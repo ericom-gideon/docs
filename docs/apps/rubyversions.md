@@ -1,4 +1,4 @@
-#### Ruby versions we currently support:
+#### Ruby versions we currently support
 
 * 2.1.2
 * 2.1.1
@@ -6,7 +6,7 @@
 * 2.0.0 (multiple patch levels)
 * 1.9.3 (multiple patch levels)
 
-#### Introspection and Ruby versions:
+#### Introspection and Ruby versions
 
 When you deploy an app on Ninefold, we check your Gemfile for your application's Ruby version, so that you don't have to select it from the drop-down.   If you do not have a ruby version defined in your Gemfile we will default to the latest released version we support. 
 
