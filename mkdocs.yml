@@ -1,0 +1,122 @@
+site_name: Ninefold
+site_url: http://help.ninefold.com
+site_description: Ninefold - Ruby on Rails hosting and app deployment
+dev_addr: '0.0.0.0:8000'
+repo_url: https://github.com/ninefold/docs/
+
+# use_directory_urls: true
+# include_search: true
+
+theme_dir: ./theme/mkdocs/
+# theme_center_lead: false
+site_favicon: favicon.ico
+google_analytics: ['UA-20888012-1', 'ninefold.com']
+
+pages:
+
+# About
+- ['index.md', 'Home']
+
+# Getting 
+- ['getstarted/index.md', 'Getting Started', 'How to deploy an app']
+- ['getstarted/index.md', 'Getting Started', 'How to install and utilize the CLI']
+- ['getstarted/index.md', 'Getting Started', 'How to migrate from Heroku']
+- ['getstarted/index.md', 'Getting Started', 'Connecting your Bitbucket account']
+- ['getstarted/index.md', 'Getting Started', 'Connecting your GitHub account']
+- ['getstarted/index.md', 'Getting Started', 'Exporting and importing PostgreSQL data']
+
+# App Deployment
+# - ['index.md', 'About', 'Ninefold']
+- ['apps/index.md', 'App Deployment', 'Deployment with continuous integration (CI)']
+- ['apps/index.md', 'App Deployment', 'Redeploying an app via deployment URL (webhook)']
+- ['apps/index.md', 'App Deployment', 'Deploying a Rails app with your own database']
+- ['apps/index.md', 'App Deployment', 'Asset precompilation on Ninefold']
+- ['apps/index.md', 'App Deployment', 'Setting up deployment notifications']
+- ['apps/index.md', 'App Deployment', 'Zero downtime deployment for your Rails app']
+- ['apps/index.md', 'App Deployment', 'Deploying a Windows created Rails app']
+- ['apps/index.md', 'App Deployment', 'Reviewing your app''s configuration']
+- ['apps/index.md', 'App Deployment', 'Private gem repos on GitHub']
+- ['apps/index.md', 'App Deployment', 'DNS configuration']
+- ['apps/index.md', 'App Deployment', 'Setting up your app''s infrastructure']
+- ['apps/index.md', 'App Deployment', 'Resizing your app''s database']
+- ['apps/index.md', 'App Deployment', 'Scaling your app']
+- ['apps/index.md', 'App Deployment', 'What happens when you deploy your app']
+- ['apps/index.md', 'App Deployment', 'What gets built when you deploy an app']
+- ['apps/index.md', 'App Deployment', 'Ruby versions']
+- ['apps/index.md', 'App Deployment', 'Pre and post migration hooks']
+- ['apps/index.md', 'App Deployment', 'SSL certificates']
+- ['apps/index.md', 'App Deployment', 'Using SendGrid with your account']
+- ['apps/index.md', 'App Deployment', 'What is a Procfile?']
+- ['apps/index.md', 'App Deployment', 'Creating scheduled tasks in Rails']
+- ['apps/index.md', 'App Deployment', 'Backing up your database']
+- ['apps/index.md', 'App Deployment', 'Restoring a database from backup']
+- ['apps/index.md', 'App Deployment', 'Redeploying an app']
+- ['apps/index.md', 'App Deployment', 'PostGIS and PostgreSQL modules']
+- ['apps/index.md', 'App Deployment', 'More on Postgresql']
+- ['apps/index.md', 'App Deployment', 'How to Utilize a CDN with Ninefold (S3 and CloudFront)']
+
+# Servers
+- ['servers/index.md', 'Servers', 'Docker containers on bare servers']
+- ['servers/index.md', 'Servers', 'How to transition existing Ninefold virtual servers to new Ninefold']
+- ['servers/index.md', 'Servers', 'How to transition to new Ninefold and start afresh']
+- ['servers/index.md', 'Servers', 'How to create a server']
+- ['servers/index.md', 'Servers', 'How to resize your server']
+- ['servers/index.md', 'Servers', 'How to access your server with live view']
+- ['servers/index.md', 'Servers', 'How to clone a server']
+- ['servers/index.md', 'Servers', 'Ninefold templates vs. custom ISOs and templates']
+- ['servers/index.md', 'Servers', 'Specifying regions for ISO & template uploads']
+- ['servers/index.md', 'Servers', 'How to attach an ISO']
+- ['servers/index.md', 'Servers', 'How to upload an ISO']
+- ['servers/index.md', 'Servers', 'How to create a template from your server']
+- ['servers/index.md', 'Servers', 'How to add storage volumes']
+- ['servers/index.md', 'Servers', 'How to view attached storage volumes']
+- ['servers/index.md', 'Servers', 'How to view detached storage volumes']
+- ['servers/index.md', 'Servers', 'How to detach then reattach a storage volume']
+- ['servers/index.md', 'Servers', 'Using backups to protect your data']
+- ['servers/index.md', 'Servers', 'Resetting server password']
+- ['servers/index.md', 'Servers', 'New server username and password']
+- ['servers/index.md', 'Servers', 'Reset your server password']
+- ['servers/index.md', 'Servers', 'How to connect to your server using SSH / RDP']
+- ['servers/index.md', 'Servers', 'FTP (File Transfer Protocol) guide']
+- ['servers/index.md', 'Servers', 'How to activate Windows Server']
+- ['servers/index.md', 'Servers', 'Microsoft licensing - Can I use my existing software and licenses?']
+
+# Networking
+- ['networking/index.md', 'Networking', 'How to enable "Ninefold Net" inter-zone networking']
+- ['networking/index.md', 'Networking', 'Using multiple regions - an overview']
+- ['networking/index.md', 'Networking', 'Copying or moving servers between regions']
+- ['networking/index.md', 'Networking', 'DNS management']
+- ['networking/index.md', 'Networking', 'Setup load balancing (single zone)']
+- ['networking/index.md', 'Networking', 'Setting up static NAT & port forward for IP addresses']
+- ['networking/index.md', 'Networking', 'How to open firewall ports']
+- ['networking/index.md', 'Networking', 'How to setup global load balancing for servers']
+- ['networking/index.md', 'Networking', 'How to delegate your domain to Ninefold']
+- ['networking/index.md', 'Networking', 'How to release or unassign your IP addresses']
+- ['networking/index.md', 'Networking', 'How to use multiple IP addresses on a server']
+
+# Accounts and Billing
+- ['billing/index.md', 'Accounts & Billing', 'How to open an account']
+- ['billing/index.md', 'Accounts & Billing', 'Update your profile / password']
+- ['billing/index.md', 'Accounts & Billing', 'Creating additional users']
+- ['billing/index.md', 'Accounts & Billing', 'Adding and updating your credit card']
+- ['billing/index.md', 'Accounts & Billing', 'Notifications']
+- ['billing/index.md', 'Accounts & Billing', 'Setting up your profile image']
+- ['billing/index.md', 'Accounts & Billing', 'Free trial']
+- ['billing/index.md', 'Accounts & Billing', 'Pricing']
+- ['billing/index.md', 'Accounts & Billing', 'Billing & usage']
+- ['billing/index.md', 'Accounts & Billing', 'Understanding pricing']
+- ['billing/index.md', 'Accounts & Billing', 'Calculating your monthly invoice']
+- ['billing/index.md', 'Accounts & Billing', 'What if any taxes are applied']
+- ['billing/index.md', 'Accounts & Billing', 'Currency considerations']
+- ['billing/index.md', 'Accounts & Billing', 'More on estimates invoices and payments']
+- ['billing/index.md', 'Accounts & Billing', 'Accepted payment methods']
+- ['billing/index.md', 'Accounts & Billing', 'How to close your account']
+
+# Reference
+- ['reference/faq.md', 'Reference', 'FAQ']
+- ['reference/libcloud.md', 'Reference', 'How to use Apache libcloud']
+- ['reference/API.md', 'Reference', 'Using the API (v2)']
+- ['reference/otherapi.md', 'Reference', 'Other supported API libraries']
+- ['reference/apdex.md', 'Reference', 'Apdex to measure user satisfaction']
+- ['reference/contributing.md', 'Reference', 'Contribute to our docs']
+
