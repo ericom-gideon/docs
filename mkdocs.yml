@@ -17,7 +17,7 @@ pages:
 # About
 - ['index.md', 'Home']
 
-# Getting 
+# Getting Started
 - ['getstarted/index.md', 'Getting Started', 'How to deploy an app']
 - ['getstarted/index.md', 'Getting Started', 'How to install and utilize the CLI']
 - ['getstarted/index.md', 'Getting Started', 'How to migrate from Heroku']
