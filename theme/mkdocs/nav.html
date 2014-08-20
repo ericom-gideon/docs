@@ -1,4 +1,4 @@
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
 
         <!-- Collapsed navigation -->
@@ -12,7 +12,7 @@
             </button>
 
             <!-- Main title -->
-            <a class="navbar-brand" href="{{ homepage_url }}">{{ site_name }}</a>
+            <!-- <a class="navbar-brand" href="{{ homepage_url }}">{{ site_name }}</a> -->
         </div>
 
         <!-- Expanded navigation -->
@@ -46,7 +46,7 @@
                     <a href="#searchModal" data-toggle="modal"><i class="fa fa-search"></i> Search</a>
                 </li>
                 {% endif %}
-                {% if repo_url %}
+                <!-- {% if repo_url %}
                 <li>
                     <a href="{{ repo_url }}">
                         {% if repo_name == 'GitHub' %}
@@ -57,7 +57,7 @@
                         {{ repo_name }}
                     </a>
                 </li>
-                {% endif %}
+                {% endif %} -->
             </ul>
         </div>
     </div>

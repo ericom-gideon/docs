@@ -1,6 +1,6 @@
 body {
     padding-top: 70px;
-}
+} 
 
 ul.nav li.main {
     font-weight: bold;
@@ -12,6 +12,11 @@ div.col-md-3 {
 
 div.source-links {
     float: right;
+}
+
+.navbar-inverse .navbar-nav>li>a
+      font-size: 1.2em;
+      color: #a6a6a6;
 }
 
 /*
