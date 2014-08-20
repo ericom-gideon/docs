@@ -42,7 +42,6 @@ pages:
 - ['apps/index.md', 'App Deployment', 'Scaling your app']
 - ['apps/index.md', 'App Deployment', 'What happens when you deploy your app']
 - ['apps/index.md', 'App Deployment', 'What gets built when you deploy an app']
-- ['apps/rubyversions.md', 'App Deployment', 'Ruby versions']
 - ['apps/index.md', 'App Deployment', 'Pre and post migration hooks']
 - ['apps/index.md', 'App Deployment', 'SSL certificates']
 - ['apps/index.md', 'App Deployment', 'Using SendGrid with your account']

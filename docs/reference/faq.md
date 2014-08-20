@@ -125,6 +125,21 @@ We always support the latest version of Ruby as well as serveral older versions.
 * 2.0.0 (multiple patch levels)
 * 1.9.3 (multiple patch levels)
 
+#### What happens if my app changes Ruby version?
+
+If you change the Ruby version of your app, you will need to redeploy. This can be done by going to your App > Configuration (tab) > Edit (Ruby version) > choose the correct Ruby version > Update > Redeploy now.
+
+If your app requires an unsupported version of Ruby, please contact support to let us know.
+
+##### Introspection and Ruby versions
+
+When you deploy an app on Ninefold, we check your Gemfile for your application's Ruby version, so that you don't have to select it from the drop-down.   If you do not have a ruby version defined in your Gemfile we will default to the latest released version we support. 
+
+	Sample Gemfile declaration
+	
+	source 'https://rubygems.org'
+	ruby '2.1.1'
+
 #### How do I manage GitHub SSH Keys?
 
 ##### Adding GitHub SSH Keys to Client Accounts
