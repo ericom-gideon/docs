@@ -1,6 +1,6 @@
 body {
     padding-top: 70px;
-} 
+}
 
 ul.nav li.main {
     font-weight: bold;
@@ -54,7 +54,7 @@ div.source-links {
     text-decoration: none;
     border-right: 1px solid;
 }
-.bs-sidebar .nav > .active > a,
+/*.bs-sidebar .nav > .active > a,*/
 .bs-sidebar .nav > .active:hover > a,
 .bs-sidebar .nav > .active:focus > a {
     font-weight: bold;
