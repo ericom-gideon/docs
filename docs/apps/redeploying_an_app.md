@@ -2,6 +2,7 @@ page_title: Redeploying a Rails App
 page_description: Knowledge base article to instruct users on the different methods of redeploying an app
 page_keywords: redeploy redeployment webhook cli 
 
+## Redeploying an App
 
 #### Overview
 

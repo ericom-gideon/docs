@@ -1,4 +1,4 @@
-#### Deploying A Rails App With Your Own Database
+## Deploying A Rails App With Your Own Database
 
 Out of the box, Ninefold enables you to implement a database server with PostgreSQL installed. Want to bring your own database? Read on! The following is our recommendation on how to implement BYOD.
 
