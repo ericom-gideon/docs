@@ -24,6 +24,7 @@ pages:
 - ['getstarted/index.md', 'Getting Started', 'Connecting your Bitbucket account']
 - ['getstarted/index.md', 'Getting Started', 'Connecting your GitHub account']
 - ['getstarted/index.md', 'Getting Started', 'Exporting and importing PostgreSQL data']
+- ['getstarted/how_to_deploy_diaspora.md', 'Getting Started', 'How to deploy Diaspora on Ninefold']
 
 # App Deployment
 # - ['index.md', 'About', 'Ninefold']
