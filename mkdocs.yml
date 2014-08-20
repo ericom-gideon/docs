@@ -18,9 +18,9 @@ pages:
 - ['index.md', 'Home']
 
 # Getting Started
-- ['getstarted/index.md', 'Getting Started', 'How to deploy an app']
-- ['getstarted/index.md', 'Getting Started', 'How to install and utilize the CLI']
-- ['getstarted/index.md', 'Getting Started', 'How to migrate from Heroku']
+- ['getstarted/how_to_deploy_an_app.md', 'Getting Started', 'How to deploy an app']
+- ['getstarted/how_to_install_and_utilize_the_cli.md', 'Getting Started', 'How to install and utilize the CLI']
+- ['getstarted/how_to_migrate_from_heroku.md', 'Getting Started', 'How to migrate from Heroku']
 - ['getstarted/index.md', 'Getting Started', 'Connecting your Bitbucket account']
 - ['getstarted/index.md', 'Getting Started', 'Connecting your GitHub account']
 - ['getstarted/index.md', 'Getting Started', 'Exporting and importing PostgreSQL data']
@@ -112,4 +112,3 @@ pages:
 - ['reference/apdex.md', 'Reference', 'Apdex to measure user satisfaction']
 - ['reference/API.md', 'Reference', 'Using the API (v2)']
 - ['reference/contributing.md', 'Reference', 'Contribute to our docs']
-

@@ -1,6 +1,10 @@
+page_title:
+page_description:
+page_keywords: 
+
 #### Why Install the Ninefold CLI?
 
-The Ninefold CLI is great for managing your Rails app on Ninefold from the command line. The CLI allows you to: 
+The Ninefold CLI is great for managing your Rails app on Ninefold from the command line. The CLI allows you to:
 
 * run rails console
 * view and tail logs
@@ -16,7 +20,7 @@ Plus, you can interact with our awesome mascot, Brutus, the shaved yak!
 Open your terminal. Install this CLI with the usual gem install command to install in into your system:
 
 	$ gem install ninefold
-	
+
 Remember to close and reopen your terminal after you have finished installing. You do not need to include the gem in your Gemfile but you are welcome to!
 
 #### How to Update
@@ -24,23 +28,23 @@ Remember to close and reopen your terminal after you have finished installing. Y
 Ninefold regularly updates the CLI, so we encourage you update the gem prior to use:
 
 	$ gem update ninefold
-	
+
 You can view your current version of the Ninefold CLI gem by typing:
 
 	$ gem list ninefold
-	
+
 #### How to Get Started with the CLI
 
 Start with
 
 	$ ninefold signin
-	
+
 You will see a list of apps available for you to select from.
 
 To see a list of commands available for your app:
 
-	$ ninefold help 
-	
+	$ ninefold help
+
 	Commands:
   		ninefold app SUBCOMMAND       # manage your apps
   		ninefold brutus SUBCOMMAND    # make Brutus do things
