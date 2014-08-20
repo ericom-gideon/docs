@@ -1,6 +1,6 @@
-page_title:
-page_description:
-page_keywords: 
+page_title:CLI
+page_description: Knowledge base article to instruct users on the Ninefold CLI
+page_keywords: CLI Ninefold Gem Brutus
 
 #### Why Install the Ninefold CLI?
 
