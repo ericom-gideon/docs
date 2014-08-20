@@ -93,22 +93,19 @@ pages:
 - ['networking/index.md', 'Networking', 'How to use multiple IP addresses on a server']
 
 # Accounts and Billing
-- ['billing/index.md', 'Accounts & Billing', 'How to open an account']
-- ['billing/index.md', 'Accounts & Billing', 'Update your profile / password']
-- ['billing/index.md', 'Accounts & Billing', 'Creating additional users']
-- ['billing/index.md', 'Accounts & Billing', 'Adding and updating your credit card']
+- ['billing/freetrial.md', 'Accounts & Billing', 'Free trial']
+- ['billing/createuser.md', 'Accounts & Billing', 'Creating additional users']
 - ['billing/index.md', 'Accounts & Billing', 'Notifications']
 - ['billing/index.md', 'Accounts & Billing', 'Setting up your profile image']
-- ['billing/index.md', 'Accounts & Billing', 'Free trial']
-- ['billing/index.md', 'Accounts & Billing', 'Pricing']
+- ['billing/index.md', 'Accounts & Billing', 'How to close your account']
+- ['billing/index.md', 'Accounts & Billing', 'Adding and updating your credit card']
 - ['billing/index.md', 'Accounts & Billing', 'Billing & usage']
+- ['billing/index.md', 'Accounts & Billing', 'Accepted payment methods']
 - ['billing/index.md', 'Accounts & Billing', 'Understanding pricing']
 - ['billing/index.md', 'Accounts & Billing', 'Calculating your monthly invoice']
+- ['billing/index.md', 'Accounts & Billing', 'More on estimates invoices and payments']
 - ['billing/index.md', 'Accounts & Billing', 'What if any taxes are applied']
 - ['billing/index.md', 'Accounts & Billing', 'Currency considerations']
-- ['billing/index.md', 'Accounts & Billing', 'More on estimates invoices and payments']
-- ['billing/index.md', 'Accounts & Billing', 'Accepted payment methods']
-- ['billing/index.md', 'Accounts & Billing', 'How to close your account']
 
 # Reference
 - ['reference/faq.md', 'Reference', 'FAQ']
