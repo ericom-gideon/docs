@@ -112,9 +112,7 @@ pages:
 
 # Reference
 - ['reference/faq.md', 'Reference', 'FAQ']
-- ['reference/libcloud.md', 'Reference', 'How to use Apache libcloud']
-- ['reference/API.md', 'Reference', 'Using the API (v2)']
-- ['reference/otherapi.md', 'Reference', 'Other supported API libraries']
 - ['reference/apdex.md', 'Reference', 'Apdex to measure user satisfaction']
+- ['reference/API.md', 'Reference', 'Using the API (v2)']
 - ['reference/contributing.md', 'Reference', 'Contribute to our docs']
 
