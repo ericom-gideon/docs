@@ -28,7 +28,6 @@ pages:
 # App Deployment
 # - ['index.md', 'About', 'Ninefold']
 - ['apps/index.md', 'App Deployment', 'Deployment with continuous integration (CI)']
-- ['apps/index.md', 'App Deployment', 'Redeploying an app via deployment URL (webhook)']
 - ['apps/index.md', 'App Deployment', 'Deploying a Rails app with your own database']
 - ['apps/index.md', 'App Deployment', 'Asset precompilation on Ninefold']
 - ['apps/index.md', 'App Deployment', 'Setting up deployment notifications']
@@ -48,7 +47,7 @@ pages:
 - ['apps/index.md', 'App Deployment', 'Creating scheduled tasks in Rails']
 - ['apps/index.md', 'App Deployment', 'Backing up your database']
 - ['apps/index.md', 'App Deployment', 'Restoring a database from backup']
-- ['apps/index.md', 'App Deployment', 'Redeploying an app']
+- ['apps/redeploy.md', 'App Deployment', 'Redeploying an app']
 - ['apps/index.md', 'App Deployment', 'PostGIS and PostgreSQL modules']
 - ['apps/index.md', 'App Deployment', 'More on Postgresql']
 - ['apps/index.md', 'App Deployment', 'How to Utilize a CDN with Ninefold (S3 and CloudFront)']
