@@ -169,6 +169,27 @@ Bundler: Log of 'bundle install.' Check here if you suspect a gem wasn't install
 * Syslog: Log of extra information such as cron tasks.
 * Trigger: Log of pre- and post-migration hooks. If they did not run, check here.
 
+#### What is a Procfile?
+
+As a part of the app deploy process, we look for a Procfile and we'll generate services for your process types with Foreman.The Procfile describes processes that are required for your application to run. This is handy for running a background worker pool if you select to include “Redis for Resque or Sidekiq”. 
+
+NOTE:  We specifically exclude web process types in the Procfile as we run our own web process via Apache 2 and Passenger.
+
+##### Do I need a Procfile?
+
+You only need a Procfile if you include the “Redis for Resque or Sidekiq” addon via the app deploy process.
+
+##### How do I make a Procfile?
+
+An example Procfile looks like this and it goes in to your Rails app's root directory along with your Gemfile and Rakefile.
+
+	scheduler: bundle exec rake resque:work QUEUE=*
+
+	worker: bundle exec rake resque:scheduler QUEUE=*
+
+##### Are Procfiles only used for the Ninefold app deploy process?
+
+Procfiles came into existence with the gem Foreman, written by David Dollar. More information can be found in the following article: [Procfiles by David Dollar](http://blog.daviddollar.org/2011/05/06/introducing-foreman.html).
 
 #### Does Ninefold support multiple environments?
 
