@@ -50,7 +50,7 @@ pages:
 - ['apps/redeploying_an_app.md', 'App Deployment', 'Redeploying an app']
 - ['apps/index.md', 'App Deployment', 'PostGIS and PostgreSQL modules']
 - ['apps/index.md', 'App Deployment', 'More on Postgresql']
-- ['apps/index.md', 'App Deployment', 'How to Utilize a CDN with Ninefold (S3 and CloudFront)']
+- ['apps/how_to_utilize_a_cdn_with_ninefold.md', 'App Deployment', 'How to Utilize a CDN with Ninefold (S3 and CloudFront)']
 
 # Servers
 - ['servers/index.md', 'Servers', 'Docker containers on bare servers']
