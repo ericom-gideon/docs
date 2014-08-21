@@ -21,8 +21,7 @@ pages:
 - ['getstarted/how_to_deploy_an_app.md', 'Getting Started', 'How to deploy an app']
 - ['getstarted/how_to_install_and_utilize_the_cli.md', 'Getting Started', 'How to install and utilize the CLI']
 - ['getstarted/how_to_migrate_from_heroku.md', 'Getting Started', 'How to migrate from Heroku']
-- ['getstarted/index.md', 'Getting Started', 'Connecting your Bitbucket account']
-- ['getstarted/index.md', 'Getting Started', 'Connecting your GitHub account']
+- ['getstarted/how_ninefold_works_with_github_bitbucket_and_git_url.md', 'Getting Started', 'How Ninefold works with Github, Bitbucket and Git URL']
 - ['getstarted/index.md', 'Getting Started', 'Exporting and importing PostgreSQL data']
 - ['getstarted/how_to_deploy_diaspora.md', 'Getting Started', 'How to deploy Diaspora on Ninefold']
 
