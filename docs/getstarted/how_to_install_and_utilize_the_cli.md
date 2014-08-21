@@ -3,6 +3,8 @@ page_autor:       Brittany Martin
 page_description: Knowledge base article to instruct users on the Ninefold CLI
 page_keywords:    CLI Ninefold Gem Brutus
 
+## How to Install and Utilize the CLI
+
 #### Why Install the Ninefold CLI?
 
 The Ninefold CLI is great for managing your Rails app on Ninefold from the command line. The CLI allows you to:
