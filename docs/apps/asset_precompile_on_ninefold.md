@@ -2,7 +2,9 @@ page_title: Asset Precompilation on Ninefold
 page_description: Knowledge base article to instruct users on how Ninefold handles asset precompilation
 page_keywords: assets precompile asset management carrierwave paperclip
 
-#### Asset Precompile
+## Asset Precompilation on Ninefold
+
+#### About Asset Precompile
 On Ninefold, we run a few rake commands during initial deployment and every subsequent deployment of a new customer code release or a force redeploy of an existing release. One of these is `rake assets:precompile`.
 
 We run this task automatically for you provided you are using rails version 3.2 or higher.  The rake task is skipped if you have checked in files to the public/assets folder other than *.ico files.  
