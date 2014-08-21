@@ -47,8 +47,7 @@ pages:
 - ['apps/index.md', 'App Deployment', 'Backing up your database']
 - ['apps/index.md', 'App Deployment', 'Restoring a database from backup']
 - ['apps/redeploying_an_app.md', 'App Deployment', 'Redeploying an app']
-- ['apps/index.md', 'App Deployment', 'PostGIS and PostgreSQL modules']
-- ['apps/index.md', 'App Deployment', 'More on Postgresql']
+- ['apps/postgres_and_postgis_and_modules.md', 'App Deployment', 'Postgres, PostGIS, and Postgres Modules']
 - ['apps/how_to_utilize_a_cdn_with_ninefold.md', 'App Deployment', 'How to Utilize a CDN with Ninefold (S3 and CloudFront)']
 
 # Servers
