@@ -1,7 +1,7 @@
 page_title:       Setting and Changing Your App's Configuration and Infrastructure
 page_author:      Brittany Martin
 page_description: Knowledge base article to instruct users on how they can change their apps configuration and infrastructure after deployment
-page_keywords:    infrastructure configuration add-ons servers size rails change
+page_keywords:    infrastructure configuration add-ons servers size rails change bash migrations
 
 ## Setting and Changing Your App Configuration and Infrastructure
 
@@ -9,7 +9,7 @@ Consider the infrastructure and configuration the Superman and Batman of your Ju
 
 #### Setting Configuration During Deployment
 
-Inital step when deploying your app to Ninefold is configuring your app.  Here, you are given the opportunity to customize some aspects of your deployment:
+Initial step when deploying your app to Ninefold is configuring your app.  Here, you are given the opportunity to customize some aspects of your deployment:
 
 __Name Your App:__
 
@@ -27,7 +27,23 @@ These fields will auto-populate if you have the services set up in your app and 
 
 __Additional Deployment Commands__
 
-You can run commands from the command line of your app server(s) from here in the same format as if you were running the command in Bash. 
+You can run commands from the command line of your app server(s) from here in the same format as if you were running the command in Bash. This allows you to do perform tasks like run rake tasks against your database after running your migrations.
+
+Keep in mind that you won’t have to run the following types of commands as Ninefold does this all for you:
+
+	rake db:setup
+	
+	rake db:migration
+	
+	rake asset:precompile
+
+but a great example would be:
+
+	mv config/redis.yml.sample config/redis.yml
+
+for your Redis config. 
+
+These pre- and post-migration commands will be run each time you commit to your branch or press __Force Redeploy__.
 
 #### Changing/Viewing Configuration for Your Deployed App
 
@@ -43,7 +59,7 @@ If you change any of these settings, be prepared to redeploy for these changes t
 
 #### Setting Infrastructure During Deployment
 
-The inital infrastructure for your app is chosen in __Step 3__ of the deploy process. 
+The initial infrastructure for your app is chosen in __Step 3__ of the deploy process. 
 
 The default setting is to have your app and database reside on separate servers. This allows for your app to be scaled vertically or horizontally very easily through the Portal interface. All server types have a root disk size of 20GB.
 
