@@ -46,9 +46,12 @@
          
             <div class="col-md-3">{% include "toc.html" %}</div>
 
-
             <div class="col-md-9" role="main">
-                   <a href="https://github.com/ninefold/docs/tree/master/docs/{{ current_page.input_path }}" class="btn btn-default pull-right"> <span class="fa fa-github"></span> Edit on GitHub</a>
+
+                <div class="col-md-12 hidden-xs hidden-sm">
+                    <a href="https://github.com/ninefold/docs/tree/master/docs/{{ current_page.input_path }}" class="btn btn-default pull-right"> <span class="fa fa-github"></span> Edit on GitHub</a>
+                </div>
+                
                    {% include "content.html" %}
             </div>
         </div>
