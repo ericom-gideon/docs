@@ -2,7 +2,7 @@ page_title: Free trial
 page_description: Free trial
 page_keywords: free, trial
 
-#### Free trial
+## Free trial
 
 When you sign up with Ninefold you will be able to create your own account and we will grant you the right to access and use the services in accordance with our [Customer Agreement](https://ninefold.com/customer-agreement/).
 

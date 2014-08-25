@@ -1,5 +1,5 @@
 page_title: Contribution Guidelines
-page_description: Contribution guidelines: create issues, conventions, pull requests
+page_description: Contribution guidelines - create issues, conventions, pull requests
 page_keywords: contributing, documentation, help, guideline
 
 ## Contributing to documentation

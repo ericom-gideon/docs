@@ -2,7 +2,7 @@ page_title: Creating additional users
 page_description: Creating additional users
 page_keywords: user, create
 
-#### Creating additional users
+## Creating additional users
 
 Creating additional users will allow others in your organization to create and manage both servers and applications in your Ninefold account. Before you can add an additional user you will need to ensure that you're an admin of the account.
 
