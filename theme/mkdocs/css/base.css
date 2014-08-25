@@ -26,13 +26,13 @@ div.source-links {
  * sections of docs content.
  */
 
-/* By default it's not affixed in mobile views, so undo that */
+/* By default it's not affixed in mobile views, so undo that 
 .bs-sidebar.affix {
     position: static;
-}
+} */
 
 .bs-sidebar.well {
-    padding: 0;
+    padding: 0
 }
 
 /* First level of nav */
@@ -103,4 +103,4 @@ div.source-links {
     .bs-sidebar.affix {
         width: 263px;
     }
-}
+} 
