@@ -43,8 +43,14 @@
         {% include "nav.html" %}
 
         <div class="container">
+         
             <div class="col-md-3">{% include "toc.html" %}</div>
-            <div class="col-md-9" role="main">{% include "content.html" %}</div>
+
+
+            <div class="col-md-9" role="main">
+                   <a href="https://github.com/ninefold/docs/tree/master/docs/{{ current_page.input_path }}" class="btn btn-default pull-right"> <span class="fa fa-github"></span> Edit on GitHub</a>
+                   {% include "content.html" %}
+            </div>
         </div>
 
         {% if include_search %}{% include "search.html" %}{% endif %}
