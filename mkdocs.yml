@@ -34,8 +34,6 @@ pages:
 - ['apps/index.md', 'App Deployment', 'Zero downtime deployment for your Rails app']
 - ['apps/Setting_and_changing_your_apps_configuration_and_infrastructure.md', 'App Deployment', 'Setting and Changing Your App Configuration and Infrastructure']
 - ['apps/index.md', 'App Deployment', 'Private gem repos on GitHub']
-- ['apps/index.md', 'App Deployment', 'Resizing your app''s database']
-- ['apps/index.md', 'App Deployment', 'Scaling your app']
 - ['apps/index.md', 'App Deployment', 'What happens when you deploy your app']
 - ['apps/index.md', 'App Deployment', 'What gets built when you deploy an app']
 - ['apps/ssl_management_for_rails_apps.md', 'App Deployment', 'SSL for Rails Apps']
