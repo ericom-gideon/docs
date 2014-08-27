@@ -19,3 +19,4 @@ mkdocs build will build a copy of the site locally.  It will create a site dir i
 
 mkdocs serve will host the site on your local machine listening on http://0.0.0.0:8000
 
+mkdocs gh-deploy will push to gh-pages branch (tested, but don't do this yet till content complete)
