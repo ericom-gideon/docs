@@ -11,8 +11,32 @@ var navHeight = $('.navbar').outerHeight(true) + 10
 $('body').scrollspy({
     target: '.bs-sidebar',
     offset: navHeight
-})
+});
 
+var headerHeight = $('#ninefold-nav').height()+62;
+
+
+
+$(document).scroll(function(){
+    var topOffset = $(this).scrollTop();
+    console.log(headerHeight+" "+topOffset);  
+    if(headerHeight < topOffset){
+        if($('.main-nav').hasClass('navbar-fixed-top')){
+            // Dont do anything
+        } else {
+            $('.main-nav').addClass('navbar-fixed-top');    
+            $('.bs-sidebar').addClass('sticky');
+            $('body').css({"margin-top":"51px"});
+        }
+        
+    } else {
+        $('.main-nav').removeClass('navbar-fixed-top');
+        $('.bs-sidebar').removeClass('sticky');
+        $('body').css({"margin-top":"0px"});
+    }
+
+    
+});
 
 /* Prevent disabled links from causing a page reload */
 $("li.disabled a").click(function() {

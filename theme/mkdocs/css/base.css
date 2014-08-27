@@ -1,10 +1,18 @@
+@font-face {
+    font-family: 'omnes-pro';
+    src: url('../fonts/omnes-medium-webfont.eot');
+    src: url('../fonts/omnes-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/omnes-medium-webfont.woff') format('woff'),
+         url('../fonts/omnes-medium-webfont.ttf') format('truetype'),
+         url('../fonts/omnes-medium-webfont.svg#omnesbold') format('svg');
+    font-weight: 500;
+    font-style: normal;
+
+}
 body {
-    padding-top: 70px;
+    /*padding-top: 70px;*/
 }
 
-ul.nav li.main {
-    font-weight: bold;
-}
 
 div.col-md-3 {
     padding-left: 0;
@@ -14,10 +22,7 @@ div.source-links {
     float: right;
 }
 
-.navbar-inverse .navbar-nav>li>a
-      font-size: 1.2em;
-      color: #a6a6a6;
-}
+
 
 /*
  * Side navigation
@@ -56,9 +61,11 @@ div.source-links {
 }
 /*.bs-sidebar .nav > .active > a,*/
 .bs-sidebar .nav > .active:hover > a,
-.bs-sidebar .nav > .active:focus > a {
+.bs-sidebar .nav > .active:focus > a,
+.bs-sidebar .nav li.active 
+ {
     font-weight: bold;
-    background-color: transparent;
+    background-color: #eeeeee;
     border-right: 1px solid;
 }
 
@@ -73,6 +80,105 @@ div.source-links {
     padding-left: 30px;
     font-size: 90%;
 }
+.bs-sidebar.sticky{
+    position: fixed !important;
+    top: 100px !important;
+}
+
+/* Ninefold brand Header / Navigation
+------------------------------------------*/
+.ninefold-nav .logo{
+    width: 99px;
+    height: 89px;
+    display: inline-block;
+    background-image: url("http://ninefold.com/images/logo.png");
+    background-position: center;
+}
+.ninefold-nav .navbar-left{
+    width: 100%;
+    float: left;
+}
+.ninefold-nav .navbar-header{
+    float: left;
+    padding-right: 15px;
+}
+.ninefold-nav .navbar-collapse {
+    width: auto;
+    border-top: 0;
+    box-shadow: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    max-height: 340px;
+    overflow-x: visible;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding: 0;
+}
+.ninefold-nav .navbar-nav {
+    margin-top: 30px;
+    margin-left: 0;
+    margin-right: 0;
+    float: right;
+}
+
+.ninefold-nav .navbar-nav a{
+    font-family: omnes-pro;
+    color:#aaacaf !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.ninefold-nav .navbar-nav a:hover{
+    color:#fff !important;
+}
+
+.ninefold-nav .navbar-nav .signin a {
+    background: #282828;
+    margin-left: 15px;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    border-radius: 6px;
+}
+.ninefold-nav .navbar-collapse .navbar {
+    padding-top: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 10px 0 10px;
+    position: relative;
+    z-index: 1000;
+    min-height: 50px;
+    margin-bottom: 0;
+    background-color: #1e1f1e;
+}
+
+/* Docs Main Nav
+---------------------*/
+
+.main-nav{
+    background: #F5F5F5;
+    border-bottom: 1px solid #e3e3e3;
+}
+.navbar-fixed-top .navbar-collapse{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.navbar{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+ul.nav li.main {
+    font-weight: bold;
+}
+.navbar-inverse .navbar-nav>li>a
+      font-size: 1.2em;
+      color: #a6a6a6;
+}
+
 
 /* Show and affix the side nav when space allows it */
 @media (min-width: 992px) {
@@ -85,8 +191,8 @@ div.source-links {
         width: 213px;
     }
     .bs-sidebar.affix {
-        position: fixed; /* Undo the static from mobile first approach */
-        top: 80px;
+        position: relative; /* Undo the static from mobile first approach */
+        top: 50px;
     }
     .bs-sidebar.affix-bottom {
         position: absolute; /* Undo the static from mobile first approach */
@@ -104,3 +210,7 @@ div.source-links {
         width: 263px;
     }
 } 
+
+.container{
+    max-width: 970px;
+}
