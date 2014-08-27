@@ -9,6 +9,9 @@ Out of the box, Ninefold enables you to implement a database server with Postgre
 
 Before you deploy, we recommend you read the entire article so you deploy with all of the current settings. There is a quiz at the end of the article!
 
+#### Infrastructure
+If your want your DB hosted on Ninefold and its not PostgreSQL, Please ensure you deploy this as a bare virtual server before deploying your app ensuring you tick the 'Enable NinefoldNet' box to ensure it is provisioned on the same private network as your app.
+
 #### Gemfile
 
 Include the relevant database gem in your Gemfile. Be sure to bundle install!
