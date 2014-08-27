@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="http://help.ninefold.com/apps/how_to_utilize_a_cdn_with_ninefold/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+        <title>How to Utilize a CDN with Ninefold (S3 and CloudFront) - Ninefold</title>
+
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <!-- <a class="navbar-brand" href="../..">Ninefold</a> -->
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../getstarted/how_to_deploy_an_app/">How to deploy an app</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../getstarted/how_to_install_and_utilize_the_cli/">How to install and utilize the CLI</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../getstarted/how_to_migrate_from_heroku/">How to migrate from Heroku</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../getstarted/how_ninefold_works_with_github_bitbucket_and_git_url/">How Ninefold works with Github, Bitbucket and Git URL</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../getstarted/">Exporting and importing PostgreSQL data</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../getstarted/how_to_deploy_diaspora/">How to deploy Diaspora on Ninefold</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">App Deployment <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../">Deployment with continuous integration (CI)</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../deploying_a_rails_app_with_your_own_database/">Deploying a Rails app with your own database</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../asset_precompile_on_ninefold/">Asset precompilation on Ninefold</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../">Setting up deployment notifications</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../">Zero downtime deployment for your Rails app</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../Setting_and_changing_your_apps_configuration_and_infrastructure/">Setting and Changing Your App Configuration and Infrastructure</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../private_gem_repos_on_github_&_bitbucket/">Private gem repos on GitHub and Bitbucket</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../">What happens when you deploy your app</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../">What gets built when you deploy an app</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../ssl_management_for_rails_apps/">SSL for Rails Apps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../dns_management_for_rails_apps/">DNS Management for Rails Apps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../adding_sendgrid_to_your_rails_app/">Adding Sendgrid to Your Rails App</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../creating_scheduled_tasks_in_rails/">Creating scheduled tasks in Rails</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../">Backing up your database</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../">Restoring a database from backup</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../redeploying_an_app/">Redeploying an app</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../postgres_and_postgis_and_modules/">Postgres, PostGIS, and Postgres Modules</a>
+                        </li>
+                    
+                        <li class="active">
+                            <a href="./">How to Utilize a CDN with Ninefold (S3 and CloudFront)</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Servers <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../servers/">Docker containers on bare servers</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/">How to transition existing Ninefold virtual servers to new Ninefold</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/">How to transition to new Ninefold and start afresh</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/">How to create a server</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/">How to resize your server</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/">How to access your server with live view</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/">How to clone a server</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/">Ninefold templates vs. custom ISOs and templates</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/">Specifying regions for ISO & template uploads</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/">How to attach an ISO</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/">How to upload an ISO</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/">How to create a template from your server</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/">How to add storage volumes</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/">How to view attached storage volumes</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/">How to view detached storage volumes</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/">How to detach then reattach a storage volume</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/">Using backups to protect your data</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/">Resetting server password</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/">New server username and password</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/">Reset your server password</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/">How to connect to your server using SSH / RDP</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/">FTP (File Transfer Protocol) guide</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/">How to activate Windows Server</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/">Microsoft licensing - Can I use my existing software and licenses?</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Networking <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../networking/">How to enable "Ninefold Net" inter-zone networking</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../networking/">Using multiple regions - an overview</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../networking/">Copying or moving servers between regions</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../networking/">DNS management</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../networking/">Setup load balancing (single zone)</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../networking/">Setting up static NAT & port forward for IP addresses</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../networking/">How to open firewall ports</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../networking/">How to setup global load balancing for servers</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../networking/">How to delegate your domain to Ninefold</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../networking/">How to release or unassign your IP addresses</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../networking/">How to use multiple IP addresses on a server</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Accounts & Billing <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../billing/freetrial/">Free trial</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../billing/createuser/">Creating additional users</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../billing/">Notifications</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../billing/">Setting up your profile image</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../billing/">How to close your account</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../billing/">Adding and updating your credit card</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../billing/">Billing & usage</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../billing/">Accepted payment methods</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../billing/">Understanding pricing</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../billing/">Calculating your monthly invoice</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../billing/">More on estimates invoices and payments</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../billing/">What if any taxes are applied</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../billing/">Currency considerations</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../reference/faq/">FAQ</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../reference/apdex/">Apdex to measure user satisfaction</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../reference/API/">Using the API (v2)</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../reference/contributing/">Contribute to our docs</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                <!-- 
+                <li>
+                    <a href="https://github.com/ninefold/docs/">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                 -->
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container-fluid">
+         
+            <div class="col-md-3"><div class="bs-sidebar hidden-print hidden-xs hidden-sm affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#how-to-utilize-a-cdn-with-ninefold-s3-and-cloudfront">How To Utilize A CDN With Ninefold (S3 And CloudFront)</a></li>
+    
+    </ul>
+</div></div>
+
+            <div class="col-md-9" role="main">
+
+                <div class="col-md-12 hidden-xs hidden-sm">
+                    <a href="https://github.com/ninefold/docs/tree/master/docs/apps/how_to_utilize_a_cdn_with_ninefold.md" class="btn btn-default pull-right"> <span class="fa fa-github"></span> Edit on GitHub</a>
+                </div>
+                <div class="col-md-12 hidden-xs hidden-sm"></br></div>
+                
+                   
+
+<h2 id="how-to-utilize-a-cdn-with-ninefold-s3-and-cloudfront">How To Utilize A CDN With Ninefold (S3 And CloudFront)</h2>
+<h4 id="what-is-a-cdn">What is a CDN?</h4>
+<p>Content Delivery Network (CDN) refers to a large network of servers deployed across multiple networks in several data centers, often geographically distributed. CDNs are employed by companies across many industries to deliver HTTP content, rich media like streaming audio and video, and downloadable files.</p>
+<h4 id="should-i-use-a-cdn-with-ninefold">Should I use a CDN with Ninefold?</h4>
+<p>Ninefold’s #1 goal for your site is performance. Using a CDN optimizes the delivery of static assets on your site. If your app serves up a lot of content, we highly recommend implementing a CDN.</p>
+<h4 id="how-to-set-up-a-cdn-with-ninefold">How to set up a CDN with Ninefold</h4>
+<p>There are lots of CDN providers out there. In this article, we take you through setting up your Ninefold Rails app to serve assets from Amazon S3, using a CloudFront distribution to serve those files even faster to visitors based on their geographical location. If you choose to use another CDN provider, these instructions will still help you.</p>
+<h4 id="amazon-s3-setup">Amazon S3 Setup</h4>
+<p>First of all, add the asset_sync gem to your Gemfile:</p>
+<pre class="prettyprint well"><code>gem "asset_sync"
+</code></pre>
+<p>then bundle install.</p>
+<pre class="prettyprint well"><code>$ bundle install
+</code></pre>
+<p>You will need to add the following configuration environment variables to your Ninefold app once you have created an Amazon AWS account:</p>
+<ul>
+<li>FOG_PROVIDER</li>
+<li>AWS_ACCESS_KEY_ID</li>
+<li>AWS_SECRET_ACCESS_KEY</li>
+</ul>
+<p>Next, create a bucket where you want to synchronize the compiled assets to. For this example, we will refer to the bucket: ‘brutus’. Log into the AWS Management Console, clicking the "S3" tab and by clicking the "Create Bucket" button. You will then add the FOG_DIRECTORY bucket to your <strong>Environment variables</strong> and update.</p>
+<p>Now, take a look at config/application.rb in your Rails app to make sure the following settings are enabled:</p>
+<pre class="prettyprint well"><code># Enable the asset pipeline
+
+config.assets.enabled = true
+config.assets.digest = true
+</code></pre>
+<p>If you have more than one top-level manifest file under your stylesheets, make sure you also add them in config/application.rb or they will not be compiled and synchronized to S3. It will break your Rails app!</p>
+<p>Before deploying your app, we recommend that your S3 configurations work on your local machine. If everything looks good, go ahead and deploy on to Ninefold. Since Ninefold does run rake assets:precompile for you, new and edited assets will be synced to your S3 bucket.</p>
+<p><em>Note: if you are you're deploying the same application with two different rails environments, you should set up separate buckets per environment. That’s what I prefer since it makes it easier to troubleshoot.</em></p>
+<h4 id="amazon-cloudfront-setup">Amazon CloudFront Setup</h4>
+<p>From here, you have the option to implement Amazon CloudFront. It integrates with S3 to give developers a way to distribute content to end users with lower latency and higher data transfer speeds.</p>
+<p>You can do this very easily by using the "Create Distribution Wizard" under the "CloudFront" tab in your AWS Management Console. Once logged in you can go to the CloudFront control panel and select ‘Create distribution’. When prompted for the delivery method, select ‘Web’. Once it is set up, it will take Amazon a few minutes to create the distribution.</p>
+<p>After redeploying to Ninefold, it is a good idea to test that your distribution is working. To do this, manually select the full URL of one of your static assets, such as a CSS file and attempt to request this file through your CloudFront endpoint that was provided to you. If your CSS file is returned to you, you are almost done!</p>
+<h4 id="adding-cloudfront-to-your-ninefold-rails-app">Adding CloudFront to Your Ninefold Rails App</h4>
+<p>Making Rails serve assets from a CDN is simple. Support for CDNs is built into most versions of Rails. You will only need to make a simple code change in your app to implement a distribution network.</p>
+<p>Within config/environments/production.rb you will see a setting asset_host that is responsible for prepending a domain onto all asset links created.</p>
+<p>Once deployed, your app will now serve all assets through the CloudFront distribution network. Sweet!</p>
+<p>Any questions can be directed to Ninefold’s Livechat or the Ninefold Portal ticketing system.</p>
+
+            </div>
+        </div>
+
+        
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/prettify-1.0.min.js"></script>
+        <script src="../../js/base.js"></script>
+    </body>
+</html>
