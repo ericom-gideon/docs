@@ -27,7 +27,7 @@ pages:
 
 # App Deployment
 # - ['index.md', 'About', 'Ninefold']
-- ['apps/index.md', 'App Deployment', 'Deployment with continuous integration (CI)']
+- ['apps/deployment_with_continuous_integration_ci.md', 'App Deployment', 'Deployment with continuous integration (CI)']
 - ['apps/deploying_a_rails_app_with_your_own_database.md', 'App Deployment', 'Deploying a Rails app with your own database']
 - ['apps/asset_precompile_on_ninefold.md', 'App Deployment', 'Asset precompilation on Ninefold']
 - ['apps/index.md', 'App Deployment', 'Setting up deployment notifications']
