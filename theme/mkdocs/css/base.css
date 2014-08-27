@@ -22,7 +22,9 @@ div.source-links {
     float: right;
 }
 
-
+.github-btn{
+    margin-top: 15px;
+}
 
 /*
  * Side navigation
@@ -41,12 +43,17 @@ div.source-links {
 }
 
 /* First level of nav */
+.bs-sidebar{
+    position: relative;
+    top: 50px;
+}
 .bs-sidenav {
     margin-top: 30px;
     margin-bottom: 30px;
     padding-top:    10px;
     padding-bottom: 10px;
     border-radius: 5px;
+    position: relative;
 }
 
 /* All levels of nav */
