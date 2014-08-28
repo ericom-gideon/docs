@@ -88,17 +88,8 @@ pages:
 # Accounts and Billing
 - ['billing/freetrial.md', 'Accounts & Billing', 'Free trial']
 - ['billing/createuser.md', 'Accounts & Billing', 'Creating additional users']
-- ['billing/index.md', 'Accounts & Billing', 'Notifications']
-- ['billing/index.md', 'Accounts & Billing', 'Setting up your profile image']
-- ['billing/index.md', 'Accounts & Billing', 'How to close your account']
-- ['billing/index.md', 'Accounts & Billing', 'Adding and updating your credit card']
-- ['billing/index.md', 'Accounts & Billing', 'Billing & usage']
-- ['billing/index.md', 'Accounts & Billing', 'Accepted payment methods']
-- ['billing/index.md', 'Accounts & Billing', 'Understanding pricing']
-- ['billing/index.md', 'Accounts & Billing', 'Calculating your monthly invoice']
-- ['billing/index.md', 'Accounts & Billing', 'More on estimates invoices and payments']
-- ['billing/index.md', 'Accounts & Billing', 'What if any taxes are applied']
-- ['billing/index.md', 'Accounts & Billing', 'Currency considerations']
+- ['billing/closeaccount.md', 'Accounts & Billing', 'How to close your account']
+- ['billing/faq.md', 'Accounts & Billing', 'Billing FAQ']
 
 # Reference
 - ['reference/faq.md', 'Reference', 'FAQ']
