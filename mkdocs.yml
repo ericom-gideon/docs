@@ -48,9 +48,7 @@ pages:
 - ['apps/upgrading_from_rails_40_to_41.md', 'App Deployment', 'Upgrading from Rails 4.0 to 4.1']
 
 # Servers
-- ['servers/index.md', 'Servers', 'Docker containers on bare servers']
-- ['servers/index.md', 'Servers', 'How to transition existing Ninefold virtual servers to new Ninefold']
-- ['servers/index.md', 'Servers', 'How to transition to new Ninefold and start afresh']
+- ['servers/docker.md', 'Servers', 'Docker containers']
 - ['servers/index.md', 'Servers', 'How to create a server']
 - ['servers/index.md', 'Servers', 'How to resize your server']
 - ['servers/index.md', 'Servers', 'How to access your server with live view']
