@@ -63,7 +63,6 @@ pages:
 - ['servers/index.md', 'Servers', 'New server username and password']
 - ['servers/index.md', 'Servers', 'Reset your server password']
 - ['servers/index.md', 'Servers', 'How to connect to your server using SSH / RDP']
-- ['servers/index.md', 'Servers', 'FTP (File Transfer Protocol) guide']
 - ['servers/index.md', 'Servers', 'How to activate Windows Server']
 - ['servers/index.md', 'Servers', 'Microsoft licensing - Can I use my existing software and licenses?']
 
