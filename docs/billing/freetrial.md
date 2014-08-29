@@ -1,6 +1,6 @@
 page_title: Free trial
 page_description: Free trial
-page_keywords: free, trial
+page_keywords: free trial
 
 ## Free trial
 

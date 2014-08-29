@@ -66,3 +66,18 @@ tsearch2
 unaccent  
 uuid-ossp  
 xml2
+
+#### PostGIS and the Activerecord-postgis-adapter gem
+Are you using the activerecord-postgis-adapter gem for use with PostGIS? Excellent. Which means you probably have your database adapter point to PostGIS in your database.yml, right?
+
+If Ninefold is hosting your Postgres database, we override your database.yml file. This will cause PostGIS to not work properly, and your :spatial indexing won't work either. But not to worry! There is a simple solution. :)
+
+Go to __Portal__ > __Your app__ > __Configuration__ (tab) then scroll to the _Environment Variables_ section at the bottom.  Add in the following:
+
+    DATABASE_ADAPTER=postgis
+
+Press _Update_ then _Redeploy_ your app.
+
+So what's happening? Rails will look at the env var first before the database.yml file then use the rest of our settings to configure the connection.  Once that is set, the database adapter will then be set to postgis, the schema_search_path will be set to “public, postgis, topology” and the rails app will find the objects properly. Boom! Done. 
+
+As always, if you have any issues, please contact support via chat or ticket.
