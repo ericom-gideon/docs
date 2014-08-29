@@ -45,6 +45,7 @@ pages:
 - ['apps/redeploying_an_app.md', 'App Deployment', 'Redeploying an app']
 - ['apps/postgres_and_postgis_and_modules.md', 'App Deployment', 'Postgres, PostGIS, and Postgres Modules']
 - ['apps/how_to_utilize_a_cdn_with_ninefold.md', 'App Deployment', 'How to Utilize a CDN with Ninefold (S3 and CloudFront)']
+- ['apps/upgrading_from_rails_40_to_41.md', 'App Deployment', 'Upgrading from Rails 4.0 to 4.1']
 
 # Servers
 - ['servers/index.md', 'Servers', 'Docker containers on bare servers']
