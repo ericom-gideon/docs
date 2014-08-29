@@ -49,7 +49,7 @@ pages:
 
 # Servers
 - ['servers/docker.md', 'Servers', 'Docker containers']
-- ['servers/index.md', 'Servers', 'How to create a server']
+- ['servers/create.md', 'Servers', 'How to create a server']
 - ['servers/index.md', 'Servers', 'How to resize your server']
 - ['servers/index.md', 'Servers', 'How to access your server with live view']
 - ['servers/index.md', 'Servers', 'How to clone a server']
