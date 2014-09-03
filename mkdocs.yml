@@ -53,6 +53,7 @@ pages:
 - ['servers/clone.md', 'Servers', 'How to clone a server']
 - ['servers/how_to_attach_and_upload_an_iso.md', 'Servers', 'How to upload and attach an ISO']
 - ['servers/index.md', 'Servers', 'How to create a template from your server']
+- ['servers/moving.md', 'Servers', 'Copying or moving servers between regions']
 - ['servers/index.md', 'Servers', 'How to add storage volumes']
 - ['servers/how_to_view_attached_and_detached_storage_volumes.md', 'Servers', 'How to view attached and detached storage volumes']
 - ['servers/index.md', 'Servers', 'How to detach then reattach a storage volume']
@@ -61,12 +62,10 @@ pages:
 - ['servers/index.md', 'Servers', 'Reset your server password']
 - ['servers/index.md', 'Servers', 'How to connect to your server using SSH / RDP']
 - ['servers/index.md', 'Servers', 'How to activate Windows Server']
-- ['servers/microsoft.md', 'Servers', 'Microsoft licensing - Can I use my existing software and licenses?']
+- ['servers/index.md', 'Servers', 'Microsoft licensing - Can I use my existing software and licenses?']
 
 # Networking
-- ['networking/index.md', 'Networking', 'How to enable "Ninefold Net" inter-zone networking']
-- ['networking/index.md', 'Networking', 'Using multiple regions - an overview']
-- ['networking/index.md', 'Networking', 'Copying or moving servers between regions']
+- ['networking/ninefold_net.md', 'Networking', 'How to enable Ninefold Net']
 - ['networking/index.md', 'Networking', 'DNS management for servers']
 - ['networking/index.md', 'Networking', 'Setup load balancing (single zone)']
 - ['networking/index.md', 'Networking', 'Setting up static NAT & port forward for IP addresses']

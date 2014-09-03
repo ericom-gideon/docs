@@ -3,35 +3,37 @@
         <div class="ninefold-nav">
             <div class="navbar-header">
                 <a title="Ninefold" class="mast__topbar__logo logo" href="/"></a>
-                <div class="navbar-toggle">
-                    <div id="toggleMenu">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                    </div>
-                </div>
+              
+                
+           
             </div>
-            <div class="collapse navbar-collapse">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".nine-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="collapse nine-navbar-collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                 <li>
-                  <a href="/pricing">Pricing</a>
+                  <a href="https://ninefold.com/pricing">Pricing</a>
                 </li>
                 <li>
-                  <a href="/performance">Performance</a>
+                  <a href="https://ninefold.com/performance">Performance</a>
                 </li>
                 <li>
-                  <a href="/testimonials">Testimonials</a>
+                  <a href="https://ninefold.com/testimonials">Testimonials</a>
                 </li>
                 <li>
-                  <a href="/news">News</a>
+                  <a href="https://ninefold.com/news">News</a>
                 </li>
                 <li>
-                  <a href="/blog">Blog</a>
+                  <a href="https://ninefold.com/blog">Blog</a>
                 </li>
                 <li>
-                  <a href="/about-us">About Us</a>
+                  <a href="https://ninefold.com/about-us">About Us</a>
                 </li>
-                <li>
+                <li class="active">
                   <a href="https://help.ninefold.com">Docs</a>
                 </li>
                 <li class="signin">
@@ -39,6 +41,7 @@
                 </li>
                 </ul>
             </div>
+
         </div>
     </div>
 
@@ -49,11 +52,9 @@
         <!-- Collapsed navigation -->
         <div class="navbar-header">
             <!-- Expander button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".main-navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                <i class="fa fa-chevron-down"></i>
             </button>
 
             <!-- Main title -->
@@ -61,7 +62,7 @@
         </div>
 
         <!-- Expanded navigation -->
-        <div class="navbar-collapse collapse">
+        <div class="main-navbar-collapse navbar-collapse collapse">
             <!-- Main navigation -->
             <ul class="nav navbar-nav">
             {% for nav_item in nav %}
