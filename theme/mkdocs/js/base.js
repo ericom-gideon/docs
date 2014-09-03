@@ -2,6 +2,14 @@
 /* Prettyify */
 $( document ).ready(function() {
     prettyPrint();
+
+    $('.main-nav .navbar-toggle, .main-nav .navbar-toggle .fa').click(function(){
+        if($(this).hasClass('collapsed')){
+            $('.main-nav .navbar-toggle .fa').addClass('fa-rotate-180');
+        } else {
+            $('.main-nav .navbar-toggle .fa').removeClass('fa-rotate-180');
+        }
+    });
 });
 
 
@@ -19,7 +27,6 @@ var headerHeight = $('#ninefold-nav').height()+62;
 
 $(document).scroll(function(){
     var topOffset = $(this).scrollTop();
-    console.log(headerHeight+" "+topOffset);  
     if(headerHeight < topOffset){
         if($('.main-nav').hasClass('navbar-fixed-top')){
             // Dont do anything
