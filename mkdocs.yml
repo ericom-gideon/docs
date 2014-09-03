@@ -57,7 +57,7 @@ pages:
 - ['servers/index.md', 'Servers', 'How to add storage volumes']
 - ['servers/how_to_view_attached_and_detached_storage_volumes.md', 'Servers', 'How to view attached and detached storage volumes']
 - ['servers/index.md', 'Servers', 'How to detach then reattach a storage volume']
-- ['servers/index.md', 'Servers', 'Using backups to protect your data']
+- ['servers/using_backups_to_protect_your_data.md', 'Servers', 'Using backups to protect your data']
 - ['servers/index.md', 'Servers', 'New server username and password']
 - ['servers/index.md', 'Servers', 'Reset your server password']
 - ['servers/index.md', 'Servers', 'How to connect to your server using SSH / RDP']
