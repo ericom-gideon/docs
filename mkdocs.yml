@@ -52,7 +52,7 @@ pages:
 - ['servers/liveview.md', 'Servers', 'How to access your server with live view']
 - ['servers/how_to_clone_your_server.md', 'Servers', 'How to clone a server']
 - ['servers/how_to_attach_and_upload_an_iso.md', 'Servers', 'How to upload and attach an ISO']
-- ['servers/index.md', 'Servers', 'How to create a template from your server']
+- ['servers/how_to_create_a_template_from_your_server.md', 'Servers', 'How to create a template from your server']
 - ['servers/moving.md', 'Servers', 'Copying or moving servers between regions']
 - ['servers/index.md', 'Servers', 'How to add storage volumes']
 - ['servers/how_to_view_attached_and_detached_storage_volumes.md', 'Servers', 'How to view attached and detached storage volumes']
