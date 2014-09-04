@@ -20,3 +20,5 @@ page_keywords:    server volume clone VPS copy
 6. Your server is now cloned.
  
 	_The Clone function will only clone a Server into the Same Zone._
+	
+	_Also, please raise a support ticket in the Ninefold Portal for any attached data disks to be cloned for you._
