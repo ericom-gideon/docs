@@ -50,7 +50,7 @@ pages:
 - ['servers/create.md', 'Servers', 'How to create a server']
 - ['servers/resize.md', 'Servers', 'How to resize your server']
 - ['servers/liveview.md', 'Servers', 'How to access your server with live view']
-- ['servers/clone.md', 'Servers', 'How to clone a server']
+- ['servers/how_to_clone_your_server.md', 'Servers', 'How to clone a server']
 - ['servers/how_to_attach_and_upload_an_iso.md', 'Servers', 'How to upload and attach an ISO']
 - ['servers/index.md', 'Servers', 'How to create a template from your server']
 - ['servers/moving.md', 'Servers', 'Copying or moving servers between regions']
