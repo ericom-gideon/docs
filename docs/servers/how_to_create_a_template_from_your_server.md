@@ -1,5 +1,5 @@
 page_title:       How To Create A Template From Your Server
-page_author:      Brittany Martin
+page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to instruct users on how they can create a template from their server
 page_keywords:    server volume clone VPS copy template 
 
