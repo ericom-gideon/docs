@@ -59,10 +59,10 @@ pages:
 - ['servers/how_to_detach_then_reattach_a_storage_volume.md', 'Servers', 'How to detach then reattach a storage volume']
 - ['servers/using_backups_to_protect_your_data.md', 'Servers', 'Using backups to protect your data']
 - ['servers/new_server_username_and_password.md', 'Servers', 'New server username and password']
-- ['servers/index.md', 'Servers', 'Reset your server password']
+- ['servers/resetting_server_password.md', 'Servers', 'Reset your server password']
 - ['servers/how_to_connect_to_your_server_using_ssh_rdp.md', 'Servers', 'How to connect to your server using SSH / RDP']
-- ['servers/index.md', 'Servers', 'How to activate Windows Server']
-- ['servers/index.md', 'Servers', 'Microsoft licensing - Can I use my existing software and licenses?']
+- ['servers/how_to_activate_windows_server.md', 'Servers', 'How to activate Windows Server']
+- ['servers/microsoft_licensing_can_i_use_my_existing_software_and_licenses_on_ninefold.md', 'Servers', 'Microsoft licensing - Can I use my existing software and licenses?']
 
 # Networking
 - ['networking/ninefold_net.md', 'Networking', 'How to enable Ninefold Net']
