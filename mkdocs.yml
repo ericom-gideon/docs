@@ -46,7 +46,7 @@ pages:
 - ['apps/upgrading_from_rails_40_to_41.md', 'App Deployment', 'Upgrading from Rails 4.0 to 4.1']
 
 # Servers
-- ['servers/docker.md', 'Servers', 'Docker containers']
+- ['servers/how_to_create_a_docker_server.md', 'Servers', 'Docker containers']
 - ['servers/create.md', 'Servers', 'How to create a server']
 - ['servers/resize.md', 'Servers', 'How to resize your server']
 - ['servers/liveview.md', 'Servers', 'How to access your server with live view']
