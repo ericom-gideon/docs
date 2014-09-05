@@ -56,7 +56,7 @@ pages:
 - ['servers/moving.md', 'Servers', 'Copying or moving servers between regions']
 - ['servers/how_to_add_storage_volumes.md', 'Servers', 'How to add storage volumes']
 - ['servers/how_to_view_attached_and_detached_storage_volumes.md', 'Servers', 'How to view attached and detached storage volumes']
-- ['servers/index.md', 'Servers', 'How to detach then reattach a storage volume']
+- ['servers/how_to_detach_then_reattach_a_storage_volume.md', 'Servers', 'How to detach then reattach a storage volume']
 - ['servers/using_backups_to_protect_your_data.md', 'Servers', 'Using backups to protect your data']
 - ['servers/new_server_username_and_password.md', 'Servers', 'New server username and password']
 - ['servers/index.md', 'Servers', 'Reset your server password']
