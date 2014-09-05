@@ -66,14 +66,14 @@ pages:
 
 # Networking
 - ['networking/ninefold_net.md', 'Networking', 'How to enable Ninefold Net']
-- ['networking/index.md', 'Networking', 'DNS management for servers']
-- ['networking/index.md', 'Networking', 'Setup load balancing (single zone)']
-- ['networking/index.md', 'Networking', 'Setting up static NAT & port forward for IP addresses']
-- ['networking/index.md', 'Networking', 'How to open firewall ports']
-- ['networking/index.md', 'Networking', 'How to setup global load balancing for servers']
-- ['networking/index.md', 'Networking', 'How to delegate your domain to Ninefold']
-- ['networking/index.md', 'Networking', 'How to release or unassign your IP addresses']
-- ['networking/index.md', 'Networking', 'How to use multiple IP addresses on a server']
+- ['networking/dns_management_for_servers.md', 'Networking', 'DNS management for servers']
+- ['networking/setup_load_balancing_single_zone.md', 'Networking', 'Setup load balancing (single zone)']
+- ['networking/setting_up_static_nat_&_port_forward_for_ip_addresses.md', 'Networking', 'Setting up static NAT & port forward for IP addresses']
+- ['networking/how_to_open_firewall_ports.md', 'Networking', 'How to open firewall ports']
+- ['networking/how_to_setup_global_load_balancing_for_servers.md', 'Networking', 'How to setup global load balancing for servers']
+- ['networking/how_to_delegate_your_domain_to_ninefold.md', 'Networking', 'How to delegate your domain to Ninefold']
+- ['networking/how_to_release_or_unassign_your_ip_addresses.md', 'Networking', 'How to release or unassign your IP addresses']
+- ['networking/how_to_use_multiple_ip_addresses_on_a_server.md', 'Networking', 'How to use multiple IP addresses on a server']
 
 # Accounts and Billing
 - ['billing/freetrial.md', 'Accounts & Billing', 'Free trial']

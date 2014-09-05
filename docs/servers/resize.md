@@ -2,7 +2,7 @@ page_title: How to resize your server
 page_description: How to resize your server
 page_keywords: server, resize
 
-## How to resize your server
+## How to Resize Your Server
 
 1. Template your server and create a new server with the desired compute size.
 2. Click the server from the dashboard you want to resize to view the server's details.
