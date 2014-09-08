@@ -1,9 +1,9 @@
-page_title:       SSL for Rails Apps
+page_title:       SSL for Rails apps
 page_author:      Brittany Martin
 page_description: Knowledge base article to instruct users on how can manage the SSL for their Rails app 
 page_keywords:    ssl certificate open rails app signed intermediate
 
-## SSL for Rails Apps 
+## SSL for Rails apps 
 
 #### What is SSL?
 
@@ -29,7 +29,7 @@ _Self Signed Certificate_
 
 Using a self-signed certificate doesn't require any additional steps.  Just click “Use a self-signed certificate” and then save. Re-deploy your app and you’re done!
 
-_Add Your Own SSL_
+_Add your own SSL_
 
 Using a certificate that has been signed by a third-party will require you to create your own certificate and have it signed.  To create a certificate, you will need to generate a private key. Open a terminal on your local machine and type:
 
@@ -45,6 +45,4 @@ Now you can come back to this menu, select __Add your own__, and you'll get a pa
 
 Enter your details, click save, redeploy your app, and you’re done!
 
---------------
-
-Any further questions on Ninefold SSL Management can be directed to our LiveChat below, or you are welcome to log a ticket in the Ninefold Portal.
+Any further questions on Ninefold SSL management can be directed to our live chat below, or you are welcome to log a ticket in the Ninefold dashboard.

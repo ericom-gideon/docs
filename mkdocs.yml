@@ -26,7 +26,6 @@ pages:
 - ['getstarted/how_to_deploy_diaspora.md', 'Getting Started', 'How to deploy Diaspora on Ninefold']
 
 # App Deployment
-# - ['index.md', 'About', 'Ninefold']
 - ['apps/deployment_with_continuous_integration_ci.md', 'App Deployment', 'Deployment with continuous integration (CI)']
 - ['apps/deploying_a_rails_app_with_your_own_database.md', 'App Deployment', 'Deploying a Rails app with your own database']
 - ['apps/asset_precompile_on_ninefold.md', 'App Deployment', 'Asset precompilation on Ninefold']
