@@ -9,6 +9,20 @@
     font-style: normal;
 
 }
+
+p {
+    margin-bottom: 15px;
+}
+
+h2 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+h3, h4 {
+    margin-top: 25px;
+}
+
 body {
     /*padding-top: 70px;*/
 }
@@ -278,5 +292,5 @@ button span.icon-bar{
 } 
 
 .container{
-    max-width: 970px;
+    max-width: 940px;
 }
