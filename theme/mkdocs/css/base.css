@@ -100,7 +100,7 @@ div.source-links {
     padding-left: 30px;
     font-size: 90%;
 }
-.bs-sidebar.sticky{
+.bs-sidebar.sticky {
     position: fixed !important;
     top: 100px !important;
 }
