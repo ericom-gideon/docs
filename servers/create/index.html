@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="http://help.ninefold.com/servers/create/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+        <title>How to create a server - Ninefold</title>
+
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+
+        <script type="text/javascript">
+        var __lc = {};
+        __lc.license = 1076997;
+
+        (function() {
+            var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+            lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+        })();
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div id="ninefold-nav" class="navbar navbar-inverse " role="navigation">
+    <div class="container">
+        <div class="ninefold-nav">
+            <div class="navbar-header">
+                <a title="Ninefold" class="mast__topbar__logo logo" href="/"></a>
+              
+                
+           
+            </div>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".nine-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="collapse nine-navbar-collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                <li>
+                  <a href="https://ninefold.com/pricing">Pricing</a>
+                </li>
+                <li>
+                  <a href="https://ninefold.com/performance">Performance</a>
+                </li>
+                <li>
+                  <a href="https://ninefold.com/testimonials">Testimonials</a>
+                </li>
+                <li>
+                  <a href="https://ninefold.com/news">News</a>
+                </li>
+                <li>
+                  <a href="https://ninefold.com/blog">Blog</a>
+                </li>
+                <li>
+                  <a href="https://ninefold.com/about-us">About Us</a>
+                </li>
+                <li class="active">
+                  <a href="https://help.ninefold.com">Docs</a>
+                </li>
+                <li class="signin">
+                  <a href="http://portal.ninefold.com">Sign in</a>
+                </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<div class="main-nav">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".main-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fa fa-chevron-down"></i>
+            </button>
+
+            <!-- Main title -->
+            <!-- <a class="navbar-brand" href="../..">Ninefold</a> -->
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="main-navbar-collapse navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../getstarted/how_to_deploy_an_app/">How to deploy an app</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../getstarted/how_to_install_and_utilize_the_cli/">How to install and utilize the CLI</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../getstarted/how_to_migrate_from_heroku/">How to migrate from Heroku</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../getstarted/how_ninefold_works_with_github_bitbucket_and_git_url/">How Ninefold works with GitHub, Bitbucket and Git URL</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../getstarted/exporting_and_importing_postgresql_data/">Exporting and importing PostgreSQL data</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../getstarted/how_to_deploy_diaspora/">How to deploy Diaspora on Ninefold</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">App Deployment <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../apps/deployment_with_continuous_integration_ci/">Deployment with continuous integration (CI)</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../apps/deploying_a_rails_app_with_your_own_database/">Deploying a Rails app with your own database</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../apps/asset_precompile_on_ninefold/">Asset precompilation on Ninefold</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../apps/setting_up_deployment_notifications/">Setting up deployment notifications</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../apps/zero_downtime_deployment_for_your_ninefold_rails_app/">Zero downtime deployment for your Rails app</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../apps/Setting_and_changing_your_apps_configuration_and_infrastructure/">Setting and changing your app configuration and infrastructure</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../apps/private_gem_repos_on_github_&_bitbucket/">Private gem repos on GitHub and Bitbucket</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../apps/what_happens_and_what_gets_built_on_a_rails_app_deployment/">What happens and what gets built when you deploy your app</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../apps/ssl_management_for_rails_apps/">SSL for Rails apps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../apps/dns_management_for_rails_apps/">DNS management for Rails apps</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../apps/adding_sendgrid_to_your_rails_app/">Adding SendGrid to your Rails app</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../apps/creating_scheduled_tasks_in_rails/">Creating scheduled tasks in Rails</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../apps/backing_up_and_restoring_your_rails_db/">Backing up and restoring your database</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../apps/redeploying_an_app/">Redeploying an app</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../apps/postgres_and_postgis_and_modules/">PostgreSQL, PostGIS, and PostgreSQL modules</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../apps/how_to_utilize_a_cdn_with_ninefold/">How to utilize a CDN with Ninefold (S3 and CloudFront)</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../apps/upgrading_from_rails_40_to_41/">Upgrading from Rails 4.0 to 4.1</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Servers <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../how_to_create_a_docker_server/">Docker containers</a>
+                        </li>
+                    
+                        <li class="active">
+                            <a href="./">How to create a server</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../resize/">How to resize your server</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../liveview/">How to access your server with live view</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../how_to_clone_your_server/">How to clone a server</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../how_to_attach_and_upload_an_iso/">How to upload and attach an ISO</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../how_to_create_a_template_from_your_server/">How to create a template from your server</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../moving/">Copying or moving servers between regions</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../how_to_add_storage_volumes/">How to add storage volumes</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../how_to_view_attached_and_detached_storage_volumes/">How to view attached and detached storage volumes</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../how_to_detach_then_reattach_a_storage_volume/">How to detach then reattach a storage volume</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../using_backups_to_protect_your_data/">Using backups to protect your data</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../new_server_username_and_password/">New server username and password</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../resetting_server_password/">Reset your server password</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../how_to_connect_to_your_server_using_ssh_rdp/">How to connect to your server using SSH / RDP</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../how_to_activate_windows_server/">How to activate Windows Server</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../microsoft_licensing_can_i_use_my_existing_software_and_licenses_on_ninefold/">Microsoft licensing - Can I use my existing software and licenses?</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Networking <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../networking/ninefold_net/">How to enable Ninefold Net</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../networking/dns_management_for_servers/">DNS management for servers</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../networking/setup_load_balancing_single_zone/">Setup load balancing (single zone)</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../networking/setting_up_static_nat_&_port_forward_for_ip_addresses/">Setting up static NAT & port forward for IP addresses</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../networking/how_to_open_firewall_ports/">How to open firewall ports</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../networking/how_to_setup_global_load_balancing_for_servers/">How to setup global load balancing for servers</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../networking/how_to_delegate_your_domain_to_ninefold/">How to delegate your domain to Ninefold</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../networking/how_to_release_or_unassign_your_ip_addresses/">How to release or unassign your IP addresses</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../networking/how_to_use_multiple_ip_addresses_on_a_server/">How to use multiple IP addresses on a server</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Accounts & Billing <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../billing/freetrial/">Free trial</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../billing/createuser/">Creating additional users</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../billing/closeaccount/">How to close your account</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../billing/faq/">Billing FAQ</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../reference/faq/">FAQ</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../reference/apdex/">Apdex to measure user satisfaction</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../reference/API/">Using the API (v2)</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../reference/contributing/">Contribute to our docs</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                <!-- 
+                <li>
+                    <a href="https://github.com/ninefold/docs/">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                 -->
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container-fluid">
+         
+            <div class="col-md-3"><div class="bs-sidebar hidden-print hidden-xs hidden-sm affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#how-to-create-a-server">How to create a server</a></li>
+    
+    </ul>
+</div></div>
+
+            <div class="col-md-9" role="main">
+
+                <div class="col-md-12 hidden-xs hidden-sm">
+                    <a href="https://github.com/ninefold/docs/tree/master/docs/servers/create.md" class="github-btn btn btn-default pull-right"> <span class="fa fa-github"></span> Edit on GitHub</a>
+                </div>
+                <div class="col-md-12 hidden-xs hidden-sm"></br></div>
+                
+                   
+
+<h2 id="how-to-create-a-server">How to create a server</h2>
+<ol>
+<li>
+<p>Click on deploy server on the <a href="https://portal.ninefold.com">dashboard</a> and follow the deploy server creation wizard. (Note:  You will need to have added a credit card to your account to deploy a virtual server).</p>
+</li>
+<li>
+<p>You will need to provide a name for the server: Use only a combination of numbers and upper / lower case letters.</p>
+</li>
+<li>
+<p>Choose the region: This dictates where the server will be geographically located. If you would like to have your server able to communicate across regions, you should enable Ninefold Net before continuing any further with your deployment.</p>
+</li>
+<li>
+<p>Choose the level of processing. You will be able to scale up and down with one click as needed. (NOTE: This does not apply to the 512MB-X1 offering).</p>
+</li>
+<li>
+<p>Select the operating system. You can choose from our optimized templates or you can <a href="#uploading-an-iso">upload your own ISO</a>.</p>
+</li>
+<li>
+<p>Select root disk storage</p>
+<ul>
+<li>Servers have a standard 80GB root disk. You cannot modify this.</li>
+<li>Custom ISOs can select smaller or larger root disks on deployment.</li>
+<li>Custom Templates may have a different root disk that is dependant on the size of the disk on its creation. (e.g. a template of an 160GB virtual machine will be 160GB on deployment)</li>
+</ul>
+</li>
+<li>
+<p>Select additional disk storage (optional): This will add another logical drive to your virtual machine that can be formatted and used to store additional data. You can remove or add more disk storage if required later.</p>
+</li>
+<li>
+<p>Select additional options: Here you can choose a few more options such as adding a public IP address or having the password emailed to you on creation (if applicable). You can also enable recurring backups which will keep your server backed up on a daily basis.</p>
+</li>
+<li>
+<p>Click Build Server and you will be advised on the progress. Once completed you will be able to access your machine via Live View or RDP/SSH (if applicable).</p>
+</li>
+</ol>
+<h4 id="uploading-an-iso">Uploading an ISO</h4>
+<p>When creating a new server, you're not limited to Ninefold's templates or operating systems. We provide you with the ability to either upload an ISO file directly from your computer or to connect to an existing web server to import the OS directly into your account.</p>
+<ol>
+<li>
+<p>From within dashboard, select "Servers"-&gt;"Resources" from the navigation bar.</p>
+</li>
+<li>
+<p>Click add new ISO.</p>
+</li>
+<li>
+<p>Click choose file if you have a suitable ISO stored on your local computer; alternatively enter the URL of the ISO file you wish to import into your account.</p>
+</li>
+<li>
+<p>If the ISO is bootable (An OS installation disk) make sure to tick the box. </p>
+</li>
+<li>
+<p>From the "OS Type" drop down list, select the OS Type. Select other if your OS type isn't listed.</p>
+<p><strong>Note:</strong> If you pick the wrong OS Type (The virtual machine errors on start, etc) you can change it by going to ""Servers"-&gt;"Resources" and clicking edit on the ISO. </p>
+</li>
+<li>
+<p>Click upload and wait for the ISO to finish importing into your account.</p>
+</li>
+</ol>
+
+            </div>
+        </div>
+
+        
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/prettify-1.0.min.js"></script>
+
+        <script src="../../js/base.js"></script>
+    </body>
+</html>

@@ -2,6 +2,14 @@
 /* Prettyify */
 $( document ).ready(function() {
     prettyPrint();
+
+    $('.main-nav .navbar-toggle, .main-nav .navbar-toggle .fa').click(function(){
+        if($(this).hasClass('collapsed')){
+            $('.main-nav .navbar-toggle .fa').addClass('fa-rotate-180');
+        } else {
+            $('.main-nav .navbar-toggle .fa').removeClass('fa-rotate-180');
+        }
+    });
 });
 
 
@@ -11,8 +19,31 @@ var navHeight = $('.navbar').outerHeight(true) + 10
 $('body').scrollspy({
     target: '.bs-sidebar',
     offset: navHeight
-})
+});
 
+var headerHeight = $('#ninefold-nav').height()+62;
+
+
+
+$(document).scroll(function(){
+    var topOffset = $(this).scrollTop();
+    if(headerHeight < topOffset){
+        if($('.main-nav').hasClass('navbar-fixed-top')){
+            // Dont do anything
+        } else {
+            $('.main-nav').addClass('navbar-fixed-top');    
+            $('.bs-sidebar').addClass('sticky');
+            $('body').css({"margin-top":"51px"});
+        }
+        
+    } else {
+        $('.main-nav').removeClass('navbar-fixed-top');
+        $('.bs-sidebar').removeClass('sticky');
+        $('body').css({"margin-top":"0px"});
+    }
+
+    
+});
 
 /* Prevent disabled links from causing a page reload */
 $("li.disabled a").click(function() {
