@@ -420,7 +420,7 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print hidden-xs hidden-sm affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#how-to-use-multiple-ip-addresses-on-a-server">How To Use Multiple IP Addresses On A Server</a></li>
+        <li class="main active"><a href="#how-to-use-multiple-ip-addresses-on-a-server">How to use multiple IP addresses on a server</a></li>
     
     </ul>
 </div>
@@ -435,11 +435,11 @@
                 
                    
 
-<h2 id="how-to-use-multiple-ip-addresses-on-a-server">How To Use Multiple IP Addresses On A Server</h2>
+<h2 id="how-to-use-multiple-ip-addresses-on-a-server">How to use multiple IP addresses on a server</h2>
 <h3 id="setup">Setup</h3>
 <p>You may have already attempted to associate another static IP address to your virtual machine and found that the platform doesn't readily allow you to do this. Currently you can only associate ONE Static NAT address to a virtual machine and Ninefold is investigating methods of adding this feature down the track, but fear not - there is a method you can use to associate other IP addresses with the same machine.</p>
 <p><em>This article assumes you wish to have multiple IP addresses directed to your server. This could be useful for those who wish to host websites on their virtual machine and associate different SSL certificates with each IP address.</em></p>
-<h3 id="example-of-a-single-virtual-machine-with-3-ip-addresses">Example of a Single Virtual Machine with 3 IP addresses</h3>
+<h3 id="example-of-a-single-virtual-machine-with-3-ip-addresses">Example of a single virtual machine with 3 IP addresses</h3>
 <table>
 <thead>
 <tr>
@@ -469,7 +469,7 @@
 <p>There are three IP addresses. One of which is a Static NAT, which means all the outgoing traffic from the machine will identify itself as 103.7.16x.1 and we also have two other IPs. While they are not Static NATs, they will forward data received at those ports to other ports specified.</p>
 <p>In this example, any data sent to 103.7.16x.2 on Port 80, will be sent to the virtual machine's Port 8080. Meaning that if I was using IIS or Apache, I can tell it to serve another document or website to a request coming in on those Ports (e.g. 8080, 8081). A web user browsing on 103.7.16x.2 or even 103.7.16x.3 won't know the difference! To them they are getting the data as per normal without having to use Port numbers in the URL.</p>
 <p><strong>Note: Please ensure you have setup your server to correctly listen on the above ports to serve content.</strong></p>
-<h3 id="use-multiple-static-nats-with-multiple-nics">Use Multiple Static NATs with Multiple NICs</h3>
+<h3 id="use-multiple-static-nats-with-multiple-nics">Use multiple static NATs with multiple NICs</h3>
 <p>Ninefold will continue to try and improve on our features as well as bring out additional features. We hope to be able to allow Multi-Static NATs in the future but for now the above workaround can definitely assist users in deploying multiple websites (w/SSL certificates) or applications whilst utilizing a single virtual machine.</p>
 
 

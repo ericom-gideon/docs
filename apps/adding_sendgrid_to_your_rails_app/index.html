@@ -443,17 +443,16 @@
 <p>Already have an account? Fantastic! You can plug your existing credentials into Ninefold on your initial deployment or your subsequent redeployments.  </p>
 <p>If you end up going over SendGrid's free plan (currently 200 emails per day), you will be billed by SendGrid separately.</p>
 <h4 id="adding-sendgrid-to-your-rails-app_1">Adding SendGrid to your Rails app</h4>
-<p><strong>On Initial Deployment</strong></p>
+<p><strong>On initial deployment</strong></p>
 <p>On Step 4 of the app deployment process, you will see the option to add SendGrid underneath the <strong>Add-ons</strong> section. Checking that box means that Ninefold will reach out to SendGrid to create a new account under your Ninefold email address. If successful, Ninefold will add your:</p>
 <pre class="prettyprint well"><code>SENDGRID_USERNAME:
 SENDGRID_PASSWORD:
 </code></pre>
-<p>to the <strong>Environment Variables</strong> section. </p>
-<p><strong>On Redeployment</strong></p>
+<p>to the <strong>environment variables</strong> section. </p>
+<p><strong>On redeployment</strong></p>
 <p>Adding email functionality to your Rails app after deploying with us? Easy. Go to your app on the Ninefold dashboard, click on the <strong>Configuration</strong> tab, scroll to <strong>Current Settings</strong> and <em>create one for free</em> or enter in your existing Sendgrid username and password. This will require a redeploy for it to take effect once you click <strong>Enable</strong>.</p>
 <p><strong>Adding SendGrid/email functionality to your code</strong></p>
 <p>It is up to you, the mighty developer, to add the SendGrid env vars and config to your Rails app. If you are new to SendGrid, we recommend checking out this great <a href="https://sendgrid.com/docs/Integrate/Frameworks/rubyonrails.html">documentation</a> from them. Happy emailing!</p>
-<p>Have a question about generating a SendGrid account from Ninefold? Feel free to visit us on chat or file a support ticket via the Ninefold dashboard.</p>
 
 
 </br></br></br></br>

@@ -420,7 +420,7 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print hidden-xs hidden-sm affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#setting-and-changing-your-app-configuration-and-infrastructure">Setting and Changing Your App Configuration and Infrastructure</a></li>
+        <li class="main active"><a href="#setting-and-changing-your-app-configuration-and-infrastructure">Setting and changing your app configuration and infrastructure</a></li>
     
     </ul>
 </div>
@@ -435,9 +435,9 @@
                 
                    
 
-<h2 id="setting-and-changing-your-app-configuration-and-infrastructure">Setting and Changing Your App Configuration and Infrastructure</h2>
+<h2 id="setting-and-changing-your-app-configuration-and-infrastructure">Setting and changing your app configuration and infrastructure</h2>
 <p>Consider the infrastructure and configuration the Superman and Batman of your Justice League Rails app. You know, the essentials parts for success.</p>
-<h4 id="setting-configuration-during-deployment">Setting Configuration During Deployment</h4>
+<h4 id="setting-configuration-during-deployment">Setting configuration during deployment</h4>
 <p>Initial step when deploying your app to Ninefold is configuring your app.  Here, you are given the opportunity to customize some aspects of your deployment:</p>
 <p><strong>Name Your App:</strong></p>
 <p>The default name for your app is the repository followed by the branch, but you can change this to whatever you like.  This will also be the subdomain in the link to your app.  For example, if you deploy an app form repository example and branch master, your URL will be examplemasterxxxx.ninefold-apps.com.</p>
@@ -469,7 +469,7 @@ rake asset:precompile
 </ul>
 <p>If you change any of these settings, be prepared to redeploy for these changes to take affect.  </p>
 <hr />
-<h4 id="setting-infrastructure-during-deployment">Setting Infrastructure During Deployment</h4>
+<h4 id="setting-infrastructure-during-deployment">Setting infrastructure during deployment</h4>
 <p>The initial infrastructure for your app is chosen in <strong>Step 3</strong> of the deploy process. </p>
 <p>The default setting is to have your app and database reside on separate servers. This allows for your app to be scaled vertically or horizontally very easily through the Portal interface. All server types have a root disk size of 20GB.</p>
 <p><strong>Web Server</strong></p>
@@ -486,18 +486,16 @@ rake asset:precompile
 <h4 id="changingviewing-infrastructure-for-your-deployed-app">Changing/Viewing Infrastructure for Your Deployed App</h4>
 <p>After your app has successfully deployed, you can change your infrastructure whenever you like.  </p>
 <p><strong>Horizontally</strong></p>
-<p><em>Scaling Existing Server Size Up or Down</em></p>
+<p><em>Scaling existing server size up or down</em></p>
 <p>With any setup you choose, you can scale your app servers outwards (unless you chose the biggest one at 24GB!). </p>
 <p>All you need to do is go to the <strong>Infrastructure</strong> tab, click <em>Edit</em>, choose your new size for the server of your choice, click <strong>Save</strong> and then redeploy. </p>
 <p><strong>Vertically</strong></p>
-<p><em>Adding/Reducing Servers of the Same Type that Exist Already</em></p>
+<p><em>Adding/reducing servers of the same type that exist already</em></p>
 <p>That's easy. All you need to do is go to the <strong>Infrastructure</strong> tab, click <em>Edit</em>, choose the amount of servers of the right type, click <strong>Save</strong> and then redeploy. We'll copy the existing server into new ones (or take ones out). The load balancer will be updated to send traffic to the correct servers. </p>
-<p><em>Adding Servers of a Different Type</em></p>
+<p><em>Adding servers of a different type</em></p>
 <p>Let's break this down with an example: say your app now needs a worker server now. In this case, you'll need to deploy another app that includes the worker server. </p>
-<p><em>Breaking Apart a Combo Box (Web + DB + Worker)</em></p>
+<p><em>Breaking apart a combo box (Web + DB + Worker)</em></p>
 <p>Often, developers will deploy a combo box to limit the use of resources. As your 'Uber for bodyguards' scales out, it will make sense to break apart your web, db and worker so that it is easy to scale both horizontally and vertically in the future. This requires a deployment of a new app to make this fundamental infrastructure change. </p>
-<hr />
-<p>Any further questions can be directed to our LiveChat below, or you are welcome to log a ticket in the Ninefold Portal.</p>
 
 
 </br></br></br></br>

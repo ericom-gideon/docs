@@ -420,7 +420,7 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print hidden-xs hidden-sm affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#creating-scheduled-tasks-in-rails">Creating Scheduled Tasks in Rails</a></li>
+        <li class="main active"><a href="#creating-scheduled-tasks-in-rails">Creating scheduled tasks in Rails</a></li>
     
     </ul>
 </div>
@@ -435,11 +435,11 @@
                 
                    
 
-<h2 id="creating-scheduled-tasks-in-rails">Creating Scheduled Tasks in Rails</h2>
+<h2 id="creating-scheduled-tasks-in-rails">Creating scheduled tasks in Rails</h2>
 <h4 id="scheduling">Scheduling</h4>
 <p>Maybe you’ve got some rake tasks that need to be run every morning. Or maybe you’ve got source some data from an external web service and load it into a your database. Whatever task it is, it’s got to be on a schedule. It’s pretty easy to do with Ninefold.</p>
 <p>So the popular way to do this is to schedule a ‘cron’ job to run your commands using the ‘Whenever’ gem. Here’s how.</p>
-<h4 id="install-the-whenever-gem">Install the Whenever gem</h4>
+<h4 id="install-the-whenever-gem">Install the whenever gem</h4>
 <p>Add the whenever gem to your Gemfile:</p>
 <pre class="prettyprint well"><code>gem 'whenever', :require =&gt; false
 </code></pre>
@@ -480,7 +480,6 @@ end
 </code></pre>
 <p>Where <code>YOUR_APP_NAME</code> is the git name of your app. This will allow for your output to be directed to the <em>After Migrations</em> trigger log, which is viewable in the CLI as well as in the <strong>Logs</strong> viewer (under Triggers).</p>
 <p>For more information about output redirection with the whenever gem, <a href="https://github.com/javan/whenever/wiki/Output-redirection-aka-logging-your-cron-jobs">click here</a>.</p>
-<p>If you have any questions regarding your cron tasks, please feel free to chat with us or submit a ticket!</p>
 
 
 </br></br></br></br>

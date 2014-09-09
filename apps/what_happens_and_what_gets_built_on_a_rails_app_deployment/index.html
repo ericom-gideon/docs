@@ -420,7 +420,7 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print hidden-xs hidden-sm affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#what-happens-and-what-gets-built-on-a-rails-app-deployment">What Happens and What Gets Built on a Rails App Deployment</a></li>
+        <li class="main active"><a href="#what-happens-and-what-gets-built-on-a-rails-app-deployment">What happens and what gets built on a Rails app deployment</a></li>
     
     </ul>
 </div>
@@ -435,11 +435,11 @@
                 
                    
 
-<h2 id="what-happens-and-what-gets-built-on-a-rails-app-deployment">What Happens and What Gets Built on a Rails App Deployment</h2>
+<h2 id="what-happens-and-what-gets-built-on-a-rails-app-deployment">What happens and what gets built on a Rails app deployment</h2>
 <h4 id="overview">Overview</h4>
 <p>This knowledge base article describes what happens behind the scenes after you hit 'deploy' when deploying your Ruby on Rails app. </p>
 <h4 id="what-happens-during-deployment">What Happens During Deployment</h4>
-<h5 id="building-infrastructure">Building Infrastructure</h5>
+<h5 id="building-infrastructure">Building infrastructure</h5>
 <p>First up we build the infrastructure in the zones you specified. Your servers are Citrix Xen Virtual machines which sit on Ninefold’s hardware. These servers are much the same as the Ninefold Virtual Machines you can spin up yourself, they’re just set up with a customized template. This Ninefold template has been crafted specifically for deploying your Ruby on Rails app. We are keen to ensure your app shines and performs well.</p>
 <p>As well as your servers, we’ll set up a load balancer for you. Yes! Your very own load balancer. This means there’s no routing mesh to contend with under load and no sharing your load balancer with noisy neighbours.</p>
 <h5 id="deploying-application">Deploying application</h5>
@@ -450,7 +450,7 @@
 <p>Once all the software is in the right place, we run your migrations and seed the database (assuming you’ve got data in your seeds.rb). We’ll also compile your assets (in the same environment as your application is served from to ensure you don’t have any unexpected issues).</p>
 <p>Your inital deployment will be longer (up to 30 minutes) but subsequent redeploys will be much faster. </p>
 <p>Once that’s all done, you’re good to go. Your app is set up and running on Ninefold.</p>
-<h4 id="what-gets-built-during-deployment">What Gets Built During Deployment</h4>
+<h4 id="what-gets-built-during-deployment">What gets built during deployment</h4>
 <ul>
 <li>
 <p>All servers are provisioned with a unique public IP address, used for remote connectivity.</p>
@@ -462,8 +462,6 @@
 <p>An additional public IP address is provisioned on a local (region specific) load balancer, configured to direct web traffic to your application server</p>
 </li>
 </ul>
-<hr />
-<p>What are you waiting for? Deploy your Rails app and let us know if you need any help via Livechat or our ticketing system via the Ninefold Portal. </p>
 
 
 </br></br></br></br>

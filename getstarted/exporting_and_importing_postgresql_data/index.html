@@ -420,7 +420,7 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print hidden-xs hidden-sm affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#exporting-and-importing-postgresql-data">Exporting And Importing PostgreSQL Data</a></li>
+        <li class="main active"><a href="#exporting-and-importing-postgresql-data">Exporting and importing PostgreSQL data</a></li>
     
     </ul>
 </div>
@@ -435,12 +435,12 @@
                 
                    
 
-<h2 id="exporting-and-importing-postgresql-data">Exporting And Importing PostgreSQL Data</h2>
+<h2 id="exporting-and-importing-postgresql-data">Exporting and importing PostgreSQL data</h2>
 <p>PostgreSQL allows for users to import and export their databases, whether it’s for backup purposes or to transfer data between servers or environments.  In either case, certain formats require certain commands.  Although there are no right and wrong ways to do this, the article will focus first on the recommended way, then on alternative ways.</p>
 <h4 id="the-recommended-way-for-exportimport-terminal">THE RECOMMENDED WAY FOR EXPORT/IMPORT: TERMINAL</h4>
 <p>The terminal method is great for custom exporting and importing of a database. The high-level overview is the following:</p>
 <ol>
-<li>Open up port 5432 in Ninefold Portal</li>
+<li>Open up port 5432</li>
 <li>Type in your Terminal commands to export or import</li>
 <li>Close port 5432</li>
 </ol>
@@ -507,8 +507,8 @@ $ ninefold db backup
 $ ninefold db download   (This will be downloaded in the current directory)
 </code></pre>
 <p>The file downloaded will be in YYYY-MM-DDTIME.tar.gz format. Open the archived file and drill down until you get to the .sql file.</p>
-<h4 id="portal">Portal</h4>
-<p>This is as easy as the CLI, except you will have to log into Ninefold’s Portal.</p>
+<h4 id="dashboard">Dashboard</h4>
+<p>This is as easy as the CLI, except you will have to log into Ninefold’s dashboard.</p>
 <ol>
 <li>Log into Portal <a href="https://portal.ninefold.com">https://portal.ninefold.com</a></li>
 <li>Choose your App from the list &gt; Database tab</li>
@@ -543,8 +543,6 @@ $ ninefold db import FILENAME
 <li><a href="http://www.postgresql.org/docs/9.2/static/app-pgrestore.html">pg_restore</a></li>
 <li><a href="http://www.postgresql.org/docs/9.2/static/app-psql.html">psql</a></li>
 </ul>
-<hr />
-<p>And as always, if you have any questions or have any issues, please drop us a note on chat or create a ticket!</p>
 
 
 </br></br></br></br>

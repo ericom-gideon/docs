@@ -442,7 +442,7 @@
 <p>Ninefold’s #1 goal for your site is performance. Using a CDN optimizes the delivery of static assets on your site. If your app serves up a lot of content, we highly recommend implementing a CDN.</p>
 <h4 id="how-to-set-up-a-cdn-with-ninefold">How to set up a CDN with Ninefold</h4>
 <p>There are lots of CDN providers out there. In this article, we take you through setting up your Ninefold Rails app to serve assets from Amazon S3, using a CloudFront distribution to serve those files even faster to visitors based on their geographical location. If you choose to use another CDN provider, these instructions will still help you.</p>
-<h4 id="amazon-s3-setup">Amazon S3 Setup</h4>
+<h4 id="amazon-s3-setup">Amazon S3 setup</h4>
 <p>First of all, add the asset_sync gem to your Gemfile:</p>
 <pre class="prettyprint well"><code>gem "asset_sync"
 </code></pre>
@@ -465,15 +465,14 @@ config.assets.digest = true
 <p>If you have more than one top-level manifest file under your stylesheets, make sure you also add them in config/application.rb or they will not be compiled and synchronized to S3. It will break your Rails app!</p>
 <p>Before deploying your app, we recommend that your S3 configurations work on your local machine. If everything looks good, go ahead and deploy on to Ninefold. Since Ninefold does run rake assets:precompile for you, new and edited assets will be synced to your S3 bucket.</p>
 <p><em>Note: if you are you're deploying the same application with two different rails environments, you should set up separate buckets per environment. That’s what I prefer since it makes it easier to troubleshoot.</em></p>
-<h4 id="amazon-cloudfront-setup">Amazon CloudFront Setup</h4>
+<h4 id="amazon-cloudfront-setup">Amazon CloudFront setup</h4>
 <p>From here, you have the option to implement Amazon CloudFront. It integrates with S3 to give developers a way to distribute content to end users with lower latency and higher data transfer speeds.</p>
 <p>You can do this very easily by using the "Create Distribution Wizard" under the "CloudFront" tab in your AWS Management Console. Once logged in you can go to the CloudFront control panel and select ‘Create distribution’. When prompted for the delivery method, select ‘Web’. Once it is set up, it will take Amazon a few minutes to create the distribution.</p>
 <p>After redeploying to Ninefold, it is a good idea to test that your distribution is working. To do this, manually select the full URL of one of your static assets, such as a CSS file and attempt to request this file through your CloudFront endpoint that was provided to you. If your CSS file is returned to you, you are almost done!</p>
-<h4 id="adding-cloudfront-to-your-ninefold-rails-app">Adding CloudFront to Your Ninefold Rails App</h4>
+<h4 id="adding-cloudfront-to-your-ninefold-rails-app">Adding CloudFront to your Ninefold Rails app</h4>
 <p>Making Rails serve assets from a CDN is simple. Support for CDNs is built into most versions of Rails. You will only need to make a simple code change in your app to implement a distribution network.</p>
 <p>Within config/environments/production.rb you will see a setting asset_host that is responsible for prepending a domain onto all asset links created.</p>
 <p>Once deployed, your app will now serve all assets through the CloudFront distribution network. Sweet!</p>
-<p>Any questions can be directed to Ninefold’s Livechat or the Ninefold Portal ticketing system.</p>
 
 
 </br></br></br></br>

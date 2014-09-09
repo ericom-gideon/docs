@@ -420,7 +420,7 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print hidden-xs hidden-sm affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#asset-precompilation-on-ninefold">Asset Precompilation on Ninefold</a></li>
+        <li class="main active"><a href="#asset-precompilation-on-ninefold">Asset precompilation on Ninefold</a></li>
     
     </ul>
 </div>
@@ -435,8 +435,8 @@
                 
                    
 
-<h2 id="asset-precompilation-on-ninefold">Asset Precompilation on Ninefold</h2>
-<h4 id="about-asset-precompile">About Asset Precompile</h4>
+<h2 id="asset-precompilation-on-ninefold">Asset precompilation on Ninefold</h2>
+<h4 id="about-asset-precompile">About asset precompile</h4>
 <p>On Ninefold, we run a few rake commands during initial deployment and every subsequent deployment of a new customer code release or a force redeploy of an existing release. One of these is <code>rake assets:precompile</code>.</p>
 <p>We run this task automatically for you provided you are using rails version 3.2 or higher.  The rake task is skipped if you have checked in files to the public/assets folder other than *.ico files.  </p>
 <p>Ninefold uses <a href="http://apache.com">Apache</a> to serve the precompiled .gz versions of static assets if it’s available and if the browser supports it.</p>
@@ -447,7 +447,7 @@
 <h4 id="file-uploads-and-the-public-directory">File uploads and the public directory</h4>
 <p>File uploading gems such as <a href="https://github.com/carrierwaveuploader/carrierwave">Carrierwave</a> or <a href="https://github.com/thoughtbot/paperclip">Paperclip</a> generally store files in the public directory. At Ninefold, every web server has its own file system. While that is enticing to use as storage, writing to the web server file system is not scalable and is not persistent across new code deployments. With multiple web servers, uploaded files will be stored on the server that handles the request. Subsequent requests may be handled by a different server and that file will not be available to it. A common object store such as S3 is the preferred approach.</p>
 <h4 id="a-word-about-cdns">A word about CDNs</h4>
-<p>Content distribution networks (CDNs) are for performance. Ninefold ensures that cache headers are properly set and that gzipped assets are served correctly from Ninefold. This means that assets will be cached at the browser for subsequent requests until a new revision updates them. When assets are served externally using a CDN, that responsibility passes to the customer / third party.  For information on how to set up your Ninefold account with a CDN, check out our article here!</p>
+<p>Content distribution networks (CDNs) are for performance. Ninefold ensures that cache headers are properly set and that gzipped assets are served correctly from Ninefold. This means that assets will be cached at the browser for subsequent requests until a new revision updates them. When assets are served externally using a CDN, that responsibility passes to the customer / third party.</p>
 
 
 </br></br></br></br>

@@ -420,7 +420,7 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print hidden-xs hidden-sm affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#deployment-with-continuous-integration-ci">Deployment With Continuous Integration (CI)</a></li>
+        <li class="main active"><a href="#deployment-with-continuous-integration-ci">Deployment with continuous integration (CI)</a></li>
     
     </ul>
 </div>
@@ -435,7 +435,7 @@
                 
                    
 
-<h2 id="deployment-with-continuous-integration-ci">Deployment With Continuous Integration (CI)</h2>
+<h2 id="deployment-with-continuous-integration-ci">Deployment with continuous integration (CI)</h2>
 <p>As developers, we are keen on certain processes such as continuous integration, because it works and it’s handy! As defined by Thoughtworks, "Continuous Integration (CI) is a development practice that requires developers to integrate code into a shared repository several times a day. Each check-in is then verified by an automated build, allowing teams to detect problems early.</p>
 <p>By integrating regularly, you can detect errors quickly, and locate them more easily.</p>
 <p>With Ruby on Rails development, we tend to use tools such as Travis CI, Circle CI, Jenkins CI, and Magnum CI (amongst others).</p>
@@ -445,7 +445,7 @@
 <p>And if you didn’t have that option checked, that’s totally cool -- you’re one step ahead of the game!</p>
 <p>You’ll need to know which CI you’re using. ...We can’t help you there. :)</p>
 <p>But, this is your lucky day! Once you pick a CI to use, we give you a whopping two options to choose from to obtain a redeployment trigger when your CI succeeds!</p>
-<h4 id="1-cli-deployment-command">#1 CLI Deployment Command</h4>
+<h4 id="1-cli-deployment-command">#1 CLI deployment command</h4>
 <p>You’ll also need the deploy command given by our awesome CLI.  (If you haven’t set it up, check out the directions <a href="http://www.ninefold.com/docs/getstarted/how_to_install_and_utilize_the_cli">here</a>.)  Make sure to put the Ninefold gem into the Gemfile and run bundle.</p>
 <pre class="prettyprint well"><code>$ ninefold signin
 $ ninefold app redeploy_command
@@ -456,9 +456,9 @@ $ ninefold app redeploy_command
 <p>Each CI environment sets it up slightly differently, but they all will use the redeploy_command seen above.  </p>
 <p>Note: You may have to add in "bundle exec" before ninefold: </p>
 <p>AUTH_TOKEN=(hash) APP_ID=(number) bundle exec ninefold app redeploy --robot --sure</p>
-<h4 id="2-deployment-url-via-portal">#2 Deployment URL via Portal</h4>
+<h4 id="2-deployment-url">#2 Deployment URL</h4>
 <p>Login into the Ninefold Portal and click on your existing app's Overview tab. Copy (or Reset) the Deployment URL. Enter the curl command ($ curl [Deployment URL]) into your CI when your tests pass.</p>
-<h4 id="how-redeploying-via-the-ci-works">How Redeploying via the CI Works</h4>
+<h4 id="how-redeploying-via-ci-works">How redeploying via CI works</h4>
 <p>The general idea is that if you push to the git repository, the CI environment will kick off and run your tests. Once the tests pass, the CI will then kick off your Ninefold deployment.</p>
 <p>Each CI environment sets it up slightly differently, but they all will use the redeploy_command or Deployment URL seen above for redeploying your app on Ninefold.</p>
 <p><strong>Travis CI</strong></p>
@@ -478,8 +478,6 @@ $ ninefold app redeploy_command
 <p>In your Jenkins shell script that is running your tests, add the redeploy_command or curl [Deployment URL] after your test commands (bundle exec rspec spec, etc).</p>
 <p><strong>Magnum CI</strong></p>
 <p>With Magnum, you can input all the information in straight into the UI. You don’t even need a .yml file!  In your build steps, add the redeploy_command or curl [Deployment URL] in the “After test suite execution” box. Definitely make sure you have “bundle exec” in the command.</p>
-<hr />
-<p>Any further questions on private gems can be directed to our LiveChat below, or you are welcome to log a ticket in the Ninefold Portal.</p>
 
 
 </br></br></br></br>
