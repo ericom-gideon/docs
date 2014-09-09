@@ -7,7 +7,7 @@ page_keywords: 		SendGrid email account add-on mail rails
 
 #### Why SendGrid for your emailing needs
 
-Easing developer pains is the core similarity between Ninefold and [SendGrid](www.sendgrid.com). Ninefold does this with simple Ruby on Rails hosting, while SendGrid takes care of everything email. That's why Ninefold is proud to name SendGrid as one of our add-on partners.
+Easing developer pains is the core similarity between Ninefold and [SendGrid](http://www.sendgrid.com). Ninefold does this with simple Ruby on Rails hosting, while SendGrid takes care of everything email. That's why Ninefold is proud to name SendGrid as one of our add-on partners.
 
 #### Ninefold + SendGrid: How it works
 

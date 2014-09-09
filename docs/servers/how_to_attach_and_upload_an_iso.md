@@ -3,7 +3,7 @@ page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to instruct users how upload and attach an ISO to their server
 page_keywords:    server ISO template attach bare VPS
 
-## How to Attach and Upload an ISO
+## How to attach and upload an ISO
 
 #### Uploading an ISO 
 
@@ -11,7 +11,7 @@ When creating a new server, you're not limited to Ninefold's Templates or Operat
 
 Please see this article for detailed information on the Operating Systems currently supported by the Citrix XenServer Hypervisor used by Ninefold.
 
-You are solely responsible for ensuring you are licensed to operate Microsoft or other commercial software that you import. Please see this article for [Microsoft licensing information](http://www.ninefold.com/docs/servers/microsoft).
+You are solely responsible for ensuring you are licensed to operate Microsoft or other commercial software that you import. Please see this article for [Microsoft licensing information](microsoft_licensing_can_i_use_my_existing_software_and_licenses_on_ninefold.md).
 
 1. From within the Ninefold Portal, select __Servers__ > __Resources__.
 

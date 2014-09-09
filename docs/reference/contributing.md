@@ -6,4 +6,4 @@ page_keywords: contributing, documentation, help, guideline
 
 Want to help improve our documentation? Great!
 
-If you're making changes to the documentation, see the [README.md](https://github.com/ninefold/docs/README.md).
+If you're making changes to the documentation, see the [README.md](https://github.com/ninefold/docs).

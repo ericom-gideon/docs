@@ -31,7 +31,7 @@ pages:
 - ['apps/asset_precompile_on_ninefold.md', 'App Deployment', 'Asset precompilation on Ninefold']
 - ['apps/setting_up_deployment_notifications.md', 'App Deployment', 'Setting up deployment notifications']
 - ['apps/zero_downtime_deployment_for_your_ninefold_rails_app.md', 'App Deployment', 'Zero downtime deployment for your Rails app']
-- ['apps/Setting_and_changing_your_apps_configuration_and_infrastructure.md', 'App Deployment', 'Setting and changing your app configuration and infrastructure']
+- ['apps/setting_and_changing_your_apps_configuration_and_infrastructure.md', 'App Deployment', 'Setting and changing your app configuration and infrastructure']
 - ['apps/private_gem_repos_on_github_&_bitbucket.md', 'App Deployment', 'Private gem repos on GitHub and Bitbucket']
 - ['apps/what_happens_and_what_gets_built_on_a_rails_app_deployment.md', 'App Deployment', 'What happens and what gets built when you deploy your app']
 - ['apps/ssl_management_for_rails_apps.md', 'App Deployment', 'SSL for Rails apps']

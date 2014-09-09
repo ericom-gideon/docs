@@ -59,7 +59,7 @@ Note: the selected postgis package is one compatible for 9.2, the Ubuntu package
 
 #### Importing your database
 
-Both Ninefold and Heroku use PostgreSQL databases. Importing across is easy. Check out our [KB article](http://www.ninefold.com/docs/apps/exporting_and_importing_postgreSQL_data) on how to do that here.
+Both Ninefold and Heroku use PostgreSQL databases. Importing across is easy. Check out our [KB article](exporting_and_importing_postgresql_data.md) on how to do that here.
 
 #### Deployment and deployment triggers
 
@@ -78,7 +78,7 @@ _If you disabled post-commit hooks, you can enable them in the Overview tab of y
 
 #### Deployment triggers
 
-Say that you have a rake task that needs to be run after every migration, rake screw:cork. Or perhaps you have to move a folder before every migration. You would be able to run these commands in our deployment triggers (pre- and post-migration). The directions to do this are found [here](http://www.ninefold.com/docs/apps/setting_and_changing_your_apps_configuration_and_infrastructure).
+Say that you have a rake task that needs to be run after every migration, rake screw:cork. Or perhaps you have to move a folder before every migration. You would be able to run these commands in our deployment triggers (pre- and post-migration). The directions to do this are found [here](../apps/setting_and_changing_your_apps_configuration_and_infrastructure.md).
 
 #### Environment variables
 
@@ -90,12 +90,10 @@ Copy the variables from there and paste them directly into the Environment varia
 
 #### Rake tasks and the CLI
 
-Say that you've got a rake task that needs to be run only once, such as rake db:categories. You can use our [awesome CLI](http://www.ninefold.com/docs/getstarted/how_to_install_and_utilize_the_cli) to connect to your app. From there you can run rails console or run rake tasks or even run dbconsole. Super sweet.
+Say that you've got a rake task that needs to be run only once, such as rake db:categories. You can use our [awesome CLI](how_to_install_and_utilize_the_cli.md) to connect to your app. From there you can run rails console or run rake tasks or even run dbconsole. Super sweet.
 
 #### Scheduled Tasks
 
-Scheduled tasks are easy to create and use. We've got documentation on how to create and run them [here](http://www.ninefold.com/docs/apps/creating_scheduled_tasks_in_rails). 
+Scheduled tasks are easy to create and use. We've got documentation on how to create and run them [here](../apps/creating_scheduled_tasks_in_rails.md). 
 
----------------
-
-Any further questions on migrating from Heroku can be directed to our LiveChat below, or you are welcome to log a ticket in the Ninefold Portal.
+Any further questions on migrating from Heroku can be directed to our live chat below, or you are welcome to log a ticket in the Ninefold dashboard.

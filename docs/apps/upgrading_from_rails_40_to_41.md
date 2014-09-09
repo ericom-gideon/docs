@@ -21,7 +21,7 @@ All your key_bases are belong to us. By default, the config/secrets.yml file sho
     production:
      secret_key_base: <%= ENV["SECRET_KEY_BASE"] %>
 
-But wait! You deployed your app on Ninefold with Rails 4.0. By default, that uses SECRET_TOKEN.  What gives? What should you do?
+But wait! You deployed your app on Ninefold with Rails 4.0. By default, that uses SECRET_TOKEN. What should you do?
 
 The simplest answer is to change the last line of your config/secrets.yml file to have it point to the already-made SECRET_TOKEN environmental variable.
 

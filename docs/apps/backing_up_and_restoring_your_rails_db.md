@@ -3,25 +3,25 @@ page_author:      Brittany Martin
 page_description: Knowledge base article to instruct users on how they back up and restore databases for Rails apps
 page_keywords:    rails database pg restore data export backup 
 
-## Backing Up and Restoring Your Rails DB
+## Backing up and restoring your Rails DB
 
 #### Overview
 
 It is generally good practice to make sure you're keeping backups of your database.  If you are running a large application with millions of users, it is imperative that you keep regular backups of your users' data. Ninefold provides an easy way to automate this process and since we don't currently charge for this feature, there's no reason not to enable it.
 
-If you are looking to move data from one app to another, please check out this awesome [KB article](http://www.ninefold.com/docs/apps/exporting_and_importing_postgreSQL_data) instead. 
+If you are looking to move data from one app to another, please check out this awesome [KB article](../getstarted/exporting_and_importing_postgresql_data.md) instead. 
 
-#### Backing Up Your Database
+#### Backing up your database
 
 Here's how - Go to the __Database__ tab on your app's page:
 
 Down near the bottom of the page you will find a section called __Scheduled Backups__ with an Enable button on the right. 
 
-__Manual Backups__
+__Manual backups__
 
-Simply click __Backup Now_ button to back up your database manually. This is ideal for ifyou plan to redeploy your app, re-scale, or perform any other maintenance operation. 
+Simply click __Backup Now_ button to back up your database manually. This is ideal for if you plan to redeploy your app, re-scale, or perform any other maintenance operation. 
 
-__Scheduling Backups__
+__Scheduling backups__
 
 Scheduling backups for your Rails app is now easier then ever through 3 automation methods being: hourly, daily, or the option of adding a Cron job.
 
@@ -33,11 +33,11 @@ Choose your preferred automation method:
 * Daily 
 * Week
 
-The first option allows scheduled backups in hourly increments ()for example: every ‘21’ hours).
+The first option allows scheduled backups in hourly increments (for example: every ‘21’ hours).
 
 The second option allows scheduled backups in specific times everyday (24 hour time) for example, 10:15(am) or 22:15(pm).
 
-The third option allows automation according to a Cron configuration. 
+The third option allows automation according to a cron configuration. 
 
 For example:
 
@@ -54,7 +54,7 @@ You can also select how many backups are kept before they are cycled over by new
 
 Click the save button and confirm that you want to save your configuration, and your backups are now automated! 
 
-#### Restoring Your Database
+#### Restoring your database
 
 Restoring an app’s database will override the current data in your app. Do this with caution!
 
@@ -68,6 +68,4 @@ Once the restore is complete, a green box will appear indicating a successful da
 
 Your database has now been successfully restored from a backup!
 
-------------
-
-Any further questions on backing up and restoring your app's DB can be directed to our LiveChat below, or you are welcome to log a ticket in the Ninefold Portal.
+Any further questions on backing up and restoring your app's DB can be directed to our live chat below, or you are welcome to log a ticket in the Ninefold dashboard.

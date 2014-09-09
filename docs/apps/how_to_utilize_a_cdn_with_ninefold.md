@@ -2,11 +2,11 @@ page_title: How To Utilize A CDN With Ninefold (S3 And CloudFront)
 page_description: Knowledge base article to instruct users how they can implement a CDN with Ninefold Rails hosting. 
 page_keywords: rails CDN Cloudfront s3 assets 
 
-## How To Utilize A CDN With Ninefold (S3 And CloudFront)
+## How to utilize a CDN with Ninefold (S3 and CloudFront)
 
 #### What is a CDN?
 
-Content Delivery Network (CDN) refers to a large network of servers deployed across multiple networks in several data centers, often geographically distributed. CDNs are employed by companies across many industries to deliver HTTP content, rich media like streaming audio and video, and downloadable files.
+A content delivery network (CDN) refers to a large network of servers deployed across multiple networks in several data centers, often geographically distributed. CDNs are employed by companies across many industries to deliver HTTP content, rich media like streaming audio and video, and downloadable files.
 
 #### Should I use a CDN with Ninefold?
 
