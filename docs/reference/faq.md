@@ -91,7 +91,7 @@ All our Rails app and database servers are set to UTC.
 
 UTC is Coordinated Universal Time, and is unaffected by things like daylight savings or summer time.
 
-UTC is our standard for all app logging, cron jobs, and backups. We also use UTC to avoid confusion about timezones. This means that when you set your cron job to run at 10:05pm every night, it will be run at 10:05pm UTC.
+UTC is our standard for all app logging, cron jobs, and backups. We also use UTC to avoid confusion about time zones. This means that when you set your cron job to run at 10:05pm every night, it will be run at 10:05pm UTC.
 
 ##### What about the virtual servers?
 
