@@ -17,4 +17,4 @@ First, make sure you are logged in to the Ninefold Portal.
 
 The disk will create and automatically attach itself to your server. You will need to format and mount this disk like you would a brand new physical disk.
 
-__Note:  If your Virtual Machine does not have XenTools installed or is a Windows-based instance, your virtual machine may need to be shutdown for this action to work and attach correctly.__
+__Note:  If your Virtual Machine does not have XenTools installed or is a Windows-based instance, your virtual machine may need to be shut down for this action to work and attach correctly.__
