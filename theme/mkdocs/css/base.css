@@ -301,3 +301,6 @@ button span.icon-bar{
 .container{
     max-width: 970px;
 }
+.container-fluid{
+    max-width: 1170px;
+}
