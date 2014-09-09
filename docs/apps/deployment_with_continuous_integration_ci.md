@@ -11,7 +11,7 @@ By integrating regularly, you can detect errors quickly, and locate them more ea
 
 With Ruby on Rails development, we tend to use tools such as Travis CI, Circle CI, Jenkins CI, and Magnum CI (amongst others).
 
-With Ninefold, you can totally set up your CI to deploy your code to Ninefold after it’s run your tests.
+With Ninefold, you can totally set up your CI to deploy your code to Ninefold after it runs your tests.
 
 _But wait, what about autodeploy?!_
 
