@@ -17,7 +17,7 @@ page_keywords: create, server, iso, upload
 6. Select root disk storage
 	* Servers have a standard 80GB root disk. You cannot modify this.
 	* Custom ISOs can select smaller or larger root disks on deployment.
-	* Custom Templates may have a different root disk that is dependant on the size of the disk on its creation. (e.g. a template of an 160GB virtual machine will be 160GB on deployment)
+	* Custom Templates may have a different root disk that is dependent on the size of the disk on its creation. (e.g. a template of an 160GB virtual machine will be 160GB on deployment)
 	
 7. Select additional disk storage (optional): This will add another logical drive to your virtual machine that can be formatted and used to store additional data. You can remove or add more disk storage if required later.
 
