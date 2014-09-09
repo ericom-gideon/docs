@@ -172,7 +172,7 @@
                         </li>
                     
                         <li >
-                            <a href="../Setting_and_changing_your_apps_configuration_and_infrastructure/">Setting and changing your app configuration and infrastructure</a>
+                            <a href="../setting_and_changing_your_apps_configuration_and_infrastructure/">Setting and changing your app configuration and infrastructure</a>
                         </li>
                     
                         <li >
@@ -451,7 +451,7 @@ test:
 production:
  secret_key_base: &lt;%= ENV["SECRET_KEY_BASE"] %&gt;
 </code></pre>
-<p>But wait! You deployed your app on Ninefold with Rails 4.0. By default, that uses SECRET_TOKEN.  What gives? What should you do?</p>
+<p>But wait! You deployed your app on Ninefold with Rails 4.0. By default, that uses SECRET_TOKEN. What should you do?</p>
 <p>The simplest answer is to change the last line of your config/secrets.yml file to have it point to the already-made SECRET_TOKEN environmental variable.</p>
 <pre class="prettyprint well"><code>production:
  secret_key_base: &lt;%= ENV["SECRET_TOKEN"] %&gt;

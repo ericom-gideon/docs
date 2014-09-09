@@ -172,7 +172,7 @@
                         </li>
                     
                         <li >
-                            <a href="../../apps/Setting_and_changing_your_apps_configuration_and_infrastructure/">Setting and changing your app configuration and infrastructure</a>
+                            <a href="../../apps/setting_and_changing_your_apps_configuration_and_infrastructure/">Setting and changing your app configuration and infrastructure</a>
                         </li>
                     
                         <li >
@@ -496,7 +496,7 @@
 <h4 id="i-dont-have-an-app-i-run-virtual-servers-how-do-i-get-involved">I don’t have an app, I run virtual servers, how do I get involved?</h4>
 <p>You need to deploy an app to take advantage of this promotion. Now could be a great time to get into Ruby on Rails!</p>
 <h4 id="what-if-i-pick-another-region">What if I pick another region?</h4>
-<p>The $50 applies to your account for the month regardless of region. Say what? Lets go with an example, if you have something in US West and something in Asia Pacific 1 the $50 comes off the total of the Ninefold services for that month.</p>
+<p>The $50 applies to your account for the month regardless of region. Say what? Let's go with an example, if you have something in US West and something in Asia Pacific 1 the $50 comes off the total of the Ninefold services for that month.</p>
 <h2 id="apps">Apps</h2>
 <h4 id="how-do-i-roll-back-my-app-to-another-version">How do I roll back my app to another version?</h4>
 <p>You can’t rollback using Ninefold’s UI. You will need to rollback using Git. It’s pretty involved. Here is a good <a href="http://stackoverflow.com/questions/4372435/how-can-i-rollback-a-github-repository-to-a-specific-commit">article on StackOverflow</a> on how to do it.</p>
@@ -509,7 +509,7 @@
 <p>All our Rails app and database servers are set to UTC.</p>
 <h5 id="why-utc">Why UTC?</h5>
 <p>UTC is Coordinated Universal Time, and is unaffected by things like daylight savings or summer time.</p>
-<p>UTC is our standard for all app logging, cron jobs, and backups. We also use UTC to avoid confusion about timezones. This means that when you set your cron job to run at 10:05pm every night, it will be run at 10:05pm UTC.</p>
+<p>UTC is our standard for all app logging, cron jobs, and backups. We also use UTC to avoid confusion about time zones. This means that when you set your cron job to run at 10:05pm every night, it will be run at 10:05pm UTC.</p>
 <h5 id="what-about-the-virtual-servers">What about the virtual servers?</h5>
 <p>As our virtual servers are completely unmanaged, you can set the clock to the time and timezone of your choosing.</p>
 <h4 id="does-ninefold-spin-down-my-instance-if-it-isnt-used">Does Ninefold spin down my instance if it isn't used?</h4>
@@ -526,7 +526,7 @@
 <p>By default, Node.js is installed on a server for asset pre-compilation. Its use is not intended for customers, and as such, Ninefold does not provide support regarding Node.js.</p>
 <p>Our suggestion for those interested in utilizing Node.js is to deploy a bare virtual server and install the environment on to it. From there you may configure your rails application to communicate with the virtual server hosting your Node.js server.</p>
 <h4 id="what-ruby-versions-does-ninefold-support">What Ruby versions does Ninefold support?</h4>
-<p>We always support the latest version of Ruby as well as serveral older versions.  The following are versions are available for deployment:</p>
+<p>We always support the latest version of Ruby as well as several older versions.  The following are versions are available for deployment:</p>
 <ul>
 <li>2.1.2</li>
 <li>2.1.1</li>
@@ -549,7 +549,7 @@ ruby '2.1.1'
 <p>You're working on a client's app and have access to their repository. You attempt deployment through Ninefold and BAM! Something breaks. You can't deploy because we can't add an SSH key to that repo. What happened?</p>
 <p>As a member of an organization, you may have push and pull access to a repo. However if you don't have administrative rights to it, Ninefold cannot deploy your app because we cannot add an SSH key to the repo.</p>
 <h5 id="a-few-options">A few options</h5>
-<p>The owner of the organization must grant you administrative rights for that particular repo. Once Ninefold adds the public SSH key to the repo, administrative rights may safely be revoked again without affecting deoloyment in the future. We only need to add the key once.
+<p>The owner of the organization must grant you administrative rights for that particular repo. Once Ninefold adds the public SSH key to the repo, administrative rights may safely be revoked again without affecting deployment in the future. We only need to add the key once.
 Create a general account on Github for use with our portal. This will allow for instances when a person with authorization access leaves the company.
 If you don't require the post-commit hooks, you can use the git URL approach and add the SSH key to your repo.</p>
 <h4 id="how-do-i-access-my-apps-logs">How do I access my app's logs?</h4>
@@ -566,10 +566,10 @@ Bundler: Log of 'bundle install.' Check here if you suspect a gem wasn't install
 <li>Trigger: Log of pre- and post-migration hooks. If they did not run, check here.</li>
 </ul>
 <h4 id="what-is-a-procfile">What is a Procfile?</h4>
-<p>As a part of the app deploy process, we look for a Procfile and we'll generate services for your process types with Foreman.The Procfile describes processes that are required for your application to run. This is handy for running a background worker pool if you select to include “Redis for Resque or Sidekiq”. </p>
+<p>As a part of the app deploy process, we look for a Procfile and we'll generate services for your process types with Foreman. The Procfile describes processes that are required for your application to run. This is handy for running a background worker pool if you select to include “Redis for Resque or Sidekiq”. </p>
 <p>NOTE:  We specifically exclude web process types in the Procfile as we run our own web process via Apache 2 and Passenger.</p>
 <h5 id="do-i-need-a-procfile">Do I need a Procfile?</h5>
-<p>You only need a Procfile if you include the “Redis for Resque or Sidekiq” addon via the app deploy process.</p>
+<p>You only need a Procfile if you include the “Redis for Resque or Sidekiq” add-on via the app deploy process.</p>
 <h5 id="how-do-i-make-a-procfile">How do I make a Procfile?</h5>
 <p>An example Procfile looks like this and it goes in to your Rails app's root directory along with your Gemfile and Rakefile.</p>
 <pre class="prettyprint well"><code>scheduler: bundle exec rake resque:work QUEUE=*

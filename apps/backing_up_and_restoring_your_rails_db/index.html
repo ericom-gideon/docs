@@ -172,7 +172,7 @@
                         </li>
                     
                         <li >
-                            <a href="../Setting_and_changing_your_apps_configuration_and_infrastructure/">Setting and changing your app configuration and infrastructure</a>
+                            <a href="../setting_and_changing_your_apps_configuration_and_infrastructure/">Setting and changing your app configuration and infrastructure</a>
                         </li>
                     
                         <li >
@@ -420,7 +420,7 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print hidden-xs hidden-sm affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#backing-up-and-restoring-your-rails-db">Backing Up and Restoring Your Rails DB</a></li>
+        <li class="main active"><a href="#backing-up-and-restoring-your-rails-db">Backing up and restoring your Rails DB</a></li>
     
     </ul>
 </div>
@@ -435,16 +435,16 @@
                 
                    
 
-<h2 id="backing-up-and-restoring-your-rails-db">Backing Up and Restoring Your Rails DB</h2>
+<h2 id="backing-up-and-restoring-your-rails-db">Backing up and restoring your Rails DB</h2>
 <h4 id="overview">Overview</h4>
 <p>It is generally good practice to make sure you're keeping backups of your database.  If you are running a large application with millions of users, it is imperative that you keep regular backups of your users' data. Ninefold provides an easy way to automate this process and since we don't currently charge for this feature, there's no reason not to enable it.</p>
-<p>If you are looking to move data from one app to another, please check out this awesome <a href="http://www.ninefold.com/docs/apps/exporting_and_importing_postgreSQL_data">KB article</a> instead. </p>
-<h4 id="backing-up-your-database">Backing Up Your Database</h4>
+<p>If you are looking to move data from one app to another, please check out this awesome <a href="../../getstarted/exporting_and_importing_postgresql_data/">KB article</a> instead. </p>
+<h4 id="backing-up-your-database">Backing up your database</h4>
 <p>Here's how - Go to the <strong>Database</strong> tab on your app's page:</p>
 <p>Down near the bottom of the page you will find a section called <strong>Scheduled Backups</strong> with an Enable button on the right. </p>
-<p><strong>Manual Backups</strong></p>
-<p>Simply click __Backup Now_ button to back up your database manually. This is ideal for ifyou plan to redeploy your app, re-scale, or perform any other maintenance operation. </p>
-<p><strong>Scheduling Backups</strong></p>
+<p><strong>Manual backups</strong></p>
+<p>Simply click __Backup Now_ button to back up your database manually. This is ideal for if you plan to redeploy your app, re-scale, or perform any other maintenance operation. </p>
+<p><strong>Scheduling backups</strong></p>
 <p>Scheduling backups for your Rails app is now easier then ever through 3 automation methods being: hourly, daily, or the option of adding a Cron job.</p>
 <p>Click the ‘Enable’ button to reveal the automation options. </p>
 <p>Choose your preferred automation method:</p>
@@ -453,9 +453,9 @@
 <li>Daily </li>
 <li>Week</li>
 </ul>
-<p>The first option allows scheduled backups in hourly increments ()for example: every ‘21’ hours).</p>
+<p>The first option allows scheduled backups in hourly increments (for example: every ‘21’ hours).</p>
 <p>The second option allows scheduled backups in specific times everyday (24 hour time) for example, 10:15(am) or 22:15(pm).</p>
-<p>The third option allows automation according to a Cron configuration. </p>
+<p>The third option allows automation according to a cron configuration. </p>
 <p>For example:</p>
 <ul>
 <li>To run the job on every minute of every hour of every day of every month: * <em> * </em> *</li>
@@ -469,7 +469,7 @@
 </ul>
 <p>You can also select how many backups are kept before they are cycled over by new snapshots by simply changing the number in the ‘keep’ field for example, enter ‘7’ to retain 7 snapshots or even ‘1’ to retain only 1.</p>
 <p>Click the save button and confirm that you want to save your configuration, and your backups are now automated! </p>
-<h4 id="restoring-your-database">Restoring Your Database</h4>
+<h4 id="restoring-your-database">Restoring your database</h4>
 <p>Restoring an app’s database will override the current data in your app. Do this with caution!</p>
 <ol>
 <li>
@@ -484,8 +484,7 @@
 </ol>
 <p>Once the restore is complete, a green box will appear indicating a successful database restore. </p>
 <p>Your database has now been successfully restored from a backup!</p>
-<hr />
-<p>Any further questions on backing up and restoring your app's DB can be directed to our LiveChat below, or you are welcome to log a ticket in the Ninefold Portal.</p>
+<p>Any further questions on backing up and restoring your app's DB can be directed to our live chat below, or you are welcome to log a ticket in the Ninefold dashboard.</p>
 
             </div>
         </div>

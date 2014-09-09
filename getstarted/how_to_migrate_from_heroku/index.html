@@ -172,7 +172,7 @@
                         </li>
                     
                         <li >
-                            <a href="../../apps/Setting_and_changing_your_apps_configuration_and_infrastructure/">Setting and changing your app configuration and infrastructure</a>
+                            <a href="../../apps/setting_and_changing_your_apps_configuration_and_infrastructure/">Setting and changing your app configuration and infrastructure</a>
                         </li>
                     
                         <li >
@@ -471,7 +471,7 @@ $ rake db:schema:dump
 <p>adminpack, autoinc, btree_gin, btree_gist, chkpass, citext, cube, dblink, dict_int, dict_xsyn, earthdistance, file_fdw, fuzzystrmatch, hstore, insert_username, intagg, intarray, isn, lo, ltree, moddatetime, pageinspect, pg_buffercache, pg_freespacemap, pg_stat_statements, pg_trgm, pgcrypto, pgrowlocks, pgstattuple, plpgsql, postgis, refint, seg, sslinfo, tablefunc, tcn, test_parser, timetravel, tsearch2, unaccent, uuid-ossp, and xml2</p>
 <p>Note: the selected postgis package is one compatible for 9.2, the Ubuntu package installed is postgresql-9.2-postgis-2.1.</p>
 <h4 id="importing-your-database">Importing your database</h4>
-<p>Both Ninefold and Heroku use PostgreSQL databases. Importing across is easy. Check out our <a href="http://www.ninefold.com/docs/apps/exporting_and_importing_postgreSQL_data">KB article</a> on how to do that here.</p>
+<p>Both Ninefold and Heroku use PostgreSQL databases. Importing across is easy. Check out our <a href="../exporting_and_importing_postgresql_data/">KB article</a> on how to do that here.</p>
 <h4 id="deployment-and-deployment-triggers">Deployment and deployment triggers</h4>
 <p>Here at Ninefold, we want to make app deployment and maintenance easy.</p>
 <p>The first time you deploy your app, Ninefold will run the following commands: </p>
@@ -484,18 +484,17 @@ $ rake db:schema:dump
 <p>For every code revision, Ninefold will autodeploy for you. It's pretty awesome. No more git push origin master then git push heroku master and heroku run rake db:migrate. It's just git push origin master.  During these subsequent autodeploys, we run: bundle, rake db:migrate, and rake assets:precompile.</p>
 <p><em>If you disabled post-commit hooks, you can enable them in the Overview tab of your app. This allows us to check when you've made a code push and autodeploy those changes immediately.</em></p>
 <h4 id="deployment-triggers">Deployment triggers</h4>
-<p>Say that you have a rake task that needs to be run after every migration, rake screw:cork. Or perhaps you have to move a folder before every migration. You would be able to run these commands in our deployment triggers (pre- and post-migration). The directions to do this are found <a href="http://www.ninefold.com/docs/apps/setting_and_changing_your_apps_configuration_and_infrastructure">here</a>.</p>
+<p>Say that you have a rake task that needs to be run after every migration, rake screw:cork. Or perhaps you have to move a folder before every migration. You would be able to run these commands in our deployment triggers (pre- and post-migration). The directions to do this are found <a href="../../apps/setting_and_changing_your_apps_configuration_and_infrastructure/">here</a>.</p>
 <h4 id="environment-variables">Environment variables</h4>
 <p>To bring over your environment variables from Heroku, from the root directory of your app run:</p>
 <pre class="prettyprint well"><code>$ heroku config --shell
 </code></pre>
 <p>Copy the variables from there and paste them directly into the Environment variables section in your deployment setup. You can also add them later under the <strong>Configuration</strong> tab.</p>
 <h4 id="rake-tasks-and-the-cli">Rake tasks and the CLI</h4>
-<p>Say that you've got a rake task that needs to be run only once, such as rake db:categories. You can use our <a href="http://www.ninefold.com/docs/getstarted/how_to_install_and_utilize_the_cli">awesome CLI</a> to connect to your app. From there you can run rails console or run rake tasks or even run dbconsole. Super sweet.</p>
+<p>Say that you've got a rake task that needs to be run only once, such as rake db:categories. You can use our <a href="../how_to_install_and_utilize_the_cli/">awesome CLI</a> to connect to your app. From there you can run rails console or run rake tasks or even run dbconsole. Super sweet.</p>
 <h4 id="scheduled-tasks">Scheduled Tasks</h4>
-<p>Scheduled tasks are easy to create and use. We've got documentation on how to create and run them <a href="http://www.ninefold.com/docs/apps/creating_scheduled_tasks_in_rails">here</a>. </p>
-<hr />
-<p>Any further questions on migrating from Heroku can be directed to our LiveChat below, or you are welcome to log a ticket in the Ninefold Portal.</p>
+<p>Scheduled tasks are easy to create and use. We've got documentation on how to create and run them <a href="../../apps/creating_scheduled_tasks_in_rails/">here</a>. </p>
+<p>Any further questions on migrating from Heroku can be directed to our live chat below, or you are welcome to log a ticket in the Ninefold dashboard.</p>
 
             </div>
         </div>
