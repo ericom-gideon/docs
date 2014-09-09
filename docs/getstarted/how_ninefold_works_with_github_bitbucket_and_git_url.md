@@ -5,7 +5,7 @@ page_keywords:    repo Github Bitbucket git deployment redeployment repository g
 
 ## How Ninefold works with GitHub, Bitbucket and Git URL
 
-#### Overview
+### Overview
 
 Ninefold will pull your code in from Github.com, Bitbucket.com, or from your private Git URL. You specify the repository in Step 1 of the deploy process.
 
@@ -15,7 +15,7 @@ This means that every time you push code changes to the deployment branch on  Ni
 
 If repos + Ninefold tickles your fancy, read on.
 
-#### GitHub
+### GitHub
 
 [GitHub](www.github.com) is a web-based hosting service for software development projects that use the Git revision control system. GitHub offers both paid plans for private repositories and free accounts for open source projects.
 
@@ -45,7 +45,7 @@ If you don't require the post-commit hooks, you can use the git URL approach and
 
 For assistance with GitHub, please visit [https://help.github.com/](https://help.github.com/).
 
-#### Bitbucket
+### Bitbucket
 
 [Bitbucket](https://bitbucket.org/) is a web-based hosting service for software development projects that use the Git revision control system. Bitbucket offers both paid plans for private repositories and free accounts for open source projects.
 
@@ -63,7 +63,7 @@ _Note: If you would like to limit the visibility of the account, Git URL would b
 
 For assistance with Bitbucket, please visit [https://bitbucket.org/support](https://bitbucket.org/support)
 
-##### Git URL
+### Git URL
 
 If you:
 
