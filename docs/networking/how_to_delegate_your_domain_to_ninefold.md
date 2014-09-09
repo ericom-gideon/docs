@@ -19,4 +19,4 @@ Your domain should be pointing to the following Nameservers:
 
 Please consult with your domain registrar for information on how you can point your domain to Ninefold's nameservers.
 
-__WARNING: If your website or domain is currently in use, you should take care in not delegating the domain without properly and adequately setting up your DNS beforehand. DNS changes can take up to 48hrs to propagate, so a mistake or poorly configured DNS records or settings can have some serious consequences.__
+__WARNING: If your website or domain is currently in use, you should take care not to delegate the domain without properly and adequately setting up your DNS beforehand. DNS changes can take up to 48hrs to propagate, so a mistake or poorly configured DNS records or settings can have some serious consequences.__
