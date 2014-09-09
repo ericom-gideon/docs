@@ -17,7 +17,7 @@ There are certain circumstances under which you may bring Microsoft licenses to 
 
 1. You have your own [SPLA agreement with Microsoft](http://www.microsoft.com/licensing/licensing-options/spla-program.aspx).
 
-2. You are an Microsoft enterprise customer and have a Microsoft Enterprise Agreement with Software Assurance and qualify under the “License Mobility” program. 
+2. You are a Microsoft enterprise customer and have a Microsoft Enterprise Agreement with Software Assurance and qualify under the “License Mobility” program. 
 
 ### License Mobility
 
