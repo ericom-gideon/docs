@@ -16,7 +16,7 @@ Ninefold’s #1 goal for your site is performance. Using a CDN optimizes the del
 
 There are lots of CDN providers out there. In this article, we take you through setting up your Ninefold Rails app to serve assets from Amazon S3, using a CloudFront distribution to serve those files even faster to visitors based on their geographical location. If you choose to use another CDN provider, these instructions will still help you.
 
-#### Amazon S3 Setup
+#### Amazon S3 setup
 
 First of all, add the asset_sync gem to your Gemfile:
 
@@ -47,7 +47,7 @@ Before deploying your app, we recommend that your S3 configurations work on your
 
 _Note: if you are you're deploying the same application with two different rails environments, you should set up separate buckets per environment. That’s what I prefer since it makes it easier to troubleshoot._
 
-#### Amazon CloudFront Setup
+#### Amazon CloudFront setup
 
 From here, you have the option to implement Amazon CloudFront. It integrates with S3 to give developers a way to distribute content to end users with lower latency and higher data transfer speeds.
 
@@ -55,13 +55,10 @@ You can do this very easily by using the "Create Distribution Wizard" under the 
 
 After redeploying to Ninefold, it is a good idea to test that your distribution is working. To do this, manually select the full URL of one of your static assets, such as a CSS file and attempt to request this file through your CloudFront endpoint that was provided to you. If your CSS file is returned to you, you are almost done!
 
-#### Adding CloudFront to Your Ninefold Rails App
+#### Adding CloudFront to your Ninefold Rails app
 
 Making Rails serve assets from a CDN is simple. Support for CDNs is built into most versions of Rails. You will only need to make a simple code change in your app to implement a distribution network.
 
 Within config/environments/production.rb you will see a setting asset_host that is responsible for prepending a domain onto all asset links created.
 
 Once deployed, your app will now serve all assets through the CloudFront distribution network. Sweet!
-
-Any questions can be directed to Ninefold’s Livechat or the Ninefold Portal ticketing system.
-

@@ -2,9 +2,9 @@ page_title: Asset Precompilation on Ninefold
 page_description: Knowledge base article to instruct users on how Ninefold handles asset precompilation
 page_keywords: assets precompile asset management carrierwave paperclip
 
-## Asset Precompilation on Ninefold
+## Asset precompilation on Ninefold
 
-#### About Asset Precompile
+#### About asset precompile
 On Ninefold, we run a few rake commands during initial deployment and every subsequent deployment of a new customer code release or a force redeploy of an existing release. One of these is `rake assets:precompile`.
 
 We run this task automatically for you provided you are using rails version 3.2 or higher.  The rake task is skipped if you have checked in files to the public/assets folder other than *.ico files.  
@@ -23,4 +23,4 @@ If you're interested in learning more about the asset pipeline because it's pret
 File uploading gems such as [Carrierwave](https://github.com/carrierwaveuploader/carrierwave) or [Paperclip](https://github.com/thoughtbot/paperclip) generally store files in the public directory. At Ninefold, every web server has its own file system. While that is enticing to use as storage, writing to the web server file system is not scalable and is not persistent across new code deployments. With multiple web servers, uploaded files will be stored on the server that handles the request. Subsequent requests may be handled by a different server and that file will not be available to it. A common object store such as S3 is the preferred approach.
 
 #### A word about CDNs
-Content distribution networks (CDNs) are for performance. Ninefold ensures that cache headers are properly set and that gzipped assets are served correctly from Ninefold. This means that assets will be cached at the browser for subsequent requests until a new revision updates them. When assets are served externally using a CDN, that responsibility passes to the customer / third party.  For information on how to set up your Ninefold account with a CDN, check out our article here!
+Content distribution networks (CDNs) are for performance. Ninefold ensures that cache headers are properly set and that gzipped assets are served correctly from Ninefold. This means that assets will be cached at the browser for subsequent requests until a new revision updates them. When assets are served externally using a CDN, that responsibility passes to the customer / third party.

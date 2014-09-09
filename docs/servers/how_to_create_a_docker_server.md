@@ -3,7 +3,7 @@ page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to instruct users on they can deploy a Ubuntu server with Docker installed
 page_keywords:    server volume Docker container ubuntu 
 
-## How to Create a Docker Server
+## How to create a Docker server
 
 Now when you go to deploy a bare server, you have the option to deploy one with [Docker](https://www.docker.com/) preloaded. 
 

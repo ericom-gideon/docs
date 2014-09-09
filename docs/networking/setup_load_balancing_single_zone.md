@@ -1,9 +1,9 @@
 page_title:       DNS management for servers
 page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to help users setup load balancing for servers 
-page_keywords:    server load balance network zone  
+page_keywords:    server load balance network  
 
-## Setup Load Balancing (Single Zone)
+## Setup load balancing (single region)
 
 ### Overview 
 
@@ -17,15 +17,13 @@ All Servers setup with a form of web server or common listening port
  
 ### Setup
 
-1. To begin, please login to your Ninefold account.
+1. Click on __Servers__ > __Network__.
 
-2. Click on __Servers__ > __Network__.
+2. Click on the __Local Load Balancers__ tab.
 
-3. Click on the __Local Load Balancers__ tab.
+3. Click __Next__ to __Load Balancers__.
 
-4. Click __Next__ to __Load Balancers__.
-
-5. Here, you will need to input:
+4. Here, you will need to input:
 
 	* A name for the load balancer
 
@@ -33,8 +31,8 @@ All Servers setup with a form of web server or common listening port
 
 	* The destination Private Port
 
-	* The Zone where your servers are located.
+	* The region where your servers are located.
 
-6. Now, select your servers from the dropdown list.
+5. Now, select your servers from the dropdown list.
 
-7. When done picking the servers you want, click __Save__.
+6. When done picking the servers you want, click __Save__.

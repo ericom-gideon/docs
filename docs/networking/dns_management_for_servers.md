@@ -2,7 +2,7 @@ page_title:       DNS management for servers
 page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to manage DNS for bare servers. page_keywords:    server volume network DNS domain godaddy 
 
-## DNS Management for Servers
+## DNS management for servers
 
 ### Overview
 
@@ -22,7 +22,7 @@ You can now use Ninefold to host your Domain Names. This enables you to leverage
 
 	* Enter a "Name" - this is the hostname.
 	* Select the type of record - A Record, CNAME Record, MX Record, TXT Record, or NS Record.
-	* Enter the "Content" - this is the IP address you wish to point the DNS record to
-	* Enter a TTL - Time To Live for the DNS record refresh
-	* Enter a priority - defaults to 1
+	* Enter the "Content" - this is the IP address you wish to point the DNS record to.
+	* Enter a TTL - Time To Live for the DNS record refresh.
+	* Enter a priority - defaults to 1.
 	* Click __Update__ to save & activate the new DNS record.

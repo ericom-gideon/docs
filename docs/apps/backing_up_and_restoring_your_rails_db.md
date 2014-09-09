@@ -67,5 +67,3 @@ Restoring an app’s database will override the current data in your app. Do thi
 Once the restore is complete, a green box will appear indicating a successful database restore. 
 
 Your database has now been successfully restored from a backup!
-
-Any further questions on backing up and restoring your app's DB can be directed to our live chat below, or you are welcome to log a ticket in the Ninefold dashboard.

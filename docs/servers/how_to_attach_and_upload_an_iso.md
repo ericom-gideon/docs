@@ -38,7 +38,3 @@ You are solely responsible for ensuring you are licensed to operate Microsoft or
 5. Find the ISO you wish to attach and click __Attach__.
 
 6. Your ISO should be accessible within the Server.
-
--------
-
-Any further questions on ISOs can be directed to our LiveChat below, or you are welcome to log a ticket in the Ninefold Portal.

@@ -20,4 +20,3 @@ _We currently only support Windows Server 2008._
 5. Click __OK__.
 
 6. Click __Close__. Your copy of Windows Server 2008 is now activated.
-

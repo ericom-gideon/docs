@@ -3,11 +3,11 @@ page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to instruct server users how can rest their passwords.
 page_keywords:    server volume password username 
 
-## Resetting Server Password
+## Resetting you server password
 
 ### Overview 
 
-There may be a point in time where you will need to reset the password. If your Virtual Machine was created from a Ninefold-provided template (and isn't a Windows machine), this can be easily achieved by following a few easy steps: Reset your server Root / Administrator password
+There may be a point in time where you will need to reset the password. If your Virtual Machine was created from a Ninefold provided template (and isn't a Windows machine), this can be easily achieved by following a few easy steps: Reset your server root / Administrator password
 
 However, if your virtual machine does not support the Password reset feature (e.g. Created from an ISO, Windows machine or an older template without password reset support) this option will not be available to you. 
 
@@ -28,4 +28,3 @@ There are ways to reset the Windows Server password using certain applications, 
 __We will be able to provide any support on the following third-party information or software, if you choose to follow these links you acknowledge that you do this at your own risk and will not hold Ninefold or its staff accountable for any damage caused.__
 
 [Offline Windows Password & Registry Editor, Bootdisk / CD](http://pogostick.net/~pnh/ntpasswd)
-

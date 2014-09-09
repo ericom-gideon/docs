@@ -3,9 +3,7 @@ page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to instruct users on how to add sotrage volumes to servers
 page_keywords:    server volume VPS add storage 
 
-## How To Add Storage Volumes
-
-First, make sure you are logged in to the Ninefold Portal.
+## How to add storage volumes
 
 1. Click on __Servers__ > __Manage__ from the top navigation menu.
 

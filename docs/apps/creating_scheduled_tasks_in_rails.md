@@ -3,14 +3,14 @@ page_author:      Risa B
 page_description: Knowledge base article to instruct users on how to create scheduled tasks in Rails on Ninefold
 page_keywords:    whenever gem cron crontab scheduled tasks scheduler
 
-## Creating Scheduled Tasks in Rails
+## Creating scheduled tasks in Rails
 
 #### Scheduling
 Maybe you’ve got some rake tasks that need to be run every morning. Or maybe you’ve got source some data from an external web service and load it into a your database. Whatever task it is, it’s got to be on a schedule. It’s pretty easy to do with Ninefold.
 
 So the popular way to do this is to schedule a ‘cron’ job to run your commands using the ‘Whenever’ gem. Here’s how.
 
-#### Install the Whenever gem
+#### Install the whenever gem
 Add the whenever gem to your Gemfile:
 
     gem 'whenever', :require => false
@@ -66,5 +66,3 @@ The whenever gem comes with the ability to set the output to a log file. To do t
 Where `YOUR_APP_NAME` is the git name of your app. This will allow for your output to be directed to the _After Migrations_ trigger log, which is viewable in the CLI as well as in the __Logs__ viewer (under Triggers).
 
 For more information about output redirection with the whenever gem, [click here](https://github.com/javan/whenever/wiki/Output-redirection-aka-logging-your-cron-jobs).
-
-If you have any questions regarding your cron tasks, please feel free to chat with us or submit a ticket!

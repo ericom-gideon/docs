@@ -2,9 +2,9 @@ page_title: 			Postgres, PostGIS, and Postgres Modules
 page_description: Knowledge base article about Postgres and the installed modules
 page_keywords: 		postgres postgresql psql postgis schema modules database
 
-## Postgres, PostGIS, and Postgres Modules
+## PostgreSQL, PostGIS, and Postgres modules
 
-#### Postgres
+#### PostgreSQL
 PostgreSQL, or more colloquially postgres, is a powerful open source SQL database.
 
 If you aren't already using postgres, you don't need to change your local setup, but you will need to add a few lines of code to your Gemfile:
@@ -19,7 +19,7 @@ On Ninefold, your app is deployed with Postgres 9.2 but Ninefold will be moving 
 
 If you're looking to use your own database (such as MySQL or a NoSQL database), it's totally possible. Check out [this doc](deploying_a_rails_app_with_your_own_database.md) on how to deploy with your own database.
 
-#### Postgres Modules and PostGIS
+#### Postgres modules and PostGIS
 When you deploy a Rails application and we create an instance of PostgreSQL for you, we automatically provide PostGIS for you to use. There are also a number of contrib modules that are part of PostgreSQL that we have made available.
 
 Currently available:
@@ -67,7 +67,7 @@ unaccent
 uuid-ossp  
 xml2
 
-#### PostGIS and the Activerecord-postgis-adapter gem
+#### PostGIS and the activerecord-postgis-adapter gem
 Are you using the activerecord-postgis-adapter gem for use with PostGIS? Excellent. Which means you probably have your database adapter point to PostGIS in your database.yml, right?
 
 If Ninefold is hosting your Postgres database, we override your database.yml file. This will cause PostGIS to not work properly, and your :spatial indexing won't work either. But not to worry! There is a simple solution. :)
@@ -79,5 +79,3 @@ Go to __Portal__ > __Your app__ > __Configuration__ (tab) then scroll to the _En
 Press _Update_ then _Redeploy_ your app.
 
 So what's happening? Rails will look at the env var first before the database.yml file then use the rest of our settings to configure the connection.  Once that is set, the database adapter will then be set to postgis, the schema_search_path will be set to “public, postgis, topology” and the rails app will find the objects properly. Boom! Done. 
-
-As always, if you have any issues, please contact support via chat or ticket.

@@ -3,13 +3,13 @@ page_author:      Brittany Martin
 page_description: Knowledge base article to instruct users on how to implement private gem repos when they host their repo on Github or Bitbucket
 page_keywords:    github bitbucket gem repo private repository 
 
-## Private Gem Repos On GitHub & Bitbucket
+## Private Gem repos on GitHub & Bitbucket
 
 #### Overview
 
 If private gems is your thing, it’s all good.  You won’t have any issues deploying with us.
 
-#### Github
+#### GitHub
 
 You have two choices. You can do this via the command line, or you can do this through GitHub.
 
@@ -59,7 +59,3 @@ Bitbucket is more difficult than Github since Bitbucket doesn't offer OAuth toke
 The good news is that Bitbucket Team accounts have API keys that can be used to clone repos over https without knowing the team account's password but using this for cloning gem repos is not supported. 
 
 You can track the issue requesting Bitbucket to add Oauth tokens [here](https://bitbucket.org/site/master/issue/7735/allow-http-access-to-repositories-via?utm_source=SAC&utm_medium=dashboard).
-
--------------------
-
-Any further questions on private gems can be directed to our LiveChat below, or you are welcome to log a ticket in the Ninefold Portal.

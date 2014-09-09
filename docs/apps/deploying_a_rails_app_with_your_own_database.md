@@ -3,7 +3,7 @@ page_author:
 page_description: Deploying a Rails app with your own database
 page_keywords: 
 
-## Deploying a Rails App with your Own Database
+## Deploying a Rails app with your own database
 
 Out of the box, Ninefold enables you to implement a database server with PostgreSQL installed. Want to bring your own database? Read on! The following is our recommendation on how to implement BYOD.
 
@@ -22,7 +22,7 @@ Example for this article will be with MySQL:
 
 	gem 'mysql2'
 
-#### Database.yml Configuration
+#### Database.yml configuration
 
 If you have a database.yml file, change it to database.yml.sample. In an effort to keep your passwords out of your repo (no fun if they get out there!), alter the file to the following format for the Rails environment being used on your Ninefold app.
 
@@ -38,11 +38,11 @@ For a ‘production’ environment:
 
 Your file can include encoding, if you like.
 
-#### Deploying an App with BYOD
+#### Deploying an app with BYOD
 
 In the deployment wizard, just uncheck the __I would like a database built for my app__ box in Step 3 of 4.
 
-#### Environmental Variable
+#### Environmental variables
 
 In Portal, we have the Environment variables section (under the Configuration tab) or in Step 4 of 4, we will ask for your variables. You will want to include the following configured line for your database:
 
@@ -50,12 +50,10 @@ In Portal, we have the Environment variables section (under the Configuration ta
 
 in the __Environment Variable__ window.
 
-#### Before Migration Trigger in the Ninefold Portal
+#### Before migration triggers
 
 Also in Step 4 of 4, add a __before migrations trigger__ (under Additional deployment commands):
 
  	mv config/database.yml.sample config/database.yml
-
-You will be all set to deploy the app with your own database. Any further questions can be directed to our LiveChat below, or you are welcome to log a ticket in the Ninefold Portal.
 
 _Quiz: just kidding but we’re glad you read to the bottom!_

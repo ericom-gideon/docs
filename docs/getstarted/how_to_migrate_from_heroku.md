@@ -3,7 +3,7 @@ page_author:      Brittany Martin
 page_description: Knowledge base article to instruct users moving their app from Heroku on what changes will needed to be made. 
 page_keywords:    heroku migrate move ninefold setup guide aws rails_12factor
 
-## How To Migrate From Heroku To Ninefold
+## How to migrate from Heroku To Ninefold
 
 #### Overview 
 
@@ -95,5 +95,3 @@ Say that you've got a rake task that needs to be run only once, such as rake db:
 #### Scheduled Tasks
 
 Scheduled tasks are easy to create and use. We've got documentation on how to create and run them [here](../apps/creating_scheduled_tasks_in_rails.md). 
-
-Any further questions on migrating from Heroku can be directed to our live chat below, or you are welcome to log a ticket in the Ninefold dashboard.

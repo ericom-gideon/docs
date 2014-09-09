@@ -3,7 +3,7 @@ page_author:      Brittany Martin
 page_description: Knowledge base article to teach users what we build and what happens on a rails app deployment
 page_keywords:    rails server deployment facts  
 
-## What Happens and What Gets Built on a Rails App Deployment
+## What happens and what gets built on a Rails app deployment
 
 #### Overview
 
@@ -11,7 +11,7 @@ This knowledge base article describes what happens behind the scenes after you h
 
 #### What Happens During Deployment 
 
-##### Building Infrastructure
+##### Building infrastructure
 
 First up we build the infrastructure in the zones you specified. Your servers are Citrix Xen Virtual machines which sit on Ninefold’s hardware. These servers are much the same as the Ninefold Virtual Machines you can spin up yourself, they’re just set up with a customized template. This Ninefold template has been crafted specifically for deploying your Ruby on Rails app. We are keen to ensure your app shines and performs well.
 
@@ -34,15 +34,10 @@ Your inital deployment will be longer (up to 30 minutes) but subsequent redeploy
 Once that’s all done, you’re good to go. Your app is set up and running on Ninefold.
 
 
-#### What Gets Built During Deployment 
+#### What gets built during deployment 
 
 * All servers are provisioned with a unique public IP address, used for remote connectivity.
 
 * All servers are provisioned in a single private VLAN, used for all server-server communication.
 
 * An additional public IP address is provisioned on a local (region specific) load balancer, configured to direct web traffic to your application server
-
----------
-
-
-What are you waiting for? Deploy your Rails app and let us know if you need any help via Livechat or our ticketing system via the Ninefold Portal. 

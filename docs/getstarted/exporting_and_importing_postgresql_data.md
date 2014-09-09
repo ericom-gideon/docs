@@ -3,14 +3,14 @@ page_author:      Risa B. (converted by Britt)
 page_description: Knowledge base article to instruct users on how to they can move their Postgres data
 page_keywords:    rails database pg pgadmin dump restore import cli data export
 
-## Exporting And Importing PostgreSQL Data
+## Exporting and importing PostgreSQL data
 
 PostgreSQL allows for users to import and export their databases, whether it’s for backup purposes or to transfer data between servers or environments.  In either case, certain formats require certain commands.  Although there are no right and wrong ways to do this, the article will focus first on the recommended way, then on alternative ways.
 
 #### THE RECOMMENDED WAY FOR EXPORT/IMPORT: TERMINAL
 The terminal method is great for custom exporting and importing of a database. The high-level overview is the following:
 
-1. Open up port 5432 in Ninefold Portal
+1. Open up port 5432
 2. Type in your Terminal commands to export or import
 3. Close port 5432
 
@@ -100,9 +100,9 @@ Database backups can be created and downloaded using our CLI. Don’t have it? G
 
 The file downloaded will be in YYYY-MM-DDTIME.tar.gz format. Open the archived file and drill down until you get to the .sql file.
 
-#### Portal
+#### Dashboard
 
-This is as easy as the CLI, except you will have to log into Ninefold’s Portal.
+This is as easy as the CLI, except you will have to log into Ninefold’s dashboard.
 
 1. Log into Portal [https://portal.ninefold.com](https://portal.ninefold.com)
 2. Choose your App from the list > Database tab
@@ -145,7 +145,3 @@ If you’d like to read more about the various Postgres flags used during export
 * [pg_dump](http://www.postgresql.org/docs/9.2/static/app-pgdump.html)
 * [pg_restore](http://www.postgresql.org/docs/9.2/static/app-pgrestore.html)
 * [psql](http://www.postgresql.org/docs/9.2/static/app-psql.html)
-
-----------------------
-
-And as always, if you have any questions or have any issues, please drop us a note on chat or create a ticket!

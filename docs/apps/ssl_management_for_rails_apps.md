@@ -44,5 +44,3 @@ Once you have your CSR, visit any Certificate Authority and submit your CSR for 
 Now you can come back to this menu, select __Add your own__, and you'll get a panel that will ask for your __certificate__, __certificate private key__ and your __intermediate certificates__ (optional).
 
 Enter your details, click save, redeploy your app, and you’re done!
-
-Any further questions on Ninefold SSL management can be directed to our live chat below, or you are welcome to log a ticket in the Ninefold dashboard.

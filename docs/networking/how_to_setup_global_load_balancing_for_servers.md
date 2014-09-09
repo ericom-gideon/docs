@@ -3,7 +3,7 @@ page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article instruct users how they can setup local load balancing
 page_keywords:    server volume network load balancer global 
 
-## How To Setup Global Load Balancing For Servers
+## How to setup global load balancing for servers
 
 ### Overview
 
@@ -27,13 +27,11 @@ zones together in one easy step.
 
 ### Setup 
 
-1. Login to Ninefold Portal
+1. Click to __Servers__ > __Network__ and then click on the __Global Load Balancers__ sub-tab in the new page.
 
-2. Click to __Servers__ > __Network__ and then click on the __Global Load Balancers__ sub-tab in the new page.
+2. Click on the Create button to set-up a new Global Load Balancer.
 
-3. Click on the Create button to set-up a new Global Load Balancer.
-
-4. Fill in the form:
+3. Fill in the form:
 
 	* __Domain__: The domain name (e.g. mydomain.com.au)
 	* __Monitoring Port__: The port you wish to conduct health checks on to ensure the server is 'live' (e.g. 80 - Web Server)

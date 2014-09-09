@@ -2,7 +2,7 @@ page_title:       How To Use Multiple IP Addresses On A Server
 page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to help users use multiple IPs on a server page_keywords:    server VPS IP multiple address
 
-## How To Use Multiple IP Addresses On A Server
+## How to use multiple IP addresses on a server
 
 ### Setup
 
@@ -10,7 +10,7 @@ You may have already attempted to associate another static IP address to your vi
 
 _This article assumes you wish to have multiple IP addresses directed to your server. This could be useful for those who wish to host websites on their virtual machine and associate different SSL certificates with each IP address._
 
-### Example of a Single Virtual Machine with 3 IP addresses
+### Example of a single virtual machine with 3 IP addresses
 
 | IP          | Rules                   | Type of IP                        |  
 |-------------|-------------------------|-----------------------------------|
@@ -25,6 +25,6 @@ In this example, any data sent to 103.7.16x.2 on Port 80, will be sent to the vi
 
 __Note: Please ensure you have setup your server to correctly listen on the above ports to serve content.__
 
-### Use Multiple Static NATs with Multiple NICs 
+### Use multiple static NATs with multiple NICs 
 
 Ninefold will continue to try and improve on our features as well as bring out additional features. We hope to be able to allow Multi-Static NATs in the future but for now the above workaround can definitely assist users in deploying multiple websites (w/SSL certificates) or applications whilst utilizing a single virtual machine.

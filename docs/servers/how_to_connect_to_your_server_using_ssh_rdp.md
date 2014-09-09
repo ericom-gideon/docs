@@ -3,7 +3,7 @@ page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to connect your server via SSH/RDP
 page_keywords:    server volume VPS RDP SSH key windows linux liveview
 
-## How To Connect To Your Server Using SSH / RDP
+## How to connect to your server using SSH / RDP
 
 ### Live View
 
@@ -11,7 +11,7 @@ Ninefold's web portal has a feature called "Live View" which allows you to conne
 
 As soon as you have the networking and firewall rules configured appropriately you should use your favourite administration tools for the best experience.
 
-### Linux / Open Source Servers
+### Linux / Open source servers
 
 __Linux / Open Source servers__ are typically administered from a terminal session via SSH (ensure port 22 is open on the Firewall); connect to your server's Public IP address using the username defined here: https://help.ninefold.com/entries/21657915-New-Server-Username-and-Password
 

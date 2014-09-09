@@ -71,6 +71,3 @@ Once you create an account and can access the portal, we provide you with real-t
 At the end of the month, prior to any billing activity, we email you your invoice.  This invoice and recent invoices are also available online.
 
 Finally, we will apply a payment against the credit card you have provided us equal to the amount on your invoice.
-
-
-
