@@ -3,13 +3,13 @@ page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to instruct server users how can they can activate Windows Server 2008 
 page_keywords:    server volume key windows 2008
 
-## How To Activate Windows Server
+## How to activate Windows Server
 
 _This document is applicable to Ninefold-provided Windows Server templates._
 
 _We currently only support Windows Server 2008._
 
-1. At first logon, you will prompted to Activate Windows or you can go to __Start__ and search for ‘Activate Windows’.
+1. At first logon, you will be prompted to activate Windows or you can go to __Start__ and search for ‘activate Windows’.
 
 2. Click __Activate Windows__.
 
