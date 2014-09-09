@@ -4,7 +4,7 @@ page_keywords: interzone
 
 ## How to enable Ninefold Net
 
-By default, servers created in an regaion make use of their own, private VLAN. If you would like the ability to link the servers in your account across multiple regions, you must first enable Ninefold Net.
+By default, servers created in a region make use of their own, private VLAN. If you would like the ability to link the servers in your account across multiple regions, you must first enable Ninefold Net.
 
 Ninefold Net enables servers in different regions to communicate with each other. When this feature is enabled it creates an additional private network which will be available to any new servers you create. You cannot disable this feature once enabled.
 

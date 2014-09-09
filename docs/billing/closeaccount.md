@@ -4,7 +4,7 @@ page_keywords: close account
 
 ## How to close your account
 
-You can visting your [account billing page](https://portal.ninefold.com/account/billing_details).  At the bottom of the page you will see a button to close your account.
+You can visiting your [account billing page](https://portal.ninefold.com/account/billing_details).  At the bottom of the page you will see a button to close your account.
 
 ![Close Account](../img/closeaccount1.png)
 

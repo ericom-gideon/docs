@@ -65,7 +65,7 @@ You need to deploy an app to take advantage of this promotion. Now could be a gr
 
 #### What if I pick another region?
 
-The $50 applies to your account for the month regardless of region. Say what? Lets go with an example, if you have something in US West and something in Asia Pacific 1 the $50 comes off the total of the Ninefold services for that month.
+The $50 applies to your account for the month regardless of region. Say what? Let's go with an example, if you have something in US West and something in Asia Pacific 1 the $50 comes off the total of the Ninefold services for that month.
 
 ## Apps
 
@@ -91,7 +91,7 @@ All our Rails app and database servers are set to UTC.
 
 UTC is Coordinated Universal Time, and is unaffected by things like daylight savings or summer time.
 
-UTC is our standard for all app logging, cron jobs, and backups. We also use UTC to avoid confusion about timezones. This means that when you set your cron job to run at 10:05pm every night, it will be run at 10:05pm UTC.
+UTC is our standard for all app logging, cron jobs, and backups. We also use UTC to avoid confusion about time zones. This means that when you set your cron job to run at 10:05pm every night, it will be run at 10:05pm UTC.
 
 ##### What about the virtual servers?
 
@@ -117,7 +117,7 @@ Our suggestion for those interested in utilizing Node.js is to deploy a bare vir
 
 #### What Ruby versions does Ninefold support?
 
-We always support the latest version of Ruby as well as serveral older versions.  The following are versions are available for deployment:
+We always support the latest version of Ruby as well as several older versions.  The following are versions are available for deployment:
 
 * 2.1.2
 * 2.1.1
@@ -150,7 +150,7 @@ As a member of an organization, you may have push and pull access to a repo. How
 
 ##### A few options
 
-The owner of the organization must grant you administrative rights for that particular repo. Once Ninefold adds the public SSH key to the repo, administrative rights may safely be revoked again without affecting deoloyment in the future. We only need to add the key once.
+The owner of the organization must grant you administrative rights for that particular repo. Once Ninefold adds the public SSH key to the repo, administrative rights may safely be revoked again without affecting deployment in the future. We only need to add the key once.
 Create a general account on Github for use with our portal. This will allow for instances when a person with authorization access leaves the company.
 If you don't require the post-commit hooks, you can use the git URL approach and add the SSH key to your repo.
 
@@ -171,13 +171,13 @@ Bundler: Log of 'bundle install.' Check here if you suspect a gem wasn't install
 
 #### What is a Procfile?
 
-As a part of the app deploy process, we look for a Procfile and we'll generate services for your process types with Foreman.The Procfile describes processes that are required for your application to run. This is handy for running a background worker pool if you select to include “Redis for Resque or Sidekiq”. 
+As a part of the app deploy process, we look for a Procfile and we'll generate services for your process types with Foreman. The Procfile describes processes that are required for your application to run. This is handy for running a background worker pool if you select to include “Redis for Resque or Sidekiq”. 
 
 NOTE:  We specifically exclude web process types in the Procfile as we run our own web process via Apache 2 and Passenger.
 
 ##### Do I need a Procfile?
 
-You only need a Procfile if you include the “Redis for Resque or Sidekiq” addon via the app deploy process.
+You only need a Procfile if you include the “Redis for Resque or Sidekiq” add-on via the app deploy process.
 
 ##### How do I make a Procfile?
 

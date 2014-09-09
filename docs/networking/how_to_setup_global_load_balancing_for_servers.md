@@ -36,7 +36,7 @@ zones together in one easy step.
 4. Fill in the form:
 
 	* __Domain__: The domain name (e.g. mydomain.com.au)
-	* __Monitoring Port__: The port you wish to conduct health checks on to ensure the server is 'live' (e.g. 80 - Web Serever)
+	* __Monitoring Port__: The port you wish to conduct health checks on to ensure the server is 'live' (e.g. 80 - Web Server)
 	* __Algorithm__: This dictates how traffic is Load Balanced.
 		* __Topology__: Traffic is geographically routed to its closest available server
 		* __Round Robin__: Traffic is evenly distributed to all available servers.
