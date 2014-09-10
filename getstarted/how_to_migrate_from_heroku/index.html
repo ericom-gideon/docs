@@ -172,7 +172,7 @@
                         </li>
                     
                         <li >
-                            <a href="../../apps/setting_and_changing_your_apps_configuration_and_infrastructure/">Setting and changing your app configuration and infrastructure</a>
+                            <a href="../../apps/setting_and_changing_your_apps_configuration/">Setting and changing your app configuration and infrastructure</a>
                         </li>
                     
                         <li >
@@ -484,7 +484,7 @@ $ rake db:schema:dump
 <p>For every code revision, Ninefold will autodeploy for you. It's pretty awesome. No more git push origin master then git push heroku master and heroku run rake db:migrate. It's just git push origin master.  During these subsequent autodeploys, we run: bundle, rake db:migrate, and rake assets:precompile.</p>
 <p><em>If you disabled post-commit hooks, you can enable them in the Overview tab of your app. This allows us to check when you've made a code push and autodeploy those changes immediately.</em></p>
 <h4 id="deployment-triggers">Deployment triggers</h4>
-<p>Say that you have a rake task that needs to be run after every migration, rake screw:cork. Or perhaps you have to move a folder before every migration. You would be able to run these commands in our deployment triggers (pre- and post-migration). The directions to do this are found <a href="../../apps/setting_and_changing_your_apps_configuration_and_infrastructure/">here</a>.</p>
+<p>Say that you have a rake task that needs to be run after every migration, rake screw:cork. Or perhaps you have to move a folder before every migration. You would be able to run these commands in our deployment triggers (pre- and post-migration). The directions to do this are found <a href="../../apps/setting_and_changing_your_apps_configuration/">here</a>.</p>
 <h4 id="environment-variables">Environment variables</h4>
 <p>To bring over your environment variables from Heroku, from the root directory of your app run:</p>
 <pre class="prettyprint well"><code>$ heroku config --shell
