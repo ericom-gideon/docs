@@ -10,6 +10,15 @@
 
 }
 
+/* Keep same color on search focus */
+
+.nav>li>a:hover, .nav>li>a:focus {
+    background-color: #0fb5e4;
+    outline: none;
+}
+
+
+/* Table defs to patch up tables due to mkdocs and bootstrap issue 
 table {
   max-width: 100%;
   background-color: transparent;
@@ -61,7 +70,8 @@ table > thead > tr > td {
 table > tbody > tr:nth-child(odd) > td,
 table > tbody > tr:nth-child(odd) > th {
   background-color: #f5f5f5;
-}
+} 
+*/ 
 
 
 p {

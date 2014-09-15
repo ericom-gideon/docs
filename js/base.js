@@ -23,6 +23,11 @@ $('body').scrollspy({
 
 var headerHeight = $('#ninefold-nav').height()+62;
 
+/* Give search field focus on modal */
+
+$('body').on('shown.bs.modal', '.modal', function () {
+  $('[id$=cse-search-input-box-id]').focus();
+})
 
 
 $(document).scroll(function(){

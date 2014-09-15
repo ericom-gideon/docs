@@ -24,15 +24,17 @@
 
         
 
-        <script type="text/javascript">
-        var __lc = {};
-        __lc.license = 1076997;
-
-        (function() {
-            var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
-            lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
-        })();
+        <script>
+          (function() {
+            var cx = '007510500888672052678:j-vcw1lhenu';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                '//www.google.com/cse/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+          })();
         </script>
         
     </head>
@@ -398,7 +400,14 @@
             </ul>
 
             <!-- Search, Navigation and Repo links -->
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-left">
+                
+                
+                <li>
+                   <a href="#searchModal" data-toggle="modal"><i class="fa fa-search"></i></a> 
+ 
+                </li>
+            
                 
                 <!-- 
                 <li>
@@ -461,7 +470,39 @@
             </div>
         </div>
 
-        
+        <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="searchModalLabel">Documentation search</h4>
+      </div>
+      <div class="modal-body">
+
+        <form onsubmit="return executeQuery();" id="cse-search-box-form-id">
+          <input type="search" class="form-control" id="cse-search-input-box-id" placeholder="Search">
+        </form>
+
+        <script type="text/javascript">
+          function executeQuery() {
+            var input = document.getElementById('cse-search-input-box-id');
+            var element = google.search.cse.element.getElement('searchresults-only0');
+            if (input.value == '') {
+              element.clearAllResults();
+            } else {
+              element.execute(input.value);
+            }
+            return false;
+          }
+        </script>
+
+
+        <gcse:searchresults-only></gcse:searchresults-only>
+       
+      </div>
+    </div>
+  </div>
+</div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="../../js/bootstrap.min.js"></script>
