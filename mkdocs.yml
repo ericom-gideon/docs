@@ -5,7 +5,7 @@ dev_addr: '0.0.0.0:8000'
 repo_url: https://github.com/ninefold/docs/
 
 # use_directory_urls: true
-# include_search: true
+include_search: true
 
 theme_dir: ./theme/mkdocs/
 # theme_center_lead: false
