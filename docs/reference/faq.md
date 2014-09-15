@@ -16,11 +16,12 @@ We recommend that you log a support ticket if you experience availability or per
 
 You can log a ticket 24/7 through the portal for accounts, enquiries and technical issues.
 
-Country        | Telephone Contact 
-:------------- | :--------------- 
-United States  | 855 896 5858
-Australia      | 1300 045 614
-Other          | +61 2 8221 7745
+
+United States:	855 896 5858
+
+Australia:		1300 045 614
+
+Other:			+61 2 8221 7745
 
 #### How do I log a support ticket?
 
