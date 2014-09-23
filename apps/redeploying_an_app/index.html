@@ -459,11 +459,11 @@
 <h4 id="manual-redeployment-via-the-ninefold-dashboard">Manual redeployment via the Ninefold dashboard</h4>
 <p>It is also possible to manually redeploy your application by clicking on the redeploy button on any tab within your app on the Ninefold Portal. </p>
 <p><em>You may notice that there is a drop-down option to force redeploy. Think of this as a clean state.  Rather than running any new migrations and making changes to the existing code, this option will completely redeploy the code from Github, running any pre- or post-migration code you may have specified and re-running all of your migrations.  This option may take longer than a standard redeploy and it will cause an outage to your users for the duration of the deployment. The duration of a force deploy depends on the size of your app (in particular how many gems there are to install) but will be close to the time of your initial deployment.</em></p>
-<h4 id="triggering-redeployment-an-url">Triggering redeployment an URL</h4>
+<h4 id="triggering-redeployment-via-deployment-url">Triggering redeployment via deployment URL</h4>
 <p>This is a great option when incorporating continuous integration (CI).</p>
 <ol>
 <li>Click on your existing app's overview page.</li>
-<li>Copy the deployment URL and paste it into the browser of your choice or you can enter the curl command ($ curl [Deployment URL]) into your CI when your tests pass.</li>
+<li>Copy the deployment URL and enter the curl command ($ curl -X POST [Deployment URL]) into your CI when your tests pass.</li>
 </ol>
 <p>You will now see your app redeploying!</p>
 <p>To reset the URL:</p>
