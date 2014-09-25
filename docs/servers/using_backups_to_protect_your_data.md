@@ -21,7 +21,7 @@ When you are creating a server, the server creation wizard will give you the opt
 
 If you require a different schedule to the one listed above, please contact Ninefold Support.
 
-#### How to nanually enable backups on servers
+#### How to manually enable backups on servers
 
 1. Select your server and select the __Backups__ tab.
 
