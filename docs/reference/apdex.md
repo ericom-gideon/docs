@@ -14,8 +14,8 @@ These buckets are defined using a threshold, called Apdex-T. Apdex-T can be defi
 
 The buckets are then divided as follows:
 
-![Apdex buckets](../img/apdex1.png)
+![Apdex buckets](../../img/apdex1.png)
 
 To calculate the Apdex, we then apply the following formula:
 
-![Apdex formula](../img/apdex2.png)
+![Apdex formula](../../img/apdex2.png)

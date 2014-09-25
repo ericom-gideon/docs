@@ -17,7 +17,7 @@ If repos + Ninefold tickles your fancy, read on.
 
 ### GitHub
 
-[GitHub](www.github.com) is a web-based hosting service for software development projects that use the Git revision control system. GitHub offers both paid plans for private repositories and free accounts for open source projects.
+[GitHub](https://www.github.com) is a web-based hosting service for software development projects that use the Git revision control system. GitHub offers both paid plans for private repositories and free accounts for open source projects.
 
 If you're not familiar with GitHub, please [sign up](https://help.github.com/articles/signing-up-for-a-new-github-account) for a new account and take a look at their docs.
 

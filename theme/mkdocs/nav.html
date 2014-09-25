@@ -2,7 +2,7 @@
     <div class="container">
         <div class="ninefold-nav">
             <div class="navbar-header">
-                <a title="Ninefold" class="mast__topbar__logo logo" href="/"></a>
+                <a title="Ninefold" class="mast__topbar__logo logo" href="https://ninefold.com"></a>
               
                 
            
@@ -34,7 +34,7 @@
                   <a href="https://ninefold.com/about-us">About Us</a>
                 </li>
                 <li class="active">
-                  <a href="https://help.ninefold.com">Docs</a>
+                  <a href="http://help.ninefold.com">Docs</a>
                 </li>
                 <li class="signin">
                   <a href="http://portal.ninefold.com">Sign in</a>
@@ -86,11 +86,14 @@
             </ul>
 
             <!-- Search, Navigation and Repo links -->
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-left">
                 {% if include_search %}
+                
                 <li>
-                    <a href="#searchModal" data-toggle="modal"><i class="fa fa-search"></i> Search</a>
+                   <a href="#searchModal" data-toggle="modal"><i class="fa fa-search"></i></a> 
+ 
                 </li>
+            
                 {% endif %}
                 <!-- {% if repo_url %}
                 <li>

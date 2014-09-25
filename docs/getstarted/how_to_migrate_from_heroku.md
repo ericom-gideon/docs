@@ -78,7 +78,7 @@ _If you disabled post-commit hooks, you can enable them in the Overview tab of y
 
 #### Deployment triggers
 
-Say that you have a rake task that needs to be run after every migration, rake screw:cork. Or perhaps you have to move a folder before every migration. You would be able to run these commands in our deployment triggers (pre- and post-migration). The directions to do this are found [here](../apps/setting_and_changing_your_apps_configuration_and_infrastructure.md).
+Say that you have a rake task that needs to be run after every migration, rake screw:cork. Or perhaps you have to move a folder before every migration. You would be able to run these commands in our deployment triggers (pre- and post-migration). The directions to do this are found [here](../apps/setting_and_changing_your_apps_configuration.md).
 
 #### Environment variables
 

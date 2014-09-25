@@ -89,7 +89,7 @@ If you want some pointers on sizing, please feel free to chat up the fabulous Ni
 
 After your app has successfully deployed, you can change your infrastructure whenever you like.  
 
-__Horizontally__
+__Vertically__
 
 _Scaling existing server size up or down_
 
@@ -97,7 +97,7 @@ With any setup you choose, you can scale your app servers outwards (unless you c
 
 All you need to do is go to the __Infrastructure__ tab, click _Edit_, choose your new size for the server of your choice, click __Save__ and then redeploy. 
 
-__Vertically__
+__Horizontally__
 
 _Adding/reducing servers of the same type that exist already_
 

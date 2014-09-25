@@ -25,12 +25,12 @@ It is also possible to manually redeploy your application by clicking on the red
 
 _You may notice that there is a drop-down option to force redeploy. Think of this as a clean state.  Rather than running any new migrations and making changes to the existing code, this option will completely redeploy the code from Github, running any pre- or post-migration code you may have specified and re-running all of your migrations.  This option may take longer than a standard redeploy and it will cause an outage to your users for the duration of the deployment. The duration of a force deploy depends on the size of your app (in particular how many gems there are to install) but will be close to the time of your initial deployment._
 
-#### Triggering redeployment an URL
+#### Triggering redeployment via deployment URL
 
 This is a great option when incorporating continuous integration (CI).
 
 1. Click on your existing app's overview page.
-2. Copy the deployment URL and paste it into the browser of your choice or you can enter the curl command ($ curl [Deployment URL]) into your CI when your tests pass.
+2. Copy the deployment URL and enter the curl command ($ curl -X POST [Deployment URL]) into your CI when your tests pass.
 
 You will now see your app redeploying!
 
