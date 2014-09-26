@@ -140,7 +140,7 @@ When you deploy an app on Ninefold, we check your Gemfile for your application's
 	Sample Gemfile declaration
 	
 	source 'https://rubygems.org'
-	ruby '2.1.1'
+	ruby '2.1.3'
 
 #### How do I manage GitHub SSH Keys?
 
