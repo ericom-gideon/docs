@@ -65,9 +65,14 @@ With Circle CI, it is best to put your AUTH_TOKEN and APP_ID in as environment v
     	branch: master (or whatever branch you’re working against)
     	commands:
            - bundle exec ninefold app redeploy --robot --sure
-or
 
-	- curl [Deployment URL]
+or you can simply use curl (Note: The deployment URL can be found in the overview tab)
+
+	deployment:
+  	  production:  
+    	branch: master (or whatever branch you’re working against)
+    	commands:
+           - curl -X POST -d "" [Deployment URL]
 	
 __Jenkins CI__
 
