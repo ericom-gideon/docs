@@ -481,8 +481,12 @@ $ ninefold app redeploy_command
     commands:
        - bundle exec ninefold app redeploy --robot --sure
 </code></pre>
-<p>or</p>
-<pre class="prettyprint well"><code>- curl [Deployment URL]
+<p>or you can simply use curl (Note: The deployment URL can be found in the overview tab)</p>
+<pre class="prettyprint well"><code>deployment:
+  production:  
+    branch: master (or whatever branch you’re working against)
+    commands:
+       - curl -X POST -d "" [Deployment URL]
 </code></pre>
 <p><strong>Jenkins CI</strong></p>
 <p>In your Jenkins shell script that is running your tests, add the redeploy_command or curl [Deployment URL] after your test commands (bundle exec rspec spec, etc).</p>
