@@ -467,7 +467,7 @@ $ ninefold app redeploy_command
 <p>Note: You may have to add in "bundle exec" before ninefold: </p>
 <p>AUTH_TOKEN=(hash) APP_ID=(number) bundle exec ninefold app redeploy --robot --sure</p>
 <h4 id="2-deployment-url">#2 Deployment URL</h4>
-<p>Login into the Ninefold Portal and click on your existing app's Overview tab. Copy (or Reset) the Deployment URL. Enter the curl command ($ curl [Deployment URL]) into your CI when your tests pass.</p>
+<p>Login into the Ninefold Portal and click on your existing app's Overview tab. Copy (or Reset) the Deployment URL. Enter the curl command ($ curl -X POST -d "" [Deployment URL]) into your CI when your tests pass.</p>
 <h4 id="how-redeploying-via-ci-works">How redeploying via CI works</h4>
 <p>The general idea is that if you push to the git repository, the CI environment will kick off and run your tests. Once the tests pass, the CI will then kick off your Ninefold deployment.</p>
 <p>Each CI environment sets it up slightly differently, but they all will use the redeploy_command or Deployment URL seen above for redeploying your app on Ninefold.</p>
@@ -489,9 +489,9 @@ $ ninefold app redeploy_command
        - curl -X POST -d "" [Deployment URL]
 </code></pre>
 <p><strong>Jenkins CI</strong></p>
-<p>In your Jenkins shell script that is running your tests, add the redeploy_command or curl [Deployment URL] after your test commands (bundle exec rspec spec, etc).</p>
+<p>In your Jenkins shell script that is running your tests, add the redeploy_command or curl -X POST -d "" [Deployment URL] after your test commands (bundle exec rspec spec, etc).</p>
 <p><strong>Magnum CI</strong></p>
-<p>With Magnum, you can input all the information in straight into the UI. You don’t even need a .yml file!  In your build steps, add the redeploy_command or curl [Deployment URL] in the “After test suite execution” box. Definitely make sure you have “bundle exec” in the command.</p>
+<p>With Magnum, you can input all the information in straight into the UI. You don’t even need a .yml file!  In your build steps, add the redeploy_command or curl -X POST -d "" [Deployment URL] in the “After test suite execution” box. Definitely make sure you have “bundle exec” in the command.</p>
 
 
 </br></br></br></br>
