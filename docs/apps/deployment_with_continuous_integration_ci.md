@@ -44,7 +44,7 @@ AUTH_TOKEN=(hash) APP_ID=(number) bundle exec ninefold app redeploy --robot --su
 
 #### #2 Deployment URL
 
-Login into the Ninefold Portal and click on your existing app's Overview tab. Copy (or Reset) the Deployment URL. Enter the curl command ($ curl [Deployment URL]) into your CI when your tests pass.
+Login into the Ninefold Portal and click on your existing app's Overview tab. Copy (or Reset) the Deployment URL. Enter the curl command ($ curl -X POST -d "" [Deployment URL]) into your CI when your tests pass.
 
 #### How redeploying via CI works
 
@@ -76,8 +76,8 @@ or you can simply use curl (Note: The deployment URL can be found in the overvie
 	
 __Jenkins CI__
 
-In your Jenkins shell script that is running your tests, add the redeploy_command or curl [Deployment URL] after your test commands (bundle exec rspec spec, etc).
+In your Jenkins shell script that is running your tests, add the redeploy_command or curl -X POST -d "" [Deployment URL] after your test commands (bundle exec rspec spec, etc).
 
 __Magnum CI__
 
-With Magnum, you can input all the information in straight into the UI. You don’t even need a .yml file!  In your build steps, add the redeploy_command or curl [Deployment URL] in the “After test suite execution” box. Definitely make sure you have “bundle exec” in the command.
+With Magnum, you can input all the information in straight into the UI. You don’t even need a .yml file!  In your build steps, add the redeploy_command or curl -X POST -d "" [Deployment URL] in the “After test suite execution” box. Definitely make sure you have “bundle exec” in the command.
