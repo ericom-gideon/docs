@@ -1,17 +1,17 @@
-page_title:       How to Migrate from Heroku 
+page_title:       How to Migrate from Heroku
 page_author:      Brittany Martin
-page_description: Knowledge base article to instruct users moving their app from Heroku on what changes will needed to be made. 
+page_description: Knowledge base article to instruct users moving their app from Heroku on what changes will needed to be made.
 page_keywords:    heroku migrate move ninefold setup guide aws rails_12factor
 
 ## How to migrate from Heroku To Ninefold
 
-#### Overview 
+#### Overview
 
 Welcome to Ninefold! We have a couple of tasks we need you to do in order to migrate to Ninefold successfully. They are easy --- we promise!
 
 #### Remove rails_12factor from Gemfile
 
-Open your Gemfile and remove the rails_12factor gem and save. 
+Open your Gemfile and remove the rails_12factor gem and save.
 
 Run:
 
@@ -19,7 +19,7 @@ Run:
 
 	$ rake db:schema:dump
 
-Commit changes and push to the repository of your choice. 
+Commit changes and push to the repository of your choice.
 
 #### Why remove the rails_12factor Gem?
 
@@ -65,10 +65,10 @@ Both Ninefold and Heroku use PostgreSQL databases. Importing across is easy. Che
 
 Here at Ninefold, we want to make app deployment and maintenance easy.
 
-The first time you deploy your app, Ninefold will run the following commands: 
+The first time you deploy your app, Ninefold will run the following commands:
 
-* bundle 
-* rake db:setup (by definition this includes db:create, db:schema:load_if_ruby/db:structure:load_if_sql, and db:seed) 
+* bundle
+* rake db:setup (by definition this includes db:create, db:schema:load_if_ruby/db:structure:load_if_sql, and db:seed)
 * rake db:migrate
 * rake assets:precompile.  
 
@@ -88,10 +88,14 @@ To bring over your environment variables from Heroku, from the root directory of
 
 Copy the variables from there and paste them directly into the Environment variables section in your deployment setup. You can also add them later under the __Configuration__ tab.
 
+***
+NOTE: Make sure to copy _only_ the environment variables you will need. If you have Ninefold provision a PG database for you, you will NOT need to bring over the env var DATABASE_URL.
+***
+
 #### Rake tasks and the CLI
 
 Say that you've got a rake task that needs to be run only once, such as rake db:categories. You can use our [awesome CLI](how_to_install_and_utilize_the_cli.md) to connect to your app. From there you can run rails console or run rake tasks or even run dbconsole. Super sweet.
 
 #### Scheduled Tasks
 
-Scheduled tasks are easy to create and use. We've got documentation on how to create and run them [here](../apps/creating_scheduled_tasks_in_rails.md). 
+Scheduled tasks are easy to create and use. We've got documentation on how to create and run them [here](../apps/creating_scheduled_tasks_in_rails.md).
