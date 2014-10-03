@@ -449,13 +449,13 @@
 <h4 id="overview">Overview</h4>
 <p>Welcome to Ninefold! We have a couple of tasks we need you to do in order to migrate to Ninefold successfully. They are easy --- we promise!</p>
 <h4 id="remove-rails_12factor-from-gemfile">Remove rails_12factor from Gemfile</h4>
-<p>Open your Gemfile and remove the rails_12factor gem and save. </p>
+<p>Open your Gemfile and remove the rails_12factor gem and save.</p>
 <p>Run:</p>
 <pre class="prettyprint well"><code>$ bundle
 
 $ rake db:schema:dump
 </code></pre>
-<p>Commit changes and push to the repository of your choice. </p>
+<p>Commit changes and push to the repository of your choice.</p>
 <h4 id="why-remove-the-rails_12factor-gem">Why remove the rails_12factor Gem?</h4>
 <p>We ask that this gem is removed because it installs 2 subsequent gems:</p>
 <ul>
@@ -484,10 +484,10 @@ $ rake db:schema:dump
 <p>Both Ninefold and Heroku use PostgreSQL databases. Importing across is easy. Check out our <a href="../exporting_and_importing_postgresql_data/">KB article</a> on how to do that here.</p>
 <h4 id="deployment-and-deployment-triggers">Deployment and deployment triggers</h4>
 <p>Here at Ninefold, we want to make app deployment and maintenance easy.</p>
-<p>The first time you deploy your app, Ninefold will run the following commands: </p>
+<p>The first time you deploy your app, Ninefold will run the following commands:</p>
 <ul>
-<li>bundle </li>
-<li>rake db:setup (by definition this includes db:create, db:schema:load_if_ruby/db:structure:load_if_sql, and db:seed) </li>
+<li>bundle</li>
+<li>rake db:setup (by definition this includes db:create, db:schema:load_if_ruby/db:structure:load_if_sql, and db:seed)</li>
 <li>rake db:migrate</li>
 <li>rake assets:precompile.  </li>
 </ul>
@@ -500,10 +500,13 @@ $ rake db:schema:dump
 <pre class="prettyprint well"><code>$ heroku config --shell
 </code></pre>
 <p>Copy the variables from there and paste them directly into the Environment variables section in your deployment setup. You can also add them later under the <strong>Configuration</strong> tab.</p>
+<hr />
+<p>NOTE: Make sure to copy <em>only</em> the environment variables you will need. If you have Ninefold provision a PG database for you, you will NOT need to bring over the env var DATABASE_URL.</p>
+<hr />
 <h4 id="rake-tasks-and-the-cli">Rake tasks and the CLI</h4>
 <p>Say that you've got a rake task that needs to be run only once, such as rake db:categories. You can use our <a href="../how_to_install_and_utilize_the_cli/">awesome CLI</a> to connect to your app. From there you can run rails console or run rake tasks or even run dbconsole. Super sweet.</p>
 <h4 id="scheduled-tasks">Scheduled Tasks</h4>
-<p>Scheduled tasks are easy to create and use. We've got documentation on how to create and run them <a href="../../apps/creating_scheduled_tasks_in_rails/">here</a>. </p>
+<p>Scheduled tasks are easy to create and use. We've got documentation on how to create and run them <a href="../../apps/creating_scheduled_tasks_in_rails/">here</a>.</p>
 
 
 </br></br></br></br>
