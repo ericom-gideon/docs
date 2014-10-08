@@ -52,13 +52,21 @@ __Settings__
     	## without an invitation. Note that this needs to be true even for
     	## the first registration (you).
         enable_registrations: true
-
+        
 __SSL__ 
 
 Ninefold uses Ubuntu on the virtual machine your app is deployed to. 
 
     	## Debian, Ubuntu, Archlinux, Gentoo (package ca-certificates)
     	certificate_authorities: '/etc/ssl/certs/ca-certificates.crt'
+
+__Redis__
+
+Ninefold sets the url of Redis in an environment variable `REDIS_URL`. Set the `redis` setting to this so that Diaspora processes background jobs.
+
+	## URL for a remote Redis (default=localhost)
+	## Don't forget to restrict IP access if you uncomment these!
+	redis: ENV['REDIS_URL']
 
 _Note: Make sure you are putting in your sensitive variables, like s3, in this format ENV['S3_SECRET']. Open a separate text file and add your actual secret keys into it. These will come into play when you deploy on to Ninefold._ __Warning: don’t EVER keep this file in your git repo.__
  
