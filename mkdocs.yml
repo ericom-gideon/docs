@@ -10,7 +10,6 @@ include_search: true
 theme_dir: ./theme/mkdocs/
 # theme_center_lead: false
 site_favicon: favicon.ico
-google_analytics: ['UA-20888012-1', 'ninefold.com']
 
 pages:
 
