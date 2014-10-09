@@ -499,6 +499,12 @@ settings: ## Section
 <pre class="prettyprint well"><code>    ## Debian, Ubuntu, Archlinux, Gentoo (package ca-certificates)
     certificate_authorities: '/etc/ssl/certs/ca-certificates.crt'
 </code></pre>
+<p><strong>Redis</strong></p>
+<p>Ninefold sets the url of Redis in an environment variable <code>REDIS_URL</code>. Set the <code>redis</code> setting to this so that Diaspora processes background jobs.</p>
+<pre class="prettyprint well"><code>## URL for a remote Redis (default=localhost)
+## Don't forget to restrict IP access if you uncomment these!
+redis: ENV['REDIS_URL']
+</code></pre>
 <p><em>Note: Make sure you are putting in your sensitive variables, like s3, in this format ENV['S3_SECRET']. Open a separate text file and add your actual secret keys into it. These will come into play when you deploy on to Ninefold.</em> <strong>Warning: don’t EVER keep this file in your git repo.</strong></p>
 <p>Step 7: Create a database.yml in the config directory. </p>
 <p>Since Ninefold loves (and supports PostgreSQL), here is a recommended setup for your database.yml (but feel free to bring your own database instead!). </p>
