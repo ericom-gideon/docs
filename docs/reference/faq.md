@@ -70,6 +70,28 @@ The $50 applies to your account for the month regardless of region. Say what? Le
 
 ## Apps
 
+#### What is a Procfile?
+
+As a part of the app deploy process, we look for a Procfile and we'll generate services for your process types with Foreman. The Procfile describes processes that are required for your application to run. This is handy for running a background worker pool if you select to include “Redis for Resque or Sidekiq”. 
+
+NOTE:  We specifically exclude web process types in the Procfile as we run our own web process via Apache 2 and Passenger.
+
+##### Do I need a Procfile?
+
+You only need a Procfile if you include the “Redis for Resque or Sidekiq” add-on via the app deploy process.
+
+##### How do I make a Procfile?
+
+An example Procfile looks like this and it goes in to your Rails app's root directory along with your Gemfile and Rakefile.
+
+	scheduler: bundle exec rake resque:work QUEUE=*
+
+	worker: bundle exec rake resque:scheduler QUEUE=*
+
+##### Are Procfiles only used for the Ninefold app deploy process?
+
+Procfiles came into existence with the gem Foreman, written by David Dollar. More information can be found in the following article: [Procfiles by David Dollar](http://blog.daviddollar.org/2011/05/06/introducing-foreman.html).
+
 #### How do I roll back my app to another version?
 
 You can’t rollback using Ninefold’s UI. You will need to rollback using Git. It’s pretty involved. Here is a good [article on StackOverflow](http://stackoverflow.com/questions/4372435/how-can-i-rollback-a-github-repository-to-a-specific-commit) on how to do it.
@@ -142,7 +164,7 @@ When you deploy an app on Ninefold, we check your Gemfile for your application's
 	source 'https://rubygems.org'
 	ruby '2.1.3'
 
-#### How do I manage GitHub SSH Keys?
+#### How do I manage GitHub SSH keys?
 
 ##### Adding GitHub SSH Keys to Client Accounts
 
@@ -171,33 +193,12 @@ Bundler: Log of 'bundle install.' Check here if you suspect a gem wasn't install
 * Syslog: Log of extra information such as cron tasks.
 * Trigger: Log of pre- and post-migration hooks. If they did not run, check here.
 
-#### What is a Procfile?
-
-As a part of the app deploy process, we look for a Procfile and we'll generate services for your process types with Foreman. The Procfile describes processes that are required for your application to run. This is handy for running a background worker pool if you select to include “Redis for Resque or Sidekiq”. 
-
-NOTE:  We specifically exclude web process types in the Procfile as we run our own web process via Apache 2 and Passenger.
-
-##### Do I need a Procfile?
-
-You only need a Procfile if you include the “Redis for Resque or Sidekiq” add-on via the app deploy process.
-
-##### How do I make a Procfile?
-
-An example Procfile looks like this and it goes in to your Rails app's root directory along with your Gemfile and Rakefile.
-
-	scheduler: bundle exec rake resque:work QUEUE=*
-
-	worker: bundle exec rake resque:scheduler QUEUE=*
-
-##### Are Procfiles only used for the Ninefold app deploy process?
-
-Procfiles came into existence with the gem Foreman, written by David Dollar. More information can be found in the following article: [Procfiles by David Dollar](http://blog.daviddollar.org/2011/05/06/introducing-foreman.html).
 
 #### Does Ninefold support multiple environments?
 
 You may find a need to set up multiple environments for your apps, such as staging and production. This is easy to do with Ninefold. All you will have to do is build and deploy a new app for each environment. Read on to know more.
 
-##### Branch-based Deployments
+##### Branch-based deployments
 
 Ninefold uses branch-based deployment. This makes it easier for the developer to choose which branch to deploy against. Got a production branch? Perfect, you can deploy against that. And a staging branch? Absolutely. You can deploy as many apps as you'd like, one for every branch and then some! And when code revisions are made, commit and push each branch as normal, and Ninefold will auto-deploy those changes for those particular branches.
 
@@ -205,7 +206,7 @@ Ninefold uses branch-based deployment. This makes it easier for the developer to
 
 So what's the difference between production and staging? Production is the instance your customers interact with. Your staging environment is just like production, but with some key differences like database size or speed. For all intents and purposes, it is like the dress rehearsal. Because of that, if it accidentally goes down during load tests or final tests before pushing to production, your actual front-facing app won't be affected.
 
-##### Power at your Fingertips
+##### Power at your fingertips
 
 On Ninefold, your production app may have multiple app servers and multiple database servers to handle all your customers and their requests. Your staging may not need as much and can be built on a much smaller scale.
 
@@ -220,7 +221,7 @@ The only reasons we would access your accounts would be:
 * You've come onto chat to ask us a question about your application and need help.
 * You've opened up a support ticket. We'll contact you to ask for permission before doing anything.
 
-For any code changes, we will ask you to change and commit them so that Ninefold can automatically redeploy your app.
+For any code changes, we will ask you to change and commit them so that we can automatically redeploy your app.
 
 ## Servers
 
@@ -236,12 +237,12 @@ Note: IP Protocol 47 (GRE) is currently blocked and thus any specific applicatio
 
 To have a PTR record added for an IP address you are using, you simply need to file a ticket with the following information:
 
-* Virtual Machine Name
+* Virtual machine name
 * External IP address (e.g. 103.7.x.x)
 * FQDN (Fully Qualified Domain Name) you wish to associate with the IP address (e.g. mx.mydomain.com)
 * Reason (e.g. My mail server requires this ...)
 
-Note: You also should be using the above IP address as a static NAT or the virtual machine will not be identifying itself with the correct IP address. Port Forwarding will not work.
+Note: You also should be using the above IP address as a static NAT or the virtual machine will not be identifying itself with the correct IP address. Port forwarding will not work.
 
 #### What is a Ninefold template?
 
