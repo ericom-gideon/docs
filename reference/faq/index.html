@@ -500,6 +500,19 @@
 <h4 id="what-if-i-pick-another-region">What if I pick another region?</h4>
 <p>The $50 applies to your account for the month regardless of region. Say what? Let's go with an example, if you have something in US West and something in Asia Pacific 1 the $50 comes off the total of the Ninefold services for that month.</p>
 <h2 id="apps">Apps</h2>
+<h4 id="what-is-a-procfile">What is a Procfile?</h4>
+<p>As a part of the app deploy process, we look for a Procfile and we'll generate services for your process types with Foreman. The Procfile describes processes that are required for your application to run. This is handy for running a background worker pool if you select to include “Redis for Resque or Sidekiq”. </p>
+<p>NOTE:  We specifically exclude web process types in the Procfile as we run our own web process via Apache 2 and Passenger.</p>
+<h5 id="do-i-need-a-procfile">Do I need a Procfile?</h5>
+<p>You only need a Procfile if you include the “Redis for Resque or Sidekiq” add-on via the app deploy process.</p>
+<h5 id="how-do-i-make-a-procfile">How do I make a Procfile?</h5>
+<p>An example Procfile looks like this and it goes in to your Rails app's root directory along with your Gemfile and Rakefile.</p>
+<pre class="prettyprint well"><code>scheduler: bundle exec rake resque:work QUEUE=*
+
+worker: bundle exec rake resque:scheduler QUEUE=*
+</code></pre>
+<h5 id="are-procfiles-only-used-for-the-ninefold-app-deploy-process">Are Procfiles only used for the Ninefold app deploy process?</h5>
+<p>Procfiles came into existence with the gem Foreman, written by David Dollar. More information can be found in the following article: <a href="http://blog.daviddollar.org/2011/05/06/introducing-foreman.html">Procfiles by David Dollar</a>.</p>
 <h4 id="how-do-i-roll-back-my-app-to-another-version">How do I roll back my app to another version?</h4>
 <p>You can’t rollback using Ninefold’s UI. You will need to rollback using Git. It’s pretty involved. Here is a good <a href="http://stackoverflow.com/questions/4372435/how-can-i-rollback-a-github-repository-to-a-specific-commit">article on StackOverflow</a> on how to do it.</p>
 <h4 id="what-can-i-do-to-ensure-uptime">What can I do to ensure uptime?</h4>
@@ -547,7 +560,7 @@
 source 'https://rubygems.org'
 ruby '2.1.3'
 </code></pre>
-<h4 id="how-do-i-manage-github-ssh-keys">How do I manage GitHub SSH Keys?</h4>
+<h4 id="how-do-i-manage-github-ssh-keys">How do I manage GitHub SSH keys?</h4>
 <h5 id="adding-github-ssh-keys-to-client-accounts">Adding GitHub SSH Keys to Client Accounts</h5>
 <p>You're working on a client's app and have access to their repository. You attempt deployment through Ninefold and BAM! Something breaks. You can't deploy because we can't add an SSH key to that repo. What happened?</p>
 <p>As a member of an organization, you may have push and pull access to a repo. However if you don't have administrative rights to it, Ninefold cannot deploy your app because we cannot add an SSH key to the repo.</p>
@@ -568,26 +581,13 @@ Bundler: Log of 'bundle install.' Check here if you suspect a gem wasn't install
 <li>Syslog: Log of extra information such as cron tasks.</li>
 <li>Trigger: Log of pre- and post-migration hooks. If they did not run, check here.</li>
 </ul>
-<h4 id="what-is-a-procfile">What is a Procfile?</h4>
-<p>As a part of the app deploy process, we look for a Procfile and we'll generate services for your process types with Foreman. The Procfile describes processes that are required for your application to run. This is handy for running a background worker pool if you select to include “Redis for Resque or Sidekiq”. </p>
-<p>NOTE:  We specifically exclude web process types in the Procfile as we run our own web process via Apache 2 and Passenger.</p>
-<h5 id="do-i-need-a-procfile">Do I need a Procfile?</h5>
-<p>You only need a Procfile if you include the “Redis for Resque or Sidekiq” add-on via the app deploy process.</p>
-<h5 id="how-do-i-make-a-procfile">How do I make a Procfile?</h5>
-<p>An example Procfile looks like this and it goes in to your Rails app's root directory along with your Gemfile and Rakefile.</p>
-<pre class="prettyprint well"><code>scheduler: bundle exec rake resque:work QUEUE=*
-
-worker: bundle exec rake resque:scheduler QUEUE=*
-</code></pre>
-<h5 id="are-procfiles-only-used-for-the-ninefold-app-deploy-process">Are Procfiles only used for the Ninefold app deploy process?</h5>
-<p>Procfiles came into existence with the gem Foreman, written by David Dollar. More information can be found in the following article: <a href="http://blog.daviddollar.org/2011/05/06/introducing-foreman.html">Procfiles by David Dollar</a>.</p>
 <h4 id="does-ninefold-support-multiple-environments">Does Ninefold support multiple environments?</h4>
 <p>You may find a need to set up multiple environments for your apps, such as staging and production. This is easy to do with Ninefold. All you will have to do is build and deploy a new app for each environment. Read on to know more.</p>
-<h5 id="branch-based-deployments">Branch-based Deployments</h5>
+<h5 id="branch-based-deployments">Branch-based deployments</h5>
 <p>Ninefold uses branch-based deployment. This makes it easier for the developer to choose which branch to deploy against. Got a production branch? Perfect, you can deploy against that. And a staging branch? Absolutely. You can deploy as many apps as you'd like, one for every branch and then some! And when code revisions are made, commit and push each branch as normal, and Ninefold will auto-deploy those changes for those particular branches.</p>
 <h5 id="production-vs-staging">Production vs. Staging</h5>
 <p>So what's the difference between production and staging? Production is the instance your customers interact with. Your staging environment is just like production, but with some key differences like database size or speed. For all intents and purposes, it is like the dress rehearsal. Because of that, if it accidentally goes down during load tests or final tests before pushing to production, your actual front-facing app won't be affected.</p>
-<h5 id="power-at-your-fingertips">Power at your Fingertips</h5>
+<h5 id="power-at-your-fingertips">Power at your fingertips</h5>
 <p>On Ninefold, your production app may have multiple app servers and multiple database servers to handle all your customers and their requests. Your staging may not need as much and can be built on a much smaller scale.</p>
 <p>Because Ninefold is a pay-as-you-go service, you can ramp up/down your servers according to your needs. This means that during load testing, you can scale your staging app to match your production app to run your tests. Once you've finished, you can ramp back down.</p>
 <h4 id="will-ninefold-ever-make-any-changes-to-my-codebase">Will Ninefold ever make any changes to my codebase?</h4>
@@ -597,7 +597,7 @@ worker: bundle exec rake resque:scheduler QUEUE=*
 <li>You've come onto chat to ask us a question about your application and need help.</li>
 <li>You've opened up a support ticket. We'll contact you to ask for permission before doing anything.</li>
 </ul>
-<p>For any code changes, we will ask you to change and commit them so that Ninefold can automatically redeploy your app.</p>
+<p>For any code changes, we will ask you to change and commit them so that we can automatically redeploy your app.</p>
 <h2 id="servers">Servers</h2>
 <h4 id="does-ninefold-block-any-server-ports-by-default">Does Ninefold block any server ports by default?</h4>
 <p>When you create a new virtual server, we have every TCP and UDP port blocked by default.</p>
@@ -606,12 +606,12 @@ worker: bundle exec rake resque:scheduler QUEUE=*
 <h4 id="how-do-i-setup-a-reverse-dns-ptr-record-for-my-ip-address">How do I setup a reverse DNS (PTR) record for my IP address?</h4>
 <p>To have a PTR record added for an IP address you are using, you simply need to file a ticket with the following information:</p>
 <ul>
-<li>Virtual Machine Name</li>
+<li>Virtual machine name</li>
 <li>External IP address (e.g. 103.7.x.x)</li>
 <li>FQDN (Fully Qualified Domain Name) you wish to associate with the IP address (e.g. mx.mydomain.com)</li>
 <li>Reason (e.g. My mail server requires this ...)</li>
 </ul>
-<p>Note: You also should be using the above IP address as a static NAT or the virtual machine will not be identifying itself with the correct IP address. Port Forwarding will not work.</p>
+<p>Note: You also should be using the above IP address as a static NAT or the virtual machine will not be identifying itself with the correct IP address. Port forwarding will not work.</p>
 <h4 id="what-is-a-ninefold-template">What is a Ninefold template?</h4>
 <p>A Ninefold template is a Ninefold created and vetted virtual server image, consisting of a specific operating system and configuration.</p>
 <p>You also have the ability to create your own templates, based on any of your existing running virtual servers.</p>
