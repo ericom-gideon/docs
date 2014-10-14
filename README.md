@@ -1,22 +1,15 @@
-# Ninefold Docs README
+SUMMARY
+=======
 
-To get started with editing the docs you need a couple of tools installed on your machine.
+This project houses the online documentation for [Ninefold](http://ninefold.com).  Most of this documentation has been created by the Ninefold support team along with the engineers and other team members at Ninefold, but we've received and continue to encourage contributions from users and the community.  
 
-1. Install brew
-2. Python
+To build and preview the entire set of docs simply run the following command, then point your browser to [localhost:8000](localhost:8000)
 
-Easy with brew - just brew install python
+    $ git clone git://github.com/ninefold/docs.git
+    $ cd docs
+    $ mkdocs build
+    $ mkdocs serve
 
-3. MkDocs
+If you'd like to make a contribution to the Ninefold documentation, please fork it and send a pull request when you have changes that you'd like to be pulled into the master branch.
 
-Easy with python - just pip install mkdocs
-
-4. Clone this repo to you local machine
-
-# MkDocs commands
-
-mkdocs build will build a copy of the site locally.  It will create a site dir in your local repo.
-
-mkdocs serve will host the site on your local machine listening on http://0.0.0.0:8000
-
-mkdocs gh-deploy will push to gh-pages branch (tested, but don't do this yet till content complete)
+For more information about MKDocs, [check out the project page on Github](https://github.com/tomchristie/mkdocs).
