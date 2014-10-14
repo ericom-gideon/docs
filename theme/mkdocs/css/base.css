@@ -18,7 +18,7 @@
 }
 
 
-/* Table defs to patch up tables due to mkdocs and bootstrap issue 
+/* Table defs to patch up tables due to mkdocs and bootstrap issue
 table {
   max-width: 100%;
   background-color: transparent;
@@ -70,8 +70,8 @@ table > thead > tr > td {
 table > tbody > tr:nth-child(odd) > td,
 table > tbody > tr:nth-child(odd) > th {
   background-color: #f5f5f5;
-} 
-*/ 
+}
+*/
 
 
 p {
@@ -110,7 +110,7 @@ div.source-links {
  * sections of docs content.
  */
 
-/* By default it's not affixed in mobile views, so undo that 
+/* By default it's not affixed in mobile views, so undo that
 .bs-sidebar.affix {
     position: static;
 } */
@@ -121,6 +121,8 @@ div.source-links {
 
 /* First level of nav */
 .bs-sidebar{
+    overflow-y: auto;
+    height: 80%;
     position: relative;
     top: 50px;
 }
@@ -136,7 +138,12 @@ div.source-links {
 /* All levels of nav */
 .bs-sidebar .nav > li > a {
     display: block;
-    padding: 5px 20px;
+    padding: 1px 20px;
+}
+
+.subsection {
+    display: block;
+    padding: 1px 1px 0px 12px;
 }
 .bs-sidebar .nav > li > a:hover,
 .bs-sidebar .nav > li > a:focus {
@@ -146,7 +153,7 @@ div.source-links {
 /*.bs-sidebar .nav > .active > a,*/
 .bs-sidebar .nav > .active:hover > a,
 .bs-sidebar .nav > .active:focus > a,
-.bs-sidebar .nav li.active 
+.bs-sidebar .nav li.active
  {
     font-weight: bold;
     background-color: #eeeeee;
@@ -207,7 +214,7 @@ div.source-links {
     margin-right: 0;
     float: none;
     width: 100%;
-    
+
 }
 
 #ninefold-nav .container{
@@ -230,7 +237,7 @@ div.source-links {
     .ninefold-nav .navbar-nav a{
         padding-left: 6px !important;
         padding-right: 6px !important;
-    }        
+    }
 }
 .ninefold-nav .navbar-nav li.active a{
     color: #45B5E1 !important;
@@ -314,7 +321,7 @@ ul.nav li.main {
 }
 
 .main-nav .navbar-nav li.active ul.dropdown-menu{
-   
+
 }
 
 button span.icon-bar{
@@ -360,7 +367,7 @@ button span.icon-bar{
     .bs-sidebar.affix {
         width: 263px;
     }
-} 
+}
 
 .container{
     max-width: 970px;
