@@ -69,6 +69,10 @@ Ninefold sets the url of Redis in an environment variable `REDIS_URL`. Set the `
 	redis: ENV['REDIS_URL']
 
 _Note: Make sure you are putting in your sensitive variables, like s3, in this format ENV['S3_SECRET']. Open a separate text file and add your actual secret keys into it. These will come into play when you deploy on to Ninefold._ __Warning: don’t EVER keep this file in your git repo.__
+
+__Foreman__
+
+Diaspora will give you a .foreman file that will conflict with Ninefold. Please find the .foreman file in your app (it will be one of the items in the root directory) and rename it to __.foreman.example__. 
  
 Step 7: Create a database.yml in the config directory. 
 
