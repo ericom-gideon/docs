@@ -69,6 +69,20 @@ To see a list of commands available for your app:
           # Default: ~/.ssh/id_rsa.pub
       -q, [--robot], [--no-robot]   # plain b&w mode w/o animations
 
+#### Tips and Tricks
+
+If you'd like to get down to business really quickly, prepend the App_ID to the command of your choice. First, get your APP_ID:
+
+    $ ninefold app list
+
+Take the number associated with the app and prepend to the ninefold command like so:
+
+    $ APP_ID=12345 ninefold command_of_choice
+
+Don't like the animations? Pity, but we understand. To get rid of Brutus, type:
+
+    $ ninefold command_of_choice --robot
+
 #### Documentation
 
 You can visit the Ninefold CLI Github repo here: [https://github.com/ninefold/cli](https://github.com/ninefold/cli) If you would like to contribute, more details can be found there.
