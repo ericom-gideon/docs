@@ -71,7 +71,6 @@ To see a list of commands available for your app:
 
 #### Logging
 
-
 Help menu:
 
 	$ ninefold app help logs
@@ -100,6 +99,20 @@ To search logs for a specific phrase, e.g. ‘Rendered static_pages’ (you will
 To search logs for specific dates, e.g. from 2014/07/20 to 2014/07/25:
 
 	$ ninefold app logs --from=’2014/07/20’ --to=’2014/07/25’
+
+#### Tips and Tricks
+
+If you'd like to get down to business really quickly, prepend the App_ID to the command of your choice. First, get your APP_ID:
+
+    $ ninefold app list
+
+Take the number associated with the app and prepend to the ninefold command like so:
+
+    $ APP_ID=12345 ninefold command_of_choice
+
+Don't like the animations? Pity, but we understand. To get rid of Brutus, type:
+
+    $ ninefold command_of_choice --robot
 
 #### Documentation
 
