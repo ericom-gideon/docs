@@ -100,7 +100,7 @@ You can’t rollback using Ninefold’s UI. You will need to rollback using Git.
 
 We recommend using New Relic, PagerDuty or Pingdom for monitoring. Setting up load balancing will also help in optimizing resource utilization. 
 
-#### How long does it take Ninefold to get up to date with a new Rails releases?
+#### How long does it take Ninefold to get up to date with a new Rails release?
 
 It is up to the customer to update their gem file to the newest Rails gem. When they deploy, their hosted app is updated.
 
