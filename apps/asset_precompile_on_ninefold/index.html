@@ -149,6 +149,10 @@
                         </li>
                     
                         <li >
+                            <a href="../../getstarted/how_to_utilize_ninefold_logging/">How to utilize Ninefold Rails logging</a>
+                        </li>
+                    
+                        <li >
                             <a href="../../getstarted/exporting_and_importing_postgresql_data/">Exporting and importing PostgreSQL data</a>
                         </li>
                     
@@ -467,10 +471,13 @@
 <p>On Ninefold, we run a few rake commands during initial deployment and every subsequent deployment of a new customer code release or a force redeploy of an existing release. One of these is <code>rake assets:precompile</code>.</p>
 <p>We run this task automatically for you provided you are using rails version 3.2 or higher.  The rake task is skipped if you have checked in files to the public/assets folder other than *.ico files.  </p>
 <p>Ninefold uses <a href="http://apache.com">Apache</a> to serve the precompiled .gz versions of static assets if it’s available and if the browser supports it.</p>
-<p>If you opt to run rake assets:precompile locally then commit them to your repo, be sure to add the following to the config/environment/production.rb file: <code>config/serve_static_assets=true</code></p>
+<p>NOTE: If you opt to run <code>rake assets:precompile</code> locally then commit them to your repo, be sure to add the following to the config/environment/production.rb file: <code>config/serve_static_assets=true</code></p>
 <p>This forces the assets that are in the public/assets directory to be served properly in production.  </p>
-<p>In the context of a production environment, it’s generally a good idea to have config.assets.compile set to false (the default). If you set it to true, it mimics the dev environment, where assets not found in the public directory are then looked for and served using Rails middleware.  This is a heavy tax and added overhead to the performance in production and is not advised.</p>
-<p>If you're interested in learning more about the asset pipeline because it's pretty confusing even to seasoned devs, check out <a href="https://ninefold.com/blog/2014/07/01/rails-and-the-warped-asset-pipeline/">this awesome blog</a> post about it!</p>
+<hr />
+<p><em>NOTE: Our recommendation is to allow us to run <code>rake assets:precompile</code> for you. This will allow for you to troubleshoot any precompilation errors via our Log viewer or CLI.</em></p>
+<hr />
+<p>In the context of a production environment, it’s generally a good idea to have <code>config.assets.compile=false</code> (the default). If you set it to true, it mimics the dev environment, where assets not found in the public directory are then looked for and served using Rails middleware.  This is a heavy tax and added overhead to the performance in production and is not advised.</p>
+<p>If you're interested in learning more about the asset pipeline because it's pretty confusing even to seasoned devs, check out <a href="https://ninefold.com/blog/2014/07/01/rails-and-the-warped-asset-pipeline/">this awesome blog post</a> about it!</p>
 <h4 id="file-uploads-and-the-public-directory">File uploads and the public directory</h4>
 <p>File uploading gems such as <a href="https://github.com/carrierwaveuploader/carrierwave">Carrierwave</a> or <a href="https://github.com/thoughtbot/paperclip">Paperclip</a> generally store files in the public directory. At Ninefold, every web server has its own file system. While that is enticing to use as storage, writing to the web server file system is not scalable and is not persistent across new code deployments. With multiple web servers, uploaded files will be stored on the server that handles the request. Subsequent requests may be handled by a different server and that file will not be available to it. A common object store such as S3 is the preferred approach.</p>
 <h4 id="a-word-about-cdns">A word about CDNs</h4>

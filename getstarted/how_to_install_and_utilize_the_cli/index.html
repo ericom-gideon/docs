@@ -149,6 +149,10 @@
                         </li>
                     
                         <li >
+                            <a href="../how_to_utilize_ninefold_logging/">How to utilize Ninefold Rails logging</a>
+                        </li>
+                    
+                        <li >
                             <a href="../exporting_and_importing_postgresql_data/">Exporting and importing PostgreSQL data</a>
                         </li>
                     
@@ -451,6 +455,10 @@
         
             <li class="subsection"><a href="#how-to-get-started-with-the-cli">How to get started with the CLI</a></li>
         
+            <li class="subsection"><a href="#logging">Logging</a></li>
+        
+            <li class="subsection"><a href="#tips-and-tricks">Tips and Tricks</a></li>
+        
             <li class="subsection"><a href="#documentation">Documentation</a></li>
         
     
@@ -518,6 +526,39 @@ Options:
   -k, [--public-key=PUBLIC_KEY] # your public key location
       # Default: ~/.ssh/id_rsa.pub
   -q, [--robot], [--no-robot]   # plain b&amp;w mode w/o animations
+</code></pre>
+<h4 id="logging">Logging</h4>
+<p>Help menu:</p>
+<pre class="prettyprint well"><code>$ ninefold app help logs
+</code></pre>
+<p>To view logs:</p>
+<pre class="prettyprint well"><code>$ ninefold app logs
+</code></pre>
+<p>To view a particular log (using the log title from log viewer &gt; Sources. Note it’s  lowercase “L”). The logs in the CLI match the source name from Portal logging. </p>
+<pre class="prettyprint well"><code>$ ninefold app logs -l rails
+$ ninefold app logs -l cheflog
+</code></pre>
+<p>To view a particular Host (server, e.g. from log viewer &gt; Hosts. Note that it’s “H” not “h”):</p>
+<pre class="prettyprint well"><code>$ ninefold app logs -H 269e
+</code></pre>
+<p>To search logs for a specific word, e.g. ‘FATAL’:</p>
+<pre class="prettyprint well"><code>$ ninefold app logs -f FATAL
+</code></pre>
+<p>To search logs for a specific phrase, e.g. ‘Rendered static_pages’ (you will need quotes):</p>
+<pre class="prettyprint well"><code>$ ninefold app logs -f ‘Rendered static_pages’
+</code></pre>
+<p>To search logs for specific dates, e.g. from 2014/07/20 to 2014/07/25:</p>
+<pre class="prettyprint well"><code>$ ninefold app logs --from=’2014/07/20’ --to=’2014/07/25’
+</code></pre>
+<h4 id="tips-and-tricks">Tips and Tricks</h4>
+<p>If you'd like to get down to business really quickly, prepend the App_ID to the command of your choice. First, get your APP_ID:</p>
+<pre class="prettyprint well"><code>$ ninefold app list
+</code></pre>
+<p>Take the number associated with the app and prepend to the ninefold command like so:</p>
+<pre class="prettyprint well"><code>$ APP_ID=12345 ninefold command_of_choice
+</code></pre>
+<p>Don't like the animations? Pity, but we understand. To get rid of Brutus, type:</p>
+<pre class="prettyprint well"><code>$ ninefold command_of_choice --robot
 </code></pre>
 <h4 id="documentation">Documentation</h4>
 <p>You can visit the Ninefold CLI Github repo here: <a href="https://github.com/ninefold/cli">https://github.com/ninefold/cli</a> If you would like to contribute, more details can be found there.</p>

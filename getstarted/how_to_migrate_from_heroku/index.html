@@ -149,6 +149,10 @@
                         </li>
                     
                         <li >
+                            <a href="../how_to_utilize_ninefold_logging/">How to utilize Ninefold Rails logging</a>
+                        </li>
+                    
+                        <li >
                             <a href="../exporting_and_importing_postgresql_data/">Exporting and importing PostgreSQL data</a>
                         </li>
                     
@@ -536,7 +540,7 @@ $ rake db:schema:dump
 </code></pre>
 <p>Copy the variables from there and paste them directly into the Environment variables section in your deployment setup. You can also add them later under the <strong>Configuration</strong> tab.</p>
 <hr />
-<p>NOTE: Make sure to copy <em>only</em> the environment variables you will need. If you have Ninefold provision a PG database for you, you will NOT need to bring over the env var DATABASE_URL.</p>
+<p><em>NOTE: Make sure to copy only the environment variables you will need. If you have Ninefold provision a PG database for you, you will NOT need to bring over the env var DATABASE_URL.</em></p>
 <hr />
 <h4 id="rake-tasks-and-the-cli">Rake tasks and the CLI</h4>
 <p>Say that you've got a rake task that needs to be run only once, such as rake db:categories. You can use our <a href="../how_to_install_and_utilize_the_cli/">awesome CLI</a> to connect to your app. From there you can run rails console or run rake tasks or even run dbconsole. Super sweet.</p>

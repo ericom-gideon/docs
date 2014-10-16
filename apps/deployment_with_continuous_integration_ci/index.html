@@ -149,6 +149,10 @@
                         </li>
                     
                         <li >
+                            <a href="../../getstarted/how_to_utilize_ninefold_logging/">How to utilize Ninefold Rails logging</a>
+                        </li>
+                    
+                        <li >
                             <a href="../../getstarted/exporting_and_importing_postgresql_data/">Exporting and importing PostgreSQL data</a>
                         </li>
                     
@@ -468,7 +472,7 @@
 <p>With Ruby on Rails development, we tend to use tools such as Travis CI, Circle CI, Jenkins CI, and Magnum CI (amongst others).</p>
 <p>With Ninefold, you can totally set up your CI to deploy your code to Ninefold after it runs your tests.</p>
 <p><em>But wait, what about autodeploy?!</em></p>
-<p>Well, we can’t have our cake and eat it, too, can we? If you deployed via the GitHub or Bitbucket option, you will have to remove the <strong>Automatically redeploy my app when I push updates to my code</strong> from the <strong>Overview</strong> tab of your app. </p>
+<p>Well, we can’t have our cake and eat it, too, can we? If you deployed via the GitHub or Bitbucket option, you will have to remove the <strong>Automatically redeploy my app when I push updates to my code</strong> from the <strong>Overview</strong> tab of your app.</p>
 <p>And if you didn’t have that option checked, that’s totally cool -- you’re one step ahead of the game!</p>
 <p>You’ll need to know which CI you’re using. ...We can’t help you there. :)</p>
 <p>But, this is your lucky day! Once you pick a CI to use, we give you a whopping two options to choose from to obtain a redeployment trigger when your CI succeeds!</p>
@@ -477,17 +481,18 @@
 <pre class="prettyprint well"><code>$ ninefold signin
 $ ninefold app redeploy_command
 </code></pre>
-<p>The output will look something like: </p>
+<p>The output will look something like:</p>
 <p>AUTH_TOKEN=(hash) APP_ID=(number) ninefold app redeploy --robot --sure</p>
 <p>The general idea is that if you push to the git repository, the CI environment will kick off and run your tests. Once the tests pass, the CI will then kick off your Ninefold deployment.</p>
-<p>Each CI environment sets it up slightly differently, but they all will use the redeploy_command seen above.  </p>
-<p>Note: You may have to add in "bundle exec" before ninefold: </p>
+<p>Note: You may have to add in "bundle exec" before ninefold:</p>
 <p>AUTH_TOKEN=(hash) APP_ID=(number) bundle exec ninefold app redeploy --robot --sure</p>
 <h4 id="2-deployment-url">#2 Deployment URL</h4>
 <p>Login into the Ninefold Portal and click on your existing app's Overview tab. Copy (or Reset) the Deployment URL. Enter the curl command ($ curl -X POST -d "" [Deployment URL]) into your CI when your tests pass.</p>
 <h4 id="how-redeploying-via-ci-works">How redeploying via CI works</h4>
 <p>The general idea is that if you push to the git repository, the CI environment will kick off and run your tests. Once the tests pass, the CI will then kick off your Ninefold deployment.</p>
-<p>Each CI environment sets it up slightly differently, but they all will use the redeploy_command or Deployment URL seen above for redeploying your app on Ninefold.</p>
+<p>Each CI environment sets it up slightly differently, but almost all will use the redeploy_command or Deployment URL seen above for redeploying your app on Ninefold.</p>
+<p><strong>Codeship</strong></p>
+<p>This is possibly the easiest setup of all the CI's. First, deploy the app with the branch of your choice. Then go to Codeship and add a deployment command that will run after your tests are green. Super simple! <a href="http://brianpattison.com/continuous-deployment-with-codeship-and-ninefold">Check out this blog post</a> on how someone set it up.</p>
 <p><strong>Travis CI</strong></p>
 <p>If you’re using Travis CI, they have some awesome documentation on their site on how to use Ninefold. Check it out <a href="http://docs.travis-ci.com/user/deployment/ninefold/">here</a>!</p>
 <p><strong>Circle CI</strong></p>
