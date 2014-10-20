@@ -3,14 +3,14 @@ page_author:      Risa B
 page_description: Knowledge base article to instruct users on how to create scheduled tasks in Rails on Ninefold
 page_keywords:    whenever gem cron crontab scheduled tasks scheduler
 
-## Creating scheduled tasks in Rails
+## Creating scheduled tasks
 
 #### Scheduling
 Maybe you’ve got some rake tasks that need to be run every morning. Or maybe you’ve got source some data from an external web service and load it into a your database. Whatever task it is, it’s got to be on a schedule. It’s pretty easy to do with Ninefold.
 
 So the popular way to do this is to schedule a ‘cron’ job to run your commands using the ‘Whenever’ gem. Here’s how.
 
-#### Install the whenever gem
+#### Whenever gem
 Add the whenever gem to your Gemfile:
 
     gem 'whenever', :require => false
@@ -27,7 +27,7 @@ Create your initial config file in your app:
 
 This will create `config/schedule.rb` which gives some examples to use. Type your cron tasks in `config/schedule.rb`. For examples of some cron schedules, go here: [Whenever gem](https://www.github.com/javan/whenever)
 
-#### Set up custom post_migration trigger on Ninefold
+#### Post_migration trigger 
 
 In your Ninefold app, go to the __Configuration__ tab > __Deployment Triggers__, in the _After Migrations_ section type:
 
@@ -35,7 +35,7 @@ In your Ninefold app, go to the __Configuration__ tab > __Deployment Triggers__,
 
 Where `my_awesome_app` is what you'd like to name your cron task. Press _Update triggers_ to save.
 
-#### Commit your changes to run the triggers
+#### Commit 
 
     $ git add .
     $ git commit -m "Adding cron jobs using whenever"
@@ -45,7 +45,7 @@ _Note: You've got to update your triggers first before you commit so that Ninefo
 
 Cron tasks will be run from the root directory of your app. If you've got multiple web and worker servers, cron tasks currently will run on ALL your web and worker servers by default. If you would like to have the cron task run ONLY on certain servers, please submit a ticket, and we will provide you details on how to do this.
 
-#### Adding an environment variable to cron
+#### Environment vars
 
 You can use defined environment variables in whenever gem constructed cron tasks. Simply add an env line for each of your environment vars in config/schedule.rb:
 
@@ -57,7 +57,7 @@ You can use defined environment variables in whenever gem constructed cron tasks
       command "echo \"I am running from cron! Environment variable value: ${SAMPLE_VAR}\""
     end
 
-#### Logging your cron jobs
+#### Logging 
 
 The whenever gem comes with the ability to set the output to a log file. To do this on Ninefold, add this to your config/schedule.rb file"."
 

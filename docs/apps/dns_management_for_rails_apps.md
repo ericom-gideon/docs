@@ -23,7 +23,7 @@ Please consult with your domain registrar for information on how you can point y
 
 _WARNING: If your website or domain is currently in use, you should take care in not delegating the domain without properly and adequately setting up your DNS before hand. DNS changes can take up to 48hrs to propagate, so a mistake or poorly configured DNS records or settings can have some serious consequences._
 
-#### #2 Add your domain (A record) to the overview tab 
+#### #2 Add your domain (A record)
 
 Once you have deployed your app, you can easily add your domain. 
 

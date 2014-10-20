@@ -3,7 +3,7 @@ page_author:      Brittany Martin
 page_description: Knowledge base article to instruct users on how they back up and restore databases for Rails apps
 page_keywords:    rails database pg restore data export backup 
 
-## Backing up and restoring your Rails DB
+## Backing up and restoring DB
 
 #### Overview
 

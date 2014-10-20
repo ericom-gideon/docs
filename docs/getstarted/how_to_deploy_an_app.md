@@ -3,7 +3,7 @@ page_author:      Brittany Martin
 page_description: Knowledge base article to instruct users how to deplpy a Rails app on Ninefold 
 page_keywords:    deployment ninefold rails deploy started start begin heroku 
 
-## How to deploy an app on Ninefold
+## How to deploy an app 
 
 #### Overview
 

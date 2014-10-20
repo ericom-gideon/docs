@@ -3,7 +3,7 @@ page_author:      Brittany Martin
 page_description: Knowledge base article to instruct users on how to implement private gem repos when they host their repo on Github or Bitbucket
 page_keywords:    github bitbucket gem repo private repository 
 
-## Private Gem repos on GitHub & Bitbucket
+## Private Gem repos 
 
 #### Overview
 

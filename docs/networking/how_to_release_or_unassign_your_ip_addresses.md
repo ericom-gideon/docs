@@ -3,7 +3,7 @@ page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to help users release or unassign their IP addresses 
 page_keywords:    server VPS IP address release unassign
 
-## How to release or unassign your IP addresses
+## Release or unassign your IP addresses
 
 If you have an existing IP address currently attached to a virtual machine, you can choose to either: 
 

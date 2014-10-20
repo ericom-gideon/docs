@@ -2,7 +2,7 @@ page_title:       Setting up static NAT & port forward for IP addresses
 page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to instruct users on they can set up static NAT and port forwarding page_keywords:    server volume network NAT port forwarding IP static
 
-## Setting up static NAT & port forward for IP addresses
+## Static NAT & port forward 
 
 ### Overview
 
@@ -31,11 +31,11 @@ IP addresses are mapped one-to-one directly to a server. The particular IP addre
 Your ports are now mapped to your server via the public IP address via Static NAT.
 
 
-#### Choice 2: destination NAT (port forwarding) 
+#### Choice 2: destination NAT 
 
 IP addresses allow you to create port forwarding rules to specific servers. The particular IP address associated with a Destination NAT rule can be associated with multiple servers (different ports across different servers).
  
-#### Setting up destination NAT (port forwarding) 
+#### Setting up destination NAT 
 
 1. Go to the __Network__ Tab in the Ninefold dashboard. 
 

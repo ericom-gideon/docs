@@ -3,7 +3,7 @@ page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to instruct users on how they can create a template from their server
 page_keywords:    server volume clone VPS copy template 
 
-## How to create a template from your server
+## Create a template 
 
 The ability to create a template from your server is a very useful feature if you need multiple servers configured similarly. Once you have spent the time to build and customise a server to your specific requirements it is then possible to create a template from which you can quickly and easily build new servers - saving a lot of time.  If you are building a Windows Server template, you may wish to sysprep the newly created server to ensure the regeneration of Windows Server's unique SID information.
 

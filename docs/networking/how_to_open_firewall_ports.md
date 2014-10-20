@@ -3,7 +3,7 @@ page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article instruct users how they can open Firewall Ports 
 page_keywords:    server volume network firewall ports
 
-## How to open firewall ports
+## Open firewall ports
 
 This article instructs you how to open firewall ports/add firewall rules for your server.
 

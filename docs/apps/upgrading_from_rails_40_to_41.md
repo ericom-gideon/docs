@@ -4,7 +4,7 @@ page_keywords:    upgrade rails 4.0 4.1 secret_token secret_key_base
 
 ## Upgrading from Rails 4.0 to 4.1
 
-#### Bleeding edge stuff!
+#### Overview
 That's fantastic that you've decided to go on the bleeding edge! :) Some important stuff was introduced in Rails 4.1 that 4.0 didn't have. Most notably (and importantly, for the purpose of this KB article) was the `config/secrets.yml` file for storing your secrets.  
 
 #### Secret_tokens and secret_key_bases
