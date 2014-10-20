@@ -89,7 +89,7 @@ To bring over your environment variables from Heroku, from the root directory of
 Copy the variables from there and paste them directly into the Environment variables section in your deployment setup. You can also add them later under the __Configuration__ tab.
 
 ***
-NOTE: Make sure to copy _only_ the environment variables you will need. If you have Ninefold provision a PG database for you, you will NOT need to bring over the env var DATABASE_URL.
+_NOTE: Make sure to copy only the environment variables you will need. If you have Ninefold provision a PG database for you, you will NOT need to bring over the env var DATABASE_URL._
 ***
 
 #### Rake tasks 

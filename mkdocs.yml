@@ -21,6 +21,7 @@ pages:
 - ['getstarted/how_to_install_and_utilize_the_cli.md', 'Getting Started', 'How to utilize the CLI']
 - ['getstarted/how_to_migrate_from_heroku.md', 'Getting Started', 'How to migrate from Heroku']
 - ['getstarted/how_ninefold_works_with_github_bitbucket_and_git_url.md', 'Getting Started', 'GitHub, Bitbucket and Git URL']
+- ['getstarted/how_to_utilize_ninefold_logging.md', 'Getting Started', 'How to utilize Ninefold Rails logging']
 - ['getstarted/exporting_and_importing_postgresql_data.md', 'Getting Started', 'Exporting and importing PostgreSQL data']
 - ['getstarted/how_to_deploy_diaspora.md', 'Getting Started', 'Deploy Diaspora']
 

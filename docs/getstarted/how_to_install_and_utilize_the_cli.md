@@ -69,6 +69,51 @@ To see a list of commands available for your app:
           # Default: ~/.ssh/id_rsa.pub
       -q, [--robot], [--no-robot]   # plain b&w mode w/o animations
 
+#### Logging
+
+Help menu:
+
+	$ ninefold app help logs
+
+To view logs:
+	
+	$ ninefold app logs
+
+To view a particular log (using the log title from log viewer > Sources. Note it’s  lowercase “L”). The logs in the CLI match the source name from Portal logging. 
+
+	$ ninefold app logs -l rails
+	$ ninefold app logs -l cheflog
+
+To view a particular Host (server, e.g. from log viewer > Hosts. Note that it’s “H” not “h”):
+
+	$ ninefold app logs -H 269e
+
+To search logs for a specific word, e.g. ‘FATAL’:
+
+	$ ninefold app logs -f FATAL
+
+To search logs for a specific phrase, e.g. ‘Rendered static_pages’ (you will need quotes):
+
+	$ ninefold app logs -f ‘Rendered static_pages’
+
+To search logs for specific dates, e.g. from 2014/07/20 to 2014/07/25:
+
+	$ ninefold app logs --from=’2014/07/20’ --to=’2014/07/25’
+
+#### Tips and Tricks
+
+If you'd like to get down to business really quickly, prepend the App_ID to the command of your choice. First, get your APP_ID:
+
+    $ ninefold app list
+
+Take the number associated with the app and prepend to the ninefold command like so:
+
+    $ APP_ID=12345 ninefold command_of_choice
+
+Don't like the animations? Pity, but we understand. To get rid of Brutus, type:
+
+    $ ninefold command_of_choice --robot
+
 #### Documentation
 
 You can visit the Ninefold CLI Github repo here: [https://github.com/ninefold/cli](https://github.com/ninefold/cli) If you would like to contribute, more details can be found there.

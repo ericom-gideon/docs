@@ -15,7 +15,7 @@ With Ninefold, you can totally set up your CI to deploy your code to Ninefold af
 
 _But wait, what about autodeploy?!_
 
-Well, we can’t have our cake and eat it, too, can we? If you deployed via the GitHub or Bitbucket option, you will have to remove the __Automatically redeploy my app when I push updates to my code__ from the __Overview__ tab of your app. 
+Well, we can’t have our cake and eat it, too, can we? If you deployed via the GitHub or Bitbucket option, you will have to remove the __Automatically redeploy my app when I push updates to my code__ from the __Overview__ tab of your app.
 
 And if you didn’t have that option checked, that’s totally cool -- you’re one step ahead of the game!
 
@@ -30,15 +30,13 @@ You’ll also need the deploy command given by our awesome CLI.  (If you haven�
 	$ ninefold signin
 	$ ninefold app redeploy_command
 
-The output will look something like: 
+The output will look something like:
 
 AUTH_TOKEN=(hash) APP_ID=(number) ninefold app redeploy --robot --sure
 
 The general idea is that if you push to the git repository, the CI environment will kick off and run your tests. Once the tests pass, the CI will then kick off your Ninefold deployment.
 
-Each CI environment sets it up slightly differently, but they all will use the redeploy_command seen above.  
-
-Note: You may have to add in "bundle exec" before ninefold: 
+Note: You may have to add in "bundle exec" before ninefold:
 
 AUTH_TOKEN=(hash) APP_ID=(number) bundle exec ninefold app redeploy --robot --sure
 
@@ -50,7 +48,11 @@ Login into the Ninefold Portal and click on your existing app's Overview tab. Co
 
 The general idea is that if you push to the git repository, the CI environment will kick off and run your tests. Once the tests pass, the CI will then kick off your Ninefold deployment.
 
-Each CI environment sets it up slightly differently, but they all will use the redeploy_command or Deployment URL seen above for redeploying your app on Ninefold.
+Each CI environment sets it up slightly differently, but almost all will use the redeploy_command or Deployment URL seen above for redeploying your app on Ninefold.
+
+__Codeship__
+
+This is possibly the easiest setup of all the CI's. First, deploy the app with the branch of your choice. Then go to Codeship and add a deployment command that will run after your tests are green. Super simple! [Check out this blog post](http://brianpattison.com/continuous-deployment-with-codeship-and-ninefold) on how someone set it up.
 
 __Travis CI__
 
@@ -73,7 +75,7 @@ or you can simply use curl (Note: The deployment URL can be found in the overvie
     	branch: master (or whatever branch you’re working against)
     	commands:
            - curl -X POST -d "" [Deployment URL]
-	
+
 __Jenkins CI__
 
 In your Jenkins shell script that is running your tests, add the redeploy_command or curl -X POST -d "" [Deployment URL] after your test commands (bundle exec rspec spec, etc).
