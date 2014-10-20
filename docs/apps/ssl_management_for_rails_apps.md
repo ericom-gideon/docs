@@ -13,13 +13,13 @@ SSL is a means by which connections over the web are encrypted with cryptographi
 
 SSL is a great starting point for web security and can help assuage customers concerns on data privacy. Not every application needs SSL, but if you have sensitive data being transmitted to and from your web app, it might be worth investing in an SSL certificate. 
 
-#### How do I get an SSL certificate?
+#### Getting an SSL certificate
 
 There are two methods by which an SSL certificate may be obtained; self-signed, or signed by a CA – a trusted third party website. 
 
 _Note: self-signed certificates are the easiest method to get started with SSL, but they also don’t bear the same well-established trust relationships than do certificates signed by companies such as VeriSign or GeoTrust. Please note that self-signed certificates are best used only for development environments._
 
-#### Enabling SSL for your app:
+#### Enabling SSL 
 
 Navigate to the __Configuration__ tab of your app. 
 

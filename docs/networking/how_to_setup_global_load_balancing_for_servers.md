@@ -3,7 +3,7 @@ page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article instruct users how they can setup local load balancing
 page_keywords:    server volume network load balancer global 
 
-## How to setup global load balancing for servers
+## Setup global load balancing 
 
 ### Overview
 

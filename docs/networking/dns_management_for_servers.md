@@ -2,7 +2,7 @@ page_title:       DNS management for servers
 page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to manage DNS for bare servers. page_keywords:    server volume network DNS domain godaddy 
 
-## DNS management for servers
+## DNS management 
 
 ### Overview
 

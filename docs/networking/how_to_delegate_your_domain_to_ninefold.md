@@ -3,7 +3,7 @@ page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to help users delegate their domain to Ninefold
 page_keywords:    server VPS domain nameserver DNS godaddy netregistry 
 
-## How to delegate your domain to Ninefold
+## Delegate your domain 
 
 If you would like to take advantage of Ninefold's DNS management service or global load balancing service you will need to delegate your domain to Ninefold's nameservers.
 

@@ -3,7 +3,7 @@ page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to instruct server users how to view attached and detached storage volumes
 page_keywords:    server volume detached attached VPS 
 
-## How to view attached and detached storage volumes
+## Viewing attached volumes
 
 1. Select the __Servers__ tab from the top navigation menu.
 
@@ -11,7 +11,7 @@ page_keywords:    server volume detached attached VPS
 
 3. Select the storage tab from the context menu. The top section of the page details your primary disk. The bottom section details your secondary disk(s).
 
-## How to view detached and detached storage Volumes
+## Viewing detached volumes
 
 1. Click on __Servers__ > __Resources__ located on the top menu.
 

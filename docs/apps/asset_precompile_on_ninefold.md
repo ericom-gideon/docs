@@ -2,9 +2,9 @@ page_title: Asset Precompilation on Ninefold
 page_description: Knowledge base article to instruct users on how Ninefold handles asset precompilation
 page_keywords: assets precompile asset management carrierwave paperclip
 
-## Asset precompilation on Ninefold
+## Asset precompilation 
 
-#### About asset precompile
+#### About
 On Ninefold, we run a few rake commands during initial deployment and every subsequent deployment of a new customer code release or a force redeploy of an existing release. One of these is `rake assets:precompile`.
 
 We run this task automatically for you provided you are using rails version 3.2 or higher.  The rake task is skipped if you have checked in files to the public/assets folder other than *.ico files.  
@@ -19,7 +19,7 @@ In the context of a production environment, it’s generally a good idea to have
 
 If you're interested in learning more about the asset pipeline because it's pretty confusing even to seasoned devs, check out [this awesome blog](https://ninefold.com/blog/2014/07/01/rails-and-the-warped-asset-pipeline/) post about it!
 
-#### File uploads and the public directory
+#### File uploads 
 File uploading gems such as [Carrierwave](https://github.com/carrierwaveuploader/carrierwave) or [Paperclip](https://github.com/thoughtbot/paperclip) generally store files in the public directory. At Ninefold, every web server has its own file system. While that is enticing to use as storage, writing to the web server file system is not scalable and is not persistent across new code deployments. With multiple web servers, uploaded files will be stored on the server that handles the request. Subsequent requests may be handled by a different server and that file will not be available to it. A common object store such as S3 is the preferred approach.
 
 #### A word about CDNs

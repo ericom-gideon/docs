@@ -2,7 +2,7 @@ page_title: How to copy or move a server to another region
 page_description: How to copy or move a server to another region
 page_keywords: server, copy, move, region
 
-## How to copy or move a server to another region
+## Copy or move a server 
 
 If you would like to copy or move a server into an alternative region, you must first create a template of the server(s). 
 

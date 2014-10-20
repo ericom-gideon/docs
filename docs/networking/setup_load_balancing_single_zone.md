@@ -3,7 +3,7 @@ page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to help users setup load balancing for servers 
 page_keywords:    server load balance network  
 
-## Setup load balancing (single region)
+## Setup load balancing 
 
 ### Overview 
 

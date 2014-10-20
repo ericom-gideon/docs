@@ -3,7 +3,7 @@ page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to connect your server via SSH/RDP
 page_keywords:    server volume VPS RDP SSH key windows linux liveview
 
-## How to connect to your server using SSH / RDP
+## Connect to your server using SSH / RDP
 
 ### Live View
 

@@ -3,11 +3,11 @@ page_author:      Brittany Martin
 page_description: Knowledge base article to instruct users on how they can change their apps configuration and infrastructure after deployment
 page_keywords:    infrastructure configuration add-ons servers size rails change bash migrations
 
-## Setting and changing your app configuration and infrastructure
+## App configuration and infrastructure
 
 Consider the infrastructure and configuration the Superman and Batman of your Justice League Rails app. You know, the essentials parts for success.
 
-#### Setting configuration during deployment
+#### Setting config 
 
 Initial step when deploying your app to Ninefold is configuring your app.  Here, you are given the opportunity to customize some aspects of your deployment:
 
@@ -45,7 +45,7 @@ for your Redis config.
 
 These pre- and post-migration commands will be run each time you commit to your branch or press __Force Redeploy__.
 
-#### Changing/Viewing Configuration for Your Deployed App
+#### Changing/Viewing Configuration
 
 After your app has successfully deployed, you can change your configuration whenever you like under Your App > __Configuration__ tab. 
 
@@ -57,7 +57,7 @@ If you change any of these settings, be prepared to redeploy for these changes t
  
 -------------
 
-#### Setting infrastructure during deployment
+#### Setting infrastructure 
 
 The initial infrastructure for your app is chosen in __Step 3__ of the deploy process. 
 
@@ -85,7 +85,7 @@ __Recommended Infrastructure__
 
 If you want some pointers on sizing, please feel free to chat up the fabulous Ninefold Support. Tell us what your app does, if you are using a CDN and how many users you expect on the site at once. 
 
-#### Changing/Viewing Infrastructure for Your Deployed App 
+#### Changing/Viewing Infrastructure 
 
 After your app has successfully deployed, you can change your infrastructure whenever you like.  
 

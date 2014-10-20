@@ -3,7 +3,7 @@ page_author:      Risa B. (converted by Britt)
 page_description: Knowledge base article to instruct users on how to they can use the deployment web hook for notifications 
 page_keywords:    deployment notification slack hipchat campfire brutus cli 
 
-## Setting up deployment notifications
+## Deployment notifications
 
 Currently, services such as [Hipchat](https://www.hipchat.com/), [Slack](https://slack.com/), [Campfire](https://campfirenow.com/), and others accept and display notifications such as when deployments have started and when they’ve ended. This is a handy way to apprise teams of when coworkers deploy.
 

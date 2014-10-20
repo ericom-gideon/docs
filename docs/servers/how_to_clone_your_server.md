@@ -3,7 +3,7 @@ page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to instruct users on how you can clone your server
 page_keywords:    server volume clone VPS copy
 
-## How to clone your server
+## Clone your server
 
 1. Click on __Servers__ > __Manage__ from the navigation menu.
 

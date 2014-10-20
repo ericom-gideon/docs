@@ -2,13 +2,13 @@ page_title: How To Utilize A CDN With Ninefold (S3 And CloudFront)
 page_description: Knowledge base article to instruct users how they can implement a CDN with Ninefold Rails hosting. 
 page_keywords: rails CDN Cloudfront s3 assets 
 
-## How to utilize a CDN with Ninefold (S3 and CloudFront)
+## How to utilize a CDN 
 
 #### What is a CDN?
 
 A content delivery network (CDN) refers to a large network of servers deployed across multiple networks in several data centers, often geographically distributed. CDNs are employed by companies across many industries to deliver HTTP content, rich media like streaming audio and video, and downloadable files.
 
-#### Should I use a CDN with Ninefold?
+#### Should I use a CDN?
 
 Ninefold’s #1 goal for your site is performance. Using a CDN optimizes the delivery of static assets on your site. If your app serves up a lot of content, we highly recommend implementing a CDN.
 
@@ -55,7 +55,7 @@ You can do this very easily by using the "Create Distribution Wizard" under the 
 
 After redeploying to Ninefold, it is a good idea to test that your distribution is working. To do this, manually select the full URL of one of your static assets, such as a CSS file and attempt to request this file through your CloudFront endpoint that was provided to you. If your CSS file is returned to you, you are almost done!
 
-#### Adding CloudFront to your Ninefold Rails app
+#### Adding CloudFront 
 
 Making Rails serve assets from a CDN is simple. Support for CDNs is built into most versions of Rails. You will only need to make a simple code change in your app to implement a distribution network.
 

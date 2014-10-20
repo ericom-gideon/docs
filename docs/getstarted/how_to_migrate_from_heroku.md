@@ -9,7 +9,7 @@ page_keywords:    heroku migrate move ninefold setup guide aws rails_12factor
 
 Welcome to Ninefold! We have a couple of tasks we need you to do in order to migrate to Ninefold successfully. They are easy --- we promise!
 
-#### Remove rails_12factor from Gemfile
+#### Remove rails_12factor 
 
 Open your Gemfile and remove the rails_12factor gem and save.
 
@@ -61,7 +61,7 @@ Note: the selected postgis package is one compatible for 9.2, the Ubuntu package
 
 Both Ninefold and Heroku use PostgreSQL databases. Importing across is easy. Check out our [KB article](exporting_and_importing_postgresql_data.md) on how to do that here.
 
-#### Deployment and deployment triggers
+#### Deployment 
 
 Here at Ninefold, we want to make app deployment and maintenance easy.
 
@@ -80,7 +80,7 @@ _If you disabled post-commit hooks, you can enable them in the Overview tab of y
 
 Say that you have a rake task that needs to be run after every migration, rake screw:cork. Or perhaps you have to move a folder before every migration. You would be able to run these commands in our deployment triggers (pre- and post-migration). The directions to do this are found [here](../apps/setting_and_changing_your_apps_configuration.md).
 
-#### Environment variables
+#### Env vars
 
 To bring over your environment variables from Heroku, from the root directory of your app run:
 
@@ -92,7 +92,7 @@ Copy the variables from there and paste them directly into the Environment varia
 NOTE: Make sure to copy _only_ the environment variables you will need. If you have Ninefold provision a PG database for you, you will NOT need to bring over the env var DATABASE_URL.
 ***
 
-#### Rake tasks and the CLI
+#### Rake tasks 
 
 Say that you've got a rake task that needs to be run only once, such as rake db:categories. You can use our [awesome CLI](how_to_install_and_utilize_the_cli.md) to connect to your app. From there you can run rails console or run rake tasks or even run dbconsole. Super sweet.
 

@@ -3,7 +3,7 @@ page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to instruct server users how to view attached and detached storage volumes
 page_keywords:    server volume backups safety VPS snapshot
 
-## Using backups to protect your data
+## Backups to protect your data
 
 #### Overview
 
@@ -15,13 +15,13 @@ A backup (snapshot) is not stored on the local server instance, but as a new and
 
 When you create a new server using the Ninefold Portal, recurring backups are enabled for all disk volumes attached to the server by default. Recurring backups are taken at 2:00am Australian Eastern Standard Time and the last seven backups are retained (with the oldest being automatically overwritten).
 
-#### How to enable backups on new servers
+#### Enable backups on new servers
 
 When you are creating a server, the server creation wizard will give you the option to enable backups. If you tick this open, it will schedule a recurring daily backup that will involve taking a snapshot of the virtual machine every day at 2:00am Australian Eastern Standard Time. Up to 7 snapshots/backups will be kept at any given time.
 
 If you require a different schedule to the one listed above, please contact Ninefold Support.
 
-#### How to manually enable backups on servers
+#### Manually enable backups on servers
 
 1. Select your server and select the __Backups__ tab.
 

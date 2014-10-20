@@ -3,7 +3,7 @@ page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to instruct server users on Microsoft licensing. 
 page_keywords:    server volume windows microsoft SPLA license 
 
-## Microsoft licensing - Can I use my existing software and licenses on Ninefold?
+## Microsoft licensing 
 
 ### Overview
 

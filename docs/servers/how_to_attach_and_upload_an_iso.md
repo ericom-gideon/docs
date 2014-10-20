@@ -3,7 +3,7 @@ page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to instruct users how upload and attach an ISO to their server
 page_keywords:    server ISO template attach bare VPS
 
-## How to attach and upload an ISO
+## Attach and upload an ISO
 
 #### Uploading an ISO 
 

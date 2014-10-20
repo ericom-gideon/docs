@@ -2,7 +2,7 @@ page_title: How to access your server with Live View
 page_description: How to access your server with Live View
 page_keywords: server, live view
 
-## How to access your server with Live View
+## Access your server with Live View
 
 Live View offers a quick and easy way to gain immediate access to your new server via the web interface.
 

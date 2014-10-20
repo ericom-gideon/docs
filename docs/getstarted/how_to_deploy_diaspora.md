@@ -2,13 +2,13 @@ page_title:Diaspora
 page_description: Knowledge base article to instruct users on how to deploy Diaspora on Ninefold
 page_keywords: Diaspora Rails Guide Social 
 
-## How to deploy Diaspora on Ninefold
+## Deploy Diaspora
 
 #### Why is Diaspora awesome?
 
 Diaspora is a nonprofit, user-owned, distributed social network that is based upon the free Diaspora Rails software. Diaspora consists of a group of independently owned nodes (called pods) which interoperate to form the social network. Since the software is not owned by one person or entity, developers can avoid features they don’t want - like advertising - when setting up their own social network. Diaspora users can even download all their images and text that has been uploaded at any time. 
 
-#### How to setup Diaspora 
+#### How to setup
 
 Step 1: Fork Diaspora and clone your fork to your local machine. It will take a few minutes - it is quite the download. 
 
@@ -112,4 +112,6 @@ Step 11: Also in Step 4, you will need to add a line in your “After Migrations
 
 Step 12: One tricky thing: your first deploy is going to fail. This is because you need to enable self signed SSL for your Diaspora pod. You do this by going into Ninefold app, click on the app, choosing Configuration, enable SSL and choose Use a self-signed certificate. Trigger a redeploy. 
 
-Wrap-up: Now you’re all set to customize your pod with whatever you’d like. Graphics, images, seed users, you name it! 
+#### Wrap-up
+
+Now you’re all set to customize your pod with whatever you’d like. Graphics, images, seed users, you name it! 

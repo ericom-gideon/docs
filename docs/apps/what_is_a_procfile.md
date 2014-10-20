@@ -11,7 +11,7 @@ A Procfile is a textfile named Procfile placed in the root of your application, 
 
 For more sophisticated apps that want to run run a worker, you will need to define your process type.
 
-### What to add to your Procfile
+### Procfile additions
 
 For worker processes like [delayed_job](https://github.com/collectiveidea/delayed_job), [Resque](https://github.com/resque/resque) and [Sidekiq](https://github.com/mperham/sidekiq), you will need to configure those within your app following their docs. 
 
