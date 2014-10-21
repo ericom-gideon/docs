@@ -5,8 +5,6 @@ page_keywords:    deployment ninefold rails deploy started start begin heroku
 
 ## How to deploy an app 
 
-#### Overview
-
 Let us be the first to welcome you to Ninefold! You just found the easiest and best performing Rails hosting solution out here. Let's guide you through deployment (and throw Clippy out the window while we do it). 
 
 If you are interested in learning more about the magic that is actually happening check out [this article](../apps/what_happens_and_what_gets_built_on_a_rails_app_deployment.md).

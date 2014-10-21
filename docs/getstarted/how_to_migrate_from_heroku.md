@@ -5,8 +5,6 @@ page_keywords:    heroku migrate move ninefold setup guide aws rails_12factor
 
 ## How to migrate from Heroku To Ninefold
 
-#### Overview
-
 Welcome to Ninefold! We have a couple of tasks we need you to do in order to migrate to Ninefold successfully. They are easy --- we promise!
 
 #### Remove rails_12factor gem

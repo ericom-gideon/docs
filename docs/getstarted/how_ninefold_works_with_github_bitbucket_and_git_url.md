@@ -5,8 +5,6 @@ page_keywords:    repo Github Bitbucket git deployment redeployment repository g
 
 ## GitHub, Bitbucket and Git URL
 
-### Overview
-
 Ninefold will pull your code in from Github.com, Bitbucket.com, or from your private Git URL. You specify the repository in Step 1 of the deploy process.
 
 Another feature of Ninefold for Github and Bitbucket is the ability to enable _auto redeployments_.
