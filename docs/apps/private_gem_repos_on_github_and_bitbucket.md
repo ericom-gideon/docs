@@ -5,8 +5,6 @@ page_keywords:    github bitbucket gem repo private repository
 
 ## Private Gem repos 
 
-#### Overview
-
 If private gems is your thing, it’s all good.  You won’t have any issues deploying with us.
 
 #### GitHub

@@ -14,7 +14,7 @@ page_keywords: create, server, iso, upload
 
 5. Select the operating system. You can choose from our optimized templates or you can [upload your own ISO](#uploading-an-iso).
 
-######At a later date, if you plan to upgrade your template beyond the version origianlly provisioned (example: Ubuntu 12.04 to 14.04) please contact support prior to performing this action.
+At a later date, if you plan to upgrade your template beyond the version origianlly provisioned (example: Ubuntu 12.04 to 14.04) please contact support prior to performing this action.
 
 6. Select root disk storage
 	* Servers have a standard 80GB root disk. You cannot modify this.

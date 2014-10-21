@@ -9,7 +9,7 @@ page_keywords:    heroku migrate move ninefold setup guide aws rails_12factor
 
 Welcome to Ninefold! We have a couple of tasks we need you to do in order to migrate to Ninefold successfully. They are easy --- we promise!
 
-#### Remove rails_12factor 
+#### Remove rails_12factor gem
 
 Open your Gemfile and remove the rails_12factor gem and save.
 
@@ -21,7 +21,7 @@ Run:
 
 Commit changes and push to the repository of your choice.
 
-#### Why remove the rails_12factor Gem?
+##### Why remove the rails_12factor gem?
 
 We ask that this gem is removed because it installs 2 subsequent gems:
 

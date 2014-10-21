@@ -5,8 +5,6 @@ page_keywords:    server volume network load balancer global
 
 ## Setup global load balancing 
 
-### Overview
-
 Global Load Balancing solutions allow you to spread workloads across multiple zones. You can route traffic geographically and implement secure and scalable DNS to improve your business continuity and user experience.
 
 ### Pre-Setup

@@ -4,8 +4,6 @@ page_description: Knowledge base article to manage DNS for bare servers. page_ke
 
 ## DNS management 
 
-### Overview
-
 You can now use Ninefold to host your Domain Names. This enables you to leverage the full power of Multi-Zone Global Load Balancing, whilst maintaining the full use of your domain names for other services such as mail.
 
 ### Setup

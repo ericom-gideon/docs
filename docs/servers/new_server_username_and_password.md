@@ -5,8 +5,6 @@ page_keywords:    server password VPS virtual username windows centos fedora ubu
 
 ## New server username and password
 
-### Overview
-
 So you've successfully created a bare server and now you want to log into it so you can add all sorts of goodies to it. Question is: what is your username and password?
 
 _Note: The information below applies only to Ninefold provided templates._

@@ -5,11 +5,9 @@ page_keywords:    dns domain godaddy rails app namecheap url
 
 ## DNS management for Rails apps
 
-#### Overview
-
 Bought yourself a domain for your brandnew shiny Rails app or you're (hooray!) moving your app to the Ninefold promiseland? Excellent! Ninefold can manage your DNS once you follow the following steps. 
 
-#### #1 Ninefold name servers
+#### Ninefold name servers
 
 Depending on the domain registrar (e.g. GoDaddy, CrazyDomains and NetRegistry) you have purchased/manage your domain on, this can involve some changes and configuration to be conducted on their respective panels or by their support team.
 
@@ -23,7 +21,7 @@ Please consult with your domain registrar for information on how you can point y
 
 _WARNING: If your website or domain is currently in use, you should take care in not delegating the domain without properly and adequately setting up your DNS before hand. DNS changes can take up to 48hrs to propagate, so a mistake or poorly configured DNS records or settings can have some serious consequences._
 
-#### #2 Add your domain (A record)
+#### Add your domain (A record)
 
 Once you have deployed your app, you can easily add your domain. 
 

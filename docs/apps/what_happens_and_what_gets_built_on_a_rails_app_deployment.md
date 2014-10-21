@@ -5,7 +5,7 @@ page_keywords:    rails server deployment facts
 
 ## What happens on an app deployment
 
-##### Building infra
+##### Building infrastructure
 
 First up we build the infrastructure in the zones you specified. Your servers are virtual machines which sit on Ninefold’s hardware. These servers are much the same as the virtual machines you can spin up yourself, they’re just set up with a customized template. This template has been crafted specifically for deploying your Ruby on Rails app. We are keen to ensure your app shines and performs well.
 

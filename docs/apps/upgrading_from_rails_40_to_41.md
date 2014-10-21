@@ -4,7 +4,6 @@ page_keywords:    upgrade rails 4.0 4.1 secret_token secret_key_base
 
 ## Upgrading from Rails 4.0 to 4.1
 
-#### Overview
 That's fantastic that you've decided to go on the bleeding edge! :) Some important stuff was introduced in Rails 4.1 that 4.0 didn't have. Most notably (and importantly, for the purpose of this KB article) was the `config/secrets.yml` file for storing your secrets.  
 
 #### Secret_tokens and secret_key_bases
@@ -38,7 +37,7 @@ Then insert that new hash with your SECRET_KEY_BASE token in your Environment Va
 
     SECRET_KEY_BASE=1234asdf_your_new_hash
 
-#### Environment Variables
+#### Environment variables
 As we provide a section for environmental variables, we do not require your secrets to be stored in config/secrets.yml.  They can all be inserted as Environment Variables.  To access this, go to __Portal__ > __Your App__ > __Configuration__ (tab) and scroll to the bottom to _Environment Variables_.
 
 \* If you started afresh with Rails 4.1, by default the config/secrets.yml file is NOT in your `.gitignore` file.

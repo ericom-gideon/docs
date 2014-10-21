@@ -5,8 +5,6 @@ page_keywords:    server volume backups safety VPS snapshot
 
 ## Backups to protect your data
 
-#### Overview
-
 A backup is actually a point-in-time "snapshot" - where the state of a server is copied from primary storage to our secondary storage platform for safe keeping.
 
 This is useful to create exact copies of your servers prior to planned maintenance. When a snapshot is run, an exact copy of the selected server's disk volumes is saved at that point in time. This gives you a reference point that can be restored should the planned maintenance create any problems with your instance.

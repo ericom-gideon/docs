@@ -4,8 +4,6 @@ page_description: Knowledge base article to instruct users on they can set up st
 
 ## Static NAT & port forward 
 
-### Overview
-
 Under the Network tab you are able to manage any IP addresses that are currently in use. Ninefold currently provides two methods of associating a public IP address with your server.
 
 #### Choice 1: static NAT 

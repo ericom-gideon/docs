@@ -23,7 +23,7 @@ You’ll need to know which CI you’re using. ...We can’t help you there. :)
 
 But, this is your lucky day! Once you pick a CI to use, we give you a whopping two options to choose from to obtain a redeployment trigger when your CI succeeds!
 
-#### #1 CLI deployment command
+#### CLI deployment command
 
 You’ll also need the deploy command given by our awesome CLI.  (If you haven’t set it up, check out the directions [here](http://www.ninefold.com/docs/getstarted/how_to_install_and_utilize_the_cli).)  Make sure to put the Ninefold gem into the Gemfile and run bundle.
 
@@ -40,7 +40,7 @@ Note: You may have to add in "bundle exec" before ninefold:
 
 AUTH_TOKEN=(hash) APP_ID=(number) bundle exec ninefold app redeploy --robot --sure
 
-#### #2 Deployment URL
+#### Deployment URL
 
 Login into the Ninefold Portal and click on your existing app's Overview tab. Copy (or Reset) the Deployment URL. Enter the curl command ($ curl -X POST -d "" [Deployment URL]) into your CI when your tests pass.
 

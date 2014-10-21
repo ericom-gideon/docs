@@ -5,8 +5,6 @@ page_keywords:    server volume windows microsoft SPLA license
 
 ## Microsoft licensing 
 
-### Overview
-
 Ninefold provide licensing for Microsoft software via our “Service Provider License Agreement (SPLA) with Microsoft.
 
 You must use Ninefold’s supplied Microsoft licensing; it is not permissible to use Microsoft retail or OEM licenses on the Ninefold platform under Microsoft's current licensing model.

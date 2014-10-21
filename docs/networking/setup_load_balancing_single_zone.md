@@ -5,8 +5,6 @@ page_keywords:    server load balance network
 
 ## Setup load balancing 
 
-### Overview 
-
 Load balancing is a computer networking methodology to distribute workload across multiple computers or a computer cluster, network links, central processing units, disk drives, or other resources, to achieve optimal resource utilization, maximize throughput, minimize response time, and avoid overload. Using multiple components with load balancing, instead of a single component, may increase reliability through redundancy.
 
 ### Requirements

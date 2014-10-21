@@ -4,8 +4,6 @@ page_keywords: redeploy redeployment webhook cli
 
 ## Redeploying an app
 
-#### Overview
-
 Ninefold has four (count 'em...four!) ways to redeploy your Rails app.
 
 1. Auto redeployment from GitHub/Bitbucket repo

@@ -5,8 +5,6 @@ page_keywords:    rails database pg restore data export backup
 
 ## Backing up and restoring DB
 
-#### Overview
-
 It is generally good practice to make sure you're keeping backups of your database.  If you are running a large application with millions of users, it is imperative that you keep regular backups of your users' data. Ninefold provides an easy way to automate this process and since we don't currently charge for this feature, there's no reason not to enable it.
 
 If you are looking to move data from one app to another, please check out this awesome [KB article](../getstarted/exporting_and_importing_postgresql_data.md) instead. 

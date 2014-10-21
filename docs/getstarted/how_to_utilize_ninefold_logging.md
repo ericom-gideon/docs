@@ -5,8 +5,6 @@ page_keywords:    logging CLI log troubleshoot migration asset portal rails
 
 ## How to utilize Ninefold Rails logging
 
-#### Overview
-
 Ninefold is awfully proud of our logging system. If you want to learn how it works, check out this [blog post](https://ninefold.com/blog/2014/06/25/managing-logs-and-why-elasticsearch-is-amazing/). 
 
 When your app is initially deployed, redeployed and serves your visitors, we're constantly logging information for you via the Ninefold Portal and CLI. 
