@@ -36,6 +36,7 @@ pages:
 - ['apps/what_happens_and_what_gets_built_on_a_rails_app_deployment.md', 'App Deployment', 'What happens during deployment']
 - ['apps/ssl_management_for_rails_apps.md', 'App Deployment', 'SSL for Rails apps']
 - ['apps/dns_management_for_rails_apps.md', 'App Deployment', 'DNS management for Rails apps']
+- ['apps/setup_elasticsearch.md', 'App Deployment', 'Setup Elasticsearch']
 - ['apps/adding_sendgrid_to_your_rails_app.md', 'App Deployment', 'Adding SendGrid']
 - ['apps/creating_scheduled_tasks_in_rails.md', 'App Deployment', 'Creating scheduled tasks']
 - ['apps/backing_up_and_restoring_your_rails_db.md', 'App Deployment', 'Backing up and restoring your database']
