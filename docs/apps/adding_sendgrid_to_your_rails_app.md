@@ -1,7 +1,7 @@
-page_title: 			Adding SendGrid to your Rails app
-page_author:      Brittany Martin
+page_title: Adding SendGrid to your Rails app
+page_author: Brittany Martin
 page_description: Knowledge base article on how to create/add a Sendgrid account on Ninefold
-page_keywords: 		SendGrid email account add-on mail rails
+page_keywords: SendGrid email account add-on mail rails
 
 ## Adding SendGrid
 
@@ -21,7 +21,7 @@ If you end up going over SendGrid's free plan (currently 200 emails per day), yo
 
 __On initial deployment__
 
-On Step 4 of the app deployment process, you will see the option to add SendGrid underneath the __Add-ons__ section. Checking that box means that Ninefold will reach out to SendGrid to create a new account under your Ninefold email address. If successful, Ninefold will add your:
+On Step 3 of the app deployment process, you will see the option to add SendGrid underneath the __Add-ons__ section. Checking that box means that Ninefold will reach out to SendGrid to create a new account under your Ninefold email address. If successful, Ninefold will add your:
 
 	SENDGRID_USERNAME:
 	SENDGRID_PASSWORD:

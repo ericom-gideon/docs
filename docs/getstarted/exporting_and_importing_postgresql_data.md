@@ -1,7 +1,7 @@
-page_title:       Exporting And Importing PostgreSQL Data
-page_author:      Risa B. (converted by Britt)
+page_title: Exporting And Importing PostgreSQL Data
+page_author: Risa B. (converted by Britt)
 page_description: Knowledge base article to instruct users on how to they can move their Postgres data
-page_keywords:    rails database pg pgadmin dump restore import cli data export
+page_keywords: rails database pg pgadmin dump restore import cli data export
 
 ## Exporting and importing PostgreSQL data
 
@@ -65,7 +65,7 @@ _NOTE: If you’re exporting your database from an external hosting provider lik
 
 #### Importing
 
-Much like Exporting, there’s only one step. However the command to use will depend on the type of file created during the Export process.  If using an external hosting provider’s backup file, you will most likely need to use the command for Compressed files.  The commands and flags are very similar to pg_dump with some slight nuances.
+Much like exporting, there’s only one step. However the command to use will depend on the type of file created during the Export process.  If using an external hosting provider’s backup file, you will most likely need to use the command for Compressed files.  The commands and flags are very similar to pg_dump with some slight nuances.
 
 _WARNING: This will override your database! If unsure, backup your database before overriding it._
 

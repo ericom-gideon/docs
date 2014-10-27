@@ -1,7 +1,7 @@
-page_title:       Deployment With Continuous Integration (CI)
-page_author:      Risa B. (converted by Britt)
+page_title: Deployment With Continuous Integration (CI)
+page_author: Risa B. (converted by Britt)
 page_description: Knowledge base article to instruct users on how to implement CI in their Ninefold Rails app
-page_keywords:    CI continuous integration travis circleci magnumci jenkins testing
+page_keywords: CI continuous integration travis circleci magnumci jenkins testing
 
 ## Deployment with CI
 

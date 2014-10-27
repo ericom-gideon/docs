@@ -1,6 +1,6 @@
-page_title:       Upgrading from Rails 4.0 to 4.1
+page_title: Upgrading from Rails 4.0 to 4.1
 page_description: Knowledge base article to instruct users on what to change when upgrading from Rails 4.0 to 4.1
-page_keywords:    upgrade rails 4.0 4.1 secret_token secret_key_base
+page_keywords: upgrade rails 4.0 4.1 secret_token secret_key_base
 
 ## Upgrading from Rails 4.0 to 4.1
 

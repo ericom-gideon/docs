@@ -1,7 +1,7 @@
-page_title:       SSL for Rails apps
-page_author:      Brittany Martin
+page_title: SSL for Rails apps
+page_author: Brittany Martin
 page_description: Knowledge base article to instruct users on how can manage the SSL for their Rails app 
-page_keywords:    ssl certificate open rails app signed intermediate
+page_keywords: ssl certificate open rails app signed intermediate
 
 ## SSL for Rails apps 
 

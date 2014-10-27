@@ -104,9 +104,9 @@ Step 8: As we always suggest at Ninefold, give your Diaspora Pod a go by running
 
 Step 9: Commit your changes back up to your forked repo. Let’s deploy to Ninefold!
 
-Step 10: Follow the instructions on how to [deploy an app on Ninefold](http://www.ninefold.com/docs/apps/deploy). We recommend that you separate your DB on to a separate server so you can easily scale your pod. Remember that text file of your secret keys? Make sure to add those into your environmental variables in Step 4 (remember keep those safe vs. ever adding to your repo). 
+Step 10: Follow the instructions on how to [deploy an app on Ninefold](http://www.ninefold.com/docs/apps/deploy). We recommend that you separate your DB on to a separate server so you can easily scale your pod. Remember that text file of your secret keys? Make sure to add those into your environmental variables in Step 3 of deployment (remember keep those safe vs. ever adding to your repo). 
 
-Step 11: Also in Step 4, you will need to add a line in your “After Migrations’ window during deployment so Ninefold can read all of the wonderful configuration you made in your diaspora.yml.example. 
+Step 11: Also in Step 3, you will need to add a line in your “After Migrations’ window during deployment so Ninefold can read all of the wonderful configuration you made in your diaspora.yml.example. 
 
 	mv config/diaspora.yml.example config/diaspora.yml
 

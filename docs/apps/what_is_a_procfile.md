@@ -1,11 +1,9 @@
-page_title:       What is a Procfile
-page_author:      Brittany Martin
+page_title: What is a Procfile
+page_author: Brittany Martin
 page_description: Knowledge base article to instruct users on how to add a Procfile to their Rails app 
-page_keywords:    procfile worker foreman rails 
+page_keywords: procfile worker foreman rails 
 
 ## Procfile + Workers on Ninefold
-
-### Overview
 
 A Procfile is a textfile named Procfile placed in the root of your application, that lists the process types in an application. 
 

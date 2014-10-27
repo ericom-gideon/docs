@@ -17,9 +17,9 @@ _Redeployments occur across all servers in your application, including any datab
 
 When you commit a change to your repo (same branch as your Ninefold deployment) and you have the __Automatically redeploy my app when I push updates to my code__ checked off in the Overview tab of your app, that will trigger a redeploy on Ninefold. 
 
-#### Manual redeployment via the Ninefold dashboard 
+#### Manual redeployment via dashboard 
 
-It is also possible to manually redeploy your application by clicking on the redeploy button on any tab within your app on the Ninefold Portal. 
+It is also possible to manually redeploy your application by clicking on the redeploy button on any tab within your app on the dashboard. 
 
 _You may notice that there is a drop-down option to force redeploy. Think of this as a clean state.  Rather than running any new migrations and making changes to the existing code, this option will completely redeploy the code from Github, running any pre- or post-migration code you may have specified and re-running all of your migrations.  This option may take longer than a standard redeploy and it will cause an outage to your users for the duration of the deployment. The duration of a force deploy depends on the size of your app (in particular how many gems there are to install) but will be close to the time of your initial deployment._
 

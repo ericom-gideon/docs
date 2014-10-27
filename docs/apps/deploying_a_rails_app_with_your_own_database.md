@@ -24,7 +24,7 @@ Example for this article will be with MySQL:
 
 #### Database.yml configuration
 
-If you have a database.yml file, change it to database.yml.sample. In an effort to keep your passwords out of your repo (no fun if they get out there!), alter the file to the following format for the Rails environment being used on your Ninefold app.
+In an effort to keep your passwords out of your repo (no fun if they get out there!), alter the file to the following format for the Rails environment being used on your Ninefold app.
 
 For a ‘production’ environment:
 
@@ -40,20 +40,14 @@ Your file can include encoding, if you like.
 
 #### Deploying an app with BYOD
 
-In the deployment wizard, just uncheck the __I would like a database built for my app__ box in Step 3 of 4.
+In the deployment wizard, just select No to the question of __Want a new PostgreSQL database built?__.
 
 #### Environmental variables
 
-In Portal, we have the Environment variables section (under the Configuration tab) or in Step 4 of 4, we will ask for your variables. You will want to include the following configured line for your database:
+In the dashbaord, we have the environment variables section (under the configuration tab) or in step 3 of the deployment wizard, we will ask for your variables. You will want to include the following configured line for your database:
 
  	DATABASE_URL=mysql://username:password/location:port/your_db_name
 
 in the __Environment Variable__ window.
-
-#### Before migration triggers
-
-Also in Step 4 of 4, add a __before migrations trigger__ (under Additional deployment commands):
-
- 	mv config/database.yml.sample config/database.yml
 
 _Quiz: just kidding but we’re glad you read to the bottom!_

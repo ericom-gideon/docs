@@ -1,7 +1,7 @@
-page_title:       Elasticsearch setup for Rails Apps
-page_author:      Brittany Martin
+page_title: Elasticsearch setup for Rails Apps
+page_author: Brittany Martin
 page_description: Knowledge base article to instruct users on how they can implement elasticsearch with Ninefold bare servers for their Rails apps 
-page_keywords:    elasticsearch solr search docker servers rails 
+page_keywords: elasticsearch solr search docker servers rails 
 
 ## Setup Elasticsearch 
 

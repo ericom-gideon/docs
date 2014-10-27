@@ -1,7 +1,7 @@
-page_title:       How to Migrate from Heroku
-page_author:      Brittany Martin
+page_title: How to Migrate from Heroku
+page_author: Brittany Martin
 page_description: Knowledge base article to instruct users moving their app from Heroku on what changes will needed to be made.
-page_keywords:    heroku migrate move ninefold setup guide aws rails_12factor
+page_keywords: heroku migrate move ninefold setup guide aws rails_12factor
 
 ## How to migrate from Heroku To Ninefold
 

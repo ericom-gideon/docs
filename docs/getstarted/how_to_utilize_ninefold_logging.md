@@ -1,7 +1,7 @@
-page_title:       How to Utilize Ninefold Logging
-page_author:      Brittany Martin
+page_title: How to Utilize Ninefold Logging
+page_author: Brittany Martin
 page_description: Knowledge base article to instruct users on how they can use Ninefold logging to troubleshoot and watch usage
-page_keywords:    logging CLI log troubleshoot migration asset portal rails 
+page_keywords: logging CLI log troubleshoot migration asset portal rails 
 
 ## How to utilize Ninefold Rails logging
 

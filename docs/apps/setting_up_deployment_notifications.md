@@ -1,7 +1,7 @@
-page_title:       Setting Up Deployment Notifications
-page_author:      Risa B. (converted by Britt)
+page_title: Setting Up Deployment Notifications
+page_author: Risa B. (converted by Britt)
 page_description: Knowledge base article to instruct users on how to they can use the deployment web hook for notifications 
-page_keywords:    deployment notification slack hipchat campfire brutus cli 
+page_keywords: deployment notification slack hipchat campfire brutus cli 
 
 ## Deployment notifications
 

@@ -1,7 +1,7 @@
-page_title:       DNS Management for Rails Apps
-page_author:      Brittany Martin
+page_title: DNS Management for Rails Apps
+page_author: Brittany Martin
 page_description: Knowledge base article to instruct users on how can manage the DNS for their Rails app 
-page_keywords:    dns domain godaddy rails app namecheap url 
+page_keywords: dns domain godaddy rails app namecheap url 
 
 ## DNS management for Rails apps
 

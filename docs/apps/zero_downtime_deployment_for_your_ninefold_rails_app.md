@@ -1,7 +1,7 @@
-page_title:       Zero Downtime Deployment For Your Rails App
-page_author:      Brittany Martin
+page_title: Zero Downtime Deployment For Your Rails App
+page_author: Brittany Martin
 page_description: Knowledge base article to instruct users on how they can implement zero downtime deployment 
-page_keywords:    zero downtime deployment redeployment lab 
+page_keywords: zero downtime deployment redeployment lab 
 
 ## Zero downtime deployment
 

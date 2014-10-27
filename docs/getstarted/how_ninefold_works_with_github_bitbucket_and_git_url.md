@@ -1,7 +1,7 @@
-page_title:       How Ninefold works with Github, Bitbucket and Git URL
-page_author:      Brittany Martin
+page_title: How Ninefold works with Github, Bitbucket and Git URL
+page_author: Brittany Martin
 page_description: Knowledge base article to instruct users on how Ninefold interacts with Github, Bitbucket and Git URL
-page_keywords:    repo Github Bitbucket git deployment redeployment repository gitURL
+page_keywords: repo Github Bitbucket git deployment redeployment repository gitURL
 
 ## GitHub, Bitbucket and Git URL
 

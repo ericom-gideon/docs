@@ -1,7 +1,7 @@
-page_title:       Creating Scheduled Tasks in Rails
-page_author:      Risa B
+page_title: Creating Scheduled Tasks in Rails
+page_author: Risa B
 page_description: Knowledge base article to instruct users on how to create scheduled tasks in Rails on Ninefold
-page_keywords:    whenever gem cron crontab scheduled tasks scheduler
+page_keywords: whenever gem cron crontab scheduled tasks scheduler
 
 ## Creating scheduled tasks
 

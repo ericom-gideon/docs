@@ -1,7 +1,7 @@
-page_title:       Redis setup for Rails Apps
-page_author:      Brittany Martin
+page_title: Redis setup for Rails Apps
+page_author: Brittany Martin
 page_description: Knowledge base article to instruct users on how they can implement Ninefold's Redis instance for their Rails apps
-page_keywords:    redis rails worker background resque
+page_keywords: redis rails worker background resque
 
 ## Redis Setup 
 

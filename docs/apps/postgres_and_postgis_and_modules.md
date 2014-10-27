@@ -1,6 +1,6 @@
-page_title: 			Postgres, PostGIS, and Postgres Modules
+page_title: Postgres, PostGIS, and Postgres Modules
 page_description: Knowledge base article about Postgres and the installed modules
-page_keywords: 		postgres postgresql psql postgis schema modules database
+page_keywords: postgres postgresql psql postgis schema modules database
 
 ## PostgreSQL, PostGIS, and Postgres modules
 
@@ -14,8 +14,6 @@ If you aren't already using postgres, you don't need to change your local setup,
     end
 
 This will tell Rails that you want to use a postgres database in your production environment.  Don't worry, it won't affect your development environment.  Once you have this in your Gemfile, you can push the code to Github and redeploy your app.  We'll take it from there.
-
-On Ninefold, your app is deployed with Postgres 9.2 but Ninefold will be moving to 9.4 in the fall of 2014.
 
 If you're looking to use your own database (such as MySQL or a NoSQL database), it's totally possible. Check out [this doc](deploying_a_rails_app_with_your_own_database.md) on how to deploy with your own database.
 
