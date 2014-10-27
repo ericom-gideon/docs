@@ -217,6 +217,10 @@
                             <a href="../adding_sendgrid_to_your_rails_app/">Adding SendGrid</a>
                         </li>
                     
+                        <li >
+                            <a href="../redisforapps/">Redis Setup</a>
+                        </li>
+                    
                         <li class="active">
                             <a href="./">Creating scheduled tasks</a>
                         </li>
@@ -511,8 +515,8 @@ $ git push origin my_ninefold_deploy_branch
 <p>You can use defined environment variables in whenever gem constructed cron tasks. Simply add an env line for each of your environment vars in config/schedule.rb:</p>
 <pre class="prettyprint well"><code>### schedule.rb
 env :SAMPLE_VAR, ENV['SAMPLE_VAR']
-env :ANOTHER_SAMPLE_VAR, ENV[‘ANOTHER_SAMPLE_VAR’]
-env :MANUALLY_DEFINED_VAR, “This is a manually defined environment variable."
+env :ANOTHER_SAMPLE_VAR, ENV['ANOTHER_SAMPLE_VAR']
+env :MANUALLY_DEFINED_VAR, "This is a manually defined environment variable."
 every 15.minutes do
   command "echo \"I am running from cron! Environment variable value: ${SAMPLE_VAR}\""
 end
