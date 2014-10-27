@@ -529,7 +529,7 @@
 <p>You will then be prompted to enter the database password. This is on the Database tab. Click <strong>Show</strong> to view the password.</p>
 <p><em>NOTE: If you’re exporting your database from an external hosting provider like <a href="https://devcenter.heroku.com/articles/heroku-postgres-import-export">Heroku</a>, please check their documentation.</em></p>
 <h4 id="importing">Importing</h4>
-<p>Much like Exporting, there’s only one step. However the command to use will depend on the type of file created during the Export process.  If using an external hosting provider’s backup file, you will most likely need to use the command for Compressed files.  The commands and flags are very similar to pg_dump with some slight nuances.</p>
+<p>Much like exporting, there’s only one step. However the command to use will depend on the type of file created during the Export process.  If using an external hosting provider’s backup file, you will most likely need to use the command for Compressed files.  The commands and flags are very similar to pg_dump with some slight nuances.</p>
 <p><em>WARNING: This will override your database! If unsure, backup your database before overriding it.</em></p>
 <p><strong>Uncompressed:</strong></p>
 <pre class="prettyprint well"><code>$ psql -h IP_ADDRESS -p 5432 -U app -f your_file_name.sql

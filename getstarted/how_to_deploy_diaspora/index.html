@@ -550,8 +550,8 @@ test:
 If you see your pod on localhost, you are ready to deploy to Ninefold!
 </code></pre>
 <p>Step 9: Commit your changes back up to your forked repo. Let’s deploy to Ninefold!</p>
-<p>Step 10: Follow the instructions on how to <a href="http://www.ninefold.com/docs/apps/deploy">deploy an app on Ninefold</a>. We recommend that you separate your DB on to a separate server so you can easily scale your pod. Remember that text file of your secret keys? Make sure to add those into your environmental variables in Step 4 (remember keep those safe vs. ever adding to your repo). </p>
-<p>Step 11: Also in Step 4, you will need to add a line in your “After Migrations’ window during deployment so Ninefold can read all of the wonderful configuration you made in your diaspora.yml.example. </p>
+<p>Step 10: Follow the instructions on how to <a href="http://www.ninefold.com/docs/apps/deploy">deploy an app on Ninefold</a>. We recommend that you separate your DB on to a separate server so you can easily scale your pod. Remember that text file of your secret keys? Make sure to add those into your environmental variables in Step 3 of deployment (remember keep those safe vs. ever adding to your repo). </p>
+<p>Step 11: Also in Step 3, you will need to add a line in your “After Migrations’ window during deployment so Ninefold can read all of the wonderful configuration you made in your diaspora.yml.example. </p>
 <pre class="prettyprint well"><code>mv config/diaspora.yml.example config/diaspora.yml
 </code></pre>
 <p>Step 12: One tricky thing: your first deploy is going to fail. This is because you need to enable self signed SSL for your Diaspora pod. You do this by going into Ninefold app, click on the app, choosing Configuration, enable SSL and choose Use a self-signed certificate. Trigger a redeploy. </p>

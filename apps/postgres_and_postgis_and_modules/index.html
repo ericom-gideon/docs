@@ -483,7 +483,6 @@
 end
 </code></pre>
 <p>This will tell Rails that you want to use a postgres database in your production environment.  Don't worry, it won't affect your development environment.  Once you have this in your Gemfile, you can push the code to Github and redeploy your app.  We'll take it from there.</p>
-<p>On Ninefold, your app is deployed with Postgres 9.2 but Ninefold will be moving to 9.4 in the fall of 2014.</p>
 <p>If you're looking to use your own database (such as MySQL or a NoSQL database), it's totally possible. Check out <a href="../deploying_a_rails_app_with_your_own_database/">this doc</a> on how to deploy with your own database.</p>
 <h4 id="postgres-modules-and-postgis">Postgres modules and PostGIS</h4>
 <p>When you deploy a Rails application and we create an instance of PostgreSQL for you, we automatically provide PostGIS for you to use. There are also a number of contrib modules that are part of PostgreSQL that we have made available.</p>

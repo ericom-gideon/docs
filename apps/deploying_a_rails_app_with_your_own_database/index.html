@@ -465,8 +465,6 @@
         
             <li class="subsection"><a href="#environmental-variables">Environmental variables</a></li>
         
-            <li class="subsection"><a href="#before-migration-triggers">Before migration triggers</a></li>
-        
     
     </ul>
 </div></div>
@@ -493,7 +491,7 @@
 gem 'mysql2'
 </code></pre>
 <h4 id="databaseyml-configuration">Database.yml configuration</h4>
-<p>If you have a database.yml file, change it to database.yml.sample. In an effort to keep your passwords out of your repo (no fun if they get out there!), alter the file to the following format for the Rails environment being used on your Ninefold app.</p>
+<p>In an effort to keep your passwords out of your repo (no fun if they get out there!), alter the file to the following format for the Rails environment being used on your Ninefold app.</p>
 <p>For a ‘production’ environment:</p>
 <pre class="prettyprint well"><code>production:
 
@@ -505,16 +503,12 @@ gem 'mysql2'
 </code></pre>
 <p>Your file can include encoding, if you like.</p>
 <h4 id="deploying-an-app-with-byod">Deploying an app with BYOD</h4>
-<p>In the deployment wizard, just uncheck the <strong>I would like a database built for my app</strong> box in Step 3 of 4.</p>
+<p>In the deployment wizard, just select No to the question of <strong>Want a new PostgreSQL database built?</strong>.</p>
 <h4 id="environmental-variables">Environmental variables</h4>
-<p>In Portal, we have the Environment variables section (under the Configuration tab) or in Step 4 of 4, we will ask for your variables. You will want to include the following configured line for your database:</p>
+<p>In the dashbaord, we have the environment variables section (under the configuration tab) or in step 3 of the deployment wizard, we will ask for your variables. You will want to include the following configured line for your database:</p>
 <pre class="prettyprint well"><code>DATABASE_URL=mysql://username:password/location:port/your_db_name
 </code></pre>
 <p>in the <strong>Environment Variable</strong> window.</p>
-<h4 id="before-migration-triggers">Before migration triggers</h4>
-<p>Also in Step 4 of 4, add a <strong>before migrations trigger</strong> (under Additional deployment commands):</p>
-<pre class="prettyprint well"><code>mv config/database.yml.sample config/database.yml
-</code></pre>
 <p><em>Quiz: just kidding but we’re glad you read to the bottom!</em></p>
 
 
