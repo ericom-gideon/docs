@@ -51,8 +51,8 @@ You can use defined environment variables in whenever gem constructed cron tasks
 
     ### schedule.rb
     env :SAMPLE_VAR, ENV['SAMPLE_VAR']
-    env :ANOTHER_SAMPLE_VAR, ENV[‘ANOTHER_SAMPLE_VAR’]
-    env :MANUALLY_DEFINED_VAR, “This is a manually defined environment variable."
+    env :ANOTHER_SAMPLE_VAR, ENV['ANOTHER_SAMPLE_VAR']
+    env :MANUALLY_DEFINED_VAR, "This is a manually defined environment variable."
     every 15.minutes do
       command "echo \"I am running from cron! Environment variable value: ${SAMPLE_VAR}\""
     end
