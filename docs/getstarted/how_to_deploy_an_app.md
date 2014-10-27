@@ -36,6 +36,7 @@ Ninefold has 4 app infrastructure choices:
 * __Production__
 	*   Production setup (higher traffic, making $$, real data) 
 	*   Dedicated server for web, db and worker	
+
 * __Custom__
     * Perfect for [bringing your own database](http://help.ninefold.com/apps/deploying_a_rails_app_with_your_own_database/) or any custom setup desired	
 
