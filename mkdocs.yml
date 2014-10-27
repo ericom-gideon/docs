@@ -71,6 +71,7 @@ pages:
 - ['networking/setup_load_balancing_single_zone.md', 'Networking', 'Setup load balancing']
 - ['networking/setting_up_static_nat_and_port_forward_for_ip_addresses.md', 'Networking', 'Static NAT & port forward']
 - ['networking/how_to_open_firewall_ports.md', 'Networking', 'Open firewall ports']
+- ['networking/disable_server_os_firewall.md', 'Networking', 'Disable server OS firewall']
 - ['networking/how_to_setup_global_load_balancing_for_servers.md', 'Networking', 'Global load balancing']
 - ['networking/how_to_delegate_your_domain_to_ninefold.md', 'Networking', 'Delegate your domain']
 - ['networking/how_to_release_or_unassign_your_ip_addresses.md', 'Networking', 'How to release or unassign your IP addresses']
