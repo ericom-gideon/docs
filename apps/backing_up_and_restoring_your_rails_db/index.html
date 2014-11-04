@@ -10,7 +10,7 @@
         <link rel="canonical" href="http://help.ninefold.com/apps/backing_up_and_restoring_your_rails_db/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-        <title>Backing up and restoring your database - Ninefold</title>
+        <title>Backup and restore your database - Ninefold</title>
 
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
@@ -133,15 +133,15 @@
                     <ul class="dropdown-menu">
                     
                         <li >
-                            <a href="../../getstarted/how_to_deploy_an_app/">How to deploy an app</a>
+                            <a href="../../getstarted/how_to_deploy_an_app/">Deploy an app</a>
                         </li>
                     
                         <li >
-                            <a href="../../getstarted/how_to_install_and_utilize_the_cli/">How to utilize the CLI</a>
+                            <a href="../../getstarted/how_to_install_and_utilize_the_cli/">Utilize the CLI</a>
                         </li>
                     
                         <li >
-                            <a href="../../getstarted/how_to_migrate_from_heroku/">How to migrate from Heroku</a>
+                            <a href="../../getstarted/how_to_migrate_from_heroku/">Migrating from Heroku</a>
                         </li>
                     
                         <li >
@@ -149,7 +149,7 @@
                         </li>
                     
                         <li >
-                            <a href="../../getstarted/how_to_utilize_ninefold_logging/">How to utilize Ninefold Rails logging</a>
+                            <a href="../../getstarted/how_to_utilize_ninefold_logging/">Ninefold logging</a>
                         </li>
                     
                         <li >
@@ -226,7 +226,7 @@
                         </li>
                     
                         <li class="active">
-                            <a href="./">Backing up and restoring your database</a>
+                            <a href="./">Backup and restore your database</a>
                         </li>
                     
                         <li >
@@ -457,11 +457,17 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#backing-up-and-restoring-db">Backing up and restoring DB</a></li>
+        <li class="main active"><a href="#backup-and-restore">Backup and Restore</a></li>
         
-            <li class="subsection"><a href="#backing-up-your-database">Backing up your database</a></li>
+    
+        <li class="main "><a href="#backups">Backups</a></li>
         
-            <li class="subsection"><a href="#restoring-your-database">Restoring your database</a></li>
+            <li class="subsection"><a href="#manual">Manual</a></li>
+        
+            <li class="subsection"><a href="#scheduled">Scheduled</a></li>
+        
+    
+        <li class="main "><a href="#restore">Restore</a></li>
         
     
     </ul>
@@ -476,53 +482,48 @@
                 
                    
 
-<h2 id="backing-up-and-restoring-db">Backing up and restoring DB</h2>
-<p>It is generally good practice to make sure you're keeping backups of your database.  If you are running a large application with millions of users, it is imperative that you keep regular backups of your users' data. Ninefold provides an easy way to automate this process and since we don't currently charge for this feature, there's no reason not to enable it.</p>
-<p>If you are looking to move data from one app to another, please check out this awesome <a href="../../getstarted/exporting_and_importing_postgresql_data/">KB article</a> instead. </p>
-<h4 id="backing-up-your-database">Backing up your database</h4>
-<p>Here's how - Go to the <strong>Database</strong> tab on your app's page:</p>
-<p>Down near the bottom of the page you will find a section called <strong>Scheduled Backups</strong> with an Enable button on the right. </p>
-<p><strong>Manual backups</strong></p>
-<p>Simply click __Backup Now_ button to back up your database manually. This is ideal for if you plan to redeploy your app, re-scale, or perform any other maintenance operation. </p>
-<p><strong>Scheduling backups</strong></p>
+<h2 id="backup-and-restore">Backup and Restore</h2>
+<p>It is generally good practice to make sure you're keeping backups of your database.  If you are running a large application with millions of users, it is imperative that you keep regular backups of your users' data. Ninefold provides an easy way to automate this process, and since we don't currently charge for this feature, there's no reason not to enable it.</p>
+<p>If you are looking to move data from one app to another, please check out how to do this <a href="../../getstarted/exporting_and_importing_postgresql_data/">with the CLI</a> instead.</p>
+<h2 id="backups">Backups</h2>
+<p>Ninefold allows for a simple way to get backups created. Here's how.</p>
+<p>Go to your <strong>Dashboard</strong> &gt; <strong>App</strong> &gt; <strong>Database</strong> tab</p>
+<p>Here you will be presented with two options on how to backup your data: manually or scheduled.</p>
+<h4 id="manual">Manual</h4>
+<p>Simply click the <strong>Backup Now</strong> button to backup your database manually. This is ideal if you plan to redeploy your app, re-scale, or perform any other maintenance operation.</p>
+<h4 id="scheduled">Scheduled</h4>
 <p>Scheduling backups for your Rails app is now easier then ever through 3 automation methods being: hourly, daily, or the option of adding a Cron job.</p>
-<p>Click the ‘Enable’ button to reveal the automation options. </p>
+<p>Click the ‘Enable’ button to reveal the automation options.</p>
 <p>Choose your preferred automation method:</p>
 <ul>
 <li>Hour</li>
-<li>Daily </li>
+<li>Daily</li>
 <li>Week</li>
 </ul>
 <p>The first option allows scheduled backups in hourly increments (for example: every ‘21’ hours).</p>
 <p>The second option allows scheduled backups in specific times everyday (24 hour time) for example, 10:15(am) or 22:15(pm).</p>
-<p>The third option allows automation according to a cron configuration. </p>
+<p>The third option allows automation according to a cron configuration.</p>
 <p>For example:</p>
 <ul>
-<li>To run the job on every minute of every hour of every day of every month: * <em> * </em> *</li>
-<li>To run the job at 01:00 AM every day: * 1 * * *</li>
-<li>To run the job at 03:20 AM every day: 20 3 * * *</li>
-<li>To run the job at 03:18 AM, 03:19AM and 03:20AM every day: 18,19,20 3 * * *</li>
-<li>To run the job at 05:00 AM of every 4th of the month: * 5 4 * *</li>
-<li>To run the job at 05:00 AM of every 4th of July: * 5 4 7 *</li>
-<li>To run the job at 12:00 AM of every Sunday: * 0 * * 0</li>
+<li>To run the job on every minute of every hour of every day of every month: <code>* * * * *</code></li>
+<li>To run the job at 01:00 AM every day: <code>* 1 * * *</code></li>
+<li>To run the job at 03:20 AM every day: <code>20 3 * * *</code></li>
+<li>To run the job at 03:18 AM, 03:19AM and 03:20AM every day: <code>18,19,20 3 * * *</code></li>
+<li>To run the job at 05:00 AM of every 4th of the month: <code>* 5 4 * *</code></li>
+<li>To run the job at 05:00 AM of every 4th of July: <code>* 5 4 7 *</code></li>
+<li>To run the job at 12:00 AM of every Sunday: <code>* 0 * * 0</code></li>
 <li>To run the job at 22:00 on the first and second Sundays of each month: 0 22 * * sun#1,sun#2</li>
 </ul>
-<p>You can also select how many backups are kept before they are cycled over by new snapshots by simply changing the number in the ‘keep’ field for example, enter ‘7’ to retain 7 snapshots or even ‘1’ to retain only 1.</p>
-<p>Click the save button and confirm that you want to save your configuration, and your backups are now automated! </p>
-<h4 id="restoring-your-database">Restoring your database</h4>
+<p>You can also select how many backups are kept before they are cycled over by new snapshots by simply changing the number in the ‘keep’ field. For example, enter ‘7’ to retain 7 snapshots or even ‘1’ to retain only 1.</p>
+<p>Click the save button and confirm that you want to save your configuration, and your backups are now automated!</p>
+<h2 id="restore">Restore</h2>
 <p>Restoring an app’s database will override the current data in your app. Do this with caution!</p>
 <ol>
-<li>
-<p>Go to your app’s Dashboard and select the <strong>Database</strong> tab.</p>
-</li>
-<li>
-<p>On the <strong>Restore</strong> button on the backup you wish to restore from.</p>
-</li>
-<li>
-<p>Click <strong>Ok</strong> when the pop-up box appears. </p>
-</li>
+<li>Go to your Dashboard, then your App, and select the <strong>Database</strong> tab.</li>
+<li>Click on the <strong>Restore</strong> button on the backup you wish to restore from.</li>
+<li>Click <strong>Ok</strong> when the pop-up box appears.</li>
 </ol>
-<p>Once the restore is complete, a green box will appear indicating a successful database restore. </p>
+<p>Once the restore is complete, a green box will appear indicating a successful database restore.</p>
 <p>Your database has now been successfully restored from a backup!</p>
 
 
