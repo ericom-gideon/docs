@@ -52,9 +52,9 @@ Each CI environment sets it up slightly differently, but almost all will use the
 
 __Codeship__
 
-Deploying your newly minted code to Ninefold from Codeship is simply a matter of entering the deployment url found on your App's Overview tab into the script deployment field in Codeship.  [Check out the Codeship docs for more info](https://www.codeship.io/documentation/continuous-deployment/deployment-to-ninefold/)
+Deploying your newly minted code to Ninefold from Codeship is simply a matter of entering the deployment url found on your App's Overview tab into the script deployment field in Codeship.  [Check out the Codeship docs for more info](https://www.codeship.io/documentation/continuous-deployment/deployment-to-ninefold/).
 
-<!--This is possibly the easiest setup of all the CI's. First, deploy the app with the branch of your choice. Then go to Codeship and add a deployment command that will run after your tests are green. Super simple! [Check out this blog post](http://brianpattison.com/continuous-deployment-with-codeship-and-ninefold) on how someone set it up.-->
+[Here's another blog post](http://brianpattison.com/continuous-deployment-with-codeship-and-ninefold) on how someone set it up.
 
 __Travis CI__
 
