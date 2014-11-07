@@ -17,6 +17,8 @@ SSL is a great starting point for web security and can help assuage customers co
 
 There are two methods by which an SSL certificate may be obtained; self-signed, or signed by a CA – a trusted third party website. 
 
+_Note: When acquiring an SSL cert, look to select 'Apache + OpenSSL' as your cert type_ 
+
 _Note: self-signed certificates are the easiest method to get started with SSL, but they also don’t bear the same well-established trust relationships than do certificates signed by companies such as VeriSign or GeoTrust. Please note that self-signed certificates are best used only for development environments._
 
 #### Enabling SSL 
