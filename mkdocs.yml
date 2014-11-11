@@ -45,6 +45,7 @@ pages:
 - ['apps/postgres_and_postgis_and_modules.md', 'App Deployment', 'PostgreSQL, PostGIS, and PostgreSQL modules']
 - ['apps/how_to_utilize_a_cdn_with_ninefold.md', 'App Deployment', 'How to utilize a CDN']
 - ['apps/upgrading_from_rails_40_to_41.md', 'App Deployment', 'Upgrading from Rails 4.0 to 4.1']
+- ['apps/faq.md', 'App Deployment', 'FAQ']
 
 # Servers
 - ['servers/how_to_create_a_docker_server.md', 'Servers', 'Docker containers']
@@ -64,6 +65,7 @@ pages:
 - ['servers/how_to_connect_to_your_server_using_ssh_rdp.md', 'Servers', 'Connect using SSH / RDP']
 - ['servers/how_to_activate_windows_server.md', 'Servers', 'Activate Windows Server']
 - ['servers/microsoft_licensing_can_i_use_my_existing_software_and_licenses_on_ninefold.md', 'Servers', 'Microsoft licensing']
+- ['servers/faq.md', 'Servers', 'FAQ']
 
 # Networking
 - ['networking/ninefold_net.md', 'Networking', 'Enable Ninefold Net']
