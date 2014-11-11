@@ -256,6 +256,10 @@
                             <a href="../../apps/upgrading_from_rails_40_to_41/">Upgrading from Rails 4.0 to 4.1</a>
                         </li>
                     
+                        <li >
+                            <a href="../../apps/faq/">FAQ</a>
+                        </li>
+                    
                     </ul>
                 </li>
             
@@ -331,6 +335,10 @@
                     
                         <li >
                             <a href="../../servers/microsoft_licensing_can_i_use_my_existing_software_and_licenses_on_ninefold/">Microsoft licensing</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/faq/">FAQ</a>
                         </li>
                     
                     </ul>
@@ -490,21 +498,21 @@
                    
 
 <h2 id="how-to-utilize-ninefold-rails-logging">How to utilize Ninefold Rails logging</h2>
-<p>Ninefold is awfully proud of our logging system. If you want to learn how it works, check out this <a href="https://ninefold.com/blog/2014/06/25/managing-logs-and-why-elasticsearch-is-amazing/">blog post</a>. </p>
-<p>When your app is initially deployed, redeployed and serves your visitors, we're constantly logging information for you via the Ninefold Portal and CLI. </p>
-<p><em>It's Log, Log, it's big, it's heavy, it's wood.</em></p>
-<p><em>It's Log, Log, it's better than bad, it's good!</em></p>
-<p><em>Everyone wants a log! You're gonna love it, Log!</em></p>
-<p><em>Come on and get your log! Everyone needs a Log!</em></p>
-<p>This <a href="https://www.youtube.com/watch?v=2C7mNr5WMjA">song</a> will be stuck in your head as you read on about Ninefold's Rails logging. </p>
+<p>Ninefold is awfully proud of our logging system. If you want to learn how it works, check out this <a href="https://ninefold.com/blog/2014/06/25/managing-logs-and-why-elasticsearch-is-amazing/">blog post</a>.</p>
+<p>When your app is initially deployed, redeployed and serves your visitors, we're constantly logging information for you via the Ninefold Portal and CLI.</p>
+<p><em>It's Log, Log, it's big, it's heavy, it's wood.</em><br />
+<em>It's Log, Log, it's better than bad, it's good!</em><br />
+<em>Everyone wants a log! You're gonna love it, Log!</em><br />
+<em>Come on and get your log! Everyone needs a Log!</em></p>
+<p>This <a href="https://www.youtube.com/watch?v=2C7mNr5WMjA">song</a> will be stuck in your head as you read on about Ninefold's Rails logging.</p>
 <h4 id="portal">Portal</h4>
-<p>You can view your most recent logs by clicking on your <strong>Dashboard</strong> &gt; <strong>Your App</strong> &gt; <strong>Logs</strong> tab. </p>
+<p>You can view your most recent logs by clicking on your <strong>Dashboard</strong> &gt; <strong>Your App</strong> &gt; <strong>Logs</strong> tab.</p>
 <p><strong>Sources</strong></p>
-<p>The sources drop-down will reveal the different types of logs to review. </p>
+<p>The sources drop-down will reveal the different types of logs to review.</p>
 <p><img alt="Source Logging" src="../../img/sourcelog.png" /></p>
-<p>Logging will default to show <strong>All</strong> sources (except Cheflog). The most popular ones for troubleshooting are: </p>
+<p>Logging will default to show <strong>All</strong> sources (except Cheflog). The most popular ones for troubleshooting are:</p>
 <ul>
-<li><em>Apache</em> - to check if the app serves a 500 error </li>
+<li><em>Apache</em> - to check if the app serves a 500 error</li>
 <li><em>Asset</em> - to view asset precompilation</li>
 <li><em>Bundler</em> - to view bundle install  </li>
 <li><em>Cheflog</em> - to track the app deployment overall</li>
@@ -513,14 +521,14 @@
 <li><em>Worker</em> - to verify background worker tasks are running (ex. delayed_job, Resque, Sidekiq)  </li>
 </ul>
 <p><strong>Deployments</strong></p>
-<p>Also in the <strong>Sources</strong> drop-down, you'll see the five most recent deployments within the past two - three days. To narrow the logs to a specific deployment, make sure to select that deployment only. </p>
+<p>Also in the <strong>Sources</strong> drop-down, you'll see the five most recent deployments within the past two - three days. To narrow the logs to a specific deployment, make sure to select that deployment only.</p>
 <p><strong>Hosts</strong></p>
-<p>The Hosts (aka the servers) drop-down will reveal all of the servers that your app is deployed on. This will default to <strong>All</strong> but selecting individual servers is helpful when troubleshooting a trouble host. </p>
+<p>The Hosts (aka the servers) drop-down will reveal all of the servers that your app is deployed on. This will default to <strong>All</strong> but selecting individual servers is helpful when troubleshooting a trouble host.</p>
 <p><img alt="Host" src="../../img/host.png" /></p>
-<p><strong>Search</strong> </p>
-<p>Ninefold logging is powered with Elasticsearch. Plug in your search term and press return to search the currently selected logs. </p>
+<p><strong>Search</strong></p>
+<p>Ninefold logging is powered with Elasticsearch. Plug in your search term and press return to search the currently selected logs.</p>
 <p><strong>Deployment &amp; Redeployment</strong></p>
-<p>During deployment and redeployment, the app dashboard will change to have only two tabs: <strong>Deployment</strong> and <strong>Logs</strong>. </p>
+<p>During deployment and redeployment, the app dashboard will change to have only two tabs: <strong>Deployment</strong> and <strong>Logs</strong>.</p>
 <p><img alt="Deploy Log" src="../../img/deploylog.png" /></p>
 <p>Navigate to the <strong>Logs</strong> tab to watch the deployment run. Your deployment is complete when you see something similar to the following on each server when you select <strong>Cheflog</strong>:</p>
 <pre class="prettyprint well"><code>client.log  INFO: Chef Run complete in 96.997723217 seconds
@@ -528,41 +536,41 @@ client.log  INFO: Running report handlers
 client.log  INFO: Report handlers complete
 </code></pre>
 <h4 id="cli">CLI</h4>
-<p>Have you installed the CLI yet? If not, Brutus the Yak is waiting for you to read over this <a href="http://help.ninefold.com/getstarted/how_to_install_and_utilize_the_cli/">guide</a>. There is a special section dedicated to logging. </p>
+<p>Have you installed the CLI yet? If not, Brutus the Yak is waiting for you to read over this <a href="http://help.ninefold.com/getstarted/how_to_install_and_utilize_the_cli/">guide</a>. There is a special section dedicated to logging.</p>
 <h4 id="common-deployment-mistakes">Common Deployment Mistakes</h4>
 <p>Ninefold Rails Support Engineers are the masters of finding deployment errors. Here are some that are easy to spot in the logs (either Portal or the CLI):</p>
 <p><strong>Rails logs not showing</strong></p>
-<p>Check to see if you have the rails_12factor gem. If yes, please remove it, bundle locally and then redeploy. </p>
+<p>Check to see if you have the rails_12factor gem. If yes, please remove it, bundle locally and then redeploy.</p>
 <p>We ask that this gem is removed because it installs 2 subsequent gems:</p>
 <p>rails_stdouting which sends logs to STDOUT</p>
 <p>rails_serve_static_assets which sets config.serve_static_assets = true</p>
-<p>Neither of these gems are necessary with Ninefold. We handle your logging merrily for you. </p>
+<p>Neither of these gems are necessary with Ninefold. We handle your logging merrily for you.</p>
 <p><strong>Migrations, Assets and Bundler</strong></p>
-<p>Customers will see the following failed deployment error from Cheflog: </p>
+<p>Customers will see the following failed deployment error from Cheflog:</p>
 <pre class="prettyprint well"><code>FATAL: Ninefold::Handler::Communicator Your app deployment on app-domain-spam-checker-master-fce0 failed for the following reason:
 ==&gt; Chef::Exceptions::Exec: deploy_revision[domain-spam-checker] (/var/chef/cache/cookbooks/application/providers/default.rb line 122) had an error: Chef::Exceptions::Exec: bash -o pipefail -c '(RAILS_ENV=production /usr/local/bin/bundle exec rake db:migrate --trace) 2&gt;&amp;1 | ts '[%FT%T%z]' | tee -a /var/www/apps/domain-spam-checker/shared/log/migration.log' ## &amp;&amp; rake db:migrate returned 1, expected 0 &lt;==
 </code></pre>
 <p>'rake db:migrate returned 1, expected 0' means that you need to click on <strong>Sources</strong> and select the <strong>Migration</strong> log. Scroll through these logs and look for the <code>rake aborted!</code> error. A similar error will occur with <strong>Asset</strong> and <strong>Bundler</strong>.</p>
 <p><strong>Gemfile.lock</strong></p>
-<p>If you change your Gemfile and forget to bundle locally, logging will display this error: </p>
-<pre class="prettyprint well"><code>client.log  ERROR: deploy_revision[10420] (/var/chef/cache/cookbooks/application/providers/default.rb line 122) had an error: Mixlib::ShellOut::ShellCommandFailed: ninefold_app_shellout[run bundle command] (/var/chef/cache/cookbooks/ninefold_app/definitions/ninefold_app_bundle_install.rb line 138) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0], but received '16' 
----- Begin output of bash -o pipefail -c 'RAILS_ENV=production /usr/local/bin/bundle install --path=vendor/bundle --deployment --without development test cucumber staging --jobs 4 --retry 0 2&gt;&amp;1 | ts "[%FT%T%z]"' ---- 
-STDOUT: [2014-09-29T16:19:17+0000] Don't run Bundler as root. Bundler can ask for sudo if it is needed, and 
-client.log  installing your bundle as root will break this application for all non-root 
-client.log  users on this machine. 
-client.log  You are trying to install in deployment mode    after changing 
-client.log  your Gemfile. Run `bundle install` elsewhere and add the 
+<p>If you change your Gemfile and forget to bundle locally, logging will display this error:</p>
+<pre class="prettyprint well"><code>client.log  ERROR: deploy_revision[10420] (/var/chef/cache/cookbooks/application/providers/default.rb line 122) had an error: Mixlib::ShellOut::ShellCommandFailed: ninefold_app_shellout[run bundle command] (/var/chef/cache/cookbooks/ninefold_app/definitions/ninefold_app_bundle_install.rb line 138) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0], but received '16'
+---- Begin output of bash -o pipefail -c 'RAILS_ENV=production /usr/local/bin/bundle install --path=vendor/bundle --deployment --without development test cucumber staging --jobs 4 --retry 0 2&gt;&amp;1 | ts "[%FT%T%z]"' ----
+STDOUT: [2014-09-29T16:19:17+0000] Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+client.log  installing your bundle as root will break this application for all non-root
+client.log  users on this machine.
+client.log  You are trying to install in deployment mode    after changing
+client.log  your Gemfile. Run `bundle install` elsewhere and add the
 client.log  updated Gemfile.lock to version control.
 </code></pre>
-<p>Bundle locally, recommit and redeploy the app. </p>
+<p>Bundle locally, recommit and redeploy the app.</p>
 <p><strong>Postgres &amp; bringing your own database</strong></p>
-<p>Another easy error to spot is database issues. </p>
-<pre class="prettyprint well"><code>migration.log /var/www/apps/odotracker/releases/2f51979991b0dde203cce663a4fe1fcc2ce771a1/vendor/bundle/ruby/2.1.0/bin/rake:23:in `&lt;main&gt;' 
+<p>Another easy error to spot is database issues.</p>
+<pre class="prettyprint well"><code>migration.log /var/www/apps/odotracker/releases/2f51979991b0dde203cce663a4fe1fcc2ce771a1/vendor/bundle/ruby/2.1.0/bin/rake:23:in `&lt;main&gt;'
 migration.log   Gem::LoadError: pg is not part of the bundle. Add it to Gemfile.
 </code></pre>
-<p>If your app utilizes Ninefold's database servers, the PG gem will need to be added to the Gemfile, bundled locally, committed and redeployed. </p>
-<p>Sometimes customers have the intention of bringing their own database (MySQL, MongoDB) and have made a mistake on the implementation so the PG gem error will occur. </p>
-<p>We recommend destroying the app and starting over again following this <a href="http://help.ninefold.com/apps/deploying_a_rails_app_with_your_own_database/">guide</a>. </p>
+<p>If your app utilizes Ninefold's database servers, the PG gem will need to be added to the Gemfile, bundled locally, committed and redeployed.</p>
+<p>Sometimes customers have the intention of bringing their own database (MySQL, MongoDB) and have made a mistake on the implementation so the PG gem error will occur.</p>
+<p>We recommend destroying the app and starting over again following this <a href="http://help.ninefold.com/apps/deploying_a_rails_app_with_your_own_database/">guide</a>.</p>
 
 
 </br></br></br></br>

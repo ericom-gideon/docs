@@ -256,6 +256,10 @@
                             <a href="../upgrading_from_rails_40_to_41/">Upgrading from Rails 4.0 to 4.1</a>
                         </li>
                     
+                        <li >
+                            <a href="../faq/">FAQ</a>
+                        </li>
+                    
                     </ul>
                 </li>
             
@@ -331,6 +335,10 @@
                     
                         <li >
                             <a href="../../servers/microsoft_licensing_can_i_use_my_existing_software_and_licenses_on_ninefold/">Microsoft licensing</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/faq/">FAQ</a>
                         </li>
                     
                     </ul>
@@ -492,7 +500,7 @@
                    
 
 <h2 id="dns-management-for-rails-apps">DNS management for Rails apps</h2>
-<p>Bought yourself a domain for your brandnew shiny Rails app or you're (hooray!) moving your app to the Ninefold promiseland? Excellent! Ninefold can manage your DNS once you follow the following steps. </p>
+<p>Bought yourself a domain for your brand new shiny Rails app or you're (hooray!) moving your app to the Ninefold promiseland? Excellent! Ninefold can manage your DNS once you follow the following steps. </p>
 <h4 id="ninefold-name-servers">Ninefold name servers</h4>
 <p>Depending on the domain registrar (e.g. GoDaddy, CrazyDomains and NetRegistry) you have purchased/manage your domain on, this can involve some changes and configuration to be conducted on their respective panels or by their support team.</p>
 <p>Your domain should be pointing to the following Ninefold Name Servers:</p>
@@ -504,26 +512,26 @@
 <p>Please consult with your domain registrar for information on how you can point your domain to Ninefold's Name Servers.</p>
 <p><em>WARNING: If your website or domain is currently in use, you should take care in not delegating the domain without properly and adequately setting up your DNS before hand. DNS changes can take up to 48hrs to propagate, so a mistake or poorly configured DNS records or settings can have some serious consequences.</em></p>
 <h4 id="add-your-domain-a-record">Add your domain (A record)</h4>
-<p>Once you have deployed your app, you can easily add your domain. </p>
+<p>Once you have deployed your app, you can easily add your domain.</p>
 <ul>
-<li>Sign into the Ninefold Portal </li>
-<li>Click on the <strong>Overview</strong> tab </li>
-<li>Click the <strong>Add</strong> button next to <strong>Domain</strong> </li>
+<li>Sign into the Ninefold Portal</li>
+<li>Click on the <strong>Overview</strong> tab</li>
+<li>Click the <strong>Add</strong> button next to <strong>Domain</strong></li>
 <li>Enter your domain and save</li>
 </ul>
-<p>Technically, it can take up to 48 hours for your domain to propagate but normally it is much faster. Go Speed Go! </p>
+<p>Technically, it can take up to 48 hours for your domain to propagate but normally it is much faster. Go Speed Go!</p>
 <h4 id="optional-cname-and-mx-records">Optional: CNAME and MX records</h4>
-<p>If you need to manage subdomains or mail exchange, you'll need to add CNAME and MX records to your app. The information to complete these will come from your domain registrar. </p>
+<p>If you need to manage subdomains or mail exchange, you'll need to add CNAME and MX records to your app. The information to complete these will come from your domain registrar.</p>
 <p>Navigate to <strong>Servers</strong> &gt; <strong>Network</strong> &gt; <strong>DNS</strong> in Ninefold. Click <strong>Edit</strong> next to your existing record (created from the <strong>Overview</strong> tab above) and then <strong>Add Record</strong>.</p>
-<p><em>CNAME</em> </p>
-<p>You can add as many CNAMEs as you want. </p>
+<p><em>CNAME</em></p>
+<p>You can add as many CNAMEs as you want.</p>
 <p><strong>Name:</strong> (subdomain URL like 'pop', 'imap' or 'smtpout')</p>
 <p><strong>Type:</strong> CNAME record</p>
 <p><strong>Content:</strong> (The full URL with the subdomain included)</p>
 <p><strong>TTL:</strong> (you can accept the default)</p>
 <p><strong>Priority:</strong> (your choice)</p>
-<p><em>MX</em> </p>
-<p>You will only need to add one record. </p>
+<p><em>MX</em></p>
+<p>You will only need to add one record.</p>
 <p><strong>Name:</strong> (can be blank or something like mail.iamawesome.com)</p>
 <p><strong>Type:</strong> MX record</p>
 <p><strong>Content:</strong> (mail server URL from your registrar)</p>
@@ -532,8 +540,8 @@
 <hr />
 <p><em>WARNING: Do not add additional A records for the domain here if the domain has already been added to the <strong>Overview</strong> tab. The two A records will conflict with each other so the domain will stop resolving correctly.</em></p>
 <h4 id="troubleshooting">Troubleshooting</h4>
-<p>When your DNS is pointed to our name servers and add it the <strong>Overview</strong> tab, your domain will point to the load balancer of your app. Don't know your load balancer IP? That can be found under Your App &gt; <strong>Infrastructure</strong> &gt; <strong>Edit</strong> &gt; <strong>Load Balancer IP</strong>. </p>
-<p>If your domain isn't pointing to your app, enter in the magic of <a href="https://www.whatsmydns.net/">What's My DNS</a>. What's My DNS is a great tool to see where the domain is currently pointed at. (hint: you want it pointed to your load balancer IP). If it is not, backtrack and make sure you followed all of the setup steps and contact the domain registrar. </p>
+<p>When your DNS is pointed to our name servers and add it the <strong>Overview</strong> tab, your domain will point to the load balancer of your app. Don't know your load balancer IP? That can be found under Your App &gt; <strong>Infrastructure</strong> &gt; <strong>Edit</strong> &gt; <strong>Load Balancer IP</strong>.</p>
+<p>If your domain isn't pointing to your app, enter in the magic of <a href="https://www.whatsmydns.net/">What's My DNS</a>. What's My DNS is a great tool to see where the domain is currently pointed at. (hint: you want it pointed to your load balancer IP). If it is not, backtrack and make sure you followed all of the setup steps and contact the domain registrar.</p>
 
 
 </br></br></br></br>

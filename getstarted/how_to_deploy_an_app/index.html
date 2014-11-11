@@ -256,6 +256,10 @@
                             <a href="../../apps/upgrading_from_rails_40_to_41/">Upgrading from Rails 4.0 to 4.1</a>
                         </li>
                     
+                        <li >
+                            <a href="../../apps/faq/">FAQ</a>
+                        </li>
+                    
                     </ul>
                 </li>
             
@@ -331,6 +335,10 @@
                     
                         <li >
                             <a href="../../servers/microsoft_licensing_can_i_use_my_existing_software_and_licenses_on_ninefold/">Microsoft licensing</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/faq/">FAQ</a>
                         </li>
                     
                     </ul>
@@ -492,19 +500,19 @@
                    
 
 <h2 id="how-to-deploy-an-app">How to deploy an app</h2>
-<p>Let us be the first to welcome you to Ninefold! You just found the easiest and best performing Rails hosting solution out here. Let's guide you through deployment (and throw Clippy out the window while we do it). </p>
+<p>Let us be the first to welcome you to Ninefold! You just found the easiest and best performing Rails hosting solution out here. Let's guide you through deployment (and throw Clippy out the window while we do it).</p>
 <p>If you are interested in learning more about the magic that is actually happening check out <a href="../../apps/what_happens_and_what_gets_built_on_a_rails_app_deployment/">this article</a>.</p>
-<h5 id="1-source">1 Source</h5>
-<p>Time to select an organization, repository, and branch/release. </p>
+<h4 id="1-source">1 Source</h4>
+<p>Time to select an organization, repository, and branch/release.</p>
 <p>Ninefold will pull your code in from GitHub, Bitbucket, or from your private Git URL. During this step, we run some validations checking: if the repository is a valid Rails repo, if you’re deploying with Postgres, or if you have the rails_12factor gem (which may adversely affect the logging for your app).</p>
 <p>For using a generic Git URL, supply the URL address and choose the branch you want to deploy. If it’s a private repo, you will need to copy the ssh key and add it to your repo. If it’s public, there isn’t a need for the SSH key. More info about repos can be found <a href="../how_ninefold_works_with_github_bitbucket_and_git_url/">here</a>.</p>
-<p>Do you want us to automatically redeploy your app when you push updates to your branch from Github or Bitbucket? Keep this at the default <strong>Yes</strong>. </p>
-<h5 id="2-configure">2 Configure</h5>
-<p>Here is where you will choose your app infrastructure and region. </p>
-<p>Ninefold has 4 app infrastructure choices: </p>
+<p>Do you want us to automatically redeploy your app when you push updates to your branch from Github or Bitbucket? Keep this at the default <strong>Yes</strong>.</p>
+<h4 id="2-configure">2 Configure</h4>
+<p>Here is where you will choose your app infrastructure and region.</p>
+<p>Ninefold has 4 app infrastructure choices:</p>
 <ul>
 <li>
-<p><strong>Development</strong> </p>
+<p><strong>Development</strong></p>
 <ul>
 <li>Development setup (low traffic, seed data)</li>
 <li>Combo box where the web, db and worker share an instance</li>
@@ -520,24 +528,24 @@
 <li>
 <p><strong>Production</strong></p>
 <ul>
-<li>Production setup (higher traffic, making $$, real data) </li>
-<li>Dedicated server for web, db and worker </li>
+<li>Production setup (higher traffic, making $$, real data)</li>
+<li>Dedicated server for web, db and worker</li>
 </ul>
 </li>
 <li>
 <p><strong>Custom</strong></p>
 <ul>
-<li>Perfect for <a href="http://help.ninefold.com/apps/deploying_a_rails_app_with_your_own_database/">bringing your own database</a> or any custom setup desired </li>
+<li>Perfect for <a href="http://help.ninefold.com/apps/deploying_a_rails_app_with_your_own_database/">bringing your own database</a> or any custom setup desired</li>
 </ul>
 </li>
 </ul>
-<p>We will initally set <strong>RAILS_ENV=production</strong> regardless of what setup is chosen. This setting can be changed in the next step. </p>
-<p>If a worker is chosen (dedicated or not), we will automatically install Redis. </p>
-<h5 id="3-details">3 Details</h5>
+<p>We will initally set <strong>RAILS_ENV=production</strong> regardless of what setup is chosen. This setting can be changed in the next step.</p>
+<p>If a worker is chosen (dedicated or not), we will automatically install Redis.</p>
+<h4 id="3-details">3 Details</h4>
 <p>Time to name your application, choose a Ruby version (if needed), and add any environment variables. Check off any free add-ons to be included in your app. Last but not least, add any before and after migration triggers. Utilize these trigger points to provide bash scripts if required.</p>
-<h5 id="deploy">Deploy!</h5>
-<p>Now Ninefold is going to build your infrastructure, deploy the app and verify the deployment. Once the app enters into deployment, a <strong>Deployment log</strong> will appear so you can watch the wonder that is Ninefold. </p>
-<p>While the app is deploying, Brutus the yak recommends installing the <a href="../how_to_install_and_utilize_the_cli/">Ninefold CLI</a> on your local machine. </p>
+<h4 id="deploy">Deploy!</h4>
+<p>Now Ninefold is going to build your infrastructure, deploy the app and verify the deployment. Once the app enters into deployment, a <strong>Deployment log</strong> will appear so you can watch the wonder that is Ninefold.</p>
+<p>While the app is deploying, Brutus the yak recommends installing the <a href="../how_to_install_and_utilize_the_cli/">Ninefold CLI</a> on your local machine.</p>
 
 
 </br></br></br></br>
