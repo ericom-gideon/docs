@@ -1,11 +1,11 @@
 page_title: DNS Management for Rails Apps
 page_author: Brittany Martin
-page_description: Knowledge base article to instruct users on how can manage the DNS for their Rails app 
-page_keywords: dns domain godaddy rails app namecheap url 
+page_description: Knowledge base article to instruct users on how can manage the DNS for their Rails app
+page_keywords: dns domain godaddy rails app namecheap url
 
 ## DNS management for Rails apps
 
-Bought yourself a domain for your brandnew shiny Rails app or you're (hooray!) moving your app to the Ninefold promiseland? Excellent! Ninefold can manage your DNS once you follow the following steps. 
+Bought yourself a domain for your brand new shiny Rails app or you're (hooray!) moving your app to the Ninefold promiseland? Excellent! Ninefold can manage your DNS once you follow the following steps. 
 
 #### Ninefold name servers
 
@@ -23,24 +23,24 @@ _WARNING: If your website or domain is currently in use, you should take care in
 
 #### Add your domain (A record)
 
-Once you have deployed your app, you can easily add your domain. 
+Once you have deployed your app, you can easily add your domain.
 
-* Sign into the Ninefold Portal 
-* Click on the __Overview__ tab 
-* Click the __Add__ button next to __Domain__ 
+* Sign into the Ninefold Portal
+* Click on the __Overview__ tab
+* Click the __Add__ button next to __Domain__
 * Enter your domain and save
 
-Technically, it can take up to 48 hours for your domain to propagate but normally it is much faster. Go Speed Go! 
+Technically, it can take up to 48 hours for your domain to propagate but normally it is much faster. Go Speed Go!
 
 #### Optional: CNAME and MX records
 
-If you need to manage subdomains or mail exchange, you'll need to add CNAME and MX records to your app. The information to complete these will come from your domain registrar. 
+If you need to manage subdomains or mail exchange, you'll need to add CNAME and MX records to your app. The information to complete these will come from your domain registrar.
 
 Navigate to __Servers__ > __Network__ > __DNS__ in Ninefold. Click __Edit__ next to your existing record (created from the __Overview__ tab above) and then __Add Record__.
 
-_CNAME_ 
+_CNAME_
 
-You can add as many CNAMEs as you want. 
+You can add as many CNAMEs as you want.
 
 __Name:__ (subdomain URL like 'pop', 'imap' or 'smtpout')
 
@@ -52,9 +52,9 @@ __TTL:__ (you can accept the default)
 
 __Priority:__ (your choice)
 
-_MX_ 
+_MX_
 
-You will only need to add one record. 
+You will only need to add one record.
 
 __Name:__ (can be blank or something like mail.iamawesome.com)
 
@@ -72,6 +72,6 @@ _WARNING: Do not add additional A records for the domain here if the domain has 
 
 #### Troubleshooting
 
-When your DNS is pointed to our name servers and add it the __Overview__ tab, your domain will point to the load balancer of your app. Don't know your load balancer IP? That can be found under Your App > __Infrastructure__ > __Edit__ > __Load Balancer IP__. 
+When your DNS is pointed to our name servers and add it the __Overview__ tab, your domain will point to the load balancer of your app. Don't know your load balancer IP? That can be found under Your App > __Infrastructure__ > __Edit__ > __Load Balancer IP__.
 
-If your domain isn't pointing to your app, enter in the magic of [What's My DNS](https://www.whatsmydns.net/). What's My DNS is a great tool to see where the domain is currently pointed at. (hint: you want it pointed to your load balancer IP). If it is not, backtrack and make sure you followed all of the setup steps and contact the domain registrar. 
+If your domain isn't pointing to your app, enter in the magic of [What's My DNS](https://www.whatsmydns.net/). What's My DNS is a great tool to see where the domain is currently pointed at. (hint: you want it pointed to your load balancer IP). If it is not, backtrack and make sure you followed all of the setup steps and contact the domain registrar.
