@@ -13,7 +13,7 @@
 /* Keep same color on search focus */
 
 .nav>li>a:hover, .nav>li>a:focus {
-    background-color: #0fb5e4;
+    /*background-color: #0fb5e4;*/
     outline: none;
 }
 
@@ -122,7 +122,7 @@ div.source-links {
 /* First level of nav */
 .bs-sidebar{
     overflow-y: auto;
-    height: 80%;
+    height: 40vh;
     position: relative;
     top: 50px;
 }
@@ -148,7 +148,7 @@ div.source-links {
 .bs-sidebar .nav > li > a:hover,
 .bs-sidebar .nav > li > a:focus {
     text-decoration: none;
-    border-right: 1px solid;
+    /*border-right: 1px solid;*/
 }
 /*.bs-sidebar .nav > .active > a,*/
 .bs-sidebar .nav > .active:hover > a,
@@ -156,8 +156,8 @@ div.source-links {
 .bs-sidebar .nav li.active
  {
     font-weight: bold;
-    background-color: #eeeeee;
-    border-right: 1px solid;
+    /*background-color: #eeeeee;*/
+    /*border-right: 1px solid;*/
 }
 
 /* Nav: second level (shown on .active) */
@@ -223,7 +223,7 @@ div.source-links {
 
 .ninefold-nav .navbar-nav a{
     font-family: omnes-pro;
-    color:#aaacaf !important;
+    /*color:#aaacaf !important;*/
     padding-left: 8px ;
     padding-right: 8px ;
     padding-top: 5px !important;
@@ -247,11 +247,11 @@ div.source-links {
     background: none;
 }
 .ninefold-nav .navbar-nav a:hover{
-    color:#fff !important;
+    /*color:#fff !important;*/
 }
 
 .ninefold-nav .navbar-nav .signin a {
-    background: #282828;
+    /*background: #282828;*/
     margin-left: 15px;
     padding-left: 15px !important;
     padding-right: 15px !important;
@@ -266,7 +266,7 @@ div.source-links {
     z-index: 1000;
     min-height: 50px;
     margin-bottom: 0;
-    background-color: #1e1f1e;
+    /*background-color: #1e1f1e;*/
 }
 .navbar-inverse .navbar-toggle{
     top: 22px;
@@ -363,9 +363,11 @@ button span.icon-bar{
 }
 @media (min-width: 1200px) {
     /* Widen the fixed sidebar again */
+    /*also setting height to auto*/
     .bs-sidebar.affix-bottom,
     .bs-sidebar.affix {
         width: 263px;
+        height: auto;
     }
 }
 
