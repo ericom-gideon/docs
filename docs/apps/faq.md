@@ -77,6 +77,7 @@ Our suggestion for those interested in utilizing Node.js is to deploy a bare vir
 
 We always support the latest version of Ruby as well as several older versions.  The following are versions are available for deployment:
 
+* 2.1.5
 * 2.1.4
 * 2.1.3
 * 2.1.2
@@ -98,7 +99,7 @@ When you deploy an app on Ninefold, we check your Gemfile for your application's
     # Sample Gemfile declaration
 
     source 'https://rubygems.org'
-    ruby '2.1.4'
+    ruby '2.1.5'
 
 #### How do I manage GitHub SSH keys?
 

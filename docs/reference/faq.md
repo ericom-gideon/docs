@@ -54,7 +54,7 @@ These services will be agreed prior to commencement.  We charge a rate of up to 
 
 ## How does the Free Tier work?
 
-#####  The free tier is available to new Ninefold customer accounts. To start using the Ninefold free tier, create a Ninefold account, deploy a Rails app, and enter a valid credit card.
+The free tier is available to new Ninefold customer accounts. To start using the Ninefold free tier, create a Ninefold account, deploy a Rails app, and enter a valid credit card.
 
 ####  What do I get for free?
 
