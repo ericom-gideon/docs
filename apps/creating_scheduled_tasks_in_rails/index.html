@@ -526,13 +526,13 @@ $ wheneverize .
 <p>In your Ninefold app, go to the <strong>Configuration</strong> tab &gt; <strong>Deployment Triggers</strong>, in the <em>After Migrations</em> section type:</p>
 <pre class="prettyprint well"><code>$ bundle exec whenever --update-crontab my_awesome_app
 </code></pre>
-<p>Where <code>my_awesome_app</code> is what you'd like to name your cron task. Press <em>Update triggers</em> to save.</p>
+<p>Where <code>my_awesome_app</code> is what you'd like to name your cron task. You can use this name or use your own, but isn't your app already awesome? Press <em>Update triggers</em> to save.</p>
 <h4 id="commit">Commit</h4>
 <pre class="prettyprint well"><code>$ git add .
 $ git commit -m "Adding cron jobs using whenever"
 $ git push origin my_ninefold_deploy_branch
 </code></pre>
-<p><em>Note: You've got to update your triggers first before you commit so that Ninefold can run them properly.</em></p>
+<p>If autodeploy is turned on, Ninefold will redeploy for you automatically after you've pushed your changes to the repo. If not, a manual redeploy is needed. In portal, press the red <strong>Redeploy Now</strong>.</p>
 <p>Cron tasks will be run from the root directory of your app. If you've got multiple web and worker servers, cron tasks currently will run on ALL your web and worker servers by default. If you would like to have the cron task run ONLY on certain servers, please submit a ticket, and we will provide you details on how to do this.</p>
 <h4 id="environment-vars">Environment vars</h4>
 <p>You can use defined environment variables in whenever gem constructed cron tasks. Simply add an env line for each of your environment vars in config/schedule.rb:</p>
@@ -545,10 +545,10 @@ every 15.minutes do
 end
 </code></pre>
 <h4 id="logging">Logging</h4>
-<p>The whenever gem comes with the ability to set the output to a log file. To do this on Ninefold, add this to your config/schedule.rb file"."</p>
-<pre class="prettyprint well"><code>set :output, '/var/www/apps/YOUR_APP_NAME/current/log/custom_deploy_after_migrate.log'
+<p>The whenever gem comes with the ability to set the output to a log file. To do this on Ninefold, add the line below to the <code>config/schedule.rb</code> file. This will allow for your output to be directed to the <em>After Migrations</em> trigger log, which is viewable in the CLI as well as in the <strong>Logs</strong> viewer (Sources &gt; Triggers).</p>
+<pre class="prettyprint well"><code>set :output, '/var/www/apps/YOUR_APP_ID/current/log/custom_deploy_after_migrate.log'
 </code></pre>
-<p>Where <code>YOUR_APP_NAME</code> is the git name of your app. This will allow for your output to be directed to the <em>After Migrations</em> trigger log, which is viewable in the CLI as well as in the <strong>Logs</strong> viewer (under Triggers).</p>
+<p><code>YOUR_APP_ID</code> is the App ID found in the URL: <code>portal.ninefold.com/apps/#####</code> or via the CLI: <code>$ ninefold app list</code>.</p>
 <p>For more information about output redirection with the whenever gem, <a href="https://github.com/javan/whenever/wiki/Output-redirection-aka-logging-your-cron-jobs">click here</a>.</p>
 
 
