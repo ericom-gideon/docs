@@ -28,6 +28,7 @@ pages:
 # App Deployment
 - ['apps/deployment_with_continuous_integration_ci.md', 'App Deployment', 'Deployment with CI']
 - ['apps/deploying_a_rails_app_with_your_own_database.md', 'App Deployment', 'Deploying a Rails app with your own database']
+- ['apps/unicorn.md', 'App Deployment', 'Setup: Unicorn']
 - ['apps/asset_precompile_on_ninefold.md', 'App Deployment', 'Asset precompilation']
 - ['apps/setting_up_deployment_notifications.md', 'App Deployment', 'Deployment notifications']
 - ['apps/zero_downtime_deployment_for_your_ninefold_rails_app.md', 'App Deployment', 'Zero downtime deployment']
