@@ -1,7 +1,7 @@
 page_title: Deploying a Rails app with your own database
-page_author: 
+page_author:
 page_description: Deploying a Rails app with your own database
-page_keywords: 
+page_keywords:
 
 ## Deploying a Rails app with your own database
 
@@ -46,7 +46,7 @@ In the deployment wizard, just select No to the question of __Want a new Postgre
 
 In the dashbaord, we have the environment variables section (under the configuration tab) or in step 3 of the deployment wizard, we will ask for your variables. You will want to include the following configured line for your database:
 
- 	DATABASE_URL=mysql://username:password/location:port/your_db_name
+   	DATABASE_URL=mysql://username:password@location:port/your_db_name
 
 in the __Environment Variable__ window.
 
