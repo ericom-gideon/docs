@@ -1,6 +1,6 @@
-page_title: How To Utilize A CDN With Ninefold (S3 And CloudFront)
+page_title: How To Utilize a CDN With Ninefold (AWS S3 And CloudFront)
 page_description: Knowledge base article to instruct users how they can implement a CDN with Ninefold Rails hosting. 
-page_keywords: rails CDN Cloudfront s3 assets 
+page_keywords: rails CDN Cloudfront s3 assets AWS Amazon
 
 ## How to utilize a CDN 
 
@@ -16,7 +16,7 @@ Ninefold’s #1 goal for your site is performance. Using a CDN optimizes the del
 
 There are lots of CDN providers out there. In this article, we take you through setting up your Ninefold Rails app to serve assets from Amazon S3, using a CloudFront distribution to serve those files even faster to visitors based on their geographical location. If you choose to use another CDN provider, these instructions will still help you.
 
-#### Amazon S3 setup
+#### Amazon AWS S3 setup
 
 First of all, add the asset_sync gem to your Gemfile:
 
@@ -45,7 +45,7 @@ If you have more than one top-level manifest file under your stylesheets, make s
 
 Before deploying your app, we recommend that your S3 configurations work on your local machine. If everything looks good, go ahead and deploy on to Ninefold. Since Ninefold does run rake assets:precompile for you, new and edited assets will be synced to your S3 bucket.
 
-_Note: if you are you're deploying the same application with two different rails environments, you should set up separate buckets per environment. That’s what I prefer since it makes it easier to troubleshoot._
+_Note: if you're deploying the same application with two different rails environments, you should set up separate buckets per environment. That’s what I prefer since it makes it easier to troubleshoot._
 
 #### Amazon CloudFront setup
 
