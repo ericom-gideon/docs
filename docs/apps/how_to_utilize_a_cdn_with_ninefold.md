@@ -1,4 +1,4 @@
-page_title: How To Utilize a CDN With Ninefold (AWS S3 And CloudFront)
+page_title: How To Utilize a CDN With Ninefold (S3 And CloudFront)
 page_description: Knowledge base article to instruct users how they can implement a CDN with Ninefold Rails hosting. 
 page_keywords: rails CDN Cloudfront s3 assets AWS Amazon
 
