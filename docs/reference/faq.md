@@ -64,7 +64,7 @@ You get a 1.5GB Rails app server in the US region.  The free tier credit is appl
 
 We use your billing information to verify that you’re a real person, to prevent abuse of our free tier offer, and for when you use more than the free tier.  This also allows a smooth transition to larger architecture when you scale your app.
 
-We ask that you add these details within 10 days of signing up to Ninefold.
+We ask that you add these details within 10 days of signing up to Ninefold. Accounts that do not have valid credit card information may be spun down.
 
 ####  Will you charge me?
 
@@ -72,7 +72,7 @@ We won’t charge you as long as your use doesn’t exceed the free usage tier -
 
 ####  How will the free tier be shown on the Ninefold Invoice?
 
-We apply a credit of $50 per month to your invoice.  This means that if you consume more than the free tier you still benefit from the free tier.
+We apply a credit of $50 per month to your invoice.  This means that if you consume more than the free tier you still benefit from the free tier. You must maintain an active app to be entitled to this discount.
 
 ####  I’m on your free tier, why is there a balance on my invoice?
  
