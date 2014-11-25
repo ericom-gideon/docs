@@ -1,7 +1,7 @@
 page_title:       How to Create a Docker Server
 page_author:      Angelo Livanos (Coverted by Brittany Martin)
-page_description: Knowledge base article to instruct users on they can deploy a Ubuntu server with Docker installed
-page_keywords:    server volume Docker container ubuntu 
+page_description: Knowledge base article to instruct users on they can deploy an Ubuntu server with Docker installed
+page_keywords:    Docker Ubuntu 14.04 LTS server container 
 
 ## Create a Docker server
 
@@ -17,8 +17,8 @@ The images preloaded are:
 * Node.js
 * Elasticsearch
 
-_NOTE: You can remove any of these from your server using docker rmi repository:tag)_
+_NOTE: You can remove any of these from your server using docker rmi repository:tag_
 
 If you are new to Docker, we suggest running through the examples in the [Docker tutorial](https://www.docker.com/tryit/). After you have gone through the tutorials, the Docker Hub has 14,000+ images for you to use today and it just keeps growing.
 
-Start shipping and running some containers! 
+Start shipping and running some docker containers! 
