@@ -40,7 +40,7 @@ Navigate to __Servers__ > __Network__ > __DNS__ in Ninefold. Click __Edit__ next
 
 _CNAME_
 
-You can add as many CNAMEs as you want.
+You can add as many CNAMEs as you want. We do support wildcard domains. 
 
 __Name:__ (subdomain URL like 'pop', 'imap' or 'smtpout')
 
@@ -75,3 +75,11 @@ _WARNING: Do not add additional A records for the domain here if the domain has 
 When your DNS is pointed to our name servers and add it the __Overview__ tab, your domain will point to the load balancer of your app. Don't know your load balancer IP? That can be found under Your App > __Infrastructure__ > __Edit__ > __Load Balancer IP__.
 
 If your domain isn't pointing to your app, enter in the magic of [What's My DNS](https://www.whatsmydns.net/). What's My DNS is a great tool to see where the domain is currently pointed at. (hint: you want it pointed to your load balancer IP). If it is not, backtrack and make sure you followed all of the setup steps and contact the domain registrar.
+
+#### Manage via Domain Registrar
+
+Not using Ninefold to manage the domain? Easy: configure your domain registrar to point the domain (via a CNAME record) to the ninefold-apps.com url Ninefold provides in the __Overview__ tab.  
+
+***
+Note: if you do not use Ninefold to manage your domain, Ninefold Support will not be able to assist you with any issues you may have with your setup. [What's My DNS](https://www.whatsmydns.net/) will still be your troubleshooting buddy. 
+***
