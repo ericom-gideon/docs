@@ -5,28 +5,6 @@ page_keywords: faq apps rails questions documentation
 
 ## Apps
 
-#### What is a Procfile?
-
-As a part of the app deploy process, we look for a Procfile and we'll generate services for your process types with Foreman. The Procfile describes processes that are required for your application to run. This is handy for running a background worker pool if you select to include “Redis for Resque or Sidekiq”.
-
-NOTE:  We specifically exclude web process types in the Procfile as we run our own web process via Apache 2 and Passenger.
-
-##### Do I need a Procfile?
-
-You only need a Procfile if you include the “Redis for Resque or Sidekiq” add-on via the app deploy process.
-
-##### How do I make a Procfile?
-
-An example Procfile looks like this and it goes in to your Rails app's root directory along with your Gemfile and Rakefile.
-
-  scheduler: bundle exec rake resque:work QUEUE=*
-
-  worker: bundle exec rake resque:scheduler QUEUE=*
-
-##### Are Procfiles only used for the Ninefold app deploy process?
-
-Procfiles came into existence with the gem Foreman, written by David Dollar. More information can be found in the following article: [Procfiles by David Dollar](http://blog.daviddollar.org/2011/05/06/introducing-foreman.html).
-
 #### How do I roll back my app to another version?
 
 You can’t rollback using Ninefold’s UI. You will need to rollback using Git. It’s pretty involved. Here is a good [article on StackOverflow](http://stackoverflow.com/questions/4372435/how-can-i-rollback-a-github-repository-to-a-specific-commit) on how to do it.

@@ -26,6 +26,7 @@ pages:
 - ['getstarted/how_to_deploy_diaspora.md', 'Getting Started', 'Deploy Diaspora']
 
 # App Deployment
+- ['apps/what_is_a_procfile.md', 'App Deployment', 'Configuring your procfile']
 - ['apps/deployment_with_continuous_integration_ci.md', 'App Deployment', 'Deployment with CI']
 - ['apps/deploying_a_rails_app_with_your_own_database.md', 'App Deployment', 'Deploying a Rails app with your own database']
 - ['apps/unicorn.md', 'App Deployment', 'Setup: Unicorn']
