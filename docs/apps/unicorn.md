@@ -51,7 +51,7 @@ Create a config file: __config/unicorn.rb__. For a standard deployment, we recom
 
 __Procfile__
 
-Ninefold utilizes Foreman so you will need to add a [Procfile](http://help.ninefold.com/apps/faq/#what-is-a-procfile) to your app. 
+Ninefold utilizes Foreman so you will need to add a [Procfile](http://help.ninefold.com/apps/what_is_a_procfile/) to your app. 
 
 Ninefold has always asked for a Procfile to manage worker processes but now we will recognize web processes. 
 
