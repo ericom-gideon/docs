@@ -14,8 +14,8 @@ On Ninefold, you can define an app server to be run. For apps that want to run r
 An example Procfile looks like this and it goes in to your Rails app's root directory along with your Gemfile and Rakefile.
 
     web: bundle exec thin start -p $PORT
+    worker: bundle exec rake jobs:work    
     scheduler: bundle exec rake resque:work QUEUE=*
-    worker: bundle exec rake jobs:work
 
 #### Procfile process types
 
@@ -30,9 +30,10 @@ Note: Ninefold will insert `web: bundle exec thin start -p $PORT` process to the
 ***
 
 For more information about each of these servers click on the links below:  
-[Thin](thin.md)
-[Unicorn](unicorn.md)
-Puma
+
+* [Thin](thin.md)
+* [Unicorn](unicorn.md)
+* Puma
 
 __Workers__
 
