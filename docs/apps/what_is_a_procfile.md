@@ -33,7 +33,7 @@ For more information about each of these servers click on the links below:
 
 * [Thin](thin.md)
 * [Unicorn](unicorn.md)
-* Puma
+* [Puma](puma.md)
 
 __Workers__
 

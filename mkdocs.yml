@@ -29,8 +29,6 @@ pages:
 - ['apps/what_is_a_procfile.md', 'App Deployment', 'Configuring your procfile']
 - ['apps/deployment_with_continuous_integration_ci.md', 'App Deployment', 'Deployment with CI']
 - ['apps/deploying_a_rails_app_with_your_own_database.md', 'App Deployment', 'Deploying a Rails app with your own database']
-- ['apps/thin.md', 'App Deployment', 'Setup with Thin']
-- ['apps/unicorn.md', 'App Deployment', 'Setup with Unicorn']
 - ['apps/asset_precompile_on_ninefold.md', 'App Deployment', 'Asset precompilation']
 - ['apps/setting_up_deployment_notifications.md', 'App Deployment', 'Deployment notifications']
 - ['apps/zero_downtime_deployment_for_your_ninefold_rails_app.md', 'App Deployment', 'Zero downtime deployment']
@@ -48,6 +46,9 @@ pages:
 - ['apps/postgres_and_postgis_and_modules.md', 'App Deployment', 'PostgreSQL, PostGIS, and PostgreSQL modules']
 - ['apps/how_to_utilize_a_cdn_with_ninefold.md', 'App Deployment', 'How to utilize a CDN']
 - ['apps/upgrading_from_rails_40_to_41.md', 'App Deployment', 'Upgrading from Rails 4.0 to 4.1']
+- ['apps/unicorn.md', 'App Deployment', 'Setup with Unicorn']
+- ['apps/puma.md', 'App Deployment', 'Setup with Puma']
+- ['apps/thin.md', 'App Deployment', 'Setup with Thin']
 - ['apps/faq.md', 'App Deployment', 'FAQ']
 
 # Servers

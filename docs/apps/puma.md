@@ -3,7 +3,7 @@ page_author: Eden
 page_description: Knowledge base article to instruct users on how enable Puma as their app server
 page_keywords: app server webserver puma nginx procfile deployment memory
 
-## Setup: Puma – For your speed and concurrency needs.
+## Setup: Puma
 
 #### Overview
 If you’ve got a need for speed, then puma is your app server! It is empowered with performance thanks to the use of a Ragel extension in order to deliver hasty, spot-on HTTP 1.1 protocol parsing.
