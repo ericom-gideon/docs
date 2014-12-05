@@ -7,10 +7,10 @@
         <meta name="msvalidate.01" content="30681728D02314C28E73C01119E51FE8" />
         
         
-        <link rel="canonical" href="http://help.ninefold.com/apps/asset_precompile_on_ninefold/">
+        <link rel="canonical" href="http://help.ninefold.com/apps/unicorn/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-        <title>Asset precompilation - Ninefold</title>
+        <title>Setup with Unicorn - Ninefold</title>
 
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
@@ -192,8 +192,8 @@
                             <a href="../deploying_a_rails_app_with_your_own_database/">Deploying a Rails app with your own database</a>
                         </li>
                     
-                        <li class="active">
-                            <a href="./">Asset precompilation</a>
+                        <li >
+                            <a href="../asset_precompile_on_ninefold/">Asset precompilation</a>
                         </li>
                     
                         <li >
@@ -260,8 +260,8 @@
                             <a href="../upgrading_from_rails_40_to_41/">Upgrading from Rails 4.0 to 4.1</a>
                         </li>
                     
-                        <li >
-                            <a href="../unicorn/">Setup with Unicorn</a>
+                        <li class="active">
+                            <a href="./">Setup with Unicorn</a>
                         </li>
                     
                         <li >
@@ -492,11 +492,17 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#asset-precompilation">Asset precompilation</a></li>
+        <li class="main active"><a href="#setup-unicorn">Setup: Unicorn</a></li>
         
-            <li class="subsection"><a href="#file-uploads">File uploads</a></li>
+            <li class="subsection"><a href="#overview">Overview</a></li>
         
-            <li class="subsection"><a href="#a-word-about-cdns">A word about CDNs</a></li>
+            <li class="subsection"><a href="#how-to-setup-before-deployment">How to Setup: Before Deployment</a></li>
+        
+            <li class="subsection"><a href="#how-to-setup-post-deployment">How to Setup: Post Deployment</a></li>
+        
+            <li class="subsection"><a href="#memory-management">Memory Management</a></li>
+        
+            <li class="subsection"><a href="#additional-information">Additional Information</a></li>
         
     
     </ul>
@@ -505,27 +511,74 @@
             <div class="col-md-9" role="main">
 
                 <div class="col-md-12 hidden-xs hidden-sm">
-                    <a href="https://github.com/ninefold/docs/tree/master/docs/apps/asset_precompile_on_ninefold.md" class="github-btn btn btn-default pull-right"> <span class="fa fa-github"></span> Edit on GitHub</a>
+                    <a href="https://github.com/ninefold/docs/tree/master/docs/apps/unicorn.md" class="github-btn btn btn-default pull-right"> <span class="fa fa-github"></span> Edit on GitHub</a>
                 </div>
                 <div class="col-md-12 hidden-xs hidden-sm"></br></div>
                 
                    
 
-<h2 id="asset-precompilation">Asset precompilation</h2>
-<p>On Ninefold, we run a few rake commands during initial deployment and every subsequent deployment of a new customer code release or a force redeploy of an existing release. One of these is <code>rake assets:precompile</code>.</p>
-<p>We run this task automatically for you provided you are using rails version 3.2 or higher.  The rake task is skipped if you have checked in files to the public/assets folder other than *.ico files.  </p>
-<p>Ninefold uses <a href="http://apache.com">Apache</a> to serve the precompiled .gz versions of static assets if it’s available and if the browser supports it.</p>
-<p>NOTE: If you opt to run <code>rake assets:precompile</code> locally then commit them to your repo, be sure to add the following to the config/environment/production.rb file: <code>config/serve_static_assets=true</code></p>
-<p>This forces the assets that are in the public/assets directory to be served properly in production.  </p>
+<h2 id="setup-unicorn">Setup: Unicorn</h2>
+<h4 id="overview">Overview</h4>
+<p>Now that Ninefold supports Nginx, you can deploy Rails apps with the <a href="https://github.com/blog/517-unicorn">Unicorn</a> app server. Unicorn is an HTTP server for Ruby, similar to Mongrel or Thin. It uses Mongrel’s Ragel HTTP parser but has a dramatically different architecture and philosophy.</p>
+<p>Unicorn will reap and restart workers that die from broken apps. There is no need to manage multiple processes or ports yourself. Unicorn can spawn and manage any number of worker processes chosen. It's a great choice for robust, production-grade Rails apps.</p>
+<h4 id="how-to-setup-before-deployment">How to Setup: Before Deployment</h4>
+<p><strong>Unicorn Gem</strong></p>
+<p>First, add the unicorn gem to your Gemfile:</p>
+<pre class="prettyprint well"><code> gem 'unicorn'
+</code></pre>
+<p>Be sure to bundle locally.</p>
+<p><strong>Unicorn.rb</strong></p>
+<p>Create a config file: <strong>config/unicorn.rb</strong>. For a standard deployment, we recommend the following settings:</p>
+<pre class="prettyprint well"><code># config/unicorn.rb
+worker_processes Integer(ENV["WEB_CONCURRENCY"] || 3)
+timeout 15
+preload_app true
+
+before_fork do |server, worker|
+Signal.trap 'TERM' do
+    puts 'Unicorn master intercepting TERM and sending myself QUIT instead'
+    Process.kill 'QUIT', Process.pid
+end
+
+defined?(ActiveRecord::Base) and
+    ActiveRecord::Base.connection.disconnect!
+end
+
+after_fork do |server, worker|
+    Signal.trap 'TERM' do
+        puts 'Unicorn worker intercepting TERM and doing nothing. Wait for master to send QUIT'
+end
+
+defined?(ActiveRecord::Base) and
+    ActiveRecord::Base.establish_connection
+end
+</code></pre>
+<p><strong>Procfile</strong></p>
+<p>Ninefold utilizes Foreman so you will need to add a <a href="http://help.ninefold.com/apps/what_is_a_procfile/">Procfile</a> to your app. </p>
+<p>Ninefold has always asked for a Procfile to manage worker processes but now we will recognize web processes.</p>
+<p>For Unicorn, you will want a line close to this:</p>
+<pre class="prettyprint well"><code>web: bundle exec unicorn -p $PORT -c ./config/unicorn.rb
+</code></pre>
+<p>During deployment, on page <strong>3 Details</strong>, Ninefold will ask for your Procfile. Time to deploy!</p>
 <hr />
-<p><em>NOTE: Our recommendation is to allow us to run <code>rake assets:precompile</code> for you. This will allow for you to troubleshoot any precompilation errors via our Log viewer or CLI.</em></p>
+<p>If you do not configure Unicorn correctly, Ninefold will automatically setup your app up with Thin.</p>
 <hr />
-<p>In the context of a production environment, it’s generally a good idea to have <code>config.assets.compile=false</code> (the default). If you set it to true, it mimics the dev environment, where assets not found in the public directory are then looked for and served using Rails middleware.  This is a heavy tax and added overhead to the performance in production and is not advised.</p>
-<p>If you're interested in learning more about the asset pipeline because it's pretty confusing even to seasoned devs, check out <a href="https://ninefold.com/blog/2014/07/01/rails-and-the-warped-asset-pipeline/">this awesome blog post</a> about it!</p>
-<h4 id="file-uploads">File uploads</h4>
-<p>File uploading gems such as <a href="https://github.com/carrierwaveuploader/carrierwave">Carrierwave</a> or <a href="https://github.com/thoughtbot/paperclip">Paperclip</a> generally store files in the public directory. At Ninefold, every web server has its own file system. While that is enticing to use as storage, writing to the web server file system is not scalable and is not persistent across new code deployments. With multiple web servers, uploaded files will be stored on the server that handles the request. Subsequent requests may be handled by a different server and that file will not be available to it. A common object store such as S3 is the preferred approach.</p>
-<h4 id="a-word-about-cdns">A word about CDNs</h4>
-<p>Content distribution networks (CDNs) are for performance. Ninefold ensures that cache headers are properly set and that gzipped assets are served correctly from Ninefold. This means that assets will be cached at the browser for subsequent requests until a new revision updates them. When assets are served externally using a CDN, that responsibility passes to the customer / third party.</p>
+<h4 id="how-to-setup-post-deployment">How to Setup: Post Deployment</h4>
+<p><strong>Already Using Another Nginx App Server</strong></p>
+<p>You can change your app server at any time by changing your Procfile (and code configuration with your app), committing and redeploying on Ninefold.</p>
+<p><strong>Enable A New App Server</strong></p>
+<p>Follow the setup instructions for your app and then go to the <strong>Configuration</strong> tab to enable choosing your app server with your Procfile. Finish off with a redeploy.</p>
+<hr />
+<p>Like initial deployment, if you do not configure Unicorn correctly, Ninefold will automatically setup your app up with Thin.</p>
+<hr />
+<h4 id="memory-management">Memory Management</h4>
+<p>By choosing Unicorn as your app server, you are taking on the responsibility of managing the app's memory. From the config file, pay special attention to this line:</p>
+<pre class="prettyprint well"><code>worker_processes Integer(ENV["WEB_CONCURRENCY"] || 3)
+</code></pre>
+<p>This means that you can set the <strong>WEB_CONCURRENCY</strong> as an env var during <strong>Step 3</strong> of the app's deployment or under the <strong>Configuration</strong> tab of the app post-deployment. If the <strong>WEB_CONCURRENCY</strong> is not set, Unicorn will default to <strong>3</strong>. Of course, you can change that to any sane number that you like.</p>
+<p>Ninefold highly recommends utilizing a tool like <a href="http://newrelic.com/">New Relic</a> to manage your memory usage and to determine the best concurrency settings for the app.</p>
+<h4 id="additional-information">Additional Information</h4>
+<p>Additional information about Unicorn can be found on the official <a href="http://unicorn.bogomips.org/">homepage</a>.</p>
 
 
 </br></br></br></br>

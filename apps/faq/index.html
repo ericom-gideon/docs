@@ -181,6 +181,10 @@
                     <ul class="dropdown-menu">
                     
                         <li >
+                            <a href="../what_is_a_procfile/">Configuring your procfile</a>
+                        </li>
+                    
+                        <li >
                             <a href="../deployment_with_continuous_integration_ci/">Deployment with CI</a>
                         </li>
                     
@@ -254,6 +258,18 @@
                     
                         <li >
                             <a href="../upgrading_from_rails_40_to_41/">Upgrading from Rails 4.0 to 4.1</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../unicorn/">Setup with Unicorn</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../puma/">Setup with Puma</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../thin/">Setup with Thin</a>
                         </li>
                     
                         <li class="active">
@@ -478,8 +494,6 @@
     
         <li class="main active"><a href="#apps">Apps</a></li>
         
-            <li class="subsection"><a href="#what-is-a-procfile">What is a Procfile?</a></li>
-        
             <li class="subsection"><a href="#how-do-i-roll-back-my-app-to-another-version">How do I roll back my app to another version?</a></li>
         
             <li class="subsection"><a href="#what-can-i-do-to-ensure-uptime">What can I do to ensure uptime?</a></li>
@@ -518,17 +532,6 @@
                    
 
 <h2 id="apps">Apps</h2>
-<h4 id="what-is-a-procfile">What is a Procfile?</h4>
-<p>As a part of the app deploy process, we look for a Procfile and we'll generate services for your process types with Foreman. The Procfile describes processes that are required for your application to run. This is handy for running a background worker pool if you select to include “Redis for Resque or Sidekiq”.</p>
-<p>NOTE:  We specifically exclude web process types in the Procfile as we run our own web process via Apache 2 and Passenger.</p>
-<h5 id="do-i-need-a-procfile">Do I need a Procfile?</h5>
-<p>You only need a Procfile if you include the “Redis for Resque or Sidekiq” add-on via the app deploy process.</p>
-<h5 id="how-do-i-make-a-procfile">How do I make a Procfile?</h5>
-<p>An example Procfile looks like this and it goes in to your Rails app's root directory along with your Gemfile and Rakefile.</p>
-<p>scheduler: bundle exec rake resque:work QUEUE=*</p>
-<p>worker: bundle exec rake resque:scheduler QUEUE=*</p>
-<h5 id="are-procfiles-only-used-for-the-ninefold-app-deploy-process">Are Procfiles only used for the Ninefold app deploy process?</h5>
-<p>Procfiles came into existence with the gem Foreman, written by David Dollar. More information can be found in the following article: <a href="http://blog.daviddollar.org/2011/05/06/introducing-foreman.html">Procfiles by David Dollar</a>.</p>
 <h4 id="how-do-i-roll-back-my-app-to-another-version">How do I roll back my app to another version?</h4>
 <p>You can’t rollback using Ninefold’s UI. You will need to rollback using Git. It’s pretty involved. Here is a good <a href="http://stackoverflow.com/questions/4372435/how-can-i-rollback-a-github-repository-to-a-specific-commit">article on StackOverflow</a> on how to do it.</p>
 <h4 id="what-can-i-do-to-ensure-uptime">What can I do to ensure uptime?</h4>

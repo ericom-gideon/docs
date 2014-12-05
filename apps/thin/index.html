@@ -7,10 +7,10 @@
         <meta name="msvalidate.01" content="30681728D02314C28E73C01119E51FE8" />
         
         
-        <link rel="canonical" href="http://help.ninefold.com/apps/asset_precompile_on_ninefold/">
+        <link rel="canonical" href="http://help.ninefold.com/apps/thin/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-        <title>Asset precompilation - Ninefold</title>
+        <title>Setup with Thin - Ninefold</title>
 
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
@@ -192,8 +192,8 @@
                             <a href="../deploying_a_rails_app_with_your_own_database/">Deploying a Rails app with your own database</a>
                         </li>
                     
-                        <li class="active">
-                            <a href="./">Asset precompilation</a>
+                        <li >
+                            <a href="../asset_precompile_on_ninefold/">Asset precompilation</a>
                         </li>
                     
                         <li >
@@ -268,8 +268,8 @@
                             <a href="../puma/">Setup with Puma</a>
                         </li>
                     
-                        <li >
-                            <a href="../thin/">Setup with Thin</a>
+                        <li class="active">
+                            <a href="./">Setup with Thin</a>
                         </li>
                     
                         <li >
@@ -492,11 +492,15 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#asset-precompilation">Asset precompilation</a></li>
+        <li class="main active"><a href="#setup-thin">Setup: Thin</a></li>
         
-            <li class="subsection"><a href="#file-uploads">File uploads</a></li>
+            <li class="subsection"><a href="#overview">Overview</a></li>
         
-            <li class="subsection"><a href="#a-word-about-cdns">A word about CDNs</a></li>
+            <li class="subsection"><a href="#how-to-setup-before-deployment">How to Setup: Before Deployment</a></li>
+        
+            <li class="subsection"><a href="#how-to-setup-post-deployment">How to Setup: Post Deployment</a></li>
+        
+            <li class="subsection"><a href="#additional-information">Additional Information</a></li>
         
     
     </ul>
@@ -505,27 +509,40 @@
             <div class="col-md-9" role="main">
 
                 <div class="col-md-12 hidden-xs hidden-sm">
-                    <a href="https://github.com/ninefold/docs/tree/master/docs/apps/asset_precompile_on_ninefold.md" class="github-btn btn btn-default pull-right"> <span class="fa fa-github"></span> Edit on GitHub</a>
+                    <a href="https://github.com/ninefold/docs/tree/master/docs/apps/thin.md" class="github-btn btn btn-default pull-right"> <span class="fa fa-github"></span> Edit on GitHub</a>
                 </div>
                 <div class="col-md-12 hidden-xs hidden-sm"></br></div>
                 
                    
 
-<h2 id="asset-precompilation">Asset precompilation</h2>
-<p>On Ninefold, we run a few rake commands during initial deployment and every subsequent deployment of a new customer code release or a force redeploy of an existing release. One of these is <code>rake assets:precompile</code>.</p>
-<p>We run this task automatically for you provided you are using rails version 3.2 or higher.  The rake task is skipped if you have checked in files to the public/assets folder other than *.ico files.  </p>
-<p>Ninefold uses <a href="http://apache.com">Apache</a> to serve the precompiled .gz versions of static assets if it’s available and if the browser supports it.</p>
-<p>NOTE: If you opt to run <code>rake assets:precompile</code> locally then commit them to your repo, be sure to add the following to the config/environment/production.rb file: <code>config/serve_static_assets=true</code></p>
-<p>This forces the assets that are in the public/assets directory to be served properly in production.  </p>
+<h2 id="setup-thin">Setup: Thin</h2>
+<h4 id="overview">Overview</h4>
+<p>Now that Ninefold supports Nginx, you can deploy Rails apps with the <a href="https://github.com/macournoyer/thin/">Thin</a> app server. Thin is yet another  server that combines "3 of the best Ruby libraries in web history": Mongrel parser, Event Machine, and Rack.  It is simple, secure, stable, fast, and extensible.</p>
+<p>It's simple to implement and use. And on Ninefold, it's the default choice for the Nginx web server (reverse proxy server).</p>
+<h4 id="how-to-setup-before-deployment">How to Setup: Before Deployment</h4>
+<p><strong>Thin Gem</strong></p>
+<p>Add the Thin gem to your Gemfile like so:</p>
+<pre class="prettyprint well"><code>group :production do
+  gem 'thin'  
+end
+</code></pre>
+<p>Don't forget to run bundle install!</p>
+<p><strong>Procfile</strong></p>
+<p>In your Procfile, add this line to the beginning:</p>
+<pre class="prettyprint well"><code>web: bundle exec thin start -p $PORT
+</code></pre>
+<p>And that's it! Commit your code to your repository!</p>
+<p>When you step through the Deploy wizard, <strong>3 Details</strong> will have <em>Run web-server with a Procfile</em>. Make sure YES is highlighted. And then deploy. Super simple.</p>
 <hr />
-<p><em>NOTE: Our recommendation is to allow us to run <code>rake assets:precompile</code> for you. This will allow for you to troubleshoot any precompilation errors via our Log viewer or CLI.</em></p>
+<p>Note: If you choose YES but do not have the Thin gem nor a Procfile, Ninefold will: 1) Insert the Thin gem into your Gemfile and run Bundler, and 2) create a Procfile for you.</p>
 <hr />
-<p>In the context of a production environment, it’s generally a good idea to have <code>config.assets.compile=false</code> (the default). If you set it to true, it mimics the dev environment, where assets not found in the public directory are then looked for and served using Rails middleware.  This is a heavy tax and added overhead to the performance in production and is not advised.</p>
-<p>If you're interested in learning more about the asset pipeline because it's pretty confusing even to seasoned devs, check out <a href="https://ninefold.com/blog/2014/07/01/rails-and-the-warped-asset-pipeline/">this awesome blog post</a> about it!</p>
-<h4 id="file-uploads">File uploads</h4>
-<p>File uploading gems such as <a href="https://github.com/carrierwaveuploader/carrierwave">Carrierwave</a> or <a href="https://github.com/thoughtbot/paperclip">Paperclip</a> generally store files in the public directory. At Ninefold, every web server has its own file system. While that is enticing to use as storage, writing to the web server file system is not scalable and is not persistent across new code deployments. With multiple web servers, uploaded files will be stored on the server that handles the request. Subsequent requests may be handled by a different server and that file will not be available to it. A common object store such as S3 is the preferred approach.</p>
-<h4 id="a-word-about-cdns">A word about CDNs</h4>
-<p>Content distribution networks (CDNs) are for performance. Ninefold ensures that cache headers are properly set and that gzipped assets are served correctly from Ninefold. This means that assets will be cached at the browser for subsequent requests until a new revision updates them. When assets are served externally using a CDN, that responsibility passes to the customer / third party.</p>
+<h4 id="how-to-setup-post-deployment">How to Setup: Post Deployment</h4>
+<p><strong>Already Using Another Nginx App Server</strong></p>
+<p>You can change your app server at any time by changing your Procfile (and code configuration with your app), committing and redeploying on Ninefold.</p>
+<p><strong>Enable A New App Server</strong></p>
+<p>If you would like to switch to Nginx as a web server, go to the <strong>Configuration</strong> tab and under App Server, click "Use Procfile". Finish off with a redeploy.</p>
+<h4 id="additional-information">Additional Information</h4>
+<p>Additional information about Thin can be found <a href="https://github.com/macournoyer/thin/">here</a> and <a href="http://code.macournoyer.com/thin/">here</a>.</p>
 
 
 </br></br></br></br>
