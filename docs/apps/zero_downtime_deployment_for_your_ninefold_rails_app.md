@@ -1,7 +1,7 @@
 page_title: Zero Downtime Deployment For Your Rails App
 page_author: Brittany Martin
 page_description: Knowledge base article to instruct users on how they can implement zero downtime deployment 
-page_keywords: zero downtime deployment redeployment lab 
+page_keywords: zero downtime deployment redeployment configuration
 
 ## Zero downtime deployment
 
@@ -22,8 +22,10 @@ __To check:__
 * Click the __Show Details__ button
 * Verify that you have at least 2 web servers
 
-__To enable:__
+__To enable (if you have two deployed web servers):__
 
-If you have two deployed web servers, navigate to __Account__, __Edit Details__.
+* Click on your App name
+* Navigate to the __Configuration__ tab
+* Click __Enable__ next to the __Zero Downtime Deployment__ option.
 
-Click on the Labs tab and check off the __Zero Downtime Deployment__ option and __Update__. You’ll be all set!
+You'll be all set for the very next time you deploy.
