@@ -1,15 +1,15 @@
-page_title: How Ninefold works with Github, Bitbucket and Git URL
+page_title: How to deploy a Rails app from Github, Bitbucket or a Git URL onto Ninefold
 page_author: Brittany Martin
-page_description: Knowledge base article to instruct users on how Ninefold interacts with Github, Bitbucket and Git URL
-page_keywords: repo Github Bitbucket git deployment redeployment repository gitURL
+page_description: Knowledge base article to instruct users on how Ninefold interacts with Github, Bitbucket and Git URL to deploy their Ruby on Rails app.
+page_keywords: repo Github Bitbucket git deployment redeployment repository gitURL ruby rails apps
 
-## GitHub, Bitbucket and Git URL
+## Deploy Rails from GitHub, Bitbucket or Git URL
 
 Ninefold will pull your code in from Github.com, Bitbucket.com, or from your private Git URL. You specify the repository in Step 1 of the deploy process.
 
 Another feature of Ninefold for Github and Bitbucket is the ability to enable _auto redeployments_.
 
-This means that every time you push code changes to the deployment branch on  Ninefold, Ninefold will automatically redeploy your app for you. Look ma, no manual redeploy! You can turn this feature on during initial deployment or toggle on/off from the __Overview__ page of your deployed app. You will need to be an admin of the repo in order to enable _auto redeployment_.
+This means that every time you push code changes to the deployment branch on  Ninefold, Ninefold will automatically redeploy your Rails app for you. Look ma, no manual redeploy! You can turn this feature on during initial deployment or toggle on/off from the __Overview__ page of your deployed app. You will need to be an admin of the repo in order to enable _auto redeployment_.
 
 If repos + Ninefold tickles your fancy, read on.
 
