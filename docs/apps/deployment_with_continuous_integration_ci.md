@@ -1,9 +1,9 @@
-page_title: Deployment With Continuous Integration (CI)
+page_title: Deploying Rails using Continuous Integration (CI)
 page_author: Risa B. (converted by Britt)
-page_description: Knowledge base article to instruct users on how to implement CI in their Ninefold Rails app
+page_description: Knowledge base article to instruct users on how to implement CI in their Ninefold Ruby on Rails app
 page_keywords: CI continuous integration travis circleci magnumci jenkins testing
 
-## Deployment with CI
+## Deploying Rails apps with CI
 
 As developers, we are keen on certain processes such as continuous integration, because it works and it’s handy! As defined by Thoughtworks, "Continuous Integration (CI) is a development practice that requires developers to integrate code into a shared repository several times a day. Each check-in is then verified by an automated build, allowing teams to detect problems early.
 
