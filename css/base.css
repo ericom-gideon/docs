@@ -16,6 +16,9 @@
     /*background-color: #0fb5e4;*/
     outline: none;
 }
+.nav>li>a:focus {
+    background-color: inherit;
+}
 
 
 /* Table defs to patch up tables due to mkdocs and bootstrap issue
