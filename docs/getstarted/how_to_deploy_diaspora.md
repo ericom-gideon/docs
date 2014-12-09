@@ -1,14 +1,14 @@
-page_title:Diaspora
+page_title:Install a Diaspora Pod on Ninefold
 page_description: Knowledge base article to instruct users on how to deploy Diaspora on Ninefold
-page_keywords: Diaspora Rails Guide Social 
+page_keywords: Diaspora Rails Guide Social ruby networking install deploy how-to
 
-## Deploy Diaspora
+## Install a Diaspora Pod on Ninefold
 
 #### Why is Diaspora awesome?
 
 Diaspora is a nonprofit, user-owned, distributed social network that is based upon the free Diaspora Rails software. Diaspora consists of a group of independently owned nodes (called pods) which interoperate to form the social network. Since the software is not owned by one person or entity, developers can avoid features they don’t want - like advertising - when setting up their own social network. Diaspora users can even download all their images and text that has been uploaded at any time. 
 
-#### How to setup
+#### How to setup Diaspora
 
 Step 1: Fork Diaspora and clone your fork to your local machine. It will take a few minutes - it is quite the download. 
 
