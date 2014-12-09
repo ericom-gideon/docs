@@ -1,7 +1,7 @@
 page_title: Exporting And Importing PostgreSQL Data
 page_author: Risa B. (converted by Britt)
-page_description: Knowledge base article to instruct users on how to they can move their Postgres data
-page_keywords: rails database pg pgadmin dump restore import cli data export
+page_description: Knowledge base article to instruct users on how to they can move their Postgres data in and out their Ruby on Rails app
+page_keywords: rails database pg pgadmin dump restore import cli data export postgres postgresql
 
 ## Export and import Postgres data
 
@@ -43,7 +43,7 @@ __Compressed:__
 
 __The variables__
 
-These variables can be found in the __Database__ tab of your app. Aren't you glad you kept this open? :)
+These variables can be found in the __Database__ tab of your Rails app. Aren't you glad you kept this open? :)
 
 * IP_ADDRESS = The IP address of your database server
 * DATABASE_NAME = The database name of your server. This can either be your app name or db#####.
