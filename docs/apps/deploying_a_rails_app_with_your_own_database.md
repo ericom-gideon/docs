@@ -1,16 +1,16 @@
 page_title: Deploying a Rails app with your own database
 page_author:
-page_description: Deploying a Rails app with your own database
-page_keywords:
+page_description: Want to deploy a Ruby on Rails app with your own database, such as MySQL or Mongo DB? Read this article to findout how.
+page_keywords: database mongo mysql byodb
 
 ## Deploying a Rails app with your own database
 
-Out of the box, Ninefold enables you to implement a database server with PostgreSQL installed. Want to bring your own database? Read on! The following is our recommendation on how to implement BYOD.
+Out of the box, Ninefold enables you to implement a database server with PostgreSQL installed. Want to bring your own database such as MySQL or MongoDB? Read on! The following is our recommendation on how to implement BYODB.
 
-Before you deploy, we recommend you read the entire article so you deploy with all of the current settings. There is a quiz at the end of the article!
+Before you deploy, we recommend you __read the entire article__ so you deploy with all of the current settings. There is a quiz at the end of the article!
 
 #### Infrastructure
-If your want your DB hosted on Ninefold and its not PostgreSQL, Please ensure you deploy this as a bare virtual server before deploying your app ensuring you tick the 'Enable NinefoldNet' box to ensure it is provisioned on the same private network as your app.
+If you want your DB hosted on Ninefold and its not PostgreSQL, Please ensure you deploy this as a bare virtual server before deploying your app ensuring you tick the 'Enable NinefoldNet' box to ensure it is provisioned on the same private network as your app.
 
 #### Gemfile
 
@@ -38,13 +38,13 @@ For a ‘production’ environment:
 
 Your file can include encoding, if you like.
 
-#### Deploying an app with BYOD
+#### Deploying an app with BYODB
 
 In the deployment wizard, just select No to the question of __Want a new PostgreSQL database built?__.
 
 #### Environmental variables
 
-In the dashbaord, we have the environment variables section (under the configuration tab) or in step 3 of the deployment wizard, we will ask for your variables. You will want to include the following configured line for your database:
+In the dashboard, we have the environment variables section (under the configuration tab) or in step 3 of the deployment wizard, we will ask for your variables. You will want to include the following configured line for your database:
 
    	DATABASE_URL=mysql2://username:password@location:port/your_db_name
 
