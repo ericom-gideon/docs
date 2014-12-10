@@ -23,8 +23,8 @@ __On initial deployment__
 
 On Step 3 of the app deployment process, you will see the option to add SendGrid underneath the __Add-ons__ section. Checking that box means that Ninefold will reach out to SendGrid to create a new account under your Ninefold email address. If successful, Ninefold will add your:
 
-	SENDGRID_USERNAME:
-	SENDGRID_PASSWORD:
+	NF_SENDGRID_USERNAME
+	NF_SENDGRID_PASSWORD
 
 to the __environment variables__ section. 
 
