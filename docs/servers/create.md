@@ -29,13 +29,13 @@ At a later date, if you plan to upgrade your template beyond the version origian
 
 #### Uploading an ISO
 
-When creating a new server, you're not limited to Ninefold's templates or operating systems. We provide you with the ability to either upload an ISO file directly from your computer or to connect to an existing web server to import the OS directly into your account.
+When creating a new server, you're not limited to Ninefold's templates or operating systems. We also provide you with the ability to connect to an existing web server to import the OS directly into your account.
 
 1. From within dashboard, select "Servers"->"Resources" from the navigation bar.
 
 2. Click add new ISO.
 
-3. Click choose file if you have a suitable ISO stored on your local computer; alternatively enter the URL of the ISO file you wish to import into your account.
+3. Enter the URL of the ISO file you wish to import into your account.
 
 4. If the ISO is bootable (An OS installation disk) make sure to tick the box. 
 5. From the "OS Type" drop down list, select the OS Type. Select other if your OS type isn't listed.
