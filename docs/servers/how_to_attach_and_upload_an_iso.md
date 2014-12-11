@@ -7,9 +7,7 @@ page_keywords:    server ISO template attach bare VPS
 
 #### Uploading an ISO 
 
-When creating a new server, you're not limited to Ninefold's Templates or Operating Systems. We provide you with the ability to either upload an ISO file directly from your computer or to connect to an existing web server to import the OS directly into your Ninefold account.
-
-Please see this article for detailed information on the Operating Systems currently supported by the Citrix XenServer Hypervisor used by Ninefold.
+When creating a new server, you're not limited to Ninefold's Templates or Operating Systems. We also provide you with the ability to connect to an existing web server to import the OS directly into your Ninefold account.
 
 You are solely responsible for ensuring you are licensed to operate Microsoft or other commercial software that you import. Please see this article for [Microsoft licensing information](microsoft_licensing_can_i_use_my_existing_software_and_licenses_on_ninefold.md).
 
@@ -17,11 +15,11 @@ You are solely responsible for ensuring you are licensed to operate Microsoft or
 
 2. Click __Add new ISO__.
 
-3. Click __Choose File__ if you have a suitable ISO stored on your local computer; alternatively enter the URL of the ISO file you wish to import  into your account.
+3. Enter the URL of the ISO file you wish to import into your account.
 
 4. If the ISO is Bootable (An OS Installation disk) make sure to tick the box. For information on regions see here. From the __OS Type__ dropdown list, select the OS Type. Use ""Other" if your OS type isn't listed.
 
-	_Note: If you pick the wrong OS Type (The virtual machine errors on start, etc) 	you can change it by going to Servers->Resources and clicking on Edit on the ISO. 	You should pick Other if your OS isn't para-virtualised out of the box or fails 	on deployment on another OS Type._
+	_Note: If you pick the wrong OS Type (The virtual machine errors on start, etc) you can change it by going to Servers->Resources and clicking on Edit on the ISO. You should pick Other if your OS isn't para-virtualised out of the box or fails 	on deployment on another OS Type._
 
 5. Click __Upload__ and wait for the ISO to finish importing into your account.
 
