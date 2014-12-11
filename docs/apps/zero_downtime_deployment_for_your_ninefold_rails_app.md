@@ -1,6 +1,6 @@
 page_title: Zero Downtime Deployment For Your Rails App
 page_author: Brittany Martin
-page_description: Knowledge base article to instruct users on how they can implement zero downtime deployment 
+page_description: Knowledge base article to instruct users on how they can implement zero downtime deployment (AKA: Rolling Deployment) for their Ruby on Rails apps
 page_keywords: zero downtime deployment redeployment configuration
 
 ## Zero downtime deployment
@@ -11,7 +11,7 @@ In traditional deployment environments, when switching an app server in the clou
 
 With Zero Downtime Deployment (aka Rolling Deployments) on Ninefold, app servers are removed from the load balancer and upgraded one at a time when upgrading your code. This minimizes downtime for your users as you deploy changes to your app. 
 
-#### How to enable 
+#### How to enable ZDD for your Rails app
 
 Check that your app is deployed on at least 2 web servers.
 
@@ -28,4 +28,4 @@ __To enable (if you have two deployed web servers):__
 * Navigate to the __Configuration__ tab
 * Click __Enable__ next to the __Zero Downtime Deployment__ option.
 
-You'll be all set for the very next time you deploy.
+You'll be all set for the very next time you deploy your Rails app.
