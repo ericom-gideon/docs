@@ -15,7 +15,7 @@ __Puma Gem__
 Add the Puma gem to your Gemfile as below:
 
     group :production do
-      gem puma
+      gem 'puma'
     end
 
 (be sure to bundle)
@@ -38,11 +38,11 @@ __Enable A New App Server__
 
 If you would like to switch to Nginx as a web server:
 - Go to the __Configuration__ tab,
-- Under App Server, click "Use Procfile". 
+- Under App Server, click "Use Procfile".
 - Redeploy.
 
 #### Additional Information
 
-Additional information about Puma can be found 
-[here]( https://github.com/puma/puma) and 
+Additional information about Puma can be found
+[here]( https://github.com/puma/puma) and
 [here]( http://puma.io/).

@@ -16,7 +16,7 @@ The terminal method is great for custom exporting and importing of a database. T
 
 Read on for more information about each.
 
-_Note: These directions have been tested with Postgres 9.3.x_
+_Note: These directions have been tested with `Postgres 9.3.x`_
 
 #### Open port 5432
 
@@ -76,13 +76,15 @@ _WARNING: This will override your database! If unsure, backup your database befo
 
 __Uncompressed:__
 
-    $ psql -h IP_ADDRESS -p 5432 -U app -f your_file_name.sql
+    $ psql -h IP_ADDRESS -p 5432 -U app -d DATABASE_NAME -f your_file_name.sql
 
 __Compressed:__
 
     $ pg_restore -h IP_ADDRESS -p 5432 -U app -d DATABASE_NAME your_file_name.dump
 
 A word on importing. Running the import command most likely will produce errors, such as “Error: role app already exists.”  This is expected behavior as the database that you’re importing into already has been created; tables, keys, and roles will already exist. However the data should transfer amicably. It is a good idea to confirm that your actual data (not tables or schema) has been transferred properly.
+
+Yet another word on importing. If you're going from Postgres 9.2 to 9.2, you won't need the `-d DATABASE_NAME` option. 
 
 #### Close port 5432
 
