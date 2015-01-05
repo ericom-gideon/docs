@@ -48,7 +48,15 @@ If a worker is chosen (dedicated or not), we will automatically install Redis.
 
 #### 3 Details
 
-Time to name your application, choose a Ruby version (if needed), and add any environment variables. Check off any free add-ons to be included in your app. Last but not least, add any before and after migration triggers. Utilize these trigger points to provide bash scripts if required.
+Time to name your application, choose a Ruby version (if needed), and add any environment variables. Check off any free add-ons to be included in your app. 
+
+Ninefold deploys Apache Passenger as the default app server. If you want to run a web process from a Procfile, check 'yes' for __Run web-server with a Procfile__. This means we will deploy nginx with a configured [Thin](http://help.ninefold.com/apps/thin/), [Unicorn](http://help.ninefold.com/apps/unicorn/) or [Puma](http://help.ninefold.com/apps/puma/) app server from the Procfile. Check 'no' to stick with Apache Passenger. 
+
+***
+If Ninefold does not detect a configured web process with a 'yes' on __Run web-server with a Procfile__, Thin will be deployed. 
+***
+
+Last but not least, add any before and after migration triggers. Utilize these trigger points to provide bash scripts if required.
 
 #### Deploy!
 
