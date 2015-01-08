@@ -1,62 +1,354 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<url><loc>http://help.ninefold.com/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/getstarted/how_to_deploy_an_app/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/getstarted/how_to_install_and_utilize_the_cli/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/getstarted/how_to_migrate_from_heroku/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/getstarted/how_ninefold_works_with_github_bitbucket_and_git_url/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/getstarted/exporting_and_importing_postgresql_data/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/getstarted/how_to_deploy_diaspora/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/apps/deployment_with_continuous_integration_ci/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/apps/deploying_a_rails_app_with_your_own_database/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/apps/asset_precompile_on_ninefold/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/apps/setting_up_deployment_notifications/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/apps/zero_downtime_deployment_for_your_ninefold_rails_app/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/apps/setting_and_changing_your_apps_configuration/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/apps/private_gem_repos_on_github_&amp;_bitbucket/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/apps/what_happens_and_what_gets_built_on_a_rails_app_deployment/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/apps/ssl_management_for_rails_apps/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/apps/dns_management_for_rails_apps/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/apps/adding_sendgrid_to_your_rails_app/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/apps/creating_scheduled_tasks_in_rails/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/apps/backing_up_and_restoring_your_rails_db/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/apps/redeploying_an_app/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/apps/postgres_and_postgis_and_modules/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/apps/how_to_utilize_a_cdn_with_ninefold/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/apps/upgrading_from_rails_40_to_41/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/servers/how_to_create_a_docker_server/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/servers/create/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/servers/resize/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/servers/liveview/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/servers/how_to_clone_your_server/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/servers/how_to_attach_and_upload_an_iso/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/servers/how_to_create_a_template_from_your_server/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/servers/moving/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/servers/how_to_add_storage_volumes/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/servers/how_to_view_attached_and_detached_storage_volumes/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/servers/how_to_detach_then_reattach_a_storage_volume/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/servers/using_backups_to_protect_your_data/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/servers/new_server_username_and_password/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/servers/resetting_server_password/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/servers/how_to_connect_to_your_server_using_ssh_rdp/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/servers/how_to_activate_windows_server/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/servers/microsoft_licensing_can_i_use_my_existing_software_and_licenses_on_ninefold/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/networking/ninefold_net/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/networking/dns_management_for_servers/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/networking/setup_load_balancing_single_zone/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/networking/setting_up_static_nat_&amp;_port_forward_for_ip_addresses/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/networking/how_to_open_firewall_ports/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/networking/how_to_setup_global_load_balancing_for_servers/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/networking/how_to_delegate_your_domain_to_ninefold/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/networking/how_to_release_or_unassign_your_ip_addresses/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/networking/how_to_use_multiple_ip_addresses_on_a_server/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/billing/freetrial/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/billing/createuser/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/billing/closeaccount/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/billing/faq/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/reference/faq/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/reference/apdex/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/reference/API/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
-<url><loc>http://help.ninefold.com/reference/contributing/</loc><lastmod>2014-09-23T02:31:25+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://help.ninefold.com/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/getstarted/how_to_deploy_an_app/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/getstarted/how_to_install_and_utilize_the_cli/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/getstarted/how_to_migrate_from_heroku/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/getstarted/how_ninefold_works_with_github_bitbucket_and_git_url/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/getstarted/how_to_utilize_ninefold_logging/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/getstarted/exporting_and_importing_postgresql_data/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/getstarted/how_to_deploy_diaspora/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/getstarted/how_to_deploy_spree/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/apps/what_is_a_procfile/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/apps/deployment_with_continuous_integration_ci/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/apps/deploying_a_rails_app_with_your_own_database/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/apps/asset_precompile_on_ninefold/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/apps/setting_up_deployment_notifications/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/apps/zero_downtime_deployment_for_your_ninefold_rails_app/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/apps/setting_and_changing_your_apps_configuration/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/apps/private_gem_repos_on_github_and_bitbucket/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/apps/what_happens_and_what_gets_built_on_a_rails_app_deployment/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/apps/ssl_management_for_rails_apps/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/apps/dns_management_for_rails_apps/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/apps/setup_elasticsearch/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/apps/adding_sendgrid_to_your_rails_app/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/apps/redisforapps/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/apps/creating_scheduled_tasks_in_rails/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/apps/backing_up_and_restoring_your_rails_db/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/apps/redeploying_an_app/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/apps/postgres_and_postgis_and_modules/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/apps/how_to_utilize_a_cdn_with_ninefold/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/apps/upgrading_from_rails_40_to_41/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/apps/unicorn/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/apps/puma/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/apps/thin/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/apps/faq/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/servers/how_to_create_a_docker_server/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/servers/create/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/servers/resize/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/servers/liveview/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/servers/how_to_clone_your_server/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/servers/how_to_attach_and_upload_an_iso/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/servers/how_to_create_a_template_from_your_server/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/servers/moving/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/servers/how_to_add_storage_volumes/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/servers/how_to_view_attached_and_detached_storage_volumes/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/servers/how_to_detach_then_reattach_a_storage_volume/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/servers/using_backups_to_protect_your_data/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/servers/new_server_username_and_password/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/servers/resetting_server_password/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/servers/how_to_connect_to_your_server_using_ssh_rdp/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/servers/how_to_activate_windows_server/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/servers/microsoft_licensing_can_i_use_my_existing_software_and_licenses_on_ninefold/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/servers/faq/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/networking/ninefold_net/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/networking/dns_management_for_servers/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/networking/setup_load_balancing_single_zone/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/networking/setting_up_static_nat_and_port_forward_for_ip_addresses/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/networking/how_to_open_firewall_ports/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/networking/disable_server_os_firewall/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/networking/how_to_setup_global_load_balancing_for_servers/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/networking/how_to_delegate_your_domain_to_ninefold/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/networking/how_to_release_or_unassign_your_ip_addresses/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/networking/how_to_use_multiple_ip_addresses_on_a_server/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/billing/freetrial/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/billing/createuser/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/billing/closeaccount/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/billing/faq/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/reference/faq/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/reference/apdex/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/reference/API/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://help.ninefold.com/reference/contributing/</loc>
+  <lastmod>2015-01-08T00:18:44+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
 </urlset>
- 
