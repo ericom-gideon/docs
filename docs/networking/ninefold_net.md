@@ -11,9 +11,9 @@ Ninefold Net enables servers in different regions to communicate with each other
 To enable, select "Servers" -> "Resources" from the dashboard.
 Click on Enable Ninefold Net.
 
-Please note; any existing servers won't be able to take advantage of the Ninefold Net. It is necessary to template and re-deploy any existing servers should they need the ability to communicate with servers in other Availability Zones.
+Please note; any existing servers won't be able to take advantage of the Ninefold Net. It is necessary to template and re-deploy any existing servers should they need the ability to communicate with servers in other regions.
  
-Tip: Enabling this feature is free and traffic between regions is free
+Tip: Enabling this feature is free and traffic between regions is free.
  
 #### Ninefold Net IP info
 
