@@ -5,6 +5,11 @@ page_keywords: database mongo mysql byodb
 
 ## Deploying a Rails app with your own database
 
+*** 
+Note: You will have to enable Ninefold Net using [this guide](http://help.ninefold.com/networking/ninefold_net/) before you deploy your Rails app and Ninefold server. If the database is hosted externally (e.g. AWS RDS, Mongolabs), no need to enable Ninefold Net. 
+***
+
+
 Out of the box, Ninefold enables you to implement a database server with PostgreSQL installed. Want to bring your own database such as MySQL or MongoDB? Read on! The following is our recommendation on how to implement BYODB.
 
 Before you deploy, we recommend you __read the entire article__ so you deploy with all of the current settings. There is a quiz at the end of the article!
