@@ -32,6 +32,8 @@ You will need to add the following configuration environment variables to your N
 * AWS_ACCESS_KEY_ID
 * AWS_SECRET_ACCESS_KEY
 
+FOG_PROVIDER should be set to AWS string, for using as s3.
+
 Next, create a bucket where you want to synchronize the compiled assets to. For this example, we will refer to the bucket: ‘brutus’. Log into the AWS Management Console, clicking the "S3" tab and by clicking the "Create Bucket" button. You will then add the FOG_DIRECTORY bucket to your __Environment variables__ and update.
 
 Now, take a look at config/application.rb in your Rails app to make sure the following settings are enabled:
