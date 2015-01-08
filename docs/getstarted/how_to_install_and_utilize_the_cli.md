@@ -1,7 +1,7 @@
 page_title: CLI
 page_autor: Brittany Martin
 page_description: Knowledge base article to instruct users on the Ninefold CLI
-page_keywords: CLI Ninefold Gem Brutus
+page_keywords: CLI Ninefold Gem Brutus ssh 
 
 ## How to utilize the CLI
 

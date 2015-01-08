@@ -5,6 +5,10 @@ page_keywords:    server volume VPS RDP SSH key windows linux liveview
 
 ## Connect to your server using SSH / RDP
 
+***
+This SSH server guide is for our bare server/VPS customers only. Using our Rails hosting? We do not grant ssh access since we carefully orchestrate everything for you. You have the nifty [CLI](http://help.ninefold.com/getstarted/how_to_install_and_utilize_the_cli/) to manage Rails apps from the command line.
+***
+
 ### Live View
 
 Ninefold's web portal has a feature called "Live View" which allows you to connect to your server for administration purposes. While convenient, Live View has limitations around screen resolution, performance, keyboard & mouse compatibility and should therefore be used for initial configuration or casual use only.
