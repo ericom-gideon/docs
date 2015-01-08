@@ -163,6 +163,10 @@
                             <a href="../how_to_deploy_diaspora">Deploy Diaspora</a>
                         </li>
                     
+                        <li >
+                            <a href="../how_to_deploy_spree">Deploy Spree</a>
+                        </li>
+                    
                     </ul>
                 </li>
             
@@ -551,7 +555,12 @@
 <p>We will initially set <strong>RAILS_ENV=production</strong> regardless of what setup is chosen. This setting can be changed in the next step.</p>
 <p>If a worker is chosen (dedicated or not), we will automatically install Redis.</p>
 <h4 id="3-details">3 Details</h4>
-<p>Time to name your application, choose a Ruby version (if needed), and add any environment variables. Check off any free add-ons to be included in your app. Last but not least, add any before and after migration triggers. Utilize these trigger points to provide bash scripts if required.</p>
+<p>Time to name your application, choose a Ruby version (if needed), and add any environment variables. Check off any free add-ons to be included in your app. </p>
+<p>Ninefold deploys Apache Passenger as the default app server. If you want to run a web process from a Procfile, check 'yes' for <strong>Run web-server with a Procfile</strong>. This means we will deploy nginx with a configured <a href="http://help.ninefold.com/apps/thin/">Thin</a>, <a href="http://help.ninefold.com/apps/unicorn/">Unicorn</a> or <a href="http://help.ninefold.com/apps/puma/">Puma</a> app server from the Procfile. Check 'no' to stick with Apache Passenger. </p>
+<hr />
+<p>If Ninefold does not detect a configured web process with a 'yes' on <strong>Run web-server with a Procfile</strong>, Thin will be deployed. </p>
+<hr />
+<p>Last but not least, add any before and after migration triggers. Utilize these trigger points to provide bash scripts if required.</p>
 <h4 id="deploy">Deploy!</h4>
 <p>Now Ninefold is going to build your infrastructure, deploy the app and verify the deployment. Once the app enters into deployment, a <strong>Deployment log</strong> will appear so you can watch the wonder that is Ninefold.</p>
 <p>While the Ruby on Rails app is deploying, Brutus the yak recommends installing the <a href="../how_to_install_and_utilize_the_cli">Ninefold CLI</a> on your local machine.</p>

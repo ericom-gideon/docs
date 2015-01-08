@@ -163,6 +163,10 @@
                             <a href="../how_to_deploy_diaspora">Deploy Diaspora</a>
                         </li>
                     
+                        <li >
+                            <a href="../how_to_deploy_spree">Deploy Spree</a>
+                        </li>
+                    
                     </ul>
                 </li>
             
@@ -533,7 +537,7 @@
 <li>Close port 5432</li>
 </ol>
 <p>Read on for more information about each.</p>
-<p><em>Note: These directions have been tested with Postgres 9.3.x</em></p>
+<p><em>Note: These directions have been tested with <code>Postgres 9.3.x</code></em></p>
 <h4 id="open-port-5432">Open port 5432</h4>
 <p>Port 5432 is the TCP port that Postgres listens in on.  By default it is closed for security.</p>
 <ol>
@@ -579,12 +583,13 @@
 <p>Much like exporting, there’s only one step. However the command to use will depend on the type of file created during the Export process.  If using an external hosting provider’s backup file, you will most likely need to use the command for Compressed files.  The commands and flags are very similar to pg_dump with some slight nuances.</p>
 <p><em>WARNING: This will override your database! If unsure, backup your database before overriding it.</em></p>
 <p><strong>Uncompressed:</strong></p>
-<pre><code>$ psql -h IP_ADDRESS -p 5432 -U app -f your_file_name.sql
+<pre><code>$ psql -h IP_ADDRESS -p 5432 -U app -d DATABASE_NAME -f your_file_name.sql
 </code></pre>
 <p><strong>Compressed:</strong></p>
 <pre><code>$ pg_restore -h IP_ADDRESS -p 5432 -U app -d DATABASE_NAME your_file_name.dump
 </code></pre>
 <p>A word on importing. Running the import command most likely will produce errors, such as “Error: role app already exists.”  This is expected behavior as the database that you’re importing into already has been created; tables, keys, and roles will already exist. However the data should transfer amicably. It is a good idea to confirm that your actual data (not tables or schema) has been transferred properly.</p>
+<p>Yet another word on importing. If you're going from Postgres 9.2 to 9.2, you won't need the <code>-d DATABASE_NAME</code> option. </p>
 <h4 id="close-port-5432">Close port 5432</h4>
 <ol>
 <li>Start from the Database tab (<strong>Dashboard</strong> &gt; <strong>App</strong> &gt; <strong>Database</strong> tab)</li>

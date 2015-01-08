@@ -7,10 +7,10 @@
         <meta name="msvalidate.01" content="30681728D02314C28E73C01119E51FE8" />
         
         
-        <link rel="canonical" href="http://help.ninefold.com/billing/createuser/">
+        <link rel="canonical" href="http://help.ninefold.com/getstarted/how_to_deploy_spree/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-        <title>Creating additional users - Ninefold</title>
+        <title>Deploy Spree - Ninefold</title>
 
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
@@ -131,40 +131,40 @@
             <ul class="nav navbar-nav">
             
             
-                <li class="dropdown">
+                <li class="dropdown active">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
                         <li >
-                            <a href="../../getstarted/how_to_deploy_an_app">Deploy an app</a>
+                            <a href="../how_to_deploy_an_app">Deploy an app</a>
                         </li>
                     
                         <li >
-                            <a href="../../getstarted/how_to_install_and_utilize_the_cli">Utilize the CLI</a>
+                            <a href="../how_to_install_and_utilize_the_cli">Utilize the CLI</a>
                         </li>
                     
                         <li >
-                            <a href="../../getstarted/how_to_migrate_from_heroku">Migrating from Heroku</a>
+                            <a href="../how_to_migrate_from_heroku">Migrating from Heroku</a>
                         </li>
                     
                         <li >
-                            <a href="../../getstarted/how_ninefold_works_with_github_bitbucket_and_git_url">GitHub, Bitbucket and Git URL</a>
+                            <a href="../how_ninefold_works_with_github_bitbucket_and_git_url">GitHub, Bitbucket and Git URL</a>
                         </li>
                     
                         <li >
-                            <a href="../../getstarted/how_to_utilize_ninefold_logging">Ninefold logging</a>
+                            <a href="../how_to_utilize_ninefold_logging">Ninefold logging</a>
                         </li>
                     
                         <li >
-                            <a href="../../getstarted/exporting_and_importing_postgresql_data">Exporting and importing PostgreSQL data</a>
+                            <a href="../exporting_and_importing_postgresql_data">Exporting and importing PostgreSQL data</a>
                         </li>
                     
                         <li >
-                            <a href="../../getstarted/how_to_deploy_diaspora">Deploy Diaspora</a>
+                            <a href="../how_to_deploy_diaspora">Deploy Diaspora</a>
                         </li>
                     
-                        <li >
-                            <a href="../../getstarted/how_to_deploy_spree">Deploy Spree</a>
+                        <li class="active">
+                            <a href=".">Deploy Spree</a>
                         </li>
                     
                     </ul>
@@ -407,24 +407,24 @@
             
             
             
-                <li class="dropdown active">
+                <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Accounts & Billing <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
                         <li >
-                            <a href="../freetrial">Free trial</a>
-                        </li>
-                    
-                        <li class="active">
-                            <a href=".">Creating additional users</a>
+                            <a href="../../billing/freetrial">Free trial</a>
                         </li>
                     
                         <li >
-                            <a href="../closeaccount">How to close your account</a>
+                            <a href="../../billing/createuser">Creating additional users</a>
                         </li>
                     
                         <li >
-                            <a href="../faq">Billing FAQ</a>
+                            <a href="../../billing/closeaccount">How to close your account</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../billing/faq">Billing FAQ</a>
                         </li>
                     
                     </ul>
@@ -488,7 +488,17 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#creating-additional-users">Creating additional users</a></li>
+        <li class="main active"><a href="#spree-on-ninefold">Spree on Ninefold</a></li>
+        
+            <li class="subsection"><a href="#why-is-spree-fantastic">Why is Spree fantastic?</a></li>
+        
+            <li class="subsection"><a href="#getting-started">Getting Started</a></li>
+        
+            <li class="subsection"><a href="#deploying-to-ninefold">Deploying to Ninefold</a></li>
+        
+            <li class="subsection"><a href="#infrastructure">Infrastructure</a></li>
+        
+            <li class="subsection"><a href="#wrap-up">Wrap-up</a></li>
         
     
     </ul>
@@ -497,57 +507,35 @@
             <div class="col-md-9" role="main">
 
                 <div class="col-md-12 hidden-xs hidden-sm">
-                    <a href="https://github.com/ninefold/docs/tree/master/docs/billing/createuser.md" class="github-btn btn btn-default pull-right"> <span class="fa fa-github"></span> Edit on GitHub</a>
+                    <a href="https://github.com/ninefold/docs/tree/master/docs/getstarted/how_to_deploy_spree.md" class="github-btn btn btn-default pull-right"> <span class="fa fa-github"></span> Edit on GitHub</a>
                 </div>
                 <div class="col-md-12 hidden-xs hidden-sm"></br></div>
                 
                    
 
-<h2 id="creating-additional-users">Creating additional users</h2>
-<p>Creating additional users will allow others in your organization to create and manage both servers and applications in your Ninefold account. Before you can add an additional user you will need to ensure that you're an admin of the account.</p>
+<h2 id="spree-on-ninefold">Spree on Ninefold</h2>
+<h4 id="why-is-spree-fantastic">Why is Spree fantastic?</h4>
+<p><a href="https://spreecommerce.com/storefront">Spree</a> is one of the largest open source software projects in the world -- not just ecommerce software but of anything! Spree is a full featured ecommerce platform written for the Ruby on Rails framework. It is designed to make programming ecommerce applications easier by making several assumptions about what most developers need to get started. </p>
+<p>That being said, Rails developers are the target audience for Spree, not business owners. Spree seeks to be the platform that developers use as the foundation for their project rather than having to start from scratch.</p>
+<h4 id="getting-started">Getting Started</h4>
+<p>New to Spree? Spree has an excellent tutorial to walk through <a href="https://guides.spreecommerce.com/developer/getting_started_tutorial.html">here</a>. </p>
+<h4 id="deploying-to-ninefold">Deploying to Ninefold</h4>
+<p>Spree has an easy to follow guide from Ninefold that makes it simple to deploy. Follow the tutorial <a href="https://guides.spreecommerce.com/developer/ninefold.html">here</a>.</p>
+<h4 id="infrastructure">Infrastructure</h4>
+<p>Spree is a complex app and can quickly go through a lot of resources. If the Spree store will serve real traffic (~ 100 concurrent users), Ninefold recommends a Production setup similar to the following:</p>
+<ul>
+<li>2 X 1.5GB Web servers (aka 2 web servers)</li>
+<li>1 X 1.5GB Database server</li>
+<li>1 X 1.5GB Worker server</li>
+</ul>
+<p>Of course, your inventory and code greatly affect what is the best infrastructure for the app. Ninefold recommends conducting load testing with a combination of <a href="https://flood.io/">Flood.io</a> and <a href="http://newrelic.com/">New Relic</a> as we did <a href="http://ninefold.com/spree/">here</a>.</p>
+<h4 id="wrap-up">Wrap-up</h4>
 <ol>
-<li>Access your account details from the dropdown in the upper right corner.</li>
-<li>Click on the users tab.</li>
-<li>Click on Create user.</li>
-<li>Fill in the form with the details for your new user.</li>
+<li>Try Spree</li>
+<li>Deploy Spree to Ninefold</li>
+<li>Something (maybe finding something to sell!)</li>
+<li>Profit</li>
 </ol>
-<p>The email address for the new user you have entered will receive an activation email that must be clicked before the new user can login. It will also ask them to set their password for the first time.</p>
-<table>
-<thead>
-<tr>
-<th>Can...</th>
-<th>User</th>
-<th>Admin</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Manage apps</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Manage servers</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Manage other users</td>
-<td>No</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Update billing details</td>
-<td>No</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>View invoices</td>
-<td>No</td>
-<td>Yes</td>
-</tr>
-</tbody>
-</table>
 
 
 </br></br></br></br>

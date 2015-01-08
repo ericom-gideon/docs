@@ -163,6 +163,10 @@
                             <a href="../../getstarted/how_to_deploy_diaspora">Deploy Diaspora</a>
                         </li>
                     
+                        <li >
+                            <a href="../../getstarted/how_to_deploy_spree">Deploy Spree</a>
+                        </li>
+                    
                     </ul>
                 </li>
             
@@ -514,7 +518,7 @@
 <p><strong>Puma Gem</strong></p>
 <p>Add the Puma gem to your Gemfile as below:</p>
 <pre><code>group :production do
-  gem puma
+  gem 'puma'
 end
 </code></pre>
 <p>(be sure to bundle)</p>
@@ -528,11 +532,11 @@ end
 <p><strong>Enable A New App Server</strong></p>
 <p>If you would like to switch to Nginx as a web server:
 - Go to the <strong>Configuration</strong> tab,
-- Under App Server, click "Use Procfile". 
+- Under App Server, click "Use Procfile".
 - Redeploy.</p>
 <h4 id="additional-information">Additional Information</h4>
-<p>Additional information about Puma can be found 
-<a href="https://github.com/puma/puma">here</a> and 
+<p>Additional information about Puma can be found
+<a href="https://github.com/puma/puma">here</a> and
 <a href="http://puma.io/">here</a>.</p>
 
 
