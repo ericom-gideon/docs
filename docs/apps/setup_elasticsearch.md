@@ -5,6 +5,10 @@ page_keywords: elasticsearch solr search docker servers rails
 
 ## Setup Elasticsearch 
 
+*** 
+Note: You will have to enable Ninefold Net using [this guide](http://help.ninefold.com/networking/ninefold_net/) before you deploy your Rails app and server. 
+***
+
 #### Why Elasticsearch? 
 
 Want to search all the things? Elasticsearch is the way to go! Elasticsearch is a flexible and powerful open source, distributed, real-time search and analytics engine. Elasticsearch gives you the ability to move easily beyond simple full-text search. At Ninefold, ES powers our robust logging search.  
@@ -30,8 +34,6 @@ If you are new to Docker, we suggest running through the examples in the [Docker
 Sign into Ninefold and instead of deploying a new app, deploy a server. We recommend deploying at least 2GB on the Ninefold bare server. 
 
 Select Ubuntu as the OS and then choose Docker in the server deployment wizard. We will automatically setup Ubuntu 14.04 LTS with Docker for you. 
-
-Important: On the last step, be sure to enable Ninefold Net. This will enable your Rails App and your Docker server to giggle and share secrets with one another (over internal IPs of course). 
 
 ![All the things](../../img/ninefoldnet.png) 
 
