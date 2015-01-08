@@ -24,6 +24,7 @@ pages:
 - ['getstarted/how_to_utilize_ninefold_logging.md', 'Getting Started', 'Ninefold logging']
 - ['getstarted/exporting_and_importing_postgresql_data.md', 'Getting Started', 'Exporting and importing PostgreSQL data']
 - ['getstarted/how_to_deploy_diaspora.md', 'Getting Started', 'Deploy Diaspora']
+- ['getstarted/how_to_deploy_spree.md', 'Getting Started', 'Deploy Spree']
 
 # App Deployment
 - ['apps/what_is_a_procfile.md', 'App Deployment', 'Configuring your procfile']
