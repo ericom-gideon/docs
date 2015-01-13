@@ -5,7 +5,7 @@ page_keywords: dns domain godaddy rails app namecheap url
 
 ## DNS management for Rails apps
 
-Bought yourself a domain for your brand new shiny Rails app or you're (hooray!) moving your app to the Ninefold promiseland? Excellent! Ninefold can manage your DNS once you follow the following steps. 
+Bought yourself a domain for your brand new shiny Rails app or you're (hooray!) moving your app to the Ninefold promiseland? Excellent! Ninefold can manage your DNS once you follow the following steps.
 
 #### Ninefold name servers
 
@@ -40,35 +40,27 @@ Navigate to __Servers__ > __Network__ > __DNS__ in Ninefold. Click __Edit__ next
 
 _CNAME_
 
-You can add as many CNAMEs as you want. We do support wildcard domains. 
+You can add as many CNAMEs as you want. We do support wildcard domains.
 
-__Name:__ (subdomain URL like 'pop', 'imap' or 'smtpout')
-
-__Type:__ CNAME record
-
-__Content:__ (The full URL with the subdomain included)
-
-__TTL:__ (you can accept the default)
-
-__Priority:__ (your choice)
+* __Name:__ (subdomain URL like 'pop', 'members', 'admin', or whatever you choose)
+* __Type:__ CNAME record
+* __Content:__ (The full URL with the subdomain included that you want the CNAME to point to)
+* __TTL:__ (you can accept the default)
+* __Priority:__ (your choice)
 
 _MX_
 
-You will only need to add one record.
+Add one per record as provided by your registrar.
 
-__Name:__ (can be blank or something like mail.iamawesome.com)
+* __Name:__ (can be blank or a subdomain URL like 'mail', 'imap', etc)
+* __Type:__ MX record
+* __Content:__ (mail server URL from your registrar)
+* __TTL:__ (you can accept the default)
+* __Priority:__ (Accept the default or add what your registrar gives you)
 
-__Type:__ MX record
-
-__Content:__ (mail server URL from your registrar)
-
-__TTL:__ (you can accept the default)
-
-__Priority:__ (Accept the default or add what your registrar gives you)
-
---------
-
-_WARNING: Do not add additional A records for the domain here if the domain has already been added to the __Overview__ tab. The two A records will conflict with each other so the domain will stop resolving correctly._
+***
+_WARNING: Do not add additional A records for the domain here if the domain has already been added to the __Overview__ tab. The two A records will conflict with each other causing the domain to stop resolving correctly._
+***
 
 #### Troubleshooting
 
@@ -81,5 +73,5 @@ If your domain isn't pointing to your app, enter in the magic of [What's My DNS]
 Not using Ninefold to manage the domain? Easy: configure your domain registrar to point the domain (via a CNAME record) to the ninefold-apps.com url Ninefold provides in the __Overview__ tab.  
 
 ***
-Note: if you do not use Ninefold to manage your domain, Ninefold Support will not be able to assist you with any issues you may have with your setup. [What's My DNS](https://www.whatsmydns.net/) will still be your troubleshooting buddy. 
+Note: if you do not use Ninefold to manage your domain, Ninefold Support will not be able to assist you with any issues you may have with your setup. [What's My DNS](https://www.whatsmydns.net/) will still be your troubleshooting buddy.
 ***
