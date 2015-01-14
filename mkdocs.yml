@@ -91,6 +91,7 @@ pages:
 - ['billing/faq.md', 'Accounts & Billing', 'Billing FAQ']
 
 # Reference
+- ['reference/support-policy.md', 'Reference', 'Support Policy']
 - ['reference/faq.md', 'Reference', 'FAQ']
 - ['reference/apdex.md', 'Reference', 'Apdex to measure user satisfaction']
 - ['reference/API.md', 'Reference', 'Using the API (v2)']
