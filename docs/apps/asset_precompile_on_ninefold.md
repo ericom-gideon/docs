@@ -10,7 +10,7 @@ We run this task automatically for you provided you are using rails version 3.2 
 
 Ninefold uses [Apache](http://apache.com) to serve the precompiled .gz versions of static assets if it’s available and if the browser supports it.
 
-NOTE: If you opt to run `rake assets:precompile` locally then commit them to your repo, be sure to add the following to the config/environment/production.rb file: `config/serve_static_assets=true`
+NOTE: If you opt to run `rake assets:precompile` locally then commit them to your repo, be sure to add the following to the config/environment/production.rb file: `config.serve_static_assets=true`
 
 This forces the assets that are in the public/assets directory to be served properly in production.  
 
