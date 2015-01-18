@@ -515,7 +515,7 @@
 <p>On Ninefold, we run a few rake commands during initial deployment and every subsequent deployment of a new customer code release or a force redeploy of an existing release. One of these is <code>rake assets:precompile</code>.</p>
 <p>We run this task automatically for you provided you are using rails version 3.2 or higher.  The rake task is skipped if you have checked in files to the public/assets folder other than *.ico files.  </p>
 <p>Ninefold uses <a href="http://apache.com">Apache</a> to serve the precompiled .gz versions of static assets if it’s available and if the browser supports it.</p>
-<p>NOTE: If you opt to run <code>rake assets:precompile</code> locally then commit them to your repo, be sure to add the following to the config/environment/production.rb file: <code>config/serve_static_assets=true</code></p>
+<p>NOTE: If you opt to run <code>rake assets:precompile</code> locally then commit them to your repo, be sure to add the following to the config/environment/production.rb file: <code>config.serve_static_assets=true</code></p>
 <p>This forces the assets that are in the public/assets directory to be served properly in production.  </p>
 <hr />
 <p><em>NOTE: Our recommendation is to allow us to run <code>rake assets:precompile</code> for you. This will allow for you to troubleshoot any precompilation errors via our Log viewer or CLI.</em></p>
