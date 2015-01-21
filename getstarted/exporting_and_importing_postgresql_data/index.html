@@ -578,10 +578,12 @@
 <ul>
 <li>-a = Data only</li>
 <li>-c = Clean</li>
+<li>-x = No privileges</li>
+<li>-O = No owner</li>
 </ul>
 <p>You will then be prompted to enter the database password. This is on the <strong>Database</strong> tab. Click <strong>Show</strong> to view the password.</p>
 <hr />
-<p>NOTE: If you’re exporting your database from an external hosting provider like <a href="https://devcenter.heroku.com/articles/heroku-postgres-import-export">Heroku</a>, please check their documentation.</p>
+<p>NOTE: If you’re exporting your database from an external hosting provider like <a href="https://devcenter.heroku.com/articles/heroku-postgres-import-export">Heroku</a>, please check their documentation.  You may have to append flags such as <code>-x</code> and <code>-O</code> to your <code>pg_dump</code> command, otherwise you may get errors about ownership.</p>
 <hr />
 <h4 id="importing">Importing</h4>
 <p>Much like exporting, there’s only one step. However the command to use will depend on the type of file created during the Export process.  If using an external hosting provider’s backup file, you will most likely need to use the command for Compressed files.  The commands and flags are very similar to pg_dump with some slight nuances.</p>
@@ -593,7 +595,7 @@
 <pre><code>$ pg_restore -h IP_ADDRESS -p 5432 -U app -d DATABASE_NAME your_file_name.dump
 </code></pre>
 <p>A word on importing. Running the import command most likely will produce errors, such as “Error: role app already exists.”  This is expected behavior as the database that you’re importing into already has been created; tables, keys, and roles will already exist. However the data should transfer amicably. It is a good idea to confirm that your actual data (not tables or schema) has been transferred properly.</p>
-<p>Yet another word on importing. If you're going from Postgres 9.2 to 9.2, you won't need the <code>-d DATABASE_NAME</code> option. </p>
+<p>Yet another word on importing. If you're going from Postgres 9.2 to 9.2, you won't need the <code>-d DATABASE_NAME</code> option.</p>
 <h4 id="close-port-5432">Close port 5432</h4>
 <ol>
 <li>Start from the Database tab (<strong>Dashboard</strong> &gt; <strong>App</strong> &gt; <strong>Database</strong> tab)</li>
