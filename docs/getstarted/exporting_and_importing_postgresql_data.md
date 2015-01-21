@@ -1,7 +1,7 @@
 page_title: Exporting And Importing PostgreSQL Data
 page_author: Risa B. (converted by Britt)
 page_description: Knowledge base article to instruct users on how to they can move their Postgres data in and out their Ruby on Rails app
-page_keywords: rails database pg pgadmin dump restore import cli data export postgres postgresql
+page_keywords: rails database pg pgadmin dump restore import cli data export postgres postgresql importing exporting
 
 ## Export and import Postgres data
 
@@ -61,11 +61,13 @@ __Optional flags__
 
 * -a = Data only
 * -c = Clean
+* -x = No privileges
+* -O = No owner
 
 You will then be prompted to enter the database password. This is on the __Database__ tab. Click __Show__ to view the password.
 
 ***
-NOTE: If you’re exporting your database from an external hosting provider like [Heroku](https://devcenter.heroku.com/articles/heroku-postgres-import-export), please check their documentation.
+NOTE: If you’re exporting your database from an external hosting provider like [Heroku](https://devcenter.heroku.com/articles/heroku-postgres-import-export), please check their documentation.  You may have to append flags such as `-x` and `-O` to your `pg_dump` command, otherwise you may get errors about ownership.
 ***
 
 #### Importing
@@ -84,7 +86,7 @@ __Compressed:__
 
 A word on importing. Running the import command most likely will produce errors, such as “Error: role app already exists.”  This is expected behavior as the database that you’re importing into already has been created; tables, keys, and roles will already exist. However the data should transfer amicably. It is a good idea to confirm that your actual data (not tables or schema) has been transferred properly.
 
-Yet another word on importing. If you're going from Postgres 9.2 to 9.2, you won't need the `-d DATABASE_NAME` option. 
+Yet another word on importing. If you're going from Postgres 9.2 to 9.2, you won't need the `-d DATABASE_NAME` option.
 
 #### Close port 5432
 
