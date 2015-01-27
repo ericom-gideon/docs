@@ -1,4 +1,4 @@
-page_title:       How To Open Firewall Ports
+page_title:       How to open firewall ports
 page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article instruct users how they can open Firewall Ports 
 page_keywords:    server volume network firewall ports

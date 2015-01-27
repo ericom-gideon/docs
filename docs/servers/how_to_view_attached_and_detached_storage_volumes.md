@@ -1,4 +1,4 @@
-page_title:       How to View Attached and Detached Storage Volumes
+page_title:       How to view attached and detached storage volumes
 page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to instruct server users how to view attached and detached storage volumes
 page_keywords:    server volume detached attached VPS 

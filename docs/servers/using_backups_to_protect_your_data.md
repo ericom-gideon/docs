@@ -1,4 +1,4 @@
-page_title:       Using Backups To Protect Your Data
+page_title:       Using backups to protect your data
 page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to instruct server users how to view attached and detached storage volumes
 page_keywords:    server volume backups safety VPS snapshot

@@ -1,4 +1,4 @@
-page_title:       How To Activate Windows Server
+page_title:       How to activate Windows Server
 page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to instruct server users how can they can activate Windows Server 2008 
 page_keywords:    server volume key windows 2008

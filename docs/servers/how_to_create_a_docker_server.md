@@ -1,4 +1,4 @@
-page_title:       How to Create a Docker Server
+page_title:       How to create a Docker server
 page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to instruct users on they can deploy an Ubuntu server with Docker installed
 page_keywords:    Docker Ubuntu 14.04 LTS server container 

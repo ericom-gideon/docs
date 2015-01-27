@@ -1,4 +1,4 @@
-page_title:       Microsoft Licensing - Can I Use My Existing Software And Licenses On Ninefold?
+page_title:       Microsoft Licensing - Can I use my existing software and licenses on Ninefold?
 page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to instruct server users on Microsoft licensing. 
 page_keywords:    server volume windows microsoft SPLA license 

@@ -1,4 +1,4 @@
-page_title:       How To Setup Global Load Balancing For Servers
+page_title:       How to setup global load balancing for servers
 page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article instruct users how they can setup local load balancing
 page_keywords:    server volume network load balancer global 

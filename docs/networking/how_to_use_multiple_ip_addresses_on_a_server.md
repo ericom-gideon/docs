@@ -1,4 +1,4 @@
-page_title:       How To Use Multiple IP Addresses On A Server
+page_title:       How to use multiple IP addresses on a server
 page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to help users use multiple IPs on a server page_keywords:    server VPS IP multiple address
 

@@ -1,4 +1,4 @@
-page_title:       How To Add Storage Volumes
+page_title:       How to add storage volumes
 page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to instruct users on how to add sotrage volumes to servers
 page_keywords:    server volume VPS add storage 

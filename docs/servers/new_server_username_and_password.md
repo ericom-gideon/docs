@@ -1,4 +1,4 @@
-page_title:       New Server Username And Password
+page_title:       New server username and password
 page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to guide users on bare server usernames and passwords
 page_keywords:    server password VPS virtual username windows centos fedora ubuntu

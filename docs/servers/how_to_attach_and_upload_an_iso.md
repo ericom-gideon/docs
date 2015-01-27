@@ -1,4 +1,4 @@
-page_title:       How to Attach an ISO
+page_title:       How to attach an ISO
 page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to instruct users how upload and attach an ISO to their server
 page_keywords:    server ISO template attach bare VPS
@@ -17,22 +17,20 @@ You are solely responsible for ensuring you are licensed to operate Microsoft or
 
 3. Enter the URL of the ISO file you wish to import into your account.
 
-4. If the ISO is Bootable (An OS Installation disk) make sure to tick the box. For information on regions see here. From the __OS Type__ dropdown list, select the OS Type. Use ""Other" if your OS type isn't listed.
+4. If the ISO is bootable (An OS installation disk) make sure to tick the box. From the __OS Type__ dropdown list, select the OS type. Use ""Other" if your OS type isn't listed.
 
-	_Note: If you pick the wrong OS Type (The virtual machine errors on start, etc) you can change it by going to Servers->Resources and clicking on Edit on the ISO. You should pick Other if your OS isn't para-virtualised out of the box or fails 	on deployment on another OS Type._
+	_Note: If you pick the wrong OS type (The virtual machine errors on start, etc) you can change it by going to Servers->Resources and clicking on Edit on the ISO. You should pick Other if your OS isn't para-virtualised out of the box or fails 	on deployment on another OS type._
 
 5. Click __Upload__ and wait for the ISO to finish importing into your account.
 
 #### Attaching an ISO 
 
-1. First, log in to the Ninefold Portal.
+1. Click on __Servers__ > __Manage__. This will list all servers in your account.
 
-2. Click on __Servers__ > __Manage__. This will list all servers in your account.
+2. Select the server which you want to attach an ISO to.
 
-3. Select the Server which you want to attach an ISO to.
+3. Click the storage tab and scroll to the bottom of the page.
 
-4. Click the Storage tab and scroll to the bottom of the page.
+4. Find the ISO you wish to attach and click __Attach__.
 
-5. Find the ISO you wish to attach and click __Attach__.
-
-6. Your ISO should be accessible within the Server.
+5. Your ISO should be accessible within the Server.

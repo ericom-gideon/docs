@@ -1,4 +1,4 @@
-page_title:       How To Detach Then Reattach A Storage Volume
+page_title:       How to detach then reattach a storage volume
 page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to instruct server users how they can detach and then reattach storage volumes
 page_keywords:    server volume detached attached VPS 

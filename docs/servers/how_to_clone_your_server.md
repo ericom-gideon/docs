@@ -1,4 +1,4 @@
-page_title:       How to Clone Your Server
+page_title:       How to clone your server
 page_author:      Angelo Livanos (Coverted by Brittany Martin)
 page_description: Knowledge base article to instruct users on how you can clone your server
 page_keywords:    server volume clone VPS copy
