@@ -75,5 +75,6 @@ then the Git URL option is the one for you. Do note that the _auto redeployment_
 You will need to generate a Git URL from your repo. The format of the Git URL will be similar to this:
 
 	git@URL:username/gitrepo.git
+* Please note that your URL must be accessible over port 80 or 443, non-standard ports are not compatible.
 
 Simply plug the URL in Step 1 of the deploy process, and you'll be on your way to deployment bliss. 
