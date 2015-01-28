@@ -18,7 +18,6 @@ pages:
 
 # Getting Started
 - ['getstarted/how_to_deploy_an_app.md', 'Getting Started', 'Deploy an app']
-- ['apps/sidekiq.md', 'App Deployment', 'Implementing Sidekiq']
 - ['getstarted/how_to_install_and_utilize_the_cli.md', 'Getting Started', 'Utilize the CLI']
 - ['getstarted/how_to_migrate_from_heroku.md', 'Getting Started', 'Migrating from Heroku']
 - ['getstarted/how_ninefold_works_with_github_bitbucket_and_git_url.md', 'Getting Started', 'GitHub, Bitbucket and Git URL']
@@ -29,6 +28,7 @@ pages:
 
 # App Deployment
 - ['apps/what_is_a_procfile.md', 'App Deployment', 'Configuring your procfile']
+- ['apps/sidekiq.md', 'App Deployment', 'Implementing Sidekiq']
 - ['apps/deployment_with_continuous_integration_ci.md', 'App Deployment', 'Deployment with CI']
 - ['apps/deploying_a_rails_app_with_your_own_database.md', 'App Deployment', 'Deploying a Rails app with your own database']
 - ['apps/asset_precompile_on_ninefold.md', 'App Deployment', 'Asset precompilation']
