@@ -181,6 +181,10 @@
                         </li>
                     
                         <li >
+                            <a href="../../apps/sidekiq">Implementing Sidekiq</a>
+                        </li>
+                    
+                        <li >
                             <a href="../../apps/deployment_with_continuous_integration_ci">Deployment with CI</a>
                         </li>
                     
@@ -494,11 +498,11 @@
     
         <li class="main active"><a href="#connect-to-your-server-using-ssh-rdp">Connect to your server using SSH / RDP</a></li>
         
-            <li class="subsection"><a href="#live-view">Live View</a></li>
-        
             <li class="subsection"><a href="#linux-open-source-servers">Linux / Open source servers</a></li>
         
             <li class="subsection"><a href="#windows-server">Windows Server</a></li>
+        
+            <li class="subsection"><a href="#live-view">Live View</a></li>
         
     
     </ul>
@@ -517,11 +521,8 @@
 <hr />
 <p>This SSH server guide is for our bare server/VPS customers only. Using our Rails hosting? We do not grant ssh access since we carefully orchestrate everything for you. You have the nifty <a href="http://help.ninefold.com/getstarted/how_to_install_and_utilize_the_cli/">CLI</a> to manage Rails apps from the command line.</p>
 <hr />
-<h3 id="live-view">Live View</h3>
-<p>Ninefold's web portal has a feature called "Live View" which allows you to connect to your server for administration purposes. While convenient, Live View has limitations around screen resolution, performance, keyboard &amp; mouse compatibility and should therefore be used for initial configuration or casual use only.</p>
-<p>As soon as you have the networking and firewall rules configured appropriately you should use your favourite administration tools for the best experience.</p>
 <h3 id="linux-open-source-servers">Linux / Open source servers</h3>
-<p><strong>Linux / Open Source servers</strong> are typically administered from a terminal session via SSH (ensure port 22 is open on the Firewall); connect to your server's Public IP address using the username defined here: https://help.ninefold.com/entries/21657915-New-Server-Username-and-Password</p>
+<p><strong>Linux / Open Source servers</strong> are typically administered from a terminal session via SSH (ensure port 22 is open on the Firewall); connect to your server's public IP address using the username defined <a href="../new_server_username_and_password">here</a>.</p>
 <ul>
 <li>
 <p>If you are using Mac OSX, use the built-in "Terminal" application.</p>
@@ -531,7 +532,7 @@
 </li>
 </ul>
 <h3 id="windows-server">Windows Server</h3>
-<p>Windows servers are typically administered via Remote Desktop. Ensure RDP is enabled on your Windows Server (port 3389 should be open on the Firewall) before connecting to your server's Public IP address using the Administrator account credentials.</p>
+<p>Windows servers are typically administered via Remote Desktop. Ensure RDP is enabled on your Windows Server (port 3389 should be open on the firewall) before connecting to your server's public IP address using the Administrator account credentials.</p>
 <ul>
 <li>
 <p>If you are using Mac OSX, download the <a href="http://www.microsoft.com/mac/remote-desktop-client">Remote Desktop client</a> from Microsoft.</p>
@@ -543,6 +544,9 @@
 <p>If you are using Linux, a good option is the <a href="http://www.2x.com/rdp-client/">2X client for Remote Desktop</a>.</p>
 </li>
 </ul>
+<h3 id="live-view">Live View</h3>
+<p>Ninefold's dashboard has a feature called "Live View" which allows you to connect to your server for administration purposes. While convenient, Live View has limitations around screen resolution, performance, keyboard &amp; mouse compatibility and should therefore be used for initial configuration or casual use only.</p>
+<p>As soon as you have the networking and firewall rules configured appropriately you should use your favourite administration tools for the best experience.</p>
 
 
 </br></br></br></br>

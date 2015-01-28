@@ -181,6 +181,10 @@
                         </li>
                     
                         <li >
+                            <a href="../../apps/sidekiq">Implementing Sidekiq</a>
+                        </li>
+                    
+                        <li >
                             <a href="../../apps/deployment_with_continuous_integration_ci">Deployment with CI</a>
                         </li>
                     
@@ -494,8 +498,6 @@
     
         <li class="main active"><a href="#how-to-create-a-server">How to create a server</a></li>
         
-            <li class="subsection"><a href="#uploading-an-iso">Uploading an ISO</a></li>
-        
     
     </ul>
 </div></div>
@@ -518,13 +520,13 @@
 <p>You will need to provide a name for the server: Use only a combination of numbers and upper / lower case letters.</p>
 </li>
 <li>
-<p>Choose the region: This dictates where the server will be geographically located. If you would like to have your server able to communicate across regions, you should enable Ninefold Net before continuing any further with your deployment.</p>
+<p>Choose the region: This dictates where the server will be geographically located. If you would like to have your server able to communicate across regions, you should <a href="../../networking/ninefold_net">enable Ninefold Net</a> before continuing any further with your deployment.</p>
 </li>
 <li>
 <p>Choose the level of processing. You will be able to scale up and down with one click as needed. (NOTE: This does not apply to the 512MB-X1 offering).</p>
 </li>
 <li>
-<p>Select the operating system. You can choose from our optimized templates or you can <a href="#uploading-an-iso">upload your own ISO</a>.</p>
+<p>Select the OS image. You can choose from our optimized templates or you can <a href="../how_to_attach_and_upload_an_iso">upload your own ISO</a>.</p>
 </li>
 </ol>
 <p>At a later date, if you plan to upgrade your template beyond the version origianlly provisioned (example: Ubuntu 12.04 to 14.04) please contact support prior to performing this action.</p>
@@ -534,40 +536,17 @@
 <ul>
 <li>Servers have a standard 80GB root disk. You cannot modify this.</li>
 <li>Custom ISOs can select smaller or larger root disks on deployment.</li>
-<li>Custom Templates may have a different root disk that is dependent on the size of the disk on its creation. (e.g. a template of an 160GB virtual machine will be 160GB on deployment)</li>
+<li>Custom templates may have a different root disk that is dependent on the size of the disk on its creation. (e.g. a template of an 160GB virtual machine will be 160GB on deployment)</li>
 </ul>
 </li>
 <li>
 <p>Select additional disk storage (optional): This will add another logical drive to your virtual machine that can be formatted and used to store additional data. You can remove or add more disk storage if required later.</p>
 </li>
 <li>
-<p>Select additional options: Here you can choose a few more options such as adding a public IP address or having the password emailed to you on creation (if applicable). You can also enable recurring backups which will keep your server backed up on a daily basis.</p>
+<p>Select additional options: Here you can choose a few more options such as enabling recurring backups which will keep your server backed up on a daily basis or <a href="../../networking/ninefold_net">enable Ninefold Net</a> if it has not already been enabled previously.</p>
 </li>
 <li>
-<p>Click Build Server and you will be advised on the progress. Once completed you will be able to access your machine via Live View or RDP/SSH (if applicable).</p>
-</li>
-</ol>
-<h4 id="uploading-an-iso">Uploading an ISO</h4>
-<p>When creating a new server, you're not limited to Ninefold's templates or operating systems. We also provide you with the ability to connect to an existing web server to import the OS directly into your account.</p>
-<ol>
-<li>
-<p>From within dashboard, select "Servers"-&gt;"Resources" from the navigation bar.</p>
-</li>
-<li>
-<p>Click add new ISO.</p>
-</li>
-<li>
-<p>Enter the URL of the ISO file you wish to import into your account.</p>
-</li>
-<li>
-<p>If the ISO is bootable (An OS installation disk) make sure to tick the box. </p>
-</li>
-<li>
-<p>From the "OS Type" drop down list, select the OS Type. Select other if your OS type isn't listed.</p>
-<p><strong>Note:</strong> If you pick the wrong OS Type (The virtual machine errors on start, etc) you can change it by going to ""Servers"-&gt;"Resources" and clicking edit on the ISO. </p>
-</li>
-<li>
-<p>Click upload and wait for the ISO to finish importing into your account.</p>
+<p>Click Deploy and you will be advised on the progress. Once completed you will be able to access your machine via Live View or RDP/SSH (if applicable).</p>
 </li>
 </ol>
 

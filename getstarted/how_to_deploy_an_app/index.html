@@ -181,6 +181,10 @@
                         </li>
                     
                         <li >
+                            <a href="../../apps/sidekiq">Implementing Sidekiq</a>
+                        </li>
+                    
+                        <li >
                             <a href="../../apps/deployment_with_continuous_integration_ci">Deployment with CI</a>
                         </li>
                     
@@ -557,7 +561,7 @@
 </li>
 </ul>
 <p>We will initially set <strong>RAILS_ENV=production</strong> regardless of what setup is chosen. This setting can be changed in the next step.</p>
-<p>If a worker is chosen (dedicated or not), we will automatically install Redis.</p>
+<p>If a worker is chosen (dedicated or not), we will automatically install Redis. Please note that if you do not choose a worker during this initial setup process, it cannot be added later.</p>
 <h4 id="3-details">3 Details</h4>
 <p>Time to name your application, choose a Ruby version (if needed), and add any environment variables. Check off any free add-ons to be included in your app. </p>
 <p>Ninefold deploys Apache Passenger as the default app server. If you want to run a web process from a Procfile, check 'yes' for <strong>Run web-server with a Procfile</strong>. This means we will deploy nginx with a configured <a href="http://help.ninefold.com/apps/thin/">Thin</a>, <a href="http://help.ninefold.com/apps/unicorn/">Unicorn</a> or <a href="http://help.ninefold.com/apps/puma/">Puma</a> app server from the Procfile. Check 'no' to stick with Apache Passenger. </p>
