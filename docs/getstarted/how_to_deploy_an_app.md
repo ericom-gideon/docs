@@ -44,7 +44,7 @@ Ninefold has 4 app infrastructure choices:
 
 We will initially set __RAILS_ENV=production__ regardless of what setup is chosen. This setting can be changed in the next step.
 
-If a worker is chosen (dedicated or not), we will automatically install Redis.
+If a worker is chosen (dedicated or not), we will automatically install Redis. Please note that if you do not choose a worker during this initial setup process, it cannot be added later.
 
 #### 3 Details
 
