@@ -18,6 +18,7 @@ pages:
 
 # Getting Started
 - ['getstarted/how_to_deploy_an_app.md', 'Getting Started', 'Deploy an app']
+- ['apps/sidekiq.md', 'App Deployment', 'Implementing Sidekiq']
 - ['getstarted/how_to_install_and_utilize_the_cli.md', 'Getting Started', 'Utilize the CLI']
 - ['getstarted/how_to_migrate_from_heroku.md', 'Getting Started', 'Migrating from Heroku']
 - ['getstarted/how_ninefold_works_with_github_bitbucket_and_git_url.md', 'Getting Started', 'GitHub, Bitbucket and Git URL']
