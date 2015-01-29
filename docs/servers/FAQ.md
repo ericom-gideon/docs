@@ -7,9 +7,14 @@ page_keywords: faq servers questions documentation
 
 #### Does Ninefold block any server ports by default?
 
-When you create a new virtual server, we have every TCP and UDP port blocked by default.
+When you create a new virtual server, we block all ports by default except the following:
 
-You are able to open which ports you require in the firewall rules section of the network tab of your deployed server.
+* 22 (SSH) 
+* 25 (SMTP)
+* 80 (HTTP)
+* 443 (HTTPS)
+
+You are able to open / close which ports you require in the firewall rules section of the network tab of your deployed server.
 
 Note: IP Protocol 47 (GRE) is currently blocked and thus any specific applications that rely on this particular protocol (e.g. PTPP VPN) is unable to operate on the new platform at present.
 
