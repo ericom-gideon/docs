@@ -521,8 +521,14 @@
 
 <h2 id="servers">Servers</h2>
 <h4 id="does-ninefold-block-any-server-ports-by-default">Does Ninefold block any server ports by default?</h4>
-<p>When you create a new virtual server, we have every TCP and UDP port blocked by default.</p>
-<p>You are able to open which ports you require in the firewall rules section of the network tab of your deployed server.</p>
+<p>When you create a new virtual server, we block all ports by default except the following:</p>
+<ul>
+<li>22 (SSH) </li>
+<li>25 (SMTP)</li>
+<li>80 (HTTP)</li>
+<li>443 (HTTPS)</li>
+</ul>
+<p>You are able to open / close which ports you require in the firewall rules section of the network tab of your deployed server.</p>
 <p>Note: IP Protocol 47 (GRE) is currently blocked and thus any specific applications that rely on this particular protocol (e.g. PTPP VPN) is unable to operate on the new platform at present.</p>
 <h4 id="how-do-i-setup-a-reverse-dns-ptr-record-for-my-ip-address">How do I setup a reverse DNS (PTR) record for my IP address?</h4>
 <p>To have a PTR record added for an IP address you are using, you simply need to file a ticket with the following information:</p>
