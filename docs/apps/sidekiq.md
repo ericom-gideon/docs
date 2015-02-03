@@ -29,7 +29,7 @@ You should have .yml file which looks something like:
 
 ##### config/sidekiq.yml
     :concurrency: <%= ENV["SIDEKIQ_CONCURRENCY"] || 4 %>
-      :queues:
+    :queues:
       - default
 
 ### Procfile
