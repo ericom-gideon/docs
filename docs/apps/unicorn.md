@@ -59,6 +59,8 @@ For Unicorn, you will want a line close to this:
 
 	web: bundle exec unicorn -p $PORT -c ./config/unicorn.rb
 
+You can specify the port if you would like to. 
+
 During deployment, on page __3 Details__, Ninefold will ask for your Procfile. Time to deploy!
 
 ***
