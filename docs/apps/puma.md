@@ -20,9 +20,35 @@ Add the Puma gem to your Gemfile as below:
 
 (be sure to bundle)
 
-In your Procfile:
+__Puma.rb__
 
-web: bundle exec puma start -p $PORT
+Create a config file: __config/puma.rb__. For a standard deployment, we recommend the following settings:
+
+    workers Integer(ENV['WEB_CONCURRENCY'] || 2)
+    threads_count = Integer(ENV['MAX_THREADS'] || 5)
+    threads threads_count, threads_count
+
+    preload_app!
+
+    rackup      DefaultRackup
+    port        ENV['PORT']     || 3000
+    environment ENV['RACK_ENV'] || 'development'
+
+    on_worker_boot do
+      ActiveRecord::Base.establish_connection
+    end
+
+__Procfile__
+
+Ninefold utilizes Foreman so you will need to add a [Procfile](http://help.ninefold.com/apps/what_is_a_procfile/) to your app. 
+
+Ninefold has always asked for a Procfile to manage worker processes but now we will recognize web processes.
+
+For Puma, you will want a line close to this:
+
+    web: bundle exec puma -C config/puma.rb
+
+You can specify the port if you would like to. 
 
 That is all you need to do, now simply commit and push!
 
