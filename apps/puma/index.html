@@ -530,8 +530,29 @@
 end
 </code></pre>
 <p>(be sure to bundle)</p>
-<p>In your Procfile:</p>
-<p>web: bundle exec puma start -p $PORT</p>
+<p><strong>Puma.rb</strong></p>
+<p>Create a config file: <strong>config/puma.rb</strong>. For a standard deployment, we recommend the following settings:</p>
+<pre><code>workers Integer(ENV['WEB_CONCURRENCY'] || 2)
+threads_count = Integer(ENV['MAX_THREADS'] || 5)
+threads threads_count, threads_count
+
+preload_app!
+
+rackup      DefaultRackup
+port        ENV['PORT']     || 3000
+environment ENV['RACK_ENV'] || 'development'
+
+on_worker_boot do
+  ActiveRecord::Base.establish_connection
+end
+</code></pre>
+<p><strong>Procfile</strong></p>
+<p>Ninefold utilizes Foreman so you will need to add a <a href="http://help.ninefold.com/apps/what_is_a_procfile/">Procfile</a> to your app. </p>
+<p>Ninefold has always asked for a Procfile to manage worker processes but now we will recognize web processes.</p>
+<p>For Puma, you will want a line close to this:</p>
+<pre><code>web: bundle exec puma -C config/puma.rb
+</code></pre>
+<p>You can specify the port if you would like to. </p>
 <p>That is all you need to do, now simply commit and push!</p>
 <p>Now, when deploying; all the default options are ticked for you in order to make use of your nominated web server via your Procfile. Specifically on step 3 – ‘Run web-server with a Procfile’ should be set to ‘Yes’.</p>
 <h4 id="how-to-setup-post-deployment">How to Setup: Post Deployment</h4>
