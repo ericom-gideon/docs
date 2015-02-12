@@ -7,7 +7,7 @@ page_keywords: deployment notification slack hipchat campfire brutus cli
 
 You are able to integrate with [Slack](https://slack.com/) to display notifications such as when deployments have started and when they’ve ended. This is a handy way to apprise teams of when coworkers deploy.
 
-On Ninefold, it’s super easy to do.  You’ll only need to use our [awesome CLI](http://www.ninefold.com/docs/getstarted/how_to_install_and_utilize_the_cli)!
+On Ninefold, it’s super easy to do.  You’ll only need to use our [awesome CLI](http://help.ninefold.com/getstarted/how_to_install_and_utilize_the_cli/)!
 
 Once you have the CLI installed, run in terminal:
 
