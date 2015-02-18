@@ -27,6 +27,7 @@ pages:
 - ['getstarted/how_to_deploy_spree.md', 'Getting Started', 'Deploy Spree']
 
 # App Deployment
+- ['apps/how_to_migrate_your_rails_app_off_of_ninefold.md', 'App Deployment', 'How to Migrate from Ninefold']
 - ['apps/what_is_a_procfile.md', 'App Deployment', 'Configuring your procfile']
 - ['apps/sidekiq.md', 'App Deployment', 'Implementing Sidekiq']
 - ['apps/deployment_with_continuous_integration_ci.md', 'App Deployment', 'Deployment with CI']
