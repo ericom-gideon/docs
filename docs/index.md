@@ -13,9 +13,8 @@ If you are new to Ninefold, we suggest a couple of articles below to help you ge
 
 ### Rails Apps
 
-*  [Migrating Rails apps away from Ninefold](apps/how_to_migrate_your_rails_app_off_of_ninefold.md)
+Ninefold will be sunsetting our Rails hosting solution. Please view the following guide to you assist you in your migration:
+
+* [How to Migrate Your Rails App Off of Ninefold](http://help.ninefold.com/apps/how_to_migrate_your_rails_app_off_of_ninefold/)
 
 If you can't find what you are looking for, feel free to start a live chat with our awesome support team via the live chat window below.
-
-
-
