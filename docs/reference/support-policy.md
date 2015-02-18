@@ -4,7 +4,7 @@ page_description: Knowledge base article detailing what kind of support to expec
 page_keywords: support policy expectation chat ticket livechat help knowledge base kb docs doco yunovps
 
 ## Support Policy
-Hey, we're Ninefold support! We love helping solve issues and getting our customers' apps up and running. We're here to help and enjoy helping our customers become and remain successful. Here are some things to help us help you.
+Hey, we're Ninefold support! We love helping solve issues and getting our customers' servers up and running. We're here to help and enjoy helping our customers become and remain successful. Here are some things to help us help you.
 
 #### TL;DR
 * __Documentation__: http://help.ninefold.com Hey you're looking at it!
@@ -21,12 +21,12 @@ We highly recommend reviewing our docs before initiating a chat or logging a cas
 #### Tickets
 Support issues can be submitted 24x7 via our ticketing system.  These tickets will be answered ASAP and in order during business hours. During non-business hours (weekends and holidays) tickets are triaged and monitored for wider platform/infrastructure issues.
 
-When submitting tickets for app issues, please put in as much information as you can, such as app name (or app ID if you know it), what steps you took to try to troubleshoot, what logs you checked, and most importantly whether or not we can redeploy your app.
+When submitting tickets for app issues, please put in as much information as you can, such as server name, what steps you took to try to troubleshoot, what logs you checked etc.
 
 Don't know how to log a ticket? Check it out [here](http://help.ninefold.com/reference/faq/#how-do-i-log-a-support-ticket).
 
 #### Chat
-Livechat is a very convenient way to get simple questions answered, whether it be platform related or sales related. Support engineers are available usually from 8am US PST to 2am US PST for general support & sales enquiries. When available, a "Chat with us" option is available on the ninefold.com domain.
+Livechat is a very convenient way to get simple questions answered, whether it be platform related or sales related. Technical support are available usually from 8am to 10pm AEST for general support & sales enquiries. When available, a "Chat with us" option is available on the ninefold.com domain.
 
 Please know that we'll do everything we can to help over chat, but sometimes a ticket will help us save you time and allow us to keep track of what's going on. Feel free to ask away on chat and we'll let you know if a ticket makes more sense.
 
@@ -38,11 +38,10 @@ We are moving to a fully online-based support model which will mean the eventual
 
 ## Monitoring
 
-#### Rails Apps
-Our Ninefold platform and infrastructure is monitored 24x7 by our engineers as well as a series of automated systems. However, it is the customer’s responsibility to configure monitoring at the application level in order to monitor application statistics. You can sign up for a free New Relic account directly in your Rails app.
-
 #### Servers
-As our server offering is unmanaged, it is the customer's responsibility to ensure that the individual server is correctly setup and secured.
+As our server offering is unmanaged, it is the customer's responsibility to configure any rescources and ensure that the individual server is correctly setup and secured.
+
+Our Ninefold platform and infrastructure is monitored 24x7 by our engineers as well as a series of automated systems. However, it is the customer’s responsibility to configure monitoring. We recommend Pingdom & New Relic.
 
 ## Platform Status
 We provide up-to-date notification of incidents & upcoming maintenance via http://status.ninefold.com. Customers can subscribe to the status system to be kept abreast of any issues.
