@@ -1,4 +1,4 @@
-***__Ninefold has made the hard decision to sunset our App Deployment functionality and our US availability zone on 24 May 2015.  For more context around why we made this decision [click here](http://ninefold.com/news/2015/02/17/containers-servers-and-ninefold/).  If you have Apps deployed to Ninefold in any availability zone or resources in our US availability zone you will need to migrate these services away as they will be expunged and no longer accessible after 24 May.__***
+***__Ninefold has made the hard decision to sunset our App Deployment functionality and our US west region on 24 May 2015.  For more context around why we made this decision [click here](http://ninefold.com/news/2015/02/17/containers-servers-and-ninefold/).  If you have Apps deployed to Ninefold in any region or resources in our US west region you will need to migrate these services away as they will be expunged and no longer accessible after 24 May.__***
 
 ##For Server only Customers
 
@@ -8,7 +8,7 @@ Nothing - no change.
 ####What if I am charged in USD but have Australian Servers?
 Nothing will change.
 
-####I am a customer with servers in both AU and US zones?
+####I am a customer with servers in both AU and US regions?
 Nothing will change to your AU resources.  The US resources will be expunged on 24 May 2015. Customer access to the US resources through the portal will be removed on this date.
 
 ####I am a customer who only uses Servers in the US, what is happening with these US servers?
