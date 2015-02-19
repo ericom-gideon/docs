@@ -21,13 +21,7 @@ __PaaS Providers__
 * [Engine Yard](https://www.engineyard.com/)  
 * [Heroku](https://www.heroku.com)  
 
-If you have a systems administrator on staff, you could choose to build your own solution to host your Rails app. Ninefold allows VPS/server deployment in APAC. If this doesn’t suit your needs, you can choose from one of the following providers:
-
-__VPS Providers__
-
-* [Amazon AWS](http://aws.amazon.com/)  
-* [Digital Ocean](https://www.digitalocean.com/)  
-* [Linode](https://www.linode.com/)  
+Alternatively you could look to build your own solution on a VPS/server provider. Ninefold allows VPS/server deployment in APAC.
 
 ##Database 
 Your database is probably your most important asset. Depending on decisions you made when you first deployed your app, you may be using Ninefold’s recommended PostgreSQL 9.2 database, your own database (either hosted on Ninefold or elsewhere) or no database at all.
