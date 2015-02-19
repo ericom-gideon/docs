@@ -28,6 +28,7 @@ pages:
 
 # App Deployment
 - ['apps/how_to_migrate_your_rails_app_off_of_ninefold.md', 'App Deployment', 'How to Migrate from Ninefold']
+- ['reference/faq_rails_us_sunset.md', 'App Deployment', 'FAQ - Rails and US sunsetting']
 - ['apps/what_is_a_procfile.md', 'App Deployment', 'Configuring your procfile']
 - ['apps/sidekiq.md', 'App Deployment', 'Implementing Sidekiq']
 - ['apps/deployment_with_continuous_integration_ci.md', 'App Deployment', 'Deployment with CI']
@@ -98,3 +99,4 @@ pages:
 - ['reference/apdex.md', 'Reference', 'Apdex to measure user satisfaction']
 - ['reference/API.md', 'Reference', 'Using the API (v2)']
 - ['reference/contributing.md', 'Reference', 'Contribute to our docs']
+- ['reference/faq_rails_us_sunset.md', 'Reference', 'FAQ - Rails and US sunsetting']
