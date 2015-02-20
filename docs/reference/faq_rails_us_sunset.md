@@ -29,7 +29,7 @@ Nothing will happen, Ninefold will provide the existing App Deploy feature set u
 We have prepared a detailed guide [here](http://help.ninefold.com/apps/how_to_migrate_your_rails_app_off_of_ninefold/).
 
 ####What happens if I don’t migrate my App by 24 May 2015?
-If you don’t migrate your App by 24 May 2015, your Service will be expunged and you will no longer be access your app or your database. 
+If you don’t migrate your App by 24 May 2015, your Service will be expunged and you will no longer be able to access your app or database. 
 
 ####Any questions?
 
