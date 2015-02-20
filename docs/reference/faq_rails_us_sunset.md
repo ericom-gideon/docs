@@ -1,4 +1,4 @@
-***__Ninefold has made the hard decision to sunset our App Deployment functionality and our US availability zone on 24 May 2015.  For more context around why we made this decision [click here](http://ninefold.com/news/2015/02/17/containers-servers-and-ninefold/).  If you have Apps deployed to Ninefold in any availability zone or resources in our US availability zone you will need to migrate these services away as they will be expunged and no longer accessible after 24 May.__***
+__Ninefold has made the hard decision to sunset our App Deployment functionality and our US availability zone on 24 May 2015.  For more context around why we made this decision [click here](http://ninefold.com/news/2015/02/17/containers-servers-and-ninefold/).  If you have Apps deployed to Ninefold in any availability zone or resources in our US availability zone you will need to migrate these services away as they will be expunged and no longer accessible after 24 May.__
 
 ##For Server only Customers
 
