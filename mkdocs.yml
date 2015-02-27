@@ -88,7 +88,6 @@ pages:
 - ['networking/how_to_use_multiple_ip_addresses_on_a_server.md', 'Networking', 'How to use multiple IP addresses']
 
 # Accounts and Billing
-- ['billing/freetrial.md', 'Accounts & Billing', 'Free trial']
 - ['billing/createuser.md', 'Accounts & Billing', 'Creating additional users']
 - ['billing/closeaccount.md', 'Accounts & Billing', 'How to close your account']
 - ['billing/faq.md', 'Accounts & Billing', 'Billing FAQ']
