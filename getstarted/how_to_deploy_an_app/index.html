@@ -126,6 +126,30 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
+                        <li >
+                            <a href="../../servers/create">Create Your Server</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/new_server_username_and_password">Finding your server username and password</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/how_to_connect_to_your_server_using_ssh_rdp">Connecting to your server</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/resize">Resize your server CPU and RAM</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/how_to_create_a_docker_server">Creating a Docker Server</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/faq">Virtual Servers FAQ</a>
+                        </li>
+                    
                         <li class="active">
                             <a href=".">Deploy an app</a>
                         </li>
@@ -139,23 +163,11 @@
                         </li>
                     
                         <li >
-                            <a href="../how_ninefold_works_with_github_bitbucket_and_git_url">GitHub, Bitbucket and Git URL</a>
-                        </li>
-                    
-                        <li >
                             <a href="../how_to_utilize_ninefold_logging">Ninefold logging</a>
                         </li>
                     
                         <li >
                             <a href="../exporting_and_importing_postgresql_data">Exporting and importing PostgreSQL data</a>
-                        </li>
-                    
-                        <li >
-                            <a href="../how_to_deploy_diaspora">Deploy Diaspora</a>
-                        </li>
-                    
-                        <li >
-                            <a href="../how_to_deploy_spree">Deploy Spree</a>
                         </li>
                     
                     </ul>
@@ -440,11 +452,7 @@
                         </li>
                     
                         <li >
-                            <a href="../../reference/faq">FAQ</a>
-                        </li>
-                    
-                        <li >
-                            <a href="../../reference/apdex">Apdex to measure user satisfaction</a>
+                            <a href="../../reference/faq">General FAQ</a>
                         </li>
                     
                         <li >
@@ -525,7 +533,7 @@
 <h4 id="1-source">1 Source</h4>
 <p>Time to select an organization, repository, and branch/release.</p>
 <p>Ninefold will pull your code in from GitHub, Bitbucket, or from your private Git URL. During this step, we run some validations checking: if the repository is a valid Rails repo, if you’re deploying with Postgres, or if you have the rails_12factor gem (which may adversely affect the logging for your app).</p>
-<p>For using a generic Git URL, supply the URL address and choose the branch you want to deploy. If it’s a private repo, you will need to copy the ssh key and add it to your repo. If it’s public, there isn’t a need for the SSH key. More info about repos can be found <a href="../how_ninefold_works_with_github_bitbucket_and_git_url">here</a>.</p>
+<p>For using a generic Git URL, supply the URL address and choose the branch you want to deploy. If it’s a private repo, you will need to copy the ssh key and add it to your repo. If it’s public, there isn’t a need for the SSH key. </p>
 <p>Do you want us to automatically redeploy your Rails app when you push updates to your branch from Github or Bitbucket? Keep this at the default <strong>Yes</strong>.</p>
 <h4 id="2-configure">2 Configure</h4>
 <p>Here is where you will choose your app infrastructure and region.</p>
