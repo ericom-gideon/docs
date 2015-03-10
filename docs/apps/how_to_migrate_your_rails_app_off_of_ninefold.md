@@ -102,7 +102,7 @@ Detailed guides for importing data into your new provider can be found here:
 * [Heroku](https://devcenter.heroku.com/articles/heroku-postgres-import-export#import)  
 * [Cloud66](http://community.cloud66.com/articles/migrate-from-heroku-to-cloud-66#data)  
 * [EngineYard](https://support.cloud.engineyard.com/entries/20996676-Restore-or-Load-a-Database#topic2)  
-* [ShellyCloud](https://shellycloud.com/documentation/database_backups#import_database)  
+* [Shelly Cloud](https://shellycloud.com/documentation/database_backups#import_database)
 * [Amazon AWS](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/PostgreSQL.Procedural.Importing.html)  
 * [Digital Ocean](https://www.digitalocean.com/community/tutorials/scaling-ruby-on-rails-setting-up-a-dedicated-postgresql-server-part-3) 
 * [Linode](https://www.linode.com/docs/databases/postgresql/)  
