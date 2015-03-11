@@ -17,14 +17,18 @@ pages:
 - ['index.md', 'Home']
 
 # Getting Started
+
+- ['servers/create.md', 'Getting Started', 'Create Your Server']
+- ['servers/new_server_username_and_password.md', 'Getting Started', 'Finding your server username and password']
+- ['servers/how_to_connect_to_your_server_using_ssh_rdp.md', 'Getting Started', 'Connecting to your server']
+- ['servers/resize.md', 'Getting Started', 'Resize your server CPU and RAM']
+- ['servers/how_to_create_a_docker_server.md', 'Getting Started', 'Creating a Docker Server']
+- ['servers/faq.md', 'Getting Started', 'Virtual Servers FAQ']
 - ['getstarted/how_to_deploy_an_app.md', 'Getting Started', 'Deploy an app']
 - ['getstarted/how_to_install_and_utilize_the_cli.md', 'Getting Started', 'Utilize the CLI']
 - ['getstarted/how_to_migrate_from_heroku.md', 'Getting Started', 'Migrating from Heroku']
-- ['getstarted/how_ninefold_works_with_github_bitbucket_and_git_url.md', 'Getting Started', 'GitHub, Bitbucket and Git URL']
 - ['getstarted/how_to_utilize_ninefold_logging.md', 'Getting Started', 'Ninefold logging']
 - ['getstarted/exporting_and_importing_postgresql_data.md', 'Getting Started', 'Exporting and importing PostgreSQL data']
-- ['getstarted/how_to_deploy_diaspora.md', 'Getting Started', 'Deploy Diaspora']
-- ['getstarted/how_to_deploy_spree.md', 'Getting Started', 'Deploy Spree']
 
 # App Deployment
 - ['apps/how_to_migrate_your_rails_app_off_of_ninefold.md', 'App Deployment', 'How to Migrate from Ninefold']
@@ -94,8 +98,7 @@ pages:
 
 # Reference
 - ['reference/support-policy.md', 'Reference', 'Support Policy']
-- ['reference/faq.md', 'Reference', 'FAQ']
-- ['reference/apdex.md', 'Reference', 'Apdex to measure user satisfaction']
+- ['reference/faq.md', 'Reference', 'General FAQ']
 - ['reference/API.md', 'Reference', 'Using the API (v2)']
 - ['reference/contributing.md', 'Reference', 'Contribute to our docs']
 - ['reference/faq_rails_us_sunset.md', 'Reference', 'FAQ - Rails and US sunsetting']

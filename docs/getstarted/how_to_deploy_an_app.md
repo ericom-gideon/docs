@@ -17,7 +17,7 @@ Time to select an organization, repository, and branch/release.
 
 Ninefold will pull your code in from GitHub, Bitbucket, or from your private Git URL. During this step, we run some validations checking: if the repository is a valid Rails repo, if you’re deploying with Postgres, or if you have the rails_12factor gem (which may adversely affect the logging for your app).
 
-For using a generic Git URL, supply the URL address and choose the branch you want to deploy. If it’s a private repo, you will need to copy the ssh key and add it to your repo. If it’s public, there isn’t a need for the SSH key. More info about repos can be found [here](how_ninefold_works_with_github_bitbucket_and_git_url.md).
+For using a generic Git URL, supply the URL address and choose the branch you want to deploy. If it’s a private repo, you will need to copy the ssh key and add it to your repo. If it’s public, there isn’t a need for the SSH key. 
 
 Do you want us to automatically redeploy your Rails app when you push updates to your branch from Github or Bitbucket? Keep this at the default __Yes__.
 
