@@ -7,7 +7,7 @@ page_keywords:    server ISO template attach bare VPS
 
 #### Uploading an ISO 
 
-When creating a new server, you're not limited to Ninefold's Templates or Operating Systems. We also provide you with the ability to connect to an existing web server to import the OS directly into your Ninefold account.
+When creating a new server, you're not limited to Ninefold's Templates or Operating Systems. We also provide you with the ability to pull in an image from a web server which you can then deploy into your Ninefold account.
 
 You are solely responsible for ensuring you are licensed to operate Microsoft or other commercial software that you import. Please see this article for [Microsoft licensing information](microsoft_licensing_can_i_use_my_existing_software_and_licenses_on_ninefold.md).
 
@@ -15,11 +15,11 @@ You are solely responsible for ensuring you are licensed to operate Microsoft or
 
 2. Click __Add new ISO__.
 
-3. Enter the URL of the ISO file you wish to import into your account.
+3. Enter the URL of the ISO file you wish to import into your account (ensure the location is accessible over port 80 and that the URL string ends in .ISO).
 
 4. If the ISO is bootable (An OS installation disk) make sure to tick the box. From the __OS Type__ dropdown list, select the OS type. Use ""Other" if your OS type isn't listed.
 
-	_Note: If you pick the wrong OS type (The virtual machine errors on start, etc) you can change it by going to Servers->Resources and clicking on Edit on the ISO. You should pick Other if your OS isn't para-virtualised out of the box or fails 	on deployment on another OS type._
+	_Note: If you pick the wrong OS type (The virtual machine errors on start, etc) you can change it by going to Servers->Resources and clicking on Edit on the ISO. You should pick Other if your OS isn't para-virtualised out of the box or fails 	on deployment on another OS type, If unsure please file a ticket with support for clarification_
 
 5. Click __Upload__ and wait for the ISO to finish importing into your account.
 

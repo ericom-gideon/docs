@@ -21,8 +21,8 @@ At a later date, if you plan to upgrade your template beyond the version origian
 	* Custom ISOs can select smaller or larger root disks on deployment.
 	* Custom templates may have a different root disk that is dependent on the size of the disk on its creation. (e.g. a template of an 160GB virtual machine will be 160GB on deployment)
 	
-7. Select additional disk storage (optional): This will add another logical drive to your virtual machine that can be formatted and used to store additional data. You can remove or add more disk storage if required later.
+7. Select if you wish to enable daily backups, this will have Ninefold take a daily snapshot of your server which you can restore at a later date, the portal will retain 7 copies.
 
-8. Select additional options: Here you can choose a few more options such as enabling recurring backups which will keep your server backed up on a daily basis or [enable Ninefold Net](../networking/ninefold_net.md) if it has not already been enabled previously.
+8. Select additional disk storage (optional): This will add another logical drive to your virtual machine that can be formatted and used to store additional data. You can remove or add more disk storage if required later.
 
 9. Click Deploy and you will be advised on the progress. Once completed you will be able to access your machine via Live View or RDP/SSH (if applicable).

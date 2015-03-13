@@ -23,6 +23,6 @@ We understand that in extreme circumstances, passwords can get misplaced or peop
 
 There are ways to reset the Windows Server password using certain applications, we have compiled a list below.
 
-__We will be able to provide any support on the following third-party information or software, if you choose to follow these links you acknowledge that you do this at your own risk and will not hold Ninefold or its staff accountable for any damage caused.__
+__We will not be able to provide any support on the following third-party information or software, if you choose to follow these links you acknowledge that you do this at your own risk and will not hold Ninefold or its staff accountable for any damage caused.__
 
 [Offline Windows Password & Registry Editor, Bootdisk / CD](http://pogostick.net/~pnh/ntpasswd)

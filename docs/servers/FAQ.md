@@ -38,3 +38,7 @@ You also have the ability to create your own templates, based on any of your exi
 #### What time standard does Ninefold use?
 
 As our virtual servers are completely unmanaged, you can set the clock to the time and timezone of your choosing.
+
+#### What are these XEN Tools your support team speak of?
+
+Citrix XEN Tools are a software component added to our templates to ensure smooth operation on our cloud. They help with many functions you use via our portal to interact with your server such as adding/removing a disk or rebooting your server. If you have brought your own OS over (ISO or Template) to Ninefold, please install these tools, they can found over at http://pub.ninefold.com for your consumption.

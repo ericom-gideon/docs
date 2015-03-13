@@ -67,7 +67,6 @@ pages:
 - ['servers/how_to_clone_your_server.md', 'Servers', 'Clone a server']
 - ['servers/how_to_attach_and_upload_an_iso.md', 'Servers', 'Upload and attach an ISO']
 - ['servers/how_to_create_a_template_from_your_server.md', 'Servers', 'Create a template from your server']
-- ['servers/moving.md', 'Servers', 'Copying or moving servers between regions']
 - ['servers/how_to_add_storage_volumes.md', 'Servers', 'Add storage volumes']
 - ['servers/how_to_view_attached_and_detached_storage_volumes.md', 'Servers', 'View attached/detached storage volumes']
 - ['servers/how_to_detach_then_reattach_a_storage_volume.md', 'Servers', 'Detach then reattach a storage volume']
