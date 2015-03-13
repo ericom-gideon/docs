@@ -325,10 +325,6 @@
                         </li>
                     
                         <li >
-                            <a href="../moving">Copying or moving servers between regions</a>
-                        </li>
-                    
-                        <li >
                             <a href="../how_to_add_storage_volumes">Add storage volumes</a>
                         </li>
                     
@@ -536,13 +532,12 @@
 <p>Click on the <strong>Storage</strong> tab. You will see the <strong>Create Template</strong> button next to your primary disk volume.</p>
 </li>
 <li>
-<p>Click <strong>Create Template</strong> and give your template a name. The creation process should take no more than a few minutes.</p>
+<p>Click <strong>Create Template</strong> and give your template a name. The template will propagate into the same zone as the existing server, if you wish for the server to be in other zones go to <strong>Servers</strong>&gt; <strong>Resources</strong>, Select <strong>Edit</strong> next to your template and check the box/s of the zones you wish to have that template in (progress for that copy will be displayed)</p>
 </li>
 <li>
 <p>Start your server again once the new template has successfully completed.</p>
 </li>
 </ol>
-<p>Your template will now be available for new server deployment across all Ninefold availability zones.</p>
 <p>To use your new template, you'll need to create a new server.</p>
 <h3 id="server-creation">Server creation</h3>
 <ol>
@@ -550,10 +545,7 @@
 <p>On the <strong>Servers</strong> page, click <strong>Create a new Server</strong>.</p>
 </li>
 <li>
-<p>At Step 4 in the server creation wizard, select <strong>Use your own Template</strong>.</p>
-</li>
-<li>
-<p>Select the template you created previously.</p>
+<p>Select the template you created previously from the image dropdown</p>
 </li>
 <li>
 <p>Complete the server creation wizard and you're done!</p>
