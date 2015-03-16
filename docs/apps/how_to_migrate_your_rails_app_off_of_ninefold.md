@@ -17,7 +17,7 @@ These providers will provide the most similar experience to what you had on Nine
 __PaaS Providers__
 
 * [Cloud 66](http://blog.cloud66.com/migrating-your-rails-apps-to-cloud-66/) 
-* [Shelly Cloud](https://shellycloud.com/)  
+* [Shelly Cloud](https://shellycloud.com/blog/2015/03/how-to-migrate-rails-application-from-ninefold)
 * [Engine Yard](https://www.engineyard.com/)  
 * [Heroku](https://www.heroku.com)  
 
