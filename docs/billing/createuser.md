@@ -14,9 +14,8 @@ Creating additional users will allow others in your organization to create and m
 
 The email address for the new user you have entered will receive an activation email that must be clicked before the new user can login. It will also ask them to set their password for the first time.
 
-Can...                    | User    | Admin
+Feature/Action                | User    | Admin
 ------------------------- | ------- | -----
-Manage apps               | Yes     | Yes
 Manage servers            | Yes     | Yes
 Manage other users        | No      | Yes
 Update billing details    | No      | Yes
