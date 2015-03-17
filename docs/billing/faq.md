@@ -26,9 +26,8 @@ As much as we would like to provide you with completely accurate costs in advanc
 
 All of our estimates are based on 730 hours in a month: the mythical 30.4167 days.  If you have an issue with months having different days, please lodge your complaints with the Astronomer Monks that Pope Gregory commissioned in 1582.  Please copy us on your correspondence, our initial inquiries were met by dead ears.
 
-Bandwidth … we do not include outbound data transfers in any of our estimates.  Why?  Our analysis (yes, there is a blog post here somewhere) showed that this is notoriously difficult to model, assess or predict.  Every App is so different and therefore difficult to estimate as a result.  Our experience shows that data only represents single digit percentage of total costs and we offer significant price breaks on data costs if you know the amount you are likely to use.  Please raise a ticket to take advantage of these discounts.
+Bandwidth … we do not include outbound data transfers in any of our estimates.  Why?  Our analysis (yes, there is a blog post here somewhere) showed that this is notoriously difficult to model, assess or predict. Our experience shows that data only represents single digit percentage of total costs and we offer significant price breaks on data costs if you know the amount you are likely to use.  Please raise a ticket to take advantage of these discounts.
 Our calculators, tables, estimators do NOT include any sales taxes we are required to charge.  Therefore the prices exclude any GST, VAT, Federal or State Sales taxes. These will be applied to your invoice as applicable.
-If you have resources across Regional Zones (i.e. Asia Pacific and US) we provide the cost estimates in the local currency of each zone and an estimate of the exchange rate likely to be applied.  See more in "Do I have to worry about currency?"
 
 
 #### How accurate are the calculators on the website and the portal?
@@ -37,22 +36,13 @@ Without creating a time machine (it's in the backlog somewhere) we provide you w
 
 #### What are the prices I see on the website?
 
-The prices in the website and the portal are the prices in the local currency of that region.  US Dollars for US Zones and Australian Dollars for AU Zones (yes unfortunately they both use "$").  As the majority of our customers use local resources, we provide pricing in that region's currency for them.
+The prices in the website and the portal are all in AUD ex GST
 
 #### Can I pay by another method besides credit card?
 
 Ninefold reviews requests for non-credit card billing on a case by case basis.  Any non-credit card paying client will be subject to credit checks, pre-payment requirements, and a strict credit policy.  Please contact sales@ninefold.com or sales chat to discuss this further.
 
 ## Currency and Tax
-
-#### Do I have to worry about currency?
-
-We try to keep things as simple as possible for our customers and will only bill you in a single currency.  You will select this when you provide us your credit card details.  That way, you get no nasty charges and costs from your credit card company/bank.
-
-You will note that we quote on the website and our estimators in the local currency for each regional zone (US Dollars for US Zones and Australian Dollars for AU Zones).  These prices will not change without prior notice (unless they go down!) and are always available.  If you have resources and services in a zone that is not the currency you have chosen to be billed in, we apply an exchange rate.  While we would love to control international exchange rates and keep them pegged, unfortunately global trade imbalances and economics operate otherwise. 
-
-As a result, if exchange rates move substantially, we will pass on the benefit or the impact to you.  We do not make this decision lightly as we want to provide as much clarity for you and ensure there are no nasty surprises.  
-
 
 #### Do I pay sales taxes or GST?
 
