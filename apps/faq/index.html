@@ -150,26 +150,6 @@
                             <a href="../../servers/faq">Virtual Servers FAQ</a>
                         </li>
                     
-                        <li >
-                            <a href="../../getstarted/how_to_deploy_an_app">Deploy an app</a>
-                        </li>
-                    
-                        <li >
-                            <a href="../../getstarted/how_to_install_and_utilize_the_cli">Utilize the CLI</a>
-                        </li>
-                    
-                        <li >
-                            <a href="../../getstarted/how_to_migrate_from_heroku">Migrating from Heroku</a>
-                        </li>
-                    
-                        <li >
-                            <a href="../../getstarted/how_to_utilize_ninefold_logging">Ninefold logging</a>
-                        </li>
-                    
-                        <li >
-                            <a href="../../getstarted/exporting_and_importing_postgresql_data">Exporting and importing PostgreSQL data</a>
-                        </li>
-                    
                     </ul>
                 </li>
             
@@ -293,15 +273,23 @@
             
             
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Servers <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Virtual Servers <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
                         <li >
-                            <a href="../../servers/how_to_create_a_docker_server">Docker containers</a>
+                            <a href="../../servers/how_to_create_a_docker_server">Create a Docker Server</a>
                         </li>
                     
                         <li >
-                            <a href="../../servers/create">Create a server</a>
+                            <a href="../../servers/create">Create a Virtual Server</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/new_server_username_and_password">New server username and password</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/resetting_server_password">Reset your server password</a>
                         </li>
                     
                         <li >
@@ -310,6 +298,22 @@
                     
                         <li >
                             <a href="../../servers/liveview">Access your server with live view</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/how_to_connect_to_your_server_using_ssh_rdp">Connect using SSH / RDP</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/ssh_keys">SSH Keys</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/user_data">User Data</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../servers/managing_storage_and_backups">Manage Storage & Backups</a>
                         </li>
                     
                         <li >
@@ -322,34 +326,6 @@
                     
                         <li >
                             <a href="../../servers/how_to_create_a_template_from_your_server">Create a template from your server</a>
-                        </li>
-                    
-                        <li >
-                            <a href="../../servers/how_to_add_storage_volumes">Add storage volumes</a>
-                        </li>
-                    
-                        <li >
-                            <a href="../../servers/how_to_view_attached_and_detached_storage_volumes">View attached/detached storage volumes</a>
-                        </li>
-                    
-                        <li >
-                            <a href="../../servers/how_to_detach_then_reattach_a_storage_volume">Detach then reattach a storage volume</a>
-                        </li>
-                    
-                        <li >
-                            <a href="../../servers/using_backups_to_protect_your_data">Using backups to protect your data</a>
-                        </li>
-                    
-                        <li >
-                            <a href="../../servers/new_server_username_and_password">New server username and password</a>
-                        </li>
-                    
-                        <li >
-                            <a href="../../servers/resetting_server_password">Reset your server password</a>
-                        </li>
-                    
-                        <li >
-                            <a href="../../servers/how_to_connect_to_your_server_using_ssh_rdp">Connect using SSH / RDP</a>
                         </li>
                     
                         <li >
@@ -519,8 +495,6 @@
         
             <li class="subsection"><a href="#how-do-i-manage-github-ssh-keys">How do I manage GitHub SSH keys?</a></li>
         
-            <li class="subsection"><a href="#how-do-i-access-my-apps-logs">How do I access my app's logs?</a></li>
-        
             <li class="subsection"><a href="#does-ninefold-support-multiple-environments">Does Ninefold support multiple environments?</a></li>
         
             <li class="subsection"><a href="#will-ninefold-ever-make-any-changes-to-my-codebase">Will Ninefold ever make any changes to my codebase?</a></li>
@@ -595,8 +569,6 @@ ruby '2.2.0'
 <p>The owner of the organization must grant you administrative rights for that particular repo. Once Ninefold adds the public SSH key to the repo, administrative rights may safely be revoked again without affecting deployment in the future. We only need to add the key once.</p>
 <p>Our recommendation is to create a general account on Github for use with our portal. This will allow for instances when a person with authorization access leaves the company. All new users who have admin access to the repo will have to authorize their Github accounts by stepping thru the deploy process to authorize and then hopping out.</p>
 <p>If you don't require the post-commit hooks, you can use the git URL approach and add the SSH key to your repo.</p>
-<h4 id="how-do-i-access-my-apps-logs">How do I access my app's logs?</h4>
-<p>We have a great KB about our logs. Check it out <a href="../../getstarted/how_to_utilize_ninefold_logging">here</a></p>
 <h4 id="does-ninefold-support-multiple-environments">Does Ninefold support multiple environments?</h4>
 <p>You may find a need to set up multiple environments for your apps, such as staging and production. This is easy to do with Ninefold. All you will have to do is build and deploy a new app for each environment. Read on to know more.</p>
 <h5 id="branch-based-deployments">Branch-based deployments</h5>
