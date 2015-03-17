@@ -92,9 +92,6 @@ Our recommendation is to create a general account on Github for use with our por
 
 If you don't require the post-commit hooks, you can use the git URL approach and add the SSH key to your repo.
 
-#### How do I access my app's logs?
-
-We have a great KB about our logs. Check it out [here](../getstarted/how_to_utilize_ninefold_logging.md)
 
 #### Does Ninefold support multiple environments?
 
