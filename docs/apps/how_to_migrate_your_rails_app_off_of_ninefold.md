@@ -18,7 +18,7 @@ __PaaS Providers__
 
 * [Cloud 66](http://blog.cloud66.com/migrating-your-rails-apps-to-cloud-66/) 
 * [Shelly Cloud](https://shellycloud.com/blog/2015/03/how-to-migrate-rails-application-from-ninefold)
-* [Engine Yard](https://www.engineyard.com/)  
+* [Engine Yard](https://www.engineyard.com/trial/9fold-move-over)  
 * [Heroku](https://www.heroku.com)  
 
 Alternatively you could look to build your own solution on a VPS/server provider. Ninefold allows VPS/server deployment in APAC.
