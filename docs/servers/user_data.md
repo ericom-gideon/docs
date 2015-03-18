@@ -34,20 +34,16 @@ To access your user data (__Ubuntu Exampe__)
 1. SSH on to the sever 
 
 2. install __Curl__ `$ sudo apt-get install curl`
-3. Discover your DCHP server IP 
+3. Discover your DCHCP server IP 
 
-	`$ cat /var/log/syslog | grep DHCPOFFER `
+	`If deployed in Asia Pacific 2 your IP will be 10.101.1.1`
 	
-	__OUTPUT__
+	`If deployed in Asia Pacific 1 your IP will be 10.102.1.1`
 	
-	`Mar 18 03:56:07 localhost dhclient: DHCPOFFER of 10.101.1.xx <-*COPY THIS ADDRESS* from 10.101.1.1`
 	
-	`Mar 18 03:56:11 localhost dhclient: DHCPOFFER of 172.16.xxx.x from 172.16.xxx.x`
-
-
 3. User data can be retrieved by Curl-ing the below address
 
-	__http://10.101.1.xx/latest/user-data__ *substitue xx with the IP discovered from the commands above
+	__http://10.10x.1.1/latest/user-data__ *substitue x with an above DHCP IP based on your deployment reigon
 
 	
 ```
