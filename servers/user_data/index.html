@@ -519,21 +519,27 @@ coreos:
 </code></pre>
 
 <h3 id="access-your-user-data">Access your User Data</h3>
-<p>To access your user data</p>
+<p>To access your user data (<strong>Ubuntu Exampe</strong>)</p>
 <ol>
 <li>
 <p>SSH on to the sever </p>
 </li>
 <li>
-<p>install <strong>Curl</strong> (Ubuntu Example <code>$ sudo apt-get install curl</code>)</p>
+<p>install <strong>Curl</strong> <code>$ sudo apt-get install curl</code></p>
+</li>
+<li>
+<p>Discover your DCHP server IP </p>
+<p><code>$ cat /var/log/syslog | grep DHCPOFFER</code></p>
+<p><strong>OUTPUT</strong></p>
+<p><code>Mar 18 03:56:07 localhost dhclient: DHCPOFFER of 10.101.1.xx &lt;-*COPY THIS ADDRESS* from 10.101.1.1</code></p>
+<p><code>Mar 18 03:56:11 localhost dhclient: DHCPOFFER of 172.16.xxx.x from 172.16.xxx.x</code></p>
 </li>
 <li>
 <p>User data can be retrieved by Curl-ing the below address</p>
-<p><strong>http://10.101.1.1/latest/user-data</strong></p>
-<p>Ubuntu example:</p>
+<p><strong>http://10.101.1.xx/latest/user-data</strong> *substitue xx with the IP discovered from the commands above</p>
 </li>
 </ol>
-<pre><code>$ curl http://10.101.1.1/latest/user-data
+<pre><code>$ curl http://10.101.1.xx/latest/user-data
 #cloud-config
 coreos:
   update:
