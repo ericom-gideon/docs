@@ -5,13 +5,12 @@ page_keywords:    server volume VPS RDP SSH key windows linux liveview
 
 ## Connect to your server using SSH / RDP
 
-***
-This SSH server guide is for our bare server/VPS customers only. Using our Rails hosting? We do not grant ssh access since we carefully orchestrate everything for you. You have the nifty [CLI](http://help.ninefold.com/getstarted/how_to_install_and_utilize_the_cli/) to manage Rails apps from the command line.
-***
 
 ### Linux / Open source servers
 
 __Linux / Open Source servers__ are typically administered from a terminal session via SSH (ensure port 22 is open on the Firewall); connect to your server's public IP address using the username defined [here](new_server_username_and_password.md).
+
+__Ninefold now also offer SSH Keys to securely an easily acces your Linux based machines, click [here](ssh_keys.md) to learn more__
 
 * If you are using Mac OSX, use the built-in "Terminal" application.
 
