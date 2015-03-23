@@ -489,6 +489,10 @@
     
         <li class="main "><a href="#modifying-existing-custom-server-templates">Modifying Existing &amp; custom server templates</a></li>
         
+            <li class="subsection"><a href="#ubuntu">Ubuntu</a></li>
+        
+            <li class="subsection"><a href="#centos">CentOS</a></li>
+        
     
     </ul>
 </div></div>
@@ -505,7 +509,7 @@
 <h2 id="how-to-manage-ssh-keys-on-ninefold">How to manage SSH keys on Ninefold</h2>
 <p>Ninefold recently added a function to manage SSH keys. If you use one of Ninefold's standard Linux templates, we will automatically manage your keys as they are added or removed from <strong>Account Details</strong> &gt; <strong>Keys</strong>.</p>
 <h2 id="identifying-your-ssh-key">Identifying your SSH key</h2>
-<p>Github has a great guide on <a href="https://help.github.com/articles/generating-ssh-keys/">Locating or Generating SSH Keys</a> (step 1 &amp; 2 only)</p>
+<p>Github has a great guide on <a href="https://help.github.com/articles/generating-ssh-keys/">Locating or Generating SSH Keys</a> (steps 1 &amp; 2 only)</p>
 <h2 id="administering-user-keys">Administering user keys</h2>
 <p>Each user manages their own public keys on Ninefold.</p>
 <ol>
@@ -519,22 +523,40 @@
 <h2 id="supported-server-templates">Supported Server templates</h2>
 <p><strong>By default all Ninefold-published linux templates from 18/03/2015 support key management.</strong> Any servers created from legacy Ninefold templates do not support this functionality. <strong>No windows templates are supported.</strong></p>
 <p>We manage your keys by installing a Ninefold management public key on your server, and we populate your authorized_keys file with keys from users in your portal account.</p>
+<p><strong>NOTE:</strong>
+Upon deploying a new server, there will be a slight delay once the server says it has been created successfully now while the SSH keys are synched on to the VM (about a couple of minutes generally).</p>
 <h2 id="modifying-existing-custom-server-templates">Modifying Existing &amp; custom server templates</h2>
 <p><strong>If you have brought a linux ISO or VHD to Ninefold</strong> then we can still manage your keys for you, although there are a few things you'll need to do to make this work.</p>
 <p>The functionality only works if a specific cloud init script is installed on your servers. The location and procedure differs a little per operating system.</p>
-<pre><code>Ubuntu
- - Add in cloud-set-guest-sshkey script to /etc/init.d (get it here https://github.com/ninefold/customer-scripts/blob/master/cloud-set-guest-sshkey-Ubuntu )
- - run /etc/init.d/update-rc.d cloud-set-guest-sshkey defaults
- - run /etc/init.d/chmod +x cloud-set-guest-sshkey
- (Optional) To enable passwordless sudo add the following to the end of /etc/sudoers: 
- - user ALL=(ALL) NOPASSWD: ALL
- - reboot
+<h3 id="ubuntu">Ubuntu</h3>
+<ul>
+<li>sudo -i</li>
+<li>Add in the <strong>cloud-set-guest-sshkey</strong> script to <em>/etc/init.d</em> (get it <a href="https://github.com/ninefold/customer-scripts/blob/master/cloud-set-guest-sshkey-Ubuntu">here</a>)</li>
+<li>run</li>
+</ul>
+<pre><code>/etc/init.d/update-rc.d cloud-set-guest-sshkey defaults
+/etc/init.d/chmod +x cloud-set-guest-sshkey
 </code></pre>
 
-<pre><code>CentOS
- - Add in cloud-set-guest-sshkey script to /etc/init.d (get it here https://github.com/ninefold/customer-scripts/blob/master/cloud-set-guest-sshkey-CentOS )
- - run /etc/init.d/chmod +x cloud-set-guest-sshkey
- - Create the following file /var/lib/systemd/system/cloud-set-guest-password.service and populate with:
+<p><strong>(Optional)</strong> To enable passwordless sudo; add the following to the end of /etc/sudoers: </p>
+<pre><code>user ALL=(ALL) NOPASSWD: ALL
+</code></pre>
+
+<ul>
+<li>reboot</li>
+</ul>
+<h3 id="centos">CentOS</h3>
+<ul>
+<li>Add in the <strong>cloud-set-guest-sshkey</strong> script to <em>/etc/init.d</em> (get it <a href="https://github.com/ninefold/customer-scripts/blob/master/cloud-set-guest-sshkey-CentOS">here</a>)</li>
+<li>run </li>
+</ul>
+<pre><code> /etc/init.d/chmod +x cloud-set-guest-sshkey
+</code></pre>
+
+<ul>
+<li>Create the following file in /var/lib/systemd/system and populate with:</li>
+</ul>
+<pre><code># cloud-set-guest-password.service
 
       [Unit]
       Description=Cloudstack set guest password
@@ -552,19 +574,24 @@
 
       [Install]
       WantedBy=multi-user.target 
-
- - Run the following:
-    # install the above systemd service (this will make it start on boot)
-    systemctl enable cloud-set-guest-password.service
-
-    # start the service manually (good for testing during template creation)
-    systemctl start cloud-set-guest-password.service
-
-    # get the status of the service (good for testing during template creation)
-    systemctl status cloud-set-guest-password.service
-  - reboot
 </code></pre>
 
+<ul>
+<li>Run the following:</li>
+</ul>
+<pre><code>    # Install the above systemd service (this will make it start on boot)
+    systemctl enable cloud-set-guest-password.service
+
+    # Start the service manually (good for testing during template creation)
+    systemctl start cloud-set-guest-password.service
+
+    # Get the status of the service (good for testing during template creation)
+    systemctl status cloud-set-guest-password.service
+</code></pre>
+
+<ul>
+<li>reboot</li>
+</ul>
 
 
 </br></br></br></br>
