@@ -18,8 +18,8 @@ From the Ninefold Dashboard click to create a [New Server](https://portal.ninefo
 * Memory & CPU: go for a minimum of 2GB-X2 (if you go lower, the OS may not boot). Choose a compute size that's suitable for your needs. You can resize at any time, but we advise keeping all CoreOS machines in a cluster the same size.
 * Image: CoreOS (we only supply the latest stable version)
 * In Additional options, select and specify [user data](user_data.md)
-** Regardless of whether you intend to set up a CoreOS cluster, you'll need a [unique discovery URL](https://coreos.com/docs/cluster-management/setup/cluster-discovery/) which will allow machines in the cluster to communicate
-** In the [user data](user_data.md) text area specify your [cloud-config](https://coreos.com/docs/cluster-management/setup/cloudinit-cloud-config/). Below we've provided an example that will get you running with etcd, fleet and docker. Remember to replace the etcd discovery attribute with the actual CoreOS discovery URL.
+  * Regardless of whether you intend to set up a CoreOS cluster, you'll need a [unique discovery URL](https://coreos.com/docs/cluster-management/setup/cluster-discovery/) which will allow machines in the cluster to communicate
+  * In the [user data](user_data.md) text area specify your [cloud-config](https://coreos.com/docs/cluster-management/setup/cloudinit-cloud-config/). Below we've provided an example that will get you running with etcd, fleet and docker. Remember to replace the etcd discovery attribute with the actual CoreOS discovery URL.
 ```
 #cloud-config
 
@@ -45,15 +45,22 @@ Click Deploy and the server is up and running in just a couple of minutes with 8
 
 If you forgot to add an [SSH key](ssh_keys.md), you can do so at any time.
 
-## Making something run on CoreOS
+## To add additional storage
 
-You've got a server running, but that's not much without getting something interesting up. There are many examples on the internet and we prefer to leave it to the experts, but we'll get you up with something worth making you cheer for.
+* Click on the Storage link against your CoreOS machine in the Ninefold portal
+* Use the New disk form to add a new disk
+* SSH onto your VM, and find /dev/xvdb (increment b by 1 letter for each additional volume)
+* To add additional disk to CoreOS or Docker, follow this CoreOS guide on [mounting storage](https://coreos.com/docs/cluster-management/setup/mounting-storage/).
 
-We'll utilise fleet. Fleet is like a distributed init system. You interact with it in a simple and intuitive way by way of submitting, stopping and starting units via [fleetctl](https://coreos.com/docs/launching-containers/launching/fleet-using-the-client/).
+## Doing something with CoreOS
+
+You've got a server running, but that's not much without doing something with it. There are many examples on the internet and we prefer to leave it to the experts, but we'll get you up and running with something that will make you cheer.
+
+We'll utilise fleet. Fleet is like a distributed init system. You interact with it in a simple and intuitive way by submitting, stopping and starting units via [fleetctl](https://coreos.com/docs/launching-containers/launching/fleet-using-the-client/).
 
 Fleetctl is a command that talks via API and helps you control executable units across your cluster. You can use _fleetctl_ on your Ninefold CoreOS server or you can run it from your local machine and control a remote cluster.
 
-`Note: you should run the same version of fleetctl on your local machine as you do on your server. fleetctl --version will help you pave the way.`
+`Note: you should run the same version of fleetctl on your local machine as you do on your server. fleetctl --version will help pave the way.`
 
 ### Install fleet on your local OSX (darwin) or linux (amd64) computer
 
@@ -61,10 +68,12 @@ You could use fleetctl on the Server you've created, but that would be no fun. Y
 
 * Visit [https://github.com/coreos/fleet/releases](https://github.com/coreos/fleet/releases). You'll need to find the appropriate binary download for the fleet version on your CoreOS server `fleetctl --version`. Download it and install it to a location on your machine that's on your path.
 * Ensure you've started your SSH user agent: `eval $(ssh-agent)`
-* Add your private key to your agent: `ssh-add`
+* Add your private key to your agent: `ssh-add` (you will need to enter your private key password if you've set one)
 * From your terminal `export FLEETCTL_TUNNEL=(yourserverpublicipaddress)`
 
 Run `fleetctl list-machines` and fleet should come back with a list of machines currently registered in your cluster.
+
+![fleet list-machines](../../img/fleetlistmachines.png)
 
 ### Get something running on your cluster
 
@@ -73,8 +82,11 @@ In this example we'll use one of CoreOS' examples of running an apache frontend 
 Fortunately, by default we open the HTTP firewall port server's IP address, so you won't need to fiddle with your Ninefold server at all.
 
 To get apache up and running:
+
 * Create yourself a unit template file anywhere on your machine (call it apache@.service):
-```[Unit]
+
+```
+[Unit]
 Description=My Apache Frontend
 After=docker.service
 Requires=docker.service
@@ -88,12 +100,14 @@ ExecStart=/usr/bin/docker run -rm --name apache1 -p 80:80 coreos/apache /usr/sbi
 ExecStop=/usr/bin/docker stop apache1
 
 [X-Fleet]
-Conflicts=apache@*.service```
-* Submit your new apache template to fleet: `fleetctl submit apache@.service`
-* fleetctl start apache@1
-* If you have more than one machine in your fleet cluster, keep running the previous command, incrementing the number after the @ sign by one each time. If you exceed the number of machines in your cluster, the service will bank up waiting for a free machine to run on.
+Conflicts=apache@*.service
+```
 
-Once you're done, hit your cluster's ip address, and walla, apache will tell you It works!
+* Submit your new apache template to fleet: `fleetctl submit apache@.service`
+* `fleetctl start apache@1`
+  * If you have more than one machine in your fleet cluster, keep running the previous command, incrementing the number after the @ sign by one each time. If you exceed the number of machines in your cluster, the service will bank up waiting for a free machine to run on.
+
+Once you're done, hit any of your machine's public ip addresses from your web browser (http://_youripaddress_), and walla, apache will tell you _It works!_.
 
 How does it work? Well the unit file you submitted and started runs a standard coreos/apache docker container, and exposes it on public port 80.
 
