@@ -57,6 +57,7 @@ pages:
 # Virtual Servers
 - ['servers/how_to_create_a_docker_server.md', 'Virtual Servers', 'Create a Docker Server']
 - ['servers/create.md', 'Virtual Servers', 'Create a Virtual Server']
+- ['servers/how_to_create_a_coreos_server.md', 'Virtual Servers', 'Create a CoreOS Server']
 - ['servers/new_server_username_and_password.md', 'Virtual Servers', 'New server username and password']
 - ['servers/resetting_server_password.md', 'Virtual Servers', 'Reset your server password']
 - ['servers/resize.md', 'Virtual Servers', 'Resize your server']
