@@ -11,6 +11,8 @@ This is useful for creating exact copies of your servers prior to planned mainte
 
 A backup (snapshot) is not stored on the local server instance, but as a new and independent copy of the instance. This enables the complete instance to be recovered even if it becomes corrupted.
 
+__Backups (snapshots) cannot be downloaded. We recommend that you use a third party backup utility as part of your DR strategy/BCP.__
+
 #### Enable scheduled backups on new servers
 
 When you create a new server using the Ninefold Portal __New Server__ wizard, you can choose to take a daily backup at a small cost (see secondary storage (pricing details)[https://ninefold.com/pricing-detail/#storage] for current costs per GB/month). We only take one recurring backup by default with the oldest being automatically overwritten. Each of your server's disks are backed up during this process. The default daily backup runs in the early hours of the morning (Australian Eastern Standard Time).
@@ -33,8 +35,12 @@ You can take a manual backup of your server at any time.
 
 1. Select your server and select the __Backups__ tab.
 
-2. You can either enable recurring backups or take an immediate manual backup from this screen. Please note that all attached disk volumes will be backed up automatically.
+2. Next to Manual Backups select __Backup now__. NB: all attached disk volumes will be backed up automatically.
 
-3. Should you wish to restore a copy of your server from a previous backup, simply click the __Restore__ icon next to the backup identified with the appropriate date and time stamp. All volumes attached to this server will be restored to a new server, leaving the existing server unaffected.
+#### Restoring manual or scheduled backups
 
-__Note: Backups (snapshots) cannot be downloaded. We recommend that you use a third party backup utility as part of your DR strategy/BCP.__
+Should you wish to restore a copy of your server from a previous backup:
+
+1. Select your server and select the __Backups__ tab.
+
+2. Click the __Restore__ icon next to the backup identified with the appropriate date and time stamp. All volumes attached to this server will be restored to a new server, leaving the existing server unaffected.
