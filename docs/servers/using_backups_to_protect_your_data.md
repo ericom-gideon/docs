@@ -15,7 +15,7 @@ __Backups (snapshots) cannot be downloaded. We recommend that you use a third pa
 
 #### Enable scheduled backups on new servers
 
-When you create a new server using the Ninefold Portal __New Server__ wizard, you can choose to take a daily backup at a small cost (see secondary storage (pricing details)[https://ninefold.com/pricing-detail/#storage] for current costs per GB/month). We only take one recurring backup by default with the oldest being automatically overwritten. Each of your server's disks are backed up during this process. The default daily backup runs in the early hours of the morning (Australian Eastern Standard Time).
+When you create a new server using the Ninefold Portal __New Server__ wizard, you can choose to take a daily backup at a small cost (see secondary storage [pricing details](https://ninefold.com/pricing-detail/#storage) for current costs per GB/month). We only take one recurring backup by default with the oldest being automatically overwritten. Each of your server's disks are backed up during this process. The default daily backup runs in the early hours of the morning (Australian Eastern Standard Time).
 
 Once your server is created, you can set your own daily or weekly backup schedule policy.
 
