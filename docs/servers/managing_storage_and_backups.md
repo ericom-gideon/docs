@@ -59,24 +59,40 @@ This article describes how to detach then reattach a storage volume to your serv
 
 A backup is actually a point-in-time "snapshot" - where the state of a server is copied from primary storage to our secondary storage platform for safe keeping.
 
-This is useful to create exact copies of your servers prior to planned maintenance. When a snapshot is run, an exact copy of the selected server's disk volumes is saved at that point in time. This gives you a reference point that can be restored should the planned maintenance create any problems with your instance.
+This is useful for creating exact copies of your servers prior to planned maintenance. When a snapshot is run, an exact copy of the selected server's disk volumes is saved at that point in time. This gives you a reference point that can be restored should the planned maintenance create any problems with your instance.
 
 A backup (snapshot) is not stored on the local server instance, but as a new and independent copy of the instance. This enables the complete instance to be recovered even if it becomes corrupted.
 
-When you create a new server using the Ninefold Portal, recurring backups are enabled for all disk volumes attached to the server by default. Recurring backups are taken at 2:00am Australian Eastern Standard Time and the last seven backups are retained (with the oldest being automatically overwritten).
+__Backups (snapshots) cannot be downloaded. We recommend that you use a third party backup utility as part of your DR strategy/BCP.__
 
-#### Enable backups on new servers
+#### Enable scheduled backups on new servers
 
-When you are creating a server, the server creation wizard will give you the option to enable backups. If you tick this open, it will schedule a recurring daily backup that will involve taking a snapshot of the virtual machine every day at 2:00am Australian Eastern Standard Time. Up to 7 snapshots/backups will be kept at any given time.
+When you create a new server using the Ninefold Portal __New Server__ wizard, you can choose to take a daily backup at a small cost (see secondary storage (pricing details)[https://ninefold.com/pricing-detail/#storage] for current costs per GB/month). We only take one recurring backup by default with the oldest being automatically overwritten. Each of your server's disks are backed up during this process. The default daily backup runs in the early hours of the morning (Australian Eastern Standard Time).
 
-If you require a different schedule to the one listed above, please contact Ninefold Support.
-
-#### Manually enable backups on servers
+Once your server is created, you can set your own daily or weekly backup schedule policy.
 
 1. Select your server and select the __Backups__ tab.
 
-2. You can either enable recurring backups or take an immediate manual backup from this screen. Please note that all attached disk volumes will be backed up automatically.
+2. Next to Scheduled Backups, select the __Edit__ button.
 
-3. Should you wish to restore a copy of your server from a previous backup, simply click the __Create server from backup__ button next to the backup identified with the appropriate date and time stamp. All volumes attached to this server will be restored to a new server, leaving the existing server unaffected.
+3. Use the Interval dropdowns to select your own __Every__ schedule, or specify your own __Cron__ expression. If you enter a cron expression the dropdowns will change to reflect your expression. We do not permit hourly backups. Note: the schedule you set up takes your Ninefold Portal user account's timezone and applies it to the backup schedule.
 
-__Note: Backups (snapshots) cannot be downloaded. We recommend that you use a third party backup utility as part of your DR strategy/BCP.__
+4. Select the maximum number of scheduled backups you wish to keep as part of this policy.
+
+5. Click the __Save__ button. Your new scheduled backup policy will take effect momentarily.
+
+#### Take manual backups on servers
+
+You can take a manual backup of your server at any time.
+
+1. Select your server and select the __Backups__ tab.
+
+2. Next to Manual Backups select __Backup now__. NB: all attached disk volumes will be backed up automatically.
+
+#### Restoring manual or scheduled backups
+
+Should you wish to restore a copy of your server from a previous backup:
+
+1. Select your server and select the __Backups__ tab.
+
+2. Click the __Restore__ icon next to the backup identified with the appropriate date and time stamp. All volumes attached to this server will be restored to a new server, leaving the existing server unaffected.
