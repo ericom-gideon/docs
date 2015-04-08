@@ -88,6 +88,7 @@ pages:
 # Accounts and Billing
 - ['billing/createuser.md', 'Accounts & Billing', 'Creating additional users']
 - ['billing/closeaccount.md', 'Accounts & Billing', 'How to close your account']
+- ['billing/billing_process.md', 'Accounts & Billing', 'Ninefold Billing Process']
 - ['billing/faq.md', 'Accounts & Billing', 'Billing FAQ']
 
 # Reference
