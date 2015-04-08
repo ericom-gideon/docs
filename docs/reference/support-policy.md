@@ -26,7 +26,7 @@ When submitting tickets for app issues, please put in as much information as you
 Don't know how to log a ticket? Check it out [here](http://help.ninefold.com/reference/faq/#how-do-i-log-a-support-ticket).
 
 #### Chat
-Livechat is a very convenient way to get simple questions answered, whether it be platform related or sales related. Technical support is available between 8am to 7pm AEST Mon-Fri for general support & sales enquiries. When available, a "Chat with us" option is available on the ninefold.com domain.
+Livechat is a very convenient way to get simple questions answered, whether it be platform related or sales related. Technical support is available between 8am to 5pm AEST Mon-Fri for general support & sales enquiries. When available, a "Chat with us" option is available on the ninefold.com domain.
 
 Please know that we'll do everything we can to help over chat, but sometimes a ticket will help us save you time and allow us to keep track of what's going on. Feel free to ask away on chat and we'll let you know if a ticket makes more sense.
 
