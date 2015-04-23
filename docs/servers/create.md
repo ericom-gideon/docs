@@ -4,25 +4,14 @@ page_keywords: create, server, iso, upload
 
 ## How to create a server
 
-1. Click on deploy server on the [dashboard](https://portal.ninefold.com) and follow the deploy server creation wizard. (Note:  You will need to have added a credit card to your account to deploy a virtual server).
+1. Select deploy server on the Ninefold [dashboard](https://portal.ninefold.com) 
 
-2. You will need to provide a name for the server: Use only a combination of numbers and upper / lower case letters.
+2. Name your server to make it easy to identify later
 
-3. Choose the region: This dictates where the server will be geographically located. If you would like to have your server able to communicate across regions, you should [enable Ninefold Net](../networking/ninefold_net.md) before continuing any further with your deployment.
+3. Chose your server architecture including its location, Memory/CPU and Server Image (Example Centos)
 
-4. Choose the level of processing. You will be able to scale up and down with one click as needed. (NOTE: This does not apply to the 512MB-X1 offering).
+4. Apply additional options such as daily backups, extra storage or specify user data *Optional 
 
-5. Select the OS image. You can choose from our optimized templates or you can [upload your own ISO](how_to_attach_and_upload_an_iso.md).
+5. Click Deploy! and follow the deployment notifications presented to see when you server will be ready.
 
-At a later date, if you plan to upgrade your template beyond the version origianlly provisioned (example: Ubuntu 12.04 to 14.04) please contact support prior to performing this action.
-
-6. Select root disk storage
-	* Servers have a standard 80GB root disk. You cannot modify this.
-	* Custom ISOs can select smaller or larger root disks on deployment.
-	* Custom templates may have a different root disk that is dependent on the size of the disk on its creation. (e.g. a template of an 160GB virtual machine will be 160GB on deployment)
-	
-7. Select if you wish to enable daily backups, this will have Ninefold take a daily snapshot of your server which you can restore at a later date, the portal will retain 7 copies.
-
-8. Select additional disk storage (optional): This will add another logical drive to your virtual machine that can be formatted and used to store additional data. You can remove or add more disk storage if required later.
-
-9. Click Deploy and you will be advised on the progress. Once completed you will be able to access your machine via Live View or RDP/SSH (if applicable).
+***At a later date, if you plan to upgrade your template beyond the version origianlly provisioned (example: Ubuntu 12.04 to 14.04) please contact support prior to performing this action.***
