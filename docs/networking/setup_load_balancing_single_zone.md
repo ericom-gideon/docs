@@ -19,18 +19,19 @@ All Servers setup with a form of web server or common listening port
 
 2. Click on the __Local Load Balancers__ tab.
 
-3. Click __Next__ to __Load Balancers__.
+3. Select __Create new LLB__.
 
 4. Here, you will need to input:
 
 	* A name for the load balancer
+	* The Zone Your servers are located in
 
 	* The incoming Public port
 
 	* The destination Private Port
 
-	* The region where your servers are located.
+	* If required you may select __Show advanced options__ and set your preffered Algorithim and Stickiness policy
 
-5. Now, select your servers from the dropdown list.
+5. Now, select your servers from the dropdown list and select _add_.
 
 6. When done picking the servers you want, click __Save__.
