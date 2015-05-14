@@ -97,7 +97,7 @@ pages:
 # Support
 - ['reference/support-policy.md', 'Support', 'Support Policy']
 - ['reference/faq.md', 'Support', 'General FAQ']
-- ['reference/API.md', 'Support', 'Using the API (v2)']
+- ['reference/api.md', 'Support', 'Using the API (v2)']
 - ['reference/devtier_faq.md', 'Support', 'Dev Tier FAQ']
 - ['reference/contributing.md', 'Support', 'Contribute to our docs']
 
