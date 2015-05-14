@@ -12,19 +12,12 @@ The status page is updated at the start and finish of any maintenance period as 
 
 We recommend that you log a support ticket if you experience availability or performance issues in addition to checking the service health page.
 
-#### Can I contact support by phone?
-
-You can log a ticket 24/7 through the portal for accounts, enquiries and technical issues.
-
-
-Australia:		1300 045 614
-
 
 #### How do I log a support ticket?
 
 Log into your Ninefold account and select the drop down under your username (top right hand corner of the window).
 
-Select tickets from the drop down list then choose create ticket.
+Select tickets from the drop down list then choose new ticket.
 
 Choose a category that we can help you with then populate the subject and description fields with content relating to your issue or query. You have the option to include a contact phone number (don't forget your area code!). Click the create ticket button.
 

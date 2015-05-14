@@ -21,7 +21,8 @@ __Ubuntu__: user (you can use sudo to elevate your permissions)
 
 __Linux__: When a new server is created a password is generated and displayed during the build process and is also sent to you via email. 
 
-__Windows__:  The password is set during the first use of this server - there is no default password.
+__Windows__:  Depending on the windows distribution the password will either be set during the first boot or emailed to you.
+
 
 If you don't receive the email, please check your spam folder. 
 

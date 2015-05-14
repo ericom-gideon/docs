@@ -11,12 +11,10 @@ If you are new to Ninefold, we suggest a couple of articles below to help you ge
 *  [Resize your server CPU and RAM](servers/resize.md)
 *  [Docker Containers](servers/how_to_create_a_docker_server.md)
 *  [Virtual Servers FAQ](servers/faq.md)
+*  [Learn about the Dev Tier](reference/devtier_faq.md)
 
-### Rails Apps
 
-Ninefold will be sunsetting our Rails hosting solution. Please view the following guide to you assist you in your migration:
+### Looking for support?
 
-* [How to Migrate Your Rails App Off of Ninefold](apps/how_to_migrate_your_rails_app_off_of_ninefold.md)
-* [FAQ - Rails and US sunsetting](reference/faq_rails_us_sunset.md)
+[Get in touch with our friendly local support team](reference/support-policy.md)
 
-If you can't find what you are looking for, feel free to start a live chat with our awesome support team via the live chat window below.

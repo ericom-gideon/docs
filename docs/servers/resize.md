@@ -10,4 +10,4 @@ page_keywords: server, resize
 
 Your server will now stop, update its service offering and return with your desired compute size.
 
-**Note:** You cannot resize a 512MB-X1 service offering. You will need to template the machine instead and deploy from the template.
+**Note:** You cannot resize a 512MB-X1 service offering. You will need to [create a template](how_to_create_a_template_from_your_server.md) of the machine instead and deploy from the template.

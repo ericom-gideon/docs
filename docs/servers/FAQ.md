@@ -13,6 +13,7 @@ When you create a new virtual server, we block all ports by default except the f
 * 25 (SMTP)
 * 80 (HTTP)
 * 443 (HTTPS)
+* 3389 (RDP)
 
 You are able to open / close which ports you require in the firewall rules section of the network tab of your deployed server.
 
@@ -37,7 +38,7 @@ You also have the ability to create your own templates, based on any of your exi
 
 #### What time standard does Ninefold use?
 
-As our virtual servers are completely unmanaged, you can set the clock to the time and timezone of your choosing.
+As our virtual servers are completely unmanaged, you can set the clock to the time and timezone of your choosing, By default servers will take the time of the host they live on which runs UTC time.
 
 #### What are these XEN Tools your support team speak of?
 

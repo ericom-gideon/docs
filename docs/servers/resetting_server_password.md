@@ -5,17 +5,21 @@ page_keywords:    server volume password username
 
 ## Resetting you server password
 
-There may be a point in time where you will need to reset the password. If your Virtual Machine was created from a Ninefold provided template (and isn't a Windows machine), this can be easily achieved by following a few easy steps: Reset your server root / Administrator password
+There may be a point in time where you will need to reset the password. If your Virtual Machine was created from a Ninefold provided template (and isn't a Windows machine), this can be easily achieved by:
+
+* Select your server in the portal
+* Select the __Options__ tab
+* Select the __Reset Password__ button
+* Your server will reboot and email you a new password
+ 
 
 However, if your virtual machine does not support the Password reset feature (e.g. Created from an ISO, Windows machine or an older template without password reset support) this option will not be available to you. 
 
 __It is important to note that Ninefold does not have access to any of the passwords generated or any passwords you have decided to use on your virtual machine.__
 
-### Security 
 
-It is important that you take appropriate steps to ensure your password is securely stored in a location that you can readily access.
 
-### Windows Servers
+## Windows Servers
 
 A question that can come up is, "I've lost my Windows Server Password, are you sure I can't get it reset somehow?".
 
