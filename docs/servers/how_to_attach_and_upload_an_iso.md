@@ -39,4 +39,4 @@ You can attach an ISO to one server at a time.
 
 5. Your ISO is now accessible within the server.
 
-* Note: if your server does not have XenServer tools installed, attaching the ISO to the server will fail unless your server is stopped. All Ninefold provided templates come with XenServer tools installed.
+    * Note: if your server does not have XenServer tools installed, attaching the ISO to the server will fail unless your server is stopped. All Ninefold provided templates come with XenServer tools installed.
