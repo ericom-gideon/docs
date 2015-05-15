@@ -15,9 +15,9 @@ When you create a new virtual server, we block all ports by default except the f
 * 443 (HTTPS)
 * 3389 (RDP)
 
-You are able to open / close which ports you require in the firewall rules section of the network tab of your deployed server.
+You can enable or disable ports in the firewall rules section of the network tab of your deployed server.
 
-Note: IP Protocol 47 (GRE) is currently blocked and thus any specific applications that rely on this particular protocol (e.g. PTPP VPN) is unable to operate on the new platform at present.
+Note: IP Protocol 47 (GRE) is currently blocked and thus any specific applications that rely on this particular protocol (e.g. PTPP VPN) is unable to operate on the Ninefold platform at present.
 
 #### How do I setup a reverse DNS (PTR) record for my IP address?
 
@@ -32,14 +32,22 @@ Note: You also should be using the above IP address as a static NAT or the virtu
 
 #### What is a Ninefold template?
 
-A Ninefold template is a Ninefold created and vetted virtual server image, consisting of a specific operating system and configuration.
+A Ninefold template is a Ninefold created and vetted virtual server image, consisting of a specific operating system, paravirtualisation tools and configuration.
 
 You also have the ability to create your own templates, based on any of your existing running virtual servers.
 
 #### What time standard does Ninefold use?
 
-As our virtual servers are completely unmanaged, you can set the clock to the time and timezone of your choosing, By default servers will take the time of the host they live on which runs UTC time.
+As our virtual servers are completely unmanaged, you can set the clock to the time and timezone of your choosing. By default servers are configured to in UTC time.
 
-#### What are these XEN Tools your support team speak of?
+#### What are Xen Tools / paravirtualisation tools?
 
-Citrix XEN Tools are a software component added to our templates to ensure smooth operation on our cloud. They help with many functions you use via our portal to interact with your server such as adding/removing a disk or rebooting your server. If you have brought your own OS over (ISO or Template) to Ninefold, please install these tools, they can found over at http://pub.ninefold.com for your consumption.
+Citrix Xen Tools are a software component added to our templates to ensure smooth operation on our cloud. They also provide performance gains on our platform.
+
+Xen Tools provide:
+
+* Enhanced operation with the Ninefold dashboard
+* Disk, network, and other system drivers
+* Better communication between the guest and hypervisor
+
+If you have brought your own OS to Ninefold via ISO or Template, please install these tools, they can found at http://pub.ninefold.com.
