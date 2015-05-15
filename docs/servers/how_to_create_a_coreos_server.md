@@ -13,7 +13,7 @@ The CoreOS template is set up based on the Cloudstack OEM overlay, which means d
 
 You can't log on to CoreOS without SSH keys, so make sure you set up your [ssh keypair](ssh_keys.md) on Ninefold or you won't be able to get on to any machine in your CoreOS cluster.
 
-From the Ninefold Dashboard click to create a [New Server](https://portal.ninefold.com/servers/new). Ensure these components are selected when deploying your CoreOS instance:
+From the Ninefold Dashboard click to create a [New Server](https://portal.ninefold.com/servers/new) and select __Production Grade__ (this template is currently unavailable as a Development server). Ensure these components are selected when deploying your CoreOS instance:
 
 * Memory & CPU: go for a minimum of 2GB-X2 (if you go lower, the OS may not boot). Choose a compute size that's suitable for your needs. You can resize at any time, but we advise keeping all CoreOS machines in a cluster the same size.
 * Image: CoreOS (we only supply the latest stable version)
