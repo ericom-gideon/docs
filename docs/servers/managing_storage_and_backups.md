@@ -7,13 +7,13 @@ page_keywords:    backup, backups, volume, disk, storage
 
 1. Click on __Servers__ > __Manage__ from the top navigation menu.
 
-2. Select the Server on which you'd like to add an additional storage volume. 
+2. Select the Server you'd like to add an additional storage volume to.
 
 3. Select the __Storage__ tab from the context menu.
 
 4. Scroll down to the __New Disk__ section. Enter a name for your new storage volume, select a size, then click __Create Disk__. 
 
-The disk will create and automatically attach itself to your server. You will need to format and mount this disk like you would a brand new physical disk.
+The disk will create and automatically attach itself to your server. You will need to format and mount this disk like you would a brand new physical disk. On Linux the disk will be made available as a new device: _/dev/xvd(b|c|d|etc)_, where /dev/xvda is your primary disk's device. On Windows you can see the Unallocated or free area in Computer Management > Storage > _Disk Management_.
 
 __Note:  If your Virtual Machine does not have XenTools installed or is a Windows-based instance, your virtual machine may need to be shut down for this action to work and attach correctly.__
 
