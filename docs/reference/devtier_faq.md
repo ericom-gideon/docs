@@ -26,7 +26,7 @@ Due to the nature of Dev Tier instances they can only be deployed new, there is 
 
 #### Can i migrate an existing Dev Tier server to your Production grade servers?
 
-When you are done with testing and development, we reccomend deploying new Production grade server/s and moving your configuration across using your Ninefold supplied private network. 
+When you are done with testing and development, we recommend deploying new Production grade server/s and moving your configuration across using your Ninefold supplied private network. 
 
 #### Who do i contact for support? 
 
