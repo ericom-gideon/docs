@@ -4,7 +4,7 @@ page_keywords: docker, containers
 
 ## Docker containers on Ninefold
 
-When you deploy a bare server, you have the option to deploy one with Docker preloaded.
+When you deploy a server, you have the option to deploy one with Docker preloaded.
 
 Simply choose the Docker __Image__ in the server deployment wizard and we will automatically setup Ubuntu 14.04 LTS with Docker for you.
 

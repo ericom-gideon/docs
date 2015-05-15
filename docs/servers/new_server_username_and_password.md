@@ -1,11 +1,11 @@
 page_title:       New server username and password
 page_author:      Angelo Livanos (Coverted by Brittany Martin)
-page_description: Knowledge base article to guide users on bare server usernames and passwords
+page_description: Knowledge base article to guide users on server usernames and passwords
 page_keywords:    server password VPS virtual username windows centos fedora ubuntu
 
 ## New server username and password
 
-So you've successfully created a bare server and now you want to log into it so you can add all sorts of goodies to it. Question is: what is your username and password?
+So you've successfully created a server and now you want to log into it so you can add all sorts of goodies to it. Question is: what is your username and password?
 
 _Note: The information below applies only to Ninefold provided templates._
 
