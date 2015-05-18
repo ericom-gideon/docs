@@ -94,6 +94,10 @@ body {
     /*padding-top: 70px;*/
 }
 
+ol ul{
+  margin-bottom: 12px !important;
+}
+
 div.col-md-3 {
     padding-left: 0;
 }

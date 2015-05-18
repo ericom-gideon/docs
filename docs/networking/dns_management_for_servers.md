@@ -19,7 +19,7 @@ You can now use Ninefold to host your Domain Names. This enables you to leverage
 5. Enter the DNS record details as follows:
 
 	* Enter a "Name" - this is the hostname.
-	* Select the type of record - A Record, CNAME Record, MX Record, TXT Record, or NS Record.
+	* Select the type of record - A Record, CNAME Record, MX Record, SPF, TXT Record, or NS Record.
 	* Enter the "Content" - this is the IP address you wish to point the DNS record to.
 	* Enter a TTL - Time To Live for the DNS record refresh.
 	* Enter a priority - defaults to 1.

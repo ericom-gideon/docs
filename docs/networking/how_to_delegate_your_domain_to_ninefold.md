@@ -14,8 +14,9 @@ Your domain should be pointing to the following Nameservers:
 | Domain           | IP             | 
 |------------------|----------------|
 | ns3.ninefold.com | 103.7.166.250  |   
+|||
 | ns4.ninefold.com | 103.7.165.250  |   
-| ns5.ninefold.com | 198.89.105.250 |  
+ 
 
 Please consult with your domain registrar for information on how you can point your domain to Ninefold's nameservers.
 

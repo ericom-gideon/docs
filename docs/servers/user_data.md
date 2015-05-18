@@ -34,7 +34,7 @@ To access your user data (__Ubuntu Exampe__)
 1. SSH on to the sever 
 
 2. install __Curl__ `$ sudo apt-get install curl`
-3. Discover your DCHCP server IP 
+3. Discover your DHCP server IP 
 
 	`If deployed in Asia Pacific 2 your IP will be 10.101.1.1`
 	
@@ -43,7 +43,7 @@ To access your user data (__Ubuntu Exampe__)
 	
 3. User data can be retrieved by Curl-ing the below address
 
-	__http://10.10x.1.1/latest/user-data__ *substitue x with an above DHCP IP based on your deployment reigon
+	__http://10.10x.1.1/latest/user-data__ *substitute x with an above DHCP IP based on your deployment region
 
 	
 ```

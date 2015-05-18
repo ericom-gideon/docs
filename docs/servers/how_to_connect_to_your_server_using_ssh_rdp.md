@@ -10,11 +10,15 @@ page_keywords:    server volume VPS RDP SSH key windows linux liveview
 
 __Linux / Open Source servers__ are typically administered from a terminal session via SSH (ensure port 22 is open on the Firewall); connect to your server's public IP address using the username defined [here](new_server_username_and_password.md).
 
-__Ninefold now also offer SSH Keys to securely an easily acces your Linux based machines, click [here](ssh_keys.md) to learn more__
+__Ninefold recommend [SSH Keys](ssh_keys.md) to securely and easily access your Linux servers.__ Use shared passwords as a secondary fallback mechanism.
+
+Some tips for accessing your server:
 
 * If you are using Mac OSX, use the built-in "Terminal" application.
 
 * If you are using Windows, we'd recommend you use [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/).
+
+* If you're already on Linux, well, you probably don't need our assistance.
 
 ### Windows Server
 
