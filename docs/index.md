@@ -13,6 +13,15 @@ If you are new to Ninefold, we suggest a couple of articles below to help you ge
 *  [Virtual Servers FAQ](servers/faq.md)
 *  [Learn about the Dev Tier](reference/devtier_faq.md)
 
+### Rails Apps
+
+Ninefold is sunsetting our Rails hosting solution. Please view the following guide to you assist you in your migration:
+
+* [How to Migrate Your Rails App Off of Ninefold](apps/how_to_migrate_your_rails_app_off_of_ninefold.md)
+
+Also see the following link for more information:
+
+* [FAQ - Rails and US sunsetting](reference/faq_rails_us_sunset.md)
 
 ### Looking for support?
 
