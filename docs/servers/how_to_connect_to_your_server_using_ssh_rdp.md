@@ -24,7 +24,7 @@ Some tips for accessing your server:
 
 Windows servers are typically administered via Remote Desktop. Ensure RDP is enabled on your Windows Server (port 3389 should be open on the firewall) before connecting to your server's public IP address using the Administrator account credentials.
 
-* If you are using Mac OSX, download the [Remote Desktop client](http://www.microsoft.com/mac/remote-desktop-client) from Microsoft.
+* If you are using Mac OSX, download the [Remote Desktop client](http://www.ericom.com/html5_rdp_client.asp) from Ericom.
 
 * If you are using Windows, the Remote Desktop client should be available under  Programs -> Accessories.
 
